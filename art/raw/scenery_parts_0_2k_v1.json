@@ -1,0 +1,55 @@
+{
+  "id": "scenery_parts_0_2k_v1",
+  "scope": "pilot",
+  "model": "sourceful/riverflow-v2.5-pro",
+  "resolution": "2K",
+  "expected_usd": 0.15,
+  "reserved_usd": 0.8,
+  "output": "art/raw/scenery_parts_0_2k_v1.png",
+  "references": [
+    {
+      "path": "art/reference/scenery_parts_normalized/atlas_0.png",
+      "sha256": "54e5a92ace23e3d587dc7e6f7cb1b4adfd263990f3254ba36a44c14f7a20c9cb"
+    }
+  ],
+  "account_balance_before_usd": 5.712456,
+  "status": "generated",
+  "response_id": null,
+  "usage": {
+    "prompt_tokens": 472,
+    "completion_tokens": 4175,
+    "total_tokens": 4647,
+    "cost": 0.525693,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.525693,
+      "upstream_inference_prompt_cost": 0,
+      "upstream_inference_completions_cost": 0.525693
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "image_tokens": 4175
+    }
+  },
+  "response_model": null,
+  "response_created": 0,
+  "elapsed_seconds": 145.02,
+  "completed_utc": "2026-10-12T03:43:03.965174+00:00",
+  "cost_usd": 0.525693,
+  "cost_exceeded_reservation": false,
+  "width": 1664,
+  "height": 2496,
+  "alpha_range": [
+    0,
+    255
+  ],
+  "provider_format": "PNG",
+  "provider_sha256": "3e556f2dbc1bb763dca0d26f52355505ce3379e26ea0dd461769f6f9f4bbf7c8",
+  "sha256": "3e556f2dbc1bb763dca0d26f52355505ce3379e26ea0dd461769f6f9f4bbf7c8",
+  "native_size_ok": true,
+  "transparency_ok": true,
+  "prompt": "Use case: style-transfer. Asset type: native 2K transparent production sprite-part atlas for a faithful illustrated stone-age amusement park remaster.\nInput image1 is the EXACT layout, color and silhouette template: four columns by four rows, portrait 2:3 canvas. Repaint the existing pixel-art pieces as clean detailed bright hand-drawn cartoon game art with smooth contours, subtle ink accents and gentle material shading. Preserve recognizable original materials, palette and humor.\nContents: 16 components. Row1: wooden directional signpost without writing; two small colorful food/fruit arrangements; dense tropical cluster. Row2: low foliage, low foliage, twin palm trees, isolated brown trunk/base. Row3: straight trunk/base, palm crown, dense tropical grove, palm crown. Row4: rounded brown stone-age food kiosk with small doorway, pink ice-cream-cone kiosk, two small separate colored service-building components. Preserve exact original geometry and palette for every piece.\nCritical assembly invariants: keep every original piece in its exact cell, at the same size, location, scale, view, silhouette and orientation. Maintain holes, attachment endpoints, branches, limbs, edge angles and the original number of structural members. Pieces are assembled later at exact old offsets, so add detail INSIDE their contour. Do not move, enlarge, center, rotate, duplicate or omit anything. Do not turn fragments into complete objects. No surrounding ground or cast shadows.\nBackground: true transparent RGBA alpha=0 around every component and in holes. Ensure all subject pixels including small isolated details, blue water and pale pieces remain in the alpha channel. No painted checkerboard, background, labels, lettering, watermark, grid or borders. Remove illegible writing from signs but preserve sign structure; the simple red cross is an icon and remains. Native 2K output."
+}

@@ -1,0 +1,49 @@
+{
+  "name": "колесо",
+  "source": "rides[0]",
+  "columns": 2,
+  "rows": 1,
+  "source_cell_size": [
+    47,
+    75
+  ],
+  "source_frame_offset": [
+    26,
+    -69
+  ],
+  "logical_footprint": [
+    3,
+    3
+  ],
+  "frames": [
+    {
+      "path": "res://assets/original/rides/0/0.png",
+      "offset": [
+        26,
+        -69
+      ],
+      "size": [
+        47,
+        75
+      ]
+    },
+    {
+      "path": "res://assets/original/rides/0/1.png",
+      "offset": [
+        26,
+        -69
+      ],
+      "size": [
+        47,
+        75
+      ]
+    }
+  ],
+  "rules": [
+    "same cell scale for both frames",
+    "same anchor for both frames",
+    "no ground, fence, text, extra shadows or passengers",
+    "alpha=0 outside ride",
+    "never trim cells independently"
+  ]
+}

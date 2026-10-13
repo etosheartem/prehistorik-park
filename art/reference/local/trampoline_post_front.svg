@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="40" height="64" viewBox="0 0 50 80"><defs>
+<linearGradient id="wood"><stop stop-color="#584026"/><stop offset=".25" stop-color="#ac8850"/><stop offset=".48" stop-color="#b6955e"/><stop offset=".7" stop-color="#80613b"/><stop offset="1" stop-color="#493520"/></linearGradient>
+<linearGradient id="rope" x1="0" y1="0" x2=".35" y2="1"><stop stop-color="#e2c780"/><stop offset=".45" stop-color="#b79752"/><stop offset="1" stop-color="#70532b"/></linearGradient>
+</defs><path d="M11 6L38 5L39 77Q26 80 11 77Z" fill="url(#wood)" stroke="#493822" stroke-width="1.2"/>
+<g fill="none" stroke-linecap="round"><path d="M16 13Q21 29 17 46T18 76M30 12Q27 29 31 43T31 76" stroke="#d2b278" stroke-width="1"/>
+<path d="M21 8Q17 21 23 39T22 75M35 13Q33 34 35 55L34 77" stroke="#5e4428" stroke-width="1"/>
+<path d="M25 48Q29 51 26 57Q22 54 25 48Z" stroke="#705331" stroke-width=".8"/></g><path d="M1 1L48 1L49 7Q25 13 1 7Z" fill="url(#rope)" stroke="#64502c" stroke-width="1.1"/>
+<path d="M3 4Q25 9 47 4" fill="none" stroke="#e1ca8e" stroke-width="1.2"/><path d="M1 23Q25 29 49 23L49 28Q25 34 1 28Z" fill="url(#rope)" stroke="#624b2a" stroke-width="1.1"/>
+<path d="M3 25Q25 31 47 25" fill="none" stroke="#dfc588" stroke-width="1"/>
+<path d="M5 24L8 29M13 26L16 31M23 27L26 32M33 26L36 30M43 25L46 29" stroke="#876739" stroke-width="1"/></svg>

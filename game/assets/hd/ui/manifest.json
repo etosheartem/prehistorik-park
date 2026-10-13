@@ -1,0 +1,55 @@
+{
+  "source": "art/raw/menu_4k_v1.png",
+  "source_size": [
+    4096,
+    2304
+  ],
+  "source_sha256": "1fa9180bc8e0eabcbe33324d656b40a4890d6fab062ead2c7b2b90eabb347fb8",
+  "api_cost_usd": 0.035,
+  "outputs": {
+    "menu_background_hd.png": {
+      "size": [
+        1920,
+        1080
+      ],
+      "sha256": "93e097b55913aef382fc8dda8e706aa0a73dd9cd39f824ca24ce7b6864ddf4c6"
+    },
+    "icon.png": {
+      "size": [
+        512,
+        512
+      ],
+      "sha256": "2df476c804177b1fff858e8340f2ccb2a57a27962ee844306fab31bd73ec4b99"
+    },
+    "menu_background.png": {
+      "size": [
+        4096,
+        2304
+      ],
+      "sha256": "1fa9180bc8e0eabcbe33324d656b40a4890d6fab062ead2c7b2b90eabb347fb8"
+    },
+    "menu_portrait.png": {
+      "size": [
+        2304,
+        4096
+      ],
+      "sha256": "a76e6777224d66091890aeb516ac442d90e97c5a849d52cafc5576b61e68d6c1"
+    },
+    "menu_portrait_hd.png": {
+      "size": [
+        1080,
+        1920
+      ],
+      "sha256": "c86e06871211747e31c643b94ff67d6ecccb5755f2c2c421f6c9533c8bd62c0b"
+    }
+  },
+  "portrait_source": {
+    "path": "art/raw/menu_portrait_4k_v1.png",
+    "size": [
+      2304,
+      4096
+    ],
+    "sha256": "a76e6777224d66091890aeb516ac442d90e97c5a849d52cafc5576b61e68d6c1",
+    "api_cost_usd": 0.035
+  }
+}

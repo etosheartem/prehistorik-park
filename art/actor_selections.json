@@ -1,0 +1,8 @@
+{
+  "3": {
+    "status": "accepted",
+    "path": "art/raw/actors_full_3_2k_v2.png",
+    "sha256": "d1fc8fb4fa4c3760a15bdd970678e3f958bc35ea2075635db6c7a09e48371f0b",
+    "reason": "Targeted style pass now matches smooth illustrated style; local facing/head consistency corrections recorded by installer."
+  }
+}

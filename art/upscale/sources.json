@@ -1,0 +1,1362 @@
+{
+  "packs/gpack0_0.png": {
+    "source": "game/assets/original/packs/gpack0_0.png",
+    "source_sha256": "113155d7d59ec62486d3b6deee07b3642993e9df5eff704e05acbdc03708d118",
+    "source_size": [
+      28,
+      110
+    ],
+    "native_size": [
+      28,
+      110
+    ],
+    "model": "realesr-animevideov3",
+    "model_files": {
+      ".bin": "548a36f9c3f4ab8da56cd3b13badf23968bee207b396dad14d04b830e5f2ab2d",
+      ".param": "850a248e7c14c27e5bd8cf7265113a9441036a7db63963bb8aa5169d788a435e"
+    },
+    "binary_sha256": "22c2296a39b40cc43ac92615c827ab6d4b60b7142e8cee59f718e3f8e2cdbda9",
+    "preprocess": "nearest-opaque-rgb-bleed-v1",
+    "input": "art/upscale/runs/1791782825089607211/realesr-animevideov3/input/packs__gpack0_0.png",
+    "input_sha256": "b29e696ef83e82fb6546b2412fd22cf99bd98538ffca371772f0244705d4fb35",
+    "raw_gpu_output": "art/upscale/runs/1791782825089607211/realesr-animevideov3/output/packs__gpack0_0.png",
+    "raw_gpu_sha256": "4baed0519b6071c526cb570f09476b472ec7a2b175aca72de9efcdbce3d07800",
+    "output": "game/assets/upscaled/packs/gpack0_0.png",
+    "output_sha256": "85dcf726c27e23937d8bca24e60fe510b6b4f9019198aa424cca222a18531c8a",
+    "output_size": [
+      112,
+      440
+    ],
+    "neural_scale": 4,
+    "native_adapter": 1,
+    "alpha": "authored source alpha, Lanczos to output size",
+    "gpu_log": "art/upscale/runs/1791782825089607211/realesr-animevideov3.log",
+    "batch_seconds": 2.039
+  },
+  "packs/gpack0_1.png": {
+    "source": "game/assets/original/packs/gpack0_1.png",
+    "source_sha256": "b221ec6ebf105fa2a09c91e8d5a2dc6c3cec9d409ba5b79fec8de87f4778c922",
+    "source_size": [
+      30,
+      121
+    ],
+    "native_size": [
+      30,
+      121
+    ],
+    "model": "realesr-animevideov3",
+    "model_files": {
+      ".bin": "548a36f9c3f4ab8da56cd3b13badf23968bee207b396dad14d04b830e5f2ab2d",
+      ".param": "850a248e7c14c27e5bd8cf7265113a9441036a7db63963bb8aa5169d788a435e"
+    },
+    "binary_sha256": "22c2296a39b40cc43ac92615c827ab6d4b60b7142e8cee59f718e3f8e2cdbda9",
+    "preprocess": "nearest-opaque-rgb-bleed-v1",
+    "input": "art/upscale/runs/1791782825089607211/realesr-animevideov3/input/packs__gpack0_1.png",
+    "input_sha256": "be1fe2e84b4a5f4e4a7b8ba677ae83e290d49290d2c402dfde39cb8bfbf7bc7b",
+    "raw_gpu_output": "art/upscale/runs/1791782825089607211/realesr-animevideov3/output/packs__gpack0_1.png",
+    "raw_gpu_sha256": "9d83bb54181cdeb310b0c8e1b6441c0668302f7fb1e43b784b4c5de46de54de7",
+    "output": "game/assets/upscaled/packs/gpack0_1.png",
+    "output_sha256": "2986797e5519633ae4a96bbacce2d7dbcca600b59e3c0ddcaa519a2084e644a8",
+    "output_size": [
+      120,
+      484
+    ],
+    "neural_scale": 4,
+    "native_adapter": 1,
+    "alpha": "authored source alpha, Lanczos to output size",
+    "gpu_log": "art/upscale/runs/1791782825089607211/realesr-animevideov3.log",
+    "batch_seconds": 2.063
+  },
+  "packs/gpack0_10.png": {
+    "source": "game/assets/original/packs/gpack0_10.png",
+    "source_sha256": "918072716636eb7accff6069a9d659541949cd829065f9e103b6c879827598be",
+    "source_size": [
+      120,
+      20
+    ],
+    "native_size": [
+      120,
+      20
+    ],
+    "model": "realesr-animevideov3",
+    "model_files": {
+      ".bin": "548a36f9c3f4ab8da56cd3b13badf23968bee207b396dad14d04b830e5f2ab2d",
+      ".param": "850a248e7c14c27e5bd8cf7265113a9441036a7db63963bb8aa5169d788a435e"
+    },
+    "binary_sha256": "22c2296a39b40cc43ac92615c827ab6d4b60b7142e8cee59f718e3f8e2cdbda9",
+    "preprocess": "nearest-opaque-rgb-bleed-v1",
+    "input": "art/upscale/runs/1791782825089607211/realesr-animevideov3/input/packs__gpack0_10.png",
+    "input_sha256": "fbf09478789d07d74006c331f60c389ad11741595d02fa054e36151ef2492e11",
+    "raw_gpu_output": "art/upscale/runs/1791782825089607211/realesr-animevideov3/output/packs__gpack0_10.png",
+    "raw_gpu_sha256": "7c0823c41fccf93aac0b186022f71d206031f5678780042f738e76cd244cb352",
+    "output": "game/assets/upscaled/packs/gpack0_10.png",
+    "output_sha256": "8ca44dcce3d740b9c1f799b81818dd1f20042fb550a5aa4747faa16cbbb373dc",
+    "output_size": [
+      480,
+      80
+    ],
+    "neural_scale": 4,
+    "native_adapter": 1,
+    "alpha": "authored source alpha, Lanczos to output size",
+    "gpu_log": "art/upscale/runs/1791782825089607211/realesr-animevideov3.log",
+    "batch_seconds": 2.08
+  },
+  "packs/gpack0_2.png": {
+    "source": "game/assets/original/packs/gpack0_2.png",
+    "source_sha256": "7d5c7e6b9ce3aaf35bae713de8c73786a25b68f12be7ece5de3199d9a02ac0e0",
+    "source_size": [
+      23,
+      125
+    ],
+    "native_size": [
+      23,
+      125
+    ],
+    "model": "realesr-animevideov3",
+    "model_files": {
+      ".bin": "548a36f9c3f4ab8da56cd3b13badf23968bee207b396dad14d04b830e5f2ab2d",
+      ".param": "850a248e7c14c27e5bd8cf7265113a9441036a7db63963bb8aa5169d788a435e"
+    },
+    "binary_sha256": "22c2296a39b40cc43ac92615c827ab6d4b60b7142e8cee59f718e3f8e2cdbda9",
+    "preprocess": "nearest-opaque-rgb-bleed-v1",
+    "input": "art/upscale/runs/1791782825089607211/realesr-animevideov3/input/packs__gpack0_2.png",
+    "input_sha256": "c57ce5a6cd368c6d6d977ea2aba200f8f350a1040eea9dd5297abb865e0f8fe6",
+    "raw_gpu_output": "art/upscale/runs/1791782825089607211/realesr-animevideov3/output/packs__gpack0_2.png",
+    "raw_gpu_sha256": "4016e50d68e3962529a772273c95d22b857d281dfc332b07daae75349ff583b6",
+    "output": "game/assets/upscaled/packs/gpack0_2.png",
+    "output_sha256": "1d57e87ec1da7b80ad7044b1be751bf3ab1ea69f0cd07b2efd37a8ba1a63eb6f",
+    "output_size": [
+      92,
+      500
+    ],
+    "neural_scale": 4,
+    "native_adapter": 1,
+    "alpha": "authored source alpha, Lanczos to output size",
+    "gpu_log": "art/upscale/runs/1791782825089607211/realesr-animevideov3.log",
+    "batch_seconds": 2.101
+  },
+  "packs/gpack0_3.png": {
+    "source": "game/assets/original/packs/gpack0_3.png",
+    "source_sha256": "17f2aaf9c9d837faa7c3993e755c8e7c4dac50922f0f5d82237ad1a41e1cf914",
+    "source_size": [
+      27,
+      126
+    ],
+    "native_size": [
+      27,
+      126
+    ],
+    "model": "realesr-animevideov3",
+    "model_files": {
+      ".bin": "548a36f9c3f4ab8da56cd3b13badf23968bee207b396dad14d04b830e5f2ab2d",
+      ".param": "850a248e7c14c27e5bd8cf7265113a9441036a7db63963bb8aa5169d788a435e"
+    },
+    "binary_sha256": "22c2296a39b40cc43ac92615c827ab6d4b60b7142e8cee59f718e3f8e2cdbda9",
+    "preprocess": "nearest-opaque-rgb-bleed-v1",
+    "input": "art/upscale/runs/1791782825089607211/realesr-animevideov3/input/packs__gpack0_3.png",
+    "input_sha256": "889a91f7d6137b0edad4fe59fde2facf1107f339289ed5a8eccbeb17b3750712",
+    "raw_gpu_output": "art/upscale/runs/1791782825089607211/realesr-animevideov3/output/packs__gpack0_3.png",
+    "raw_gpu_sha256": "52a7fa7748fba87821dfd7818fcba226a1d91a307b7fb1126a74f55de0095537",
+    "output": "game/assets/upscaled/packs/gpack0_3.png",
+    "output_sha256": "ba5e379c4a312262612c28ddede7ce5d456e30924a74b9fd0849774c4af3ceeb",
+    "output_size": [
+      108,
+      504
+    ],
+    "neural_scale": 4,
+    "native_adapter": 1,
+    "alpha": "authored source alpha, Lanczos to output size",
+    "gpu_log": "art/upscale/runs/1791782825089607211/realesr-animevideov3.log",
+    "batch_seconds": 2.123
+  },
+  "packs/gpack0_4.png": {
+    "source": "game/assets/original/packs/gpack0_4.png",
+    "source_sha256": "11e668d4e23cf2424d53f04e9f6aa330c30470119720c8bcca13a5b177732c4f",
+    "source_size": [
+      24,
+      138
+    ],
+    "native_size": [
+      24,
+      138
+    ],
+    "model": "realesr-animevideov3",
+    "model_files": {
+      ".bin": "548a36f9c3f4ab8da56cd3b13badf23968bee207b396dad14d04b830e5f2ab2d",
+      ".param": "850a248e7c14c27e5bd8cf7265113a9441036a7db63963bb8aa5169d788a435e"
+    },
+    "binary_sha256": "22c2296a39b40cc43ac92615c827ab6d4b60b7142e8cee59f718e3f8e2cdbda9",
+    "preprocess": "nearest-opaque-rgb-bleed-v1",
+    "input": "art/upscale/runs/1791782825089607211/realesr-animevideov3/input/packs__gpack0_4.png",
+    "input_sha256": "3787ee4a5709924bb11f18813b9c6efde626156733c4e938745381d6713c3a03",
+    "raw_gpu_output": "art/upscale/runs/1791782825089607211/realesr-animevideov3/output/packs__gpack0_4.png",
+    "raw_gpu_sha256": "5714c31812024628d291fac5449bc82da48a96209fac85dd87d910a758186d5c",
+    "output": "game/assets/upscaled/packs/gpack0_4.png",
+    "output_sha256": "050574b517b9b8e395f371235da51ebb67f26b6562fa29cb35f751137463fdda",
+    "output_size": [
+      96,
+      552
+    ],
+    "neural_scale": 4,
+    "native_adapter": 1,
+    "alpha": "authored source alpha, Lanczos to output size",
+    "gpu_log": "art/upscale/runs/1791782825089607211/realesr-animevideov3.log",
+    "batch_seconds": 2.146
+  },
+  "packs/gpack0_5.png": {
+    "source": "game/assets/original/packs/gpack0_5.png",
+    "source_sha256": "e1f1d6b850650e952d125f26c750c91e490fa1fc85d8e22d741f8f17ad2d3fdd",
+    "source_size": [
+      30,
+      114
+    ],
+    "native_size": [
+      30,
+      114
+    ],
+    "model": "realesr-animevideov3",
+    "model_files": {
+      ".bin": "548a36f9c3f4ab8da56cd3b13badf23968bee207b396dad14d04b830e5f2ab2d",
+      ".param": "850a248e7c14c27e5bd8cf7265113a9441036a7db63963bb8aa5169d788a435e"
+    },
+    "binary_sha256": "22c2296a39b40cc43ac92615c827ab6d4b60b7142e8cee59f718e3f8e2cdbda9",
+    "preprocess": "nearest-opaque-rgb-bleed-v1",
+    "input": "art/upscale/runs/1791782825089607211/realesr-animevideov3/input/packs__gpack0_5.png",
+    "input_sha256": "61aba2953a8af01312ce3edd30e77081a2977e2ee02913f17bd29547f8944f6a",
+    "raw_gpu_output": "art/upscale/runs/1791782825089607211/realesr-animevideov3/output/packs__gpack0_5.png",
+    "raw_gpu_sha256": "b13359aecf968a7cf2a1a79adb6bb18f39d27b9a656bec64face3cec6a0f00f9",
+    "output": "game/assets/upscaled/packs/gpack0_5.png",
+    "output_sha256": "90efcacdfa9a514f4c950a45dbca83e2172ed7ee292b3a11d39dd5b74d4b8ba1",
+    "output_size": [
+      120,
+      456
+    ],
+    "neural_scale": 4,
+    "native_adapter": 1,
+    "alpha": "authored source alpha, Lanczos to output size",
+    "gpu_log": "art/upscale/runs/1791782825089607211/realesr-animevideov3.log",
+    "batch_seconds": 2.17
+  },
+  "packs/gpack0_6.png": {
+    "source": "game/assets/original/packs/gpack0_6.png",
+    "source_sha256": "aa404b27ccb424ae9e5443ddfed8d0b5ff13116a573e55e0d049b4647c629bfb",
+    "source_size": [
+      26,
+      117
+    ],
+    "native_size": [
+      26,
+      117
+    ],
+    "model": "realesr-animevideov3",
+    "model_files": {
+      ".bin": "548a36f9c3f4ab8da56cd3b13badf23968bee207b396dad14d04b830e5f2ab2d",
+      ".param": "850a248e7c14c27e5bd8cf7265113a9441036a7db63963bb8aa5169d788a435e"
+    },
+    "binary_sha256": "22c2296a39b40cc43ac92615c827ab6d4b60b7142e8cee59f718e3f8e2cdbda9",
+    "preprocess": "nearest-opaque-rgb-bleed-v1",
+    "input": "art/upscale/runs/1791782825089607211/realesr-animevideov3/input/packs__gpack0_6.png",
+    "input_sha256": "1a68e289764c6f18f1f0b795c3aa6a62287ec6e88fb2d2dd6a00af55839571a8",
+    "raw_gpu_output": "art/upscale/runs/1791782825089607211/realesr-animevideov3/output/packs__gpack0_6.png",
+    "raw_gpu_sha256": "e66b123fd1cf0ff9703b4aaffc52e261b165e2ffefd76860eba72be22757471f",
+    "output": "game/assets/upscaled/packs/gpack0_6.png",
+    "output_sha256": "eeac45e79ab79460101207e41740ce9f92447e3a2bdd5c274a52f36a7b11b2fd",
+    "output_size": [
+      104,
+      468
+    ],
+    "neural_scale": 4,
+    "native_adapter": 1,
+    "alpha": "authored source alpha, Lanczos to output size",
+    "gpu_log": "art/upscale/runs/1791782825089607211/realesr-animevideov3.log",
+    "batch_seconds": 2.19
+  },
+  "packs/gpack0_7.png": {
+    "source": "game/assets/original/packs/gpack0_7.png",
+    "source_sha256": "d9d3cd76ac13349ec2750ebd1dc86f2182cb8813e81f4abe3b8e9891f9594f07",
+    "source_size": [
+      30,
+      136
+    ],
+    "native_size": [
+      30,
+      136
+    ],
+    "model": "realesr-animevideov3",
+    "model_files": {
+      ".bin": "548a36f9c3f4ab8da56cd3b13badf23968bee207b396dad14d04b830e5f2ab2d",
+      ".param": "850a248e7c14c27e5bd8cf7265113a9441036a7db63963bb8aa5169d788a435e"
+    },
+    "binary_sha256": "22c2296a39b40cc43ac92615c827ab6d4b60b7142e8cee59f718e3f8e2cdbda9",
+    "preprocess": "nearest-opaque-rgb-bleed-v1",
+    "input": "art/upscale/runs/1791782825089607211/realesr-animevideov3/input/packs__gpack0_7.png",
+    "input_sha256": "09cb342ed99f2e64238ed736140682170964114d8149602af8afeb75050c6726",
+    "raw_gpu_output": "art/upscale/runs/1791782825089607211/realesr-animevideov3/output/packs__gpack0_7.png",
+    "raw_gpu_sha256": "5f482f2e53d6ad5d420abaac9af2af030ab0bb0df9eadc16a890055168221f22",
+    "output": "game/assets/upscaled/packs/gpack0_7.png",
+    "output_sha256": "06a211320540056ef4f4350477ed0594ae2a33909cd32f0375797ba5c1643bac",
+    "output_size": [
+      120,
+      544
+    ],
+    "neural_scale": 4,
+    "native_adapter": 1,
+    "alpha": "authored source alpha, Lanczos to output size",
+    "gpu_log": "art/upscale/runs/1791782825089607211/realesr-animevideov3.log",
+    "batch_seconds": 2.22
+  },
+  "packs/gpack0_8.png": {
+    "source": "game/assets/original/packs/gpack0_8.png",
+    "source_sha256": "4f0624ce83835101d5fda872ba5a0c92feb6b528ecb0b7c2c2c6cdc72bf8390d",
+    "source_size": [
+      28,
+      72
+    ],
+    "native_size": [
+      28,
+      72
+    ],
+    "model": "realesr-animevideov3",
+    "model_files": {
+      ".bin": "548a36f9c3f4ab8da56cd3b13badf23968bee207b396dad14d04b830e5f2ab2d",
+      ".param": "850a248e7c14c27e5bd8cf7265113a9441036a7db63963bb8aa5169d788a435e"
+    },
+    "binary_sha256": "22c2296a39b40cc43ac92615c827ab6d4b60b7142e8cee59f718e3f8e2cdbda9",
+    "preprocess": "nearest-opaque-rgb-bleed-v1",
+    "input": "art/upscale/runs/1791782825089607211/realesr-animevideov3/input/packs__gpack0_8.png",
+    "input_sha256": "a7a745586cb38c648c49dba8d0473bf8f769e448381582c1dde27270d1e72b89",
+    "raw_gpu_output": "art/upscale/runs/1791782825089607211/realesr-animevideov3/output/packs__gpack0_8.png",
+    "raw_gpu_sha256": "a45032bee5e4fa317ef5a7230266da4bd8756df0bfb449f76f2c192b59a40b71",
+    "output": "game/assets/upscaled/packs/gpack0_8.png",
+    "output_sha256": "5143a7d99fb47fc48f2181ba6eb3fa443d00cbed01fab48f2dd874062caf0926",
+    "output_size": [
+      112,
+      288
+    ],
+    "neural_scale": 4,
+    "native_adapter": 1,
+    "alpha": "authored source alpha, Lanczos to output size",
+    "gpu_log": "art/upscale/runs/1791782825089607211/realesr-animevideov3.log",
+    "batch_seconds": 2.238
+  },
+  "packs/gpack0_9.png": {
+    "source": "game/assets/original/packs/gpack0_9.png",
+    "source_sha256": "90b18ca7a97bd4fade86b1f5545ddf4d976e99e061f74439dc73ce36d329e09b",
+    "source_size": [
+      30,
+      89
+    ],
+    "native_size": [
+      30,
+      89
+    ],
+    "model": "realesr-animevideov3",
+    "model_files": {
+      ".bin": "548a36f9c3f4ab8da56cd3b13badf23968bee207b396dad14d04b830e5f2ab2d",
+      ".param": "850a248e7c14c27e5bd8cf7265113a9441036a7db63963bb8aa5169d788a435e"
+    },
+    "binary_sha256": "22c2296a39b40cc43ac92615c827ab6d4b60b7142e8cee59f718e3f8e2cdbda9",
+    "preprocess": "nearest-opaque-rgb-bleed-v1",
+    "input": "art/upscale/runs/1791782825089607211/realesr-animevideov3/input/packs__gpack0_9.png",
+    "input_sha256": "c856c1e782f2b604f04ff908ba63baf9d15dc50ef9473d88c5fcc281f3aed2e0",
+    "raw_gpu_output": "art/upscale/runs/1791782825089607211/realesr-animevideov3/output/packs__gpack0_9.png",
+    "raw_gpu_sha256": "9e0e576e0d2115e655e07f6bbc185352deeb8806a8f820fbaaf34509c693ad50",
+    "output": "game/assets/upscaled/packs/gpack0_9.png",
+    "output_sha256": "9b326b585140e2cb6deb5c02256f692632103a2a887947b74cec6e48c2a4bc28",
+    "output_size": [
+      120,
+      356
+    ],
+    "neural_scale": 4,
+    "native_adapter": 1,
+    "alpha": "authored source alpha, Lanczos to output size",
+    "gpu_log": "art/upscale/runs/1791782825089607211/realesr-animevideov3.log",
+    "batch_seconds": 2.258
+  },
+  "packs/gpack1_0.png": {
+    "source": "game/assets/original/packs/gpack1_0.png",
+    "source_sha256": "a7571c9a91d065c4d2266882ac560d5e6cda4e2df7fa7f8440dbffd1a8ed9211",
+    "source_size": [
+      64,
+      132
+    ],
+    "native_size": [
+      64,
+      132
+    ],
+    "model": "realesr-animevideov3",
+    "model_files": {
+      ".bin": "548a36f9c3f4ab8da56cd3b13badf23968bee207b396dad14d04b830e5f2ab2d",
+      ".param": "850a248e7c14c27e5bd8cf7265113a9441036a7db63963bb8aa5169d788a435e"
+    },
+    "binary_sha256": "22c2296a39b40cc43ac92615c827ab6d4b60b7142e8cee59f718e3f8e2cdbda9",
+    "preprocess": "nearest-opaque-rgb-bleed-v1",
+    "input": "art/upscale/runs/1791782825089607211/realesr-animevideov3/input/packs__gpack1_0.png",
+    "input_sha256": "b616fc26304cb8ca212401e010aa88a5a312fdf06db641ef6a1d395b22df9cdc",
+    "raw_gpu_output": "art/upscale/runs/1791782825089607211/realesr-animevideov3/output/packs__gpack1_0.png",
+    "raw_gpu_sha256": "a455076ba2552398586a1a16d06bab91cc8e557e1c423a2cdac79ed8ca710af2",
+    "output": "game/assets/upscaled/packs/gpack1_0.png",
+    "output_sha256": "849c97da805b7810c92e13002e3164fc30fda055fc560723e8befed0facbbdab",
+    "output_size": [
+      256,
+      528
+    ],
+    "neural_scale": 4,
+    "native_adapter": 1,
+    "alpha": "authored source alpha, Lanczos to output size",
+    "gpu_log": "art/upscale/runs/1791782825089607211/realesr-animevideov3.log",
+    "batch_seconds": 2.309
+  },
+  "packs/gpack1_1.png": {
+    "source": "game/assets/original/packs/gpack1_1.png",
+    "source_sha256": "903f7e031d5ac921a3bc6a3e805005d2047386d56e3c795aa94616c496a3b3b0",
+    "source_size": [
+      74,
+      45
+    ],
+    "native_size": [
+      74,
+      45
+    ],
+    "model": "realesr-animevideov3",
+    "model_files": {
+      ".bin": "548a36f9c3f4ab8da56cd3b13badf23968bee207b396dad14d04b830e5f2ab2d",
+      ".param": "850a248e7c14c27e5bd8cf7265113a9441036a7db63963bb8aa5169d788a435e"
+    },
+    "binary_sha256": "22c2296a39b40cc43ac92615c827ab6d4b60b7142e8cee59f718e3f8e2cdbda9",
+    "preprocess": "nearest-opaque-rgb-bleed-v1",
+    "input": "art/upscale/runs/1791782825089607211/realesr-animevideov3/input/packs__gpack1_1.png",
+    "input_sha256": "37efd0c6bb0c56667576134c3d96a036ce8f0f1e62a6b959107e1e484432bb8a",
+    "raw_gpu_output": "art/upscale/runs/1791782825089607211/realesr-animevideov3/output/packs__gpack1_1.png",
+    "raw_gpu_sha256": "8872990c3a24b914fc9d6f29f3cda2d165b12fa8292c67e719e92a43b2687738",
+    "output": "game/assets/upscaled/packs/gpack1_1.png",
+    "output_sha256": "68d6984a8af0c7bd14be6a0c161477ed59145c5d3606a06b4190032c0e997e9e",
+    "output_size": [
+      296,
+      180
+    ],
+    "neural_scale": 4,
+    "native_adapter": 1,
+    "alpha": "authored source alpha, Lanczos to output size",
+    "gpu_log": "art/upscale/runs/1791782825089607211/realesr-animevideov3.log",
+    "batch_seconds": 2.342
+  },
+  "packs/gpack1_10.png": {
+    "source": "game/assets/original/packs/gpack1_10.png",
+    "source_sha256": "a31d43376efc1ea9a78dfd572673eb3654cf12054c1738fb12fe39f12dd7d249",
+    "source_size": [
+      39,
+      23
+    ],
+    "native_size": [
+      39,
+      23
+    ],
+    "model": "realesr-animevideov3",
+    "model_files": {
+      ".bin": "548a36f9c3f4ab8da56cd3b13badf23968bee207b396dad14d04b830e5f2ab2d",
+      ".param": "850a248e7c14c27e5bd8cf7265113a9441036a7db63963bb8aa5169d788a435e"
+    },
+    "binary_sha256": "22c2296a39b40cc43ac92615c827ab6d4b60b7142e8cee59f718e3f8e2cdbda9",
+    "preprocess": "nearest-opaque-rgb-bleed-v1",
+    "input": "art/upscale/runs/1791782825089607211/realesr-animevideov3/input/packs__gpack1_10.png",
+    "input_sha256": "31067219d1da723dd5c0729e72eb568013bfa034576ce9981393e77cea6e6ac9",
+    "raw_gpu_output": "art/upscale/runs/1791782825089607211/realesr-animevideov3/output/packs__gpack1_10.png",
+    "raw_gpu_sha256": "dbbe5bbc3a3dbfbb19fd2f0c3e557c4298a8b4e27af04efcb5e5e1eb87b50a81",
+    "output": "game/assets/upscaled/packs/gpack1_10.png",
+    "output_sha256": "24c6eeffd9daf48facf45fdb0974923573804208b1aa1c6ac579099afbb5bcc7",
+    "output_size": [
+      156,
+      92
+    ],
+    "neural_scale": 4,
+    "native_adapter": 1,
+    "alpha": "authored source alpha, Lanczos to output size",
+    "gpu_log": "art/upscale/runs/1791782825089607211/realesr-animevideov3.log",
+    "batch_seconds": 2.354
+  },
+  "packs/gpack1_11.png": {
+    "source": "game/assets/original/packs/gpack1_11.png",
+    "source_sha256": "020b7828925c22c9f8de3449e720cae9d27c04edc40bceacf9956236b30f3587",
+    "source_size": [
+      82,
+      16
+    ],
+    "native_size": [
+      82,
+      16
+    ],
+    "model": "realesr-animevideov3",
+    "model_files": {
+      ".bin": "548a36f9c3f4ab8da56cd3b13badf23968bee207b396dad14d04b830e5f2ab2d",
+      ".param": "850a248e7c14c27e5bd8cf7265113a9441036a7db63963bb8aa5169d788a435e"
+    },
+    "binary_sha256": "22c2296a39b40cc43ac92615c827ab6d4b60b7142e8cee59f718e3f8e2cdbda9",
+    "preprocess": "nearest-opaque-rgb-bleed-v1",
+    "input": "art/upscale/runs/1791782825089607211/realesr-animevideov3/input/packs__gpack1_11.png",
+    "input_sha256": "7722831d614f2ad688c15ff1f93d96ae81757f303ed85fa20665a0036943e132",
+    "raw_gpu_output": "art/upscale/runs/1791782825089607211/realesr-animevideov3/output/packs__gpack1_11.png",
+    "raw_gpu_sha256": "cb18715fa69b2c500b13c4ad7b136c3472b250753a0d54612e06fd60c037774d",
+    "output": "game/assets/upscaled/packs/gpack1_11.png",
+    "output_sha256": "0851dfdbf87d44ef75ba34b9af7e783ffc0f134f173076beb0626a8a0eca5846",
+    "output_size": [
+      328,
+      64
+    ],
+    "neural_scale": 4,
+    "native_adapter": 1,
+    "alpha": "authored source alpha, Lanczos to output size",
+    "gpu_log": "art/upscale/runs/1791782825089607211/realesr-animevideov3.log",
+    "batch_seconds": 2.368
+  },
+  "packs/gpack1_12.png": {
+    "source": "game/assets/original/packs/gpack1_12.png",
+    "source_sha256": "747a4cfaf2e037ad7a30dd783c4792eea0cdae35c8eb45ca54f6eb13f8798fed",
+    "source_size": [
+      33,
+      63
+    ],
+    "native_size": [
+      33,
+      63
+    ],
+    "model": "realesr-animevideov3",
+    "model_files": {
+      ".bin": "548a36f9c3f4ab8da56cd3b13badf23968bee207b396dad14d04b830e5f2ab2d",
+      ".param": "850a248e7c14c27e5bd8cf7265113a9441036a7db63963bb8aa5169d788a435e"
+    },
+    "binary_sha256": "22c2296a39b40cc43ac92615c827ab6d4b60b7142e8cee59f718e3f8e2cdbda9",
+    "preprocess": "nearest-opaque-rgb-bleed-v1",
+    "input": "art/upscale/runs/1791782825089607211/realesr-animevideov3/input/packs__gpack1_12.png",
+    "input_sha256": "162890fd4fed033b94781f04ea68def88591d519f0ee95b7ba0d4f7778804486",
+    "raw_gpu_output": "art/upscale/runs/1791782825089607211/realesr-animevideov3/output/packs__gpack1_12.png",
+    "raw_gpu_sha256": "2095f1b1e1bb49fc09b2dbc20991bd07d5515c1f53b1475159615f8c71c407af",
+    "output": "game/assets/upscaled/packs/gpack1_12.png",
+    "output_sha256": "317210b47f8b786c3ec8ba90cc1a734225b3bad381f0da41288acf13930f0ca6",
+    "output_size": [
+      132,
+      252
+    ],
+    "neural_scale": 4,
+    "native_adapter": 1,
+    "alpha": "authored source alpha, Lanczos to output size",
+    "gpu_log": "art/upscale/runs/1791782825089607211/realesr-animevideov3.log",
+    "batch_seconds": 2.389
+  },
+  "packs/gpack1_2.png": {
+    "source": "game/assets/original/packs/gpack1_2.png",
+    "source_sha256": "c3d2f757bba5c595e12acb9c3db502ec95203b5233283efd7f6dca87713e6ffc",
+    "source_size": [
+      125,
+      124
+    ],
+    "native_size": [
+      125,
+      124
+    ],
+    "model": "realesr-animevideov3",
+    "model_files": {
+      ".bin": "548a36f9c3f4ab8da56cd3b13badf23968bee207b396dad14d04b830e5f2ab2d",
+      ".param": "850a248e7c14c27e5bd8cf7265113a9441036a7db63963bb8aa5169d788a435e"
+    },
+    "binary_sha256": "22c2296a39b40cc43ac92615c827ab6d4b60b7142e8cee59f718e3f8e2cdbda9",
+    "preprocess": "nearest-opaque-rgb-bleed-v1",
+    "input": "art/upscale/runs/1791782825089607211/realesr-animevideov3/input/packs__gpack1_2.png",
+    "input_sha256": "626d43c54cafe7c5174a3cb27da425ff65d1c06d8a25299cacfdf2e36af17a53",
+    "raw_gpu_output": "art/upscale/runs/1791782825089607211/realesr-animevideov3/output/packs__gpack1_2.png",
+    "raw_gpu_sha256": "952c81c1af1bab16a6cb7616b5ccc77d80c5654ac3907be2a3249b8cd7d02556",
+    "output": "game/assets/upscaled/packs/gpack1_2.png",
+    "output_sha256": "170dcf1434a7c89a5aa924fd45ea44346c6861edd9e95c73ff4c7edb7cef5d6c",
+    "output_size": [
+      500,
+      496
+    ],
+    "neural_scale": 4,
+    "native_adapter": 1,
+    "alpha": "authored source alpha, Lanczos to output size",
+    "gpu_log": "art/upscale/runs/1791782825089607211/realesr-animevideov3.log",
+    "batch_seconds": 2.477
+  },
+  "packs/gpack1_3.png": {
+    "source": "game/assets/original/packs/gpack1_3.png",
+    "source_sha256": "aed75c6bc5030666d4d40fcae7d68412a7dd9b5819d9c350b402044071d53153",
+    "source_size": [
+      107,
+      56
+    ],
+    "native_size": [
+      107,
+      56
+    ],
+    "model": "realesr-animevideov3",
+    "model_files": {
+      ".bin": "548a36f9c3f4ab8da56cd3b13badf23968bee207b396dad14d04b830e5f2ab2d",
+      ".param": "850a248e7c14c27e5bd8cf7265113a9441036a7db63963bb8aa5169d788a435e"
+    },
+    "binary_sha256": "22c2296a39b40cc43ac92615c827ab6d4b60b7142e8cee59f718e3f8e2cdbda9",
+    "preprocess": "nearest-opaque-rgb-bleed-v1",
+    "input": "art/upscale/runs/1791782825089607211/realesr-animevideov3/input/packs__gpack1_3.png",
+    "input_sha256": "79073a88aa42b0d24cb51a9a5b73654cd34a79846e715112646087b86914fcdf",
+    "raw_gpu_output": "art/upscale/runs/1791782825089607211/realesr-animevideov3/output/packs__gpack1_3.png",
+    "raw_gpu_sha256": "63c9010e93f1d730d712274dd66a24d258f0331f638233c73a7f5bd988f730f8",
+    "output": "game/assets/upscaled/packs/gpack1_3.png",
+    "output_sha256": "05d8549acc71a9d48d6aafa68af31842c438aab5151d954c5281429d66bc4e42",
+    "output_size": [
+      428,
+      224
+    ],
+    "neural_scale": 4,
+    "native_adapter": 1,
+    "alpha": "authored source alpha, Lanczos to output size",
+    "gpu_log": "art/upscale/runs/1791782825089607211/realesr-animevideov3.log",
+    "batch_seconds": 2.518
+  },
+  "packs/gpack1_4.png": {
+    "source": "game/assets/original/packs/gpack1_4.png",
+    "source_sha256": "21ab7fb527a229429894324391fb3df2a05b67ee8c54063c5bea44c4d1c0a677",
+    "source_size": [
+      108,
+      87
+    ],
+    "native_size": [
+      108,
+      87
+    ],
+    "model": "realesr-animevideov3",
+    "model_files": {
+      ".bin": "548a36f9c3f4ab8da56cd3b13badf23968bee207b396dad14d04b830e5f2ab2d",
+      ".param": "850a248e7c14c27e5bd8cf7265113a9441036a7db63963bb8aa5169d788a435e"
+    },
+    "binary_sha256": "22c2296a39b40cc43ac92615c827ab6d4b60b7142e8cee59f718e3f8e2cdbda9",
+    "preprocess": "nearest-opaque-rgb-bleed-v1",
+    "input": "art/upscale/runs/1791782825089607211/realesr-animevideov3/input/packs__gpack1_4.png",
+    "input_sha256": "a4b8ae2e412692157364e243e63e0a4f05f6738bec176fbffe9fe9bff293a740",
+    "raw_gpu_output": "art/upscale/runs/1791782825089607211/realesr-animevideov3/output/packs__gpack1_4.png",
+    "raw_gpu_sha256": "4a0f59811284b19642d213ea913068e85b0371bf84372a9430b4501fec451766",
+    "output": "game/assets/upscaled/packs/gpack1_4.png",
+    "output_sha256": "839459e67b71853a1fce298edd4690c68ad084181cea975108608a5c7680f2fe",
+    "output_size": [
+      432,
+      348
+    ],
+    "neural_scale": 4,
+    "native_adapter": 1,
+    "alpha": "authored source alpha, Lanczos to output size",
+    "gpu_log": "art/upscale/runs/1791782825089607211/realesr-animevideov3.log",
+    "batch_seconds": 2.58
+  },
+  "packs/gpack1_5.png": {
+    "source": "game/assets/original/packs/gpack1_5.png",
+    "source_sha256": "a843a7a4a10b58f9d9b9f06ff553a5fb5c1470700decde987f8a9bae978146cb",
+    "source_size": [
+      38,
+      58
+    ],
+    "native_size": [
+      38,
+      58
+    ],
+    "model": "realesr-animevideov3",
+    "model_files": {
+      ".bin": "548a36f9c3f4ab8da56cd3b13badf23968bee207b396dad14d04b830e5f2ab2d",
+      ".param": "850a248e7c14c27e5bd8cf7265113a9441036a7db63963bb8aa5169d788a435e"
+    },
+    "binary_sha256": "22c2296a39b40cc43ac92615c827ab6d4b60b7142e8cee59f718e3f8e2cdbda9",
+    "preprocess": "nearest-opaque-rgb-bleed-v1",
+    "input": "art/upscale/runs/1791782825089607211/realesr-animevideov3/input/packs__gpack1_5.png",
+    "input_sha256": "9765f0ab791c15a9a51f1b2507f5b5195596411fa9dee8d948c490ce5c872fbd",
+    "raw_gpu_output": "art/upscale/runs/1791782825089607211/realesr-animevideov3/output/packs__gpack1_5.png",
+    "raw_gpu_sha256": "daf9256291c58562df226df60443f7375c73e072ea2edc77b12336cef54cfb9c",
+    "output": "game/assets/upscaled/packs/gpack1_5.png",
+    "output_sha256": "a10a9e3ce8c26eff0de01a4fb6acfa16f5a1a05132cb7c56ad39e6c155a0c23e",
+    "output_size": [
+      152,
+      232
+    ],
+    "neural_scale": 4,
+    "native_adapter": 1,
+    "alpha": "authored source alpha, Lanczos to output size",
+    "gpu_log": "art/upscale/runs/1791782825089607211/realesr-animevideov3.log",
+    "batch_seconds": 2.606
+  },
+  "packs/gpack1_6.png": {
+    "source": "game/assets/original/packs/gpack1_6.png",
+    "source_sha256": "fec481ee34b2f24f23760164e6ed76d4fce6087c4267b48eb11ad53d185090d6",
+    "source_size": [
+      112,
+      124
+    ],
+    "native_size": [
+      112,
+      124
+    ],
+    "model": "realesr-animevideov3",
+    "model_files": {
+      ".bin": "548a36f9c3f4ab8da56cd3b13badf23968bee207b396dad14d04b830e5f2ab2d",
+      ".param": "850a248e7c14c27e5bd8cf7265113a9441036a7db63963bb8aa5169d788a435e"
+    },
+    "binary_sha256": "22c2296a39b40cc43ac92615c827ab6d4b60b7142e8cee59f718e3f8e2cdbda9",
+    "preprocess": "nearest-opaque-rgb-bleed-v1",
+    "input": "art/upscale/runs/1791782825089607211/realesr-animevideov3/input/packs__gpack1_6.png",
+    "input_sha256": "5d22370af4424b5eeae4efc4ae6d004937b67b0005d0eab4e39fef52ad7ea318",
+    "raw_gpu_output": "art/upscale/runs/1791782825089607211/realesr-animevideov3/output/packs__gpack1_6.png",
+    "raw_gpu_sha256": "8b381aadec06941c9e6568ee8398832672302f9c53633584643b106187adbbf4",
+    "output": "game/assets/upscaled/packs/gpack1_6.png",
+    "output_sha256": "89da3a2c803fc976484676d0066f2e462c18e54529617a6aa08b7369ba646e6e",
+    "output_size": [
+      448,
+      496
+    ],
+    "neural_scale": 4,
+    "native_adapter": 1,
+    "alpha": "authored source alpha, Lanczos to output size",
+    "gpu_log": "art/upscale/runs/1791782825089607211/realesr-animevideov3.log",
+    "batch_seconds": 2.681
+  },
+  "packs/gpack1_8.png": {
+    "source": "game/assets/original/packs/gpack1_8.png",
+    "source_sha256": "18821f91e0b4344645338d39187e6597797a23482ab413a3bce018fff892f26b",
+    "source_size": [
+      107,
+      25
+    ],
+    "native_size": [
+      107,
+      25
+    ],
+    "model": "realesr-animevideov3",
+    "model_files": {
+      ".bin": "548a36f9c3f4ab8da56cd3b13badf23968bee207b396dad14d04b830e5f2ab2d",
+      ".param": "850a248e7c14c27e5bd8cf7265113a9441036a7db63963bb8aa5169d788a435e"
+    },
+    "binary_sha256": "22c2296a39b40cc43ac92615c827ab6d4b60b7142e8cee59f718e3f8e2cdbda9",
+    "preprocess": "nearest-opaque-rgb-bleed-v1",
+    "input": "art/upscale/runs/1791782825089607211/realesr-animevideov3/input/packs__gpack1_8.png",
+    "input_sha256": "77af252ea3cad9fca83698a977328e20ffaa4566eacf19dbcc9354cac033d34e",
+    "raw_gpu_output": "art/upscale/runs/1791782825089607211/realesr-animevideov3/output/packs__gpack1_8.png",
+    "raw_gpu_sha256": "eebfa87611f443178aab037069e11543f926160fe0df87e79669e0b8c3eb90c5",
+    "output": "game/assets/upscaled/packs/gpack1_8.png",
+    "output_sha256": "d775a5f295d38a1510cc1baf5a11325ff61c07ced8af7f7e4cbddb377cf2c1ba",
+    "output_size": [
+      428,
+      100
+    ],
+    "neural_scale": 4,
+    "native_adapter": 1,
+    "alpha": "authored source alpha, Lanczos to output size",
+    "gpu_log": "art/upscale/runs/1791782825089607211/realesr-animevideov3.log",
+    "batch_seconds": 2.707
+  },
+  "packs/gpack1_9.png": {
+    "source": "game/assets/original/packs/gpack1_9.png",
+    "source_sha256": "5fdd6197c7c3e95c1e9614fbcc974791f976580c8b4efea367d1ffe329c17281",
+    "source_size": [
+      44,
+      73
+    ],
+    "native_size": [
+      44,
+      73
+    ],
+    "model": "realesr-animevideov3",
+    "model_files": {
+      ".bin": "548a36f9c3f4ab8da56cd3b13badf23968bee207b396dad14d04b830e5f2ab2d",
+      ".param": "850a248e7c14c27e5bd8cf7265113a9441036a7db63963bb8aa5169d788a435e"
+    },
+    "binary_sha256": "22c2296a39b40cc43ac92615c827ab6d4b60b7142e8cee59f718e3f8e2cdbda9",
+    "preprocess": "nearest-opaque-rgb-bleed-v1",
+    "input": "art/upscale/runs/1791782825089607211/realesr-animevideov3/input/packs__gpack1_9.png",
+    "input_sha256": "8b69d071e2add33c91f0c5e9001b68783b294c545754bf93bde0ed80d9124480",
+    "raw_gpu_output": "art/upscale/runs/1791782825089607211/realesr-animevideov3/output/packs__gpack1_9.png",
+    "raw_gpu_sha256": "61dd6c38ce09497f47f8c66f0f38df6361ffdf101f9fbed521f87195e37edd5c",
+    "output": "game/assets/upscaled/packs/gpack1_9.png",
+    "output_sha256": "ec2652f3e291f0e82a32b81fb2325e4185460920885504f611f91651d562be45",
+    "output_size": [
+      176,
+      292
+    ],
+    "neural_scale": 4,
+    "native_adapter": 1,
+    "alpha": "authored source alpha, Lanczos to output size",
+    "gpu_log": "art/upscale/runs/1791782825089607211/realesr-animevideov3.log",
+    "batch_seconds": 2.736
+  },
+  "packs/gpack2_0.png": {
+    "source": "game/assets/original/packs/gpack2_0.png",
+    "source_sha256": "4aa98e1db03f98007ed0475dfb2e3f80149ce9a4ccbd7c3cb8cd790b4cf251d7",
+    "source_size": [
+      38,
+      60
+    ],
+    "native_size": [
+      38,
+      60
+    ],
+    "model": "realesr-animevideov3",
+    "model_files": {
+      ".bin": "548a36f9c3f4ab8da56cd3b13badf23968bee207b396dad14d04b830e5f2ab2d",
+      ".param": "850a248e7c14c27e5bd8cf7265113a9441036a7db63963bb8aa5169d788a435e"
+    },
+    "binary_sha256": "22c2296a39b40cc43ac92615c827ab6d4b60b7142e8cee59f718e3f8e2cdbda9",
+    "preprocess": "nearest-opaque-rgb-bleed-v1",
+    "input": "art/upscale/runs/1791782825089607211/realesr-animevideov3/input/packs__gpack2_0.png",
+    "input_sha256": "c90378b04eee5edb2a08e640c8e837019e2ac9d641be1fe04594072a4d116dbc",
+    "raw_gpu_output": "art/upscale/runs/1791782825089607211/realesr-animevideov3/output/packs__gpack2_0.png",
+    "raw_gpu_sha256": "fd3c26a761cbb35a738b6b52e170f3ba16803bdd3943253133350e6e8de0ed13",
+    "output": "game/assets/upscaled/packs/gpack2_0.png",
+    "output_sha256": "87147bdb25fc3324a410ac7560eff9e73919393da8eb2ba219d0c564c0f39556",
+    "output_size": [
+      152,
+      240
+    ],
+    "neural_scale": 4,
+    "native_adapter": 1,
+    "alpha": "authored source alpha, Lanczos to output size",
+    "gpu_log": "art/upscale/runs/1791782825089607211/realesr-animevideov3.log",
+    "batch_seconds": 2.762
+  },
+  "packs/gpack2_1.png": {
+    "source": "game/assets/original/packs/gpack2_1.png",
+    "source_sha256": "187dab475bad8a70a2c90a895e7b1d2a3ca27559b2015c1ea1d2ba1c4481820b",
+    "source_size": [
+      38,
+      60
+    ],
+    "native_size": [
+      38,
+      60
+    ],
+    "model": "realesr-animevideov3",
+    "model_files": {
+      ".bin": "548a36f9c3f4ab8da56cd3b13badf23968bee207b396dad14d04b830e5f2ab2d",
+      ".param": "850a248e7c14c27e5bd8cf7265113a9441036a7db63963bb8aa5169d788a435e"
+    },
+    "binary_sha256": "22c2296a39b40cc43ac92615c827ab6d4b60b7142e8cee59f718e3f8e2cdbda9",
+    "preprocess": "nearest-opaque-rgb-bleed-v1",
+    "input": "art/upscale/runs/1791782825089607211/realesr-animevideov3/input/packs__gpack2_1.png",
+    "input_sha256": "bd0a11469252bae7187eb54d86f5f1688a79b304e3de89235b6d191e841fab8f",
+    "raw_gpu_output": "art/upscale/runs/1791782825089607211/realesr-animevideov3/output/packs__gpack2_1.png",
+    "raw_gpu_sha256": "9788893b4f16c475e0857a32a5ec897af835502bbdb7c338620f1891409b2724",
+    "output": "game/assets/upscaled/packs/gpack2_1.png",
+    "output_sha256": "afac4d7cf261c9dff6ce318c2146ace98ed36f1415aacb721e86093732c5a369",
+    "output_size": [
+      152,
+      240
+    ],
+    "neural_scale": 4,
+    "native_adapter": 1,
+    "alpha": "authored source alpha, Lanczos to output size",
+    "gpu_log": "art/upscale/runs/1791782825089607211/realesr-animevideov3.log",
+    "batch_seconds": 2.782
+  },
+  "packs/gpack2_10.png": {
+    "source": "game/assets/original/packs/gpack2_10.png",
+    "source_sha256": "4befa1211a2b7b45524ecba7a1ebe5705ce539c2e11094d145667375ce5d24bb",
+    "source_size": [
+      133,
+      149
+    ],
+    "native_size": [
+      133,
+      149
+    ],
+    "model": "realesr-animevideov3",
+    "model_files": {
+      ".bin": "548a36f9c3f4ab8da56cd3b13badf23968bee207b396dad14d04b830e5f2ab2d",
+      ".param": "850a248e7c14c27e5bd8cf7265113a9441036a7db63963bb8aa5169d788a435e"
+    },
+    "binary_sha256": "22c2296a39b40cc43ac92615c827ab6d4b60b7142e8cee59f718e3f8e2cdbda9",
+    "preprocess": "nearest-opaque-rgb-bleed-v1",
+    "input": "art/upscale/runs/1791782825089607211/realesr-animevideov3/input/packs__gpack2_10.png",
+    "input_sha256": "2ebe556d1a5fe161e2c39b428185175a8a0e9d1a4fac44159d28d4f0a5ffdc27",
+    "raw_gpu_output": "art/upscale/runs/1791782825089607211/realesr-animevideov3/output/packs__gpack2_10.png",
+    "raw_gpu_sha256": "f46d3a5ef388af306df48d503f5b7cfdb1572f1291220f5a917cddab796e8a3d",
+    "output": "game/assets/upscaled/packs/gpack2_10.png",
+    "output_sha256": "f9437d7108f33cb3a300c83af0864af611be85fa15640bbc24af315e81139255",
+    "output_size": [
+      532,
+      596
+    ],
+    "neural_scale": 4,
+    "native_adapter": 1,
+    "alpha": "authored source alpha, Lanczos to output size",
+    "gpu_log": "art/upscale/runs/1791782825089607211/realesr-animevideov3.log",
+    "batch_seconds": 2.904
+  },
+  "packs/gpack2_11.png": {
+    "source": "game/assets/original/packs/gpack2_11.png",
+    "source_sha256": "d0ce8de87490ac948f24c22ebe741aef38b19f835122c3041405a285872ad36d",
+    "source_size": [
+      120,
+      60
+    ],
+    "native_size": [
+      120,
+      60
+    ],
+    "model": "realesr-animevideov3",
+    "model_files": {
+      ".bin": "548a36f9c3f4ab8da56cd3b13badf23968bee207b396dad14d04b830e5f2ab2d",
+      ".param": "850a248e7c14c27e5bd8cf7265113a9441036a7db63963bb8aa5169d788a435e"
+    },
+    "binary_sha256": "22c2296a39b40cc43ac92615c827ab6d4b60b7142e8cee59f718e3f8e2cdbda9",
+    "preprocess": "nearest-opaque-rgb-bleed-v1",
+    "input": "art/upscale/runs/1791782825089607211/realesr-animevideov3/input/packs__gpack2_11.png",
+    "input_sha256": "bd00d4cce70ceac0875d9b7670924ec39ac22a97bf4c0955fefbba556b12c74d",
+    "raw_gpu_output": "art/upscale/runs/1791782825089607211/realesr-animevideov3/output/packs__gpack2_11.png",
+    "raw_gpu_sha256": "a9eebe5c9efd2121abe09335e3d49a355675fb48cd9b5cc2d838f974feca6ef4",
+    "output": "game/assets/upscaled/packs/gpack2_11.png",
+    "output_sha256": "1a1dc23bb4a99a516bebedb6d9ffb4909819dadb73abad7265abc5e7306a753e",
+    "output_size": [
+      480,
+      240
+    ],
+    "neural_scale": 4,
+    "native_adapter": 1,
+    "alpha": "authored source alpha, Lanczos to output size",
+    "gpu_log": "art/upscale/runs/1791782825089607211/realesr-animevideov3.log",
+    "batch_seconds": 2.953
+  },
+  "packs/gpack2_2.png": {
+    "source": "game/assets/original/packs/gpack2_2.png",
+    "source_sha256": "217179de3659ca49689b5dc525301b224d52b754d8f91751ca4cc9601278a06e",
+    "source_size": [
+      105,
+      56
+    ],
+    "native_size": [
+      105,
+      56
+    ],
+    "model": "realesr-animevideov3",
+    "model_files": {
+      ".bin": "548a36f9c3f4ab8da56cd3b13badf23968bee207b396dad14d04b830e5f2ab2d",
+      ".param": "850a248e7c14c27e5bd8cf7265113a9441036a7db63963bb8aa5169d788a435e"
+    },
+    "binary_sha256": "22c2296a39b40cc43ac92615c827ab6d4b60b7142e8cee59f718e3f8e2cdbda9",
+    "preprocess": "nearest-opaque-rgb-bleed-v1",
+    "input": "art/upscale/runs/1791782825089607211/realesr-animevideov3/input/packs__gpack2_2.png",
+    "input_sha256": "4c9dd97f7cf52bfa8eaea0466e8c65a9ea987225416b29574461c48333d02ee5",
+    "raw_gpu_output": "art/upscale/runs/1791782825089607211/realesr-animevideov3/output/packs__gpack2_2.png",
+    "raw_gpu_sha256": "b74e5a7a74d48a4287bc20c80b099a9caa96880f8b4247171105b649ed553db4",
+    "output": "game/assets/upscaled/packs/gpack2_2.png",
+    "output_sha256": "6bb76572e9dd152aa0c91409a8076c4a202d600b847eb8c79562746a74c2d7ad",
+    "output_size": [
+      420,
+      224
+    ],
+    "neural_scale": 4,
+    "native_adapter": 1,
+    "alpha": "authored source alpha, Lanczos to output size",
+    "gpu_log": "art/upscale/runs/1791782825089607211/realesr-animevideov3.log",
+    "batch_seconds": 3.0
+  },
+  "packs/gpack2_3.png": {
+    "source": "game/assets/original/packs/gpack2_3.png",
+    "source_sha256": "9f0d5cd86c907ddeeee9670a5c25197eb2e87de324dcedaa663b4e183002cf5a",
+    "source_size": [
+      156,
+      116
+    ],
+    "native_size": [
+      156,
+      116
+    ],
+    "model": "realesr-animevideov3",
+    "model_files": {
+      ".bin": "548a36f9c3f4ab8da56cd3b13badf23968bee207b396dad14d04b830e5f2ab2d",
+      ".param": "850a248e7c14c27e5bd8cf7265113a9441036a7db63963bb8aa5169d788a435e"
+    },
+    "binary_sha256": "22c2296a39b40cc43ac92615c827ab6d4b60b7142e8cee59f718e3f8e2cdbda9",
+    "preprocess": "nearest-opaque-rgb-bleed-v1",
+    "input": "art/upscale/runs/1791782825089607211/realesr-animevideov3/input/packs__gpack2_3.png",
+    "input_sha256": "50fa4297bac17830a111204418e63281363b11cfdd75a1d0b68eb1de637a5d45",
+    "raw_gpu_output": "art/upscale/runs/1791782825089607211/realesr-animevideov3/output/packs__gpack2_3.png",
+    "raw_gpu_sha256": "60746009d9911decbf6b7169bc1a4a4862439565125fbbb03d229d9593df865c",
+    "output": "game/assets/upscaled/packs/gpack2_3.png",
+    "output_sha256": "2fab991ae0c252336231a362574e87891f213ac528923864decfd7267280c8eb",
+    "output_size": [
+      624,
+      464
+    ],
+    "neural_scale": 4,
+    "native_adapter": 1,
+    "alpha": "authored source alpha, Lanczos to output size",
+    "gpu_log": "art/upscale/runs/1791782825089607211/realesr-animevideov3.log",
+    "batch_seconds": 3.133
+  },
+  "packs/gpack2_4.png": {
+    "source": "game/assets/original/packs/gpack2_4.png",
+    "source_sha256": "4b199609a1f69efbde1475939e1ff48fed5e32c3600e7e5045aac8d5fc70b172",
+    "source_size": [
+      36,
+      42
+    ],
+    "native_size": [
+      36,
+      42
+    ],
+    "model": "realesr-animevideov3",
+    "model_files": {
+      ".bin": "548a36f9c3f4ab8da56cd3b13badf23968bee207b396dad14d04b830e5f2ab2d",
+      ".param": "850a248e7c14c27e5bd8cf7265113a9441036a7db63963bb8aa5169d788a435e"
+    },
+    "binary_sha256": "22c2296a39b40cc43ac92615c827ab6d4b60b7142e8cee59f718e3f8e2cdbda9",
+    "preprocess": "nearest-opaque-rgb-bleed-v1",
+    "input": "art/upscale/runs/1791782825089607211/realesr-animevideov3/input/packs__gpack2_4.png",
+    "input_sha256": "d7c7edcfb49109f155b3eaed21cf617484d0e832b64fd9c15dcd6055fc46c895",
+    "raw_gpu_output": "art/upscale/runs/1791782825089607211/realesr-animevideov3/output/packs__gpack2_4.png",
+    "raw_gpu_sha256": "c4b62856aa68626fa88b49609321173a14b15b406a654c953d74fa0bdca810da",
+    "output": "game/assets/upscaled/packs/gpack2_4.png",
+    "output_sha256": "a6fc6a62a1d6f9ff32ae4bcc2c78bc0e13984a120d0ca02dcf5dcaa7fa026729",
+    "output_size": [
+      144,
+      168
+    ],
+    "neural_scale": 4,
+    "native_adapter": 1,
+    "alpha": "authored source alpha, Lanczos to output size",
+    "gpu_log": "art/upscale/runs/1791782825089607211/realesr-animevideov3.log",
+    "batch_seconds": 3.152
+  },
+  "packs/gpack2_5.png": {
+    "source": "game/assets/original/packs/gpack2_5.png",
+    "source_sha256": "749db19799e49c2e1a9badc10e255ed439af8c620a48d8f62a6fcbabc7d09809",
+    "source_size": [
+      148,
+      160
+    ],
+    "native_size": [
+      148,
+      160
+    ],
+    "model": "realesr-animevideov3",
+    "model_files": {
+      ".bin": "548a36f9c3f4ab8da56cd3b13badf23968bee207b396dad14d04b830e5f2ab2d",
+      ".param": "850a248e7c14c27e5bd8cf7265113a9441036a7db63963bb8aa5169d788a435e"
+    },
+    "binary_sha256": "22c2296a39b40cc43ac92615c827ab6d4b60b7142e8cee59f718e3f8e2cdbda9",
+    "preprocess": "nearest-opaque-rgb-bleed-v1",
+    "input": "art/upscale/runs/1791782825089607211/realesr-animevideov3/input/packs__gpack2_5.png",
+    "input_sha256": "04132005df2792301bbabc0550b44df95472551c4767a5744d18ffe8ae14eba8",
+    "raw_gpu_output": "art/upscale/runs/1791782825089607211/realesr-animevideov3/output/packs__gpack2_5.png",
+    "raw_gpu_sha256": "55f481db7c60409533818294af7b6fb4d0f85d559e116f27dc870793d3d4c5e7",
+    "output": "game/assets/upscaled/packs/gpack2_5.png",
+    "output_sha256": "53611e289e92c445b18b8af8387bec6bc55f800447e28c3073ee4c4b346ef456",
+    "output_size": [
+      592,
+      640
+    ],
+    "neural_scale": 4,
+    "native_adapter": 1,
+    "alpha": "authored source alpha, Lanczos to output size",
+    "gpu_log": "art/upscale/runs/1791782825089607211/realesr-animevideov3.log",
+    "batch_seconds": 3.359
+  },
+  "packs/gpack2_6.png": {
+    "source": "game/assets/original/packs/gpack2_6.png",
+    "source_sha256": "d6cb1ef6e69d85f35b9ebfcac965d3d5b7678ac02115982bedafc3d9087af798",
+    "source_size": [
+      180,
+      73
+    ],
+    "native_size": [
+      180,
+      73
+    ],
+    "model": "realesr-animevideov3",
+    "model_files": {
+      ".bin": "548a36f9c3f4ab8da56cd3b13badf23968bee207b396dad14d04b830e5f2ab2d",
+      ".param": "850a248e7c14c27e5bd8cf7265113a9441036a7db63963bb8aa5169d788a435e"
+    },
+    "binary_sha256": "22c2296a39b40cc43ac92615c827ab6d4b60b7142e8cee59f718e3f8e2cdbda9",
+    "preprocess": "nearest-opaque-rgb-bleed-v1",
+    "input": "art/upscale/runs/1791782825089607211/realesr-animevideov3/input/packs__gpack2_6.png",
+    "input_sha256": "0536141f9c7ff8372b8c54ab3e50894e1e7f2c4831651269b09b6077848b27be",
+    "raw_gpu_output": "art/upscale/runs/1791782825089607211/realesr-animevideov3/output/packs__gpack2_6.png",
+    "raw_gpu_sha256": "35b7ec2dc19bf3eaa4f68b18c8579c4acd667d824278241ce27b4ccb9a460cae",
+    "output": "game/assets/upscaled/packs/gpack2_6.png",
+    "output_sha256": "0f1c0d8612f1a2b1196f41f0fda6bad209a3a1b63852dbf37874b11907e95a38",
+    "output_size": [
+      720,
+      292
+    ],
+    "neural_scale": 4,
+    "native_adapter": 1,
+    "alpha": "authored source alpha, Lanczos to output size",
+    "gpu_log": "art/upscale/runs/1791782825089607211/realesr-animevideov3.log",
+    "batch_seconds": 3.423
+  },
+  "packs/gpack2_7.png": {
+    "source": "game/assets/original/packs/gpack2_7.png",
+    "source_sha256": "e00c532e246e2acbea37a048297fcc0690486c55e4640ea79283a806d26ab885",
+    "source_size": [
+      124,
+      53
+    ],
+    "native_size": [
+      124,
+      53
+    ],
+    "model": "realesr-animevideov3",
+    "model_files": {
+      ".bin": "548a36f9c3f4ab8da56cd3b13badf23968bee207b396dad14d04b830e5f2ab2d",
+      ".param": "850a248e7c14c27e5bd8cf7265113a9441036a7db63963bb8aa5169d788a435e"
+    },
+    "binary_sha256": "22c2296a39b40cc43ac92615c827ab6d4b60b7142e8cee59f718e3f8e2cdbda9",
+    "preprocess": "nearest-opaque-rgb-bleed-v1",
+    "input": "art/upscale/runs/1791782825089607211/realesr-animevideov3/input/packs__gpack2_7.png",
+    "input_sha256": "f840c7abac113396eb62864f4081f29db068c8f405cd5b4a49a626c1d7c6a4a0",
+    "raw_gpu_output": "art/upscale/runs/1791782825089607211/realesr-animevideov3/output/packs__gpack2_7.png",
+    "raw_gpu_sha256": "b9cf34afd9059382d66017328260d6407652709305e36b363e1fbef791236cd1",
+    "output": "game/assets/upscaled/packs/gpack2_7.png",
+    "output_sha256": "7c27a18815202eec05cdcd4662589b7a5ce7a76d4be5aacd983d3f8c8f3b7fd4",
+    "output_size": [
+      496,
+      212
+    ],
+    "neural_scale": 4,
+    "native_adapter": 1,
+    "alpha": "authored source alpha, Lanczos to output size",
+    "gpu_log": "art/upscale/runs/1791782825089607211/realesr-animevideov3.log",
+    "batch_seconds": 3.465
+  },
+  "packs/gpack2_8.png": {
+    "source": "game/assets/original/packs/gpack2_8.png",
+    "source_sha256": "e35eb1db9eca3715cebdeb1416f7495723f67a8561049a855183b4adb0c762a2",
+    "source_size": [
+      63,
+      25
+    ],
+    "native_size": [
+      63,
+      25
+    ],
+    "model": "realesr-animevideov3",
+    "model_files": {
+      ".bin": "548a36f9c3f4ab8da56cd3b13badf23968bee207b396dad14d04b830e5f2ab2d",
+      ".param": "850a248e7c14c27e5bd8cf7265113a9441036a7db63963bb8aa5169d788a435e"
+    },
+    "binary_sha256": "22c2296a39b40cc43ac92615c827ab6d4b60b7142e8cee59f718e3f8e2cdbda9",
+    "preprocess": "nearest-opaque-rgb-bleed-v1",
+    "input": "art/upscale/runs/1791782825089607211/realesr-animevideov3/input/packs__gpack2_8.png",
+    "input_sha256": "964d9d80aa43d738f620e1735ba492fb0b57b77ebba16db943c7101ad5a25330",
+    "raw_gpu_output": "art/upscale/runs/1791782825089607211/realesr-animevideov3/output/packs__gpack2_8.png",
+    "raw_gpu_sha256": "605f3fd7a4f1912c361a0873b9731826ed1d41c69ae9a5d5b231b8b3d297e6d5",
+    "output": "game/assets/upscaled/packs/gpack2_8.png",
+    "output_sha256": "90c284fdfd8765ea6589e877bc1b04506d5f566c8b91ed641ce0f9ecddc86ce2",
+    "output_size": [
+      252,
+      100
+    ],
+    "neural_scale": 4,
+    "native_adapter": 1,
+    "alpha": "authored source alpha, Lanczos to output size",
+    "gpu_log": "art/upscale/runs/1791782825089607211/realesr-animevideov3.log",
+    "batch_seconds": 3.484
+  },
+  "packs/gpack2_9.png": {
+    "source": "game/assets/original/packs/gpack2_9.png",
+    "source_sha256": "54f468cdf2956fbdefb4f777e08be2295158af4d9840639cad4ef26a3a700fde",
+    "source_size": [
+      38,
+      37
+    ],
+    "native_size": [
+      38,
+      37
+    ],
+    "model": "realesr-animevideov3",
+    "model_files": {
+      ".bin": "548a36f9c3f4ab8da56cd3b13badf23968bee207b396dad14d04b830e5f2ab2d",
+      ".param": "850a248e7c14c27e5bd8cf7265113a9441036a7db63963bb8aa5169d788a435e"
+    },
+    "binary_sha256": "22c2296a39b40cc43ac92615c827ab6d4b60b7142e8cee59f718e3f8e2cdbda9",
+    "preprocess": "nearest-opaque-rgb-bleed-v1",
+    "input": "art/upscale/runs/1791782825089607211/realesr-animevideov3/input/packs__gpack2_9.png",
+    "input_sha256": "0ec33f885cfc6e6041802214f03ab559f474cdc26644adb641e236b2126f5fad",
+    "raw_gpu_output": "art/upscale/runs/1791782825089607211/realesr-animevideov3/output/packs__gpack2_9.png",
+    "raw_gpu_sha256": "bbf93a13b1187cbe0053d11e5d3f2e1ce42bd5824941b5ffdc792e1aa17fca3b",
+    "output": "game/assets/upscaled/packs/gpack2_9.png",
+    "output_sha256": "1a53e2cef36cb702e7097102b8c9b890d2c593e95c56d398a6b002463e68f997",
+    "output_size": [
+      152,
+      148
+    ],
+    "neural_scale": 4,
+    "native_adapter": 1,
+    "alpha": "authored source alpha, Lanczos to output size",
+    "gpu_log": "art/upscale/runs/1791782825089607211/realesr-animevideov3.log",
+    "batch_seconds": 3.498
+  },
+  "fonts/original.png": {
+    "source": "game/assets/original/fonts/original.png",
+    "source_sha256": "e4671bee5c4d96f1ff05311cc0ba45c8aba9195fae8000a000a757405b7b0224",
+    "source_size": [
+      1024,
+      512
+    ],
+    "native_size": [
+      256,
+      128
+    ],
+    "model": "realesr-animevideov3",
+    "model_files": {
+      ".bin": "548a36f9c3f4ab8da56cd3b13badf23968bee207b396dad14d04b830e5f2ab2d",
+      ".param": "850a248e7c14c27e5bd8cf7265113a9441036a7db63963bb8aa5169d788a435e"
+    },
+    "binary_sha256": "22c2296a39b40cc43ac92615c827ab6d4b60b7142e8cee59f718e3f8e2cdbda9",
+    "preprocess": "nearest-opaque-rgb-bleed-v1",
+    "input": "art/upscale/runs/1791782825089607211/realesr-animevideov3/input/fonts__original.png",
+    "input_sha256": "15f38badc13385643977ec5c1ac30c8473aeddd668e2106b6b6e876e528f0ece",
+    "raw_gpu_output": "art/upscale/runs/1791782825089607211/realesr-animevideov3/output/fonts__original.png",
+    "raw_gpu_sha256": "12cfc8bdee0b1cb13b92479cdfaba0e85eae77a6139d90d242cf12687bb3ffc4",
+    "output": "game/assets/upscaled/fonts/original.png",
+    "output_sha256": "610c07f6b239690717ec8a7112bd3cc54c567170259c3340b59d9e2f4fc6ac3b",
+    "output_size": [
+      1024,
+      512
+    ],
+    "neural_scale": 4,
+    "native_adapter": 4,
+    "alpha": "authored source alpha, Lanczos to output size",
+    "gpu_log": "art/upscale/runs/1791782825089607211/realesr-animevideov3.log",
+    "batch_seconds": 3.667
+  },
+  "ui/icon.png": {
+    "source": "game/assets/original/ui/icon.png",
+    "source_sha256": "9efb317dfea9ae94a0129f0672879120fff917080d954c25196bc34e38de02e2",
+    "source_size": [
+      24,
+      24
+    ],
+    "native_size": [
+      24,
+      24
+    ],
+    "model": "realesrgan-x4plus-anime",
+    "model_files": {
+      ".bin": "fe01c269cfd10cdef8e018ab66ebe750cf79c7af4d1f9c16c737e1295229bacc",
+      ".param": "2b8fb6e0ae4d2d85704ca08c119a2f5ea40add4f2ecd512eb7f4cd44b6127ed4"
+    },
+    "binary_sha256": "22c2296a39b40cc43ac92615c827ab6d4b60b7142e8cee59f718e3f8e2cdbda9",
+    "preprocess": "nearest-opaque-rgb-bleed-v1",
+    "input": "art/upscale/runs/1791782825089607211/realesrgan-x4plus-anime/input/ui__icon.png",
+    "input_sha256": "18e508d2e4a541e6d439eb8cafc902972e7cd6081122794ddb34ef0c9dba7e50",
+    "raw_gpu_output": "art/upscale/runs/1791782825089607211/realesrgan-x4plus-anime/output/ui__icon.png",
+    "raw_gpu_sha256": "eb9863ab4baab18a1fbabd6c290395667343f4ed17cb9d1f9299bb03515665d7",
+    "output": "game/assets/upscaled/ui/icon.png",
+    "output_sha256": "e21f19c1fae6489be2987bdbe62397a4c5afe05ed552c3c3671efe504b4824ad",
+    "output_size": [
+      96,
+      96
+    ],
+    "neural_scale": 4,
+    "native_adapter": 1,
+    "alpha": "authored source alpha, Lanczos to output size",
+    "gpu_log": "art/upscale/runs/1791782825089607211/realesrgan-x4plus-anime.log",
+    "batch_seconds": 2.153
+  },
+  "ui/splash0.png": {
+    "source": "game/assets/original/ui/splash0.png",
+    "source_sha256": "e253d5fd212092db69010ff287147a675e5e6084d59ad743147ba7614c822597",
+    "source_size": [
+      100,
+      33
+    ],
+    "native_size": [
+      100,
+      33
+    ],
+    "model": "realesrgan-x4plus-anime",
+    "model_files": {
+      ".bin": "fe01c269cfd10cdef8e018ab66ebe750cf79c7af4d1f9c16c737e1295229bacc",
+      ".param": "2b8fb6e0ae4d2d85704ca08c119a2f5ea40add4f2ecd512eb7f4cd44b6127ed4"
+    },
+    "binary_sha256": "22c2296a39b40cc43ac92615c827ab6d4b60b7142e8cee59f718e3f8e2cdbda9",
+    "preprocess": "nearest-opaque-rgb-bleed-v1",
+    "input": "art/upscale/runs/1791782825089607211/realesrgan-x4plus-anime/input/ui__splash0.png",
+    "input_sha256": "f7c7461e226498ff5b640f95f6199b9f0dd439367da71a4c1331d4850c7f672b",
+    "raw_gpu_output": "art/upscale/runs/1791782825089607211/realesrgan-x4plus-anime/output/ui__splash0.png",
+    "raw_gpu_sha256": "955d1432fac53507c641f57520000fe02bfeb4bd129d1d0d6c1e7bad24e4d36a",
+    "output": "game/assets/upscaled/ui/splash0.png",
+    "output_sha256": "63d3db2be6ea76ad108151a8df7ad755e78b2090b3888d18a7f77bf25f9a4176",
+    "output_size": [
+      400,
+      132
+    ],
+    "neural_scale": 4,
+    "native_adapter": 1,
+    "alpha": "authored source alpha, Lanczos to output size",
+    "gpu_log": "art/upscale/runs/1791782825089607211/realesrgan-x4plus-anime.log",
+    "batch_seconds": 2.178
+  },
+  "ui/splash1.png": {
+    "source": "game/assets/original/ui/splash1.png",
+    "source_sha256": "ec9819c0de77b3421f5aeecef5314cc967474ad03a8848641c4d7738a3037821",
+    "source_size": [
+      176,
+      208
+    ],
+    "native_size": [
+      176,
+      208
+    ],
+    "model": "realesrgan-x4plus-anime",
+    "model_files": {
+      ".bin": "fe01c269cfd10cdef8e018ab66ebe750cf79c7af4d1f9c16c737e1295229bacc",
+      ".param": "2b8fb6e0ae4d2d85704ca08c119a2f5ea40add4f2ecd512eb7f4cd44b6127ed4"
+    },
+    "binary_sha256": "22c2296a39b40cc43ac92615c827ab6d4b60b7142e8cee59f718e3f8e2cdbda9",
+    "preprocess": "nearest-opaque-rgb-bleed-v1",
+    "input": "art/upscale/runs/1791782825089607211/realesrgan-x4plus-anime/input/ui__splash1.png",
+    "input_sha256": "6436195097539c0667c05f785f0b41b10ef57e8e43ecf703ae981d29fc2b3423",
+    "raw_gpu_output": "art/upscale/runs/1791782825089607211/realesrgan-x4plus-anime/output/ui__splash1.png",
+    "raw_gpu_sha256": "cdd080caff2d51d8fe638cc2b7c8fdf8e712c3ce426ee26cf37ba72169af6968",
+    "output": "game/assets/upscaled/ui/splash1.png",
+    "output_sha256": "bedd186c88a2d89e80b0d5a3395ef619ce14b07dcb8fba567fdabe3d2db48ed8",
+    "output_size": [
+      704,
+      832
+    ],
+    "neural_scale": 4,
+    "native_adapter": 1,
+    "alpha": "authored source alpha, Lanczos to output size",
+    "gpu_log": "art/upscale/runs/1791782825089607211/realesrgan-x4plus-anime.log",
+    "batch_seconds": 2.262
+  },
+  "ui/splash2.png": {
+    "source": "game/assets/original/ui/splash2.png",
+    "source_sha256": "7577f900c275f0c4a9b2e4d646e4491688539d22b5bc25ce5f0daccaf31cc101",
+    "source_size": [
+      240,
+      320
+    ],
+    "native_size": [
+      240,
+      320
+    ],
+    "model": "realesrgan-x4plus-anime",
+    "model_files": {
+      ".bin": "fe01c269cfd10cdef8e018ab66ebe750cf79c7af4d1f9c16c737e1295229bacc",
+      ".param": "2b8fb6e0ae4d2d85704ca08c119a2f5ea40add4f2ecd512eb7f4cd44b6127ed4"
+    },
+    "binary_sha256": "22c2296a39b40cc43ac92615c827ab6d4b60b7142e8cee59f718e3f8e2cdbda9",
+    "preprocess": "nearest-opaque-rgb-bleed-v1",
+    "input": "art/upscale/runs/1791782825089607211/realesrgan-x4plus-anime/input/ui__splash2.png",
+    "input_sha256": "2a048b2f6e71eb9fc9f8b4d209e7269813c97c27687defc7b884d2f0d4050484",
+    "raw_gpu_output": "art/upscale/runs/1791782825089607211/realesrgan-x4plus-anime/output/ui__splash2.png",
+    "raw_gpu_sha256": "3e08c01fe247ffec2b4ee0caf2091a895049b8fad3581475c3fa6d464626129f",
+    "output": "game/assets/upscaled/ui/splash2.png",
+    "output_sha256": "7c3436413b7f1f7e6de56c6ce0e40f3721020fa02d39881b086e319f4c016287",
+    "output_size": [
+      960,
+      1280
+    ],
+    "neural_scale": 4,
+    "native_adapter": 1,
+    "alpha": "authored source alpha, Lanczos to output size",
+    "gpu_log": "art/upscale/runs/1791782825089607211/realesrgan-x4plus-anime.log",
+    "batch_seconds": 2.59
+  }
+}

@@ -1,0 +1,1128 @@
+{
+  "project_limit_usd": 9.5,
+  "scope_limits_usd": {
+    "pilot": 9.5
+  },
+  "jobs": [
+    {
+      "id": "menu_4k_v1",
+      "scope": "pilot",
+      "model": "bytedance-seed/seedream-5-0-lite",
+      "resolution": "4K",
+      "expected_usd": 0.035,
+      "reserved_usd": 0.05,
+      "output": "art/raw/menu_4k_v1.png",
+      "references": [
+        {
+          "path": "original/jar/splash2.png",
+          "sha256": "c87ae9722128cb0b41c552da2c03c6dc6e5587fb9f45a213a0055183cd9e5bbe"
+        }
+      ],
+      "status": "generated",
+      "created_utc": "2026-10-12T03:03:48.202267+00:00",
+      "job_sha256": "2a1583b6544b58ca7dec6accbd63b154f747bd365697e02d656cc55bb028e6ef",
+      "response_id": null,
+      "usage": {
+        "prompt_tokens": 456,
+        "completion_tokens": 36864,
+        "total_tokens": 37320,
+        "cost": 0.035,
+        "is_byok": false,
+        "prompt_tokens_details": {
+          "cached_tokens": 0
+        },
+        "cost_details": {
+          "upstream_inference_cost": 0.035,
+          "upstream_inference_prompt_cost": 0,
+          "upstream_inference_completions_cost": 0.035
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 0,
+          "image_tokens": 36864
+        }
+      },
+      "elapsed_seconds": 45.52,
+      "completed_utc": "2026-10-12T03:04:33.723255+00:00",
+      "cost_usd": 0.035,
+      "width": 4096,
+      "height": 2304,
+      "alpha_range": [
+        255,
+        255
+      ],
+      "sha256": "1fa9180bc8e0eabcbe33324d656b40a4890d6fab062ead2c7b2b90eabb347fb8",
+      "native_size_ok": true,
+      "transparency_ok": true,
+      "provider_format": "JPEG",
+      "provider_sha256": "7520cda2c611e9ea680cffb3d20704e52a2dbc08647e7c69ec339c193d8b36f0"
+    },
+    {
+      "id": "wheel_atlas_2k_v1",
+      "scope": "pilot",
+      "model": "sourceful/riverflow-v2.5-pro",
+      "resolution": "2K",
+      "expected_usd": 0.15,
+      "reserved_usd": 0.165,
+      "output": "art/raw/wheel_atlas_2k_v1.png",
+      "references": [
+        {
+          "path": "art/reference/wheel_grid_4x3.png",
+          "sha256": "da5146c9bea4d6c5a18fb5c4583cbefde13c7032227cfb2474f5a12a54f8135b"
+        }
+      ],
+      "status": "generated",
+      "created_utc": "2026-10-12T03:04:33.810761+00:00",
+      "job_sha256": "7a23f3d75c20280f1867cca387051a2e2f9f7e6f3ddde0481d3ab0ea41b2c92b",
+      "response_id": null,
+      "usage": {
+        "prompt_tokens": 530,
+        "completion_tokens": 4175,
+        "total_tokens": 4705,
+        "cost": 0.390302,
+        "is_byok": false,
+        "prompt_tokens_details": {
+          "cached_tokens": 0
+        },
+        "cost_details": {
+          "upstream_inference_cost": 0.390302,
+          "upstream_inference_prompt_cost": 0,
+          "upstream_inference_completions_cost": 0.390302
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 0,
+          "image_tokens": 4175
+        }
+      },
+      "elapsed_seconds": 112.86,
+      "completed_utc": "2026-10-12T03:06:26.670802+00:00",
+      "cost_usd": 0.390302,
+      "width": 2304,
+      "height": 1728,
+      "alpha_range": [
+        0,
+        255
+      ],
+      "sha256": "962e463d9acb814ad0d2120b33146e13c9a295b55e53424d50601e630ff89454",
+      "native_size_ok": true,
+      "transparency_ok": true
+    },
+    {
+      "id": "ride_parts_0_2k_v1",
+      "scope": "pilot",
+      "model": "sourceful/riverflow-v2.5-pro",
+      "resolution": "2K",
+      "expected_usd": 0.15,
+      "reserved_usd": 0.8,
+      "output": "art/raw/ride_parts_0_2k_v1.png",
+      "references": [
+        {
+          "path": "art/reference/ride_parts_normalized/atlas_0.png",
+          "sha256": "f56b066d293e1c2f69c32d05620663b4a856ffa7924de79f5d20e141fb499c7e"
+        }
+      ],
+      "status": "generated",
+      "created_utc": "2026-10-12T03:12:24.520767+00:00",
+      "job_sha256": "a1085519dc81f553887647bda52cb1f8e5163e5374956f5c04e185f2ee04fd2d",
+      "response_id": null,
+      "usage": {
+        "prompt_tokens": 508,
+        "completion_tokens": 4175,
+        "total_tokens": 4683,
+        "cost": 0.530286,
+        "is_byok": false,
+        "prompt_tokens_details": {
+          "cached_tokens": 0
+        },
+        "cost_details": {
+          "upstream_inference_cost": 0.530286,
+          "upstream_inference_prompt_cost": 0,
+          "upstream_inference_completions_cost": 0.530286
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 0,
+          "image_tokens": 4175
+        }
+      },
+      "response_model": null,
+      "response_created": 0,
+      "elapsed_seconds": 141.47,
+      "completed_utc": "2026-10-12T03:14:45.988566+00:00",
+      "cost_usd": 0.530286,
+      "cost_exceeded_reservation": false,
+      "width": 1664,
+      "height": 2496,
+      "alpha_range": [
+        0,
+        255
+      ],
+      "provider_format": "PNG",
+      "provider_sha256": "eaf58d1a63b4e5b7c460ca75d2c7dfab1a970a6a82dc72df9c62422336345f8b",
+      "sha256": "eaf58d1a63b4e5b7c460ca75d2c7dfab1a970a6a82dc72df9c62422336345f8b",
+      "native_size_ok": true,
+      "transparency_ok": true
+    },
+    {
+      "id": "ride_parts_1_2k_v1",
+      "scope": "pilot",
+      "model": "sourceful/riverflow-v2.5-pro",
+      "resolution": "2K",
+      "expected_usd": 0.15,
+      "reserved_usd": 0.8,
+      "output": "art/raw/ride_parts_1_2k_v1.png",
+      "references": [
+        {
+          "path": "art/reference/ride_parts_normalized/atlas_1.png",
+          "sha256": "ccbffeaa07676bad4ae271ac0c9ec020ec36b4309d2c407bd26a6d370db0bf85"
+        }
+      ],
+      "status": "generated",
+      "created_utc": "2026-10-12T03:16:24.885673+00:00",
+      "job_sha256": "31847615916923a67c64a3e518444d6e6ca6385c407910a9c8952f8dc639bc86",
+      "response_id": null,
+      "usage": {
+        "prompt_tokens": 407,
+        "completion_tokens": 4175,
+        "total_tokens": 4582,
+        "cost": 0.529409,
+        "is_byok": false,
+        "prompt_tokens_details": {
+          "cached_tokens": 0
+        },
+        "cost_details": {
+          "upstream_inference_cost": 0.529409,
+          "upstream_inference_prompt_cost": 0,
+          "upstream_inference_completions_cost": 0.529409
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 0,
+          "image_tokens": 4175
+        }
+      },
+      "response_model": null,
+      "response_created": 0,
+      "elapsed_seconds": 134.6,
+      "completed_utc": "2026-10-12T03:18:39.483991+00:00",
+      "cost_usd": 0.529409,
+      "cost_exceeded_reservation": false,
+      "width": 1664,
+      "height": 2496,
+      "alpha_range": [
+        0,
+        255
+      ],
+      "provider_format": "PNG",
+      "provider_sha256": "49c4fb7d40b0d96d54acfd131ab1c0bf35090f73cca78d6689de5f43c85c6aea",
+      "sha256": "49c4fb7d40b0d96d54acfd131ab1c0bf35090f73cca78d6689de5f43c85c6aea",
+      "native_size_ok": true,
+      "transparency_ok": true
+    },
+    {
+      "id": "menu_portrait_4k_v1",
+      "scope": "pilot",
+      "model": "bytedance-seed/seedream-5-0-lite",
+      "resolution": "4K",
+      "expected_usd": 0.035,
+      "reserved_usd": 0.8,
+      "output": "art/raw/menu_portrait_4k_v1.png",
+      "references": [
+        {
+          "path": "original/jar/splash2.png",
+          "sha256": "c87ae9722128cb0b41c552da2c03c6dc6e5587fb9f45a213a0055183cd9e5bbe"
+        },
+        {
+          "path": "game/assets/hd/ui/menu_background_hd.png",
+          "sha256": "93e097b55913aef382fc8dda8e706aa0a73dd9cd39f824ca24ce7b6864ddf4c6"
+        }
+      ],
+      "account_balance_before_usd": 8.413986,
+      "status": "generated",
+      "created_utc": "2026-10-12T03:19:48.857446+00:00",
+      "job_sha256": "cabf14e321a0b6bd54c2c41b78ddd02d1d707faf6dac3a5160be4cdbd3f2ea90",
+      "response_id": null,
+      "usage": {
+        "prompt_tokens": 469,
+        "completion_tokens": 36864,
+        "total_tokens": 37333,
+        "cost": 0.035,
+        "is_byok": false,
+        "prompt_tokens_details": {
+          "cached_tokens": 0
+        },
+        "cost_details": {
+          "upstream_inference_cost": 0.035,
+          "upstream_inference_prompt_cost": 0,
+          "upstream_inference_completions_cost": 0.035
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 0,
+          "image_tokens": 36864
+        }
+      },
+      "response_model": null,
+      "response_created": 1791775237,
+      "elapsed_seconds": 49.94,
+      "completed_utc": "2026-10-12T03:20:38.797711+00:00",
+      "cost_usd": 0.035,
+      "cost_exceeded_reservation": false,
+      "width": 2304,
+      "height": 4096,
+      "alpha_range": [
+        255,
+        255
+      ],
+      "provider_format": "JPEG",
+      "provider_sha256": "c80db8fa19f081fe1ddea736e35e429d82713e90ec554df111a1e658feb796a1",
+      "sha256": "a76e6777224d66091890aeb516ac442d90e97c5a849d52cafc5576b61e68d6c1",
+      "native_size_ok": true,
+      "transparency_ok": true
+    },
+    {
+      "id": "ride_parts_2_2k_v1",
+      "scope": "pilot",
+      "model": "sourceful/riverflow-v2.5-pro",
+      "resolution": "2K",
+      "expected_usd": 0.15,
+      "reserved_usd": 0.8,
+      "output": "art/raw/ride_parts_2_2k_v1.png",
+      "references": [
+        {
+          "path": "art/reference/ride_parts_normalized/atlas_2.png",
+          "sha256": "e14ed83c758905e4c9a092e5b00780898034af32b8c9dc0601fc9c6498257517"
+        }
+      ],
+      "account_balance_before_usd": 8.378986,
+      "status": "generated",
+      "created_utc": "2026-10-12T03:21:08.807447+00:00",
+      "job_sha256": "703f58f80f64570bb4f5f1e7e54e0277453ae696823df6527ddd0c2aa7ca2689",
+      "response_id": null,
+      "usage": {
+        "prompt_tokens": 413,
+        "completion_tokens": 4175,
+        "total_tokens": 4588,
+        "cost": 0.528467,
+        "is_byok": false,
+        "prompt_tokens_details": {
+          "cached_tokens": 0
+        },
+        "cost_details": {
+          "upstream_inference_cost": 0.528467,
+          "upstream_inference_prompt_cost": 0,
+          "upstream_inference_completions_cost": 0.528467
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 0,
+          "image_tokens": 4175
+        }
+      },
+      "response_model": null,
+      "response_created": 0,
+      "elapsed_seconds": 133.39,
+      "completed_utc": "2026-10-12T03:23:22.200960+00:00",
+      "cost_usd": 0.528467,
+      "cost_exceeded_reservation": false,
+      "width": 1664,
+      "height": 2496,
+      "alpha_range": [
+        0,
+        255
+      ],
+      "provider_format": "PNG",
+      "provider_sha256": "e15407c43eb31bf76ed7db1084aa78f427d1b31e10399a53ea95da6d7896cc64",
+      "sha256": "e15407c43eb31bf76ed7db1084aa78f427d1b31e10399a53ea95da6d7896cc64",
+      "native_size_ok": true,
+      "transparency_ok": true
+    },
+    {
+      "id": "ride_parts_3_2k_v1",
+      "scope": "pilot",
+      "model": "sourceful/riverflow-v2.5-pro",
+      "resolution": "2K",
+      "expected_usd": 0.15,
+      "reserved_usd": 0.8,
+      "output": "art/raw/ride_parts_3_2k_v1.png",
+      "references": [
+        {
+          "path": "art/reference/ride_parts_normalized/atlas_3.png",
+          "sha256": "52822200168e0f46e02dad6fd51ed405b3d68a0ca8bc8d5ee4858c033e330ac3"
+        }
+      ],
+      "account_balance_before_usd": 7.850519,
+      "status": "generated",
+      "created_utc": "2026-10-12T03:24:53.487900+00:00",
+      "job_sha256": "8c272fceadfbaf39701b105259a35fb6a0e8a7133d0b42bdce7dd09836c0ada5",
+      "response_id": null,
+      "usage": {
+        "prompt_tokens": 455,
+        "completion_tokens": 4175,
+        "total_tokens": 4630,
+        "cost": 0.359538,
+        "is_byok": false,
+        "prompt_tokens_details": {
+          "cached_tokens": 0
+        },
+        "cost_details": {
+          "upstream_inference_cost": 0.359538,
+          "upstream_inference_prompt_cost": 0,
+          "upstream_inference_completions_cost": 0.359538
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 0,
+          "image_tokens": 4175
+        }
+      },
+      "response_model": null,
+      "response_created": 0,
+      "elapsed_seconds": 100.65,
+      "completed_utc": "2026-10-12T03:26:34.141852+00:00",
+      "cost_usd": 0.359538,
+      "cost_exceeded_reservation": false,
+      "width": 1664,
+      "height": 2496,
+      "alpha_range": [
+        0,
+        255
+      ],
+      "provider_format": "PNG",
+      "provider_sha256": "f28663e37779841020f15129176d3f985396b15872963f66b96a157104e253ad",
+      "sha256": "f28663e37779841020f15129176d3f985396b15872963f66b96a157104e253ad",
+      "native_size_ok": true,
+      "transparency_ok": true
+    },
+    {
+      "id": "ride_parts_4_2k_v1",
+      "scope": "pilot",
+      "model": "sourceful/riverflow-v2.5-pro",
+      "resolution": "2K",
+      "expected_usd": 0.15,
+      "reserved_usd": 0.8,
+      "output": "art/raw/ride_parts_4_2k_v1.png",
+      "references": [
+        {
+          "path": "art/reference/ride_parts_normalized/atlas_4.png",
+          "sha256": "c905fef776eeab395c37f863b350a86917e322695975c6606e0e20e722bc28e4"
+        }
+      ],
+      "account_balance_before_usd": 7.490981,
+      "status": "generated",
+      "created_utc": "2026-10-12T03:27:04.763146+00:00",
+      "job_sha256": "d83b7d6463506cfc67d5ade05f365d58d5c6cf0b2e11e2181cdd1fd4bb9cd419",
+      "response_id": null,
+      "usage": {
+        "prompt_tokens": 433,
+        "completion_tokens": 4175,
+        "total_tokens": 4608,
+        "cost": 0.359377,
+        "is_byok": false,
+        "prompt_tokens_details": {
+          "cached_tokens": 0
+        },
+        "cost_details": {
+          "upstream_inference_cost": 0.359377,
+          "upstream_inference_prompt_cost": 0,
+          "upstream_inference_completions_cost": 0.359377
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 0,
+          "image_tokens": 4175
+        }
+      },
+      "response_model": null,
+      "response_created": 0,
+      "elapsed_seconds": 104.69,
+      "completed_utc": "2026-10-12T03:28:49.456311+00:00",
+      "cost_usd": 0.359377,
+      "cost_exceeded_reservation": false,
+      "width": 1664,
+      "height": 2496,
+      "alpha_range": [
+        0,
+        255
+      ],
+      "provider_format": "PNG",
+      "provider_sha256": "f8000ccd903753bc856b4b72bab990940118e4c3806d03f691c2fa826b152fe5",
+      "sha256": "f8000ccd903753bc856b4b72bab990940118e4c3806d03f691c2fa826b152fe5",
+      "native_size_ok": true,
+      "transparency_ok": true
+    },
+    {
+      "id": "ride_parts_5_2k_v1",
+      "scope": "pilot",
+      "model": "sourceful/riverflow-v2.5-pro",
+      "resolution": "2K",
+      "expected_usd": 0.15,
+      "reserved_usd": 0.8,
+      "output": "art/raw/ride_parts_5_2k_v1.png",
+      "references": [
+        {
+          "path": "art/reference/ride_parts_normalized/atlas_5.png",
+          "sha256": "b8b43ee5d09b51736f09e725010ae6d8460d3d43d373caa4102687ef756c9fa2"
+        }
+      ],
+      "account_balance_before_usd": 7.131604,
+      "status": "generated",
+      "created_utc": "2026-10-12T03:31:25.475346+00:00",
+      "job_sha256": "2675d826703630a44d3ecb2cffefb0b3390948da6befbcbbf6b60174a2f9f331",
+      "response_id": null,
+      "usage": {
+        "prompt_tokens": 432,
+        "completion_tokens": 4175,
+        "total_tokens": 4607,
+        "cost": 0.528834,
+        "is_byok": false,
+        "prompt_tokens_details": {
+          "cached_tokens": 0
+        },
+        "cost_details": {
+          "upstream_inference_cost": 0.528834,
+          "upstream_inference_prompt_cost": 0,
+          "upstream_inference_completions_cost": 0.528834
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 0,
+          "image_tokens": 4175
+        }
+      },
+      "response_model": null,
+      "response_created": 0,
+      "elapsed_seconds": 137.23,
+      "completed_utc": "2026-10-12T03:33:42.702084+00:00",
+      "cost_usd": 0.528834,
+      "cost_exceeded_reservation": false,
+      "width": 1664,
+      "height": 2496,
+      "alpha_range": [
+        0,
+        255
+      ],
+      "provider_format": "PNG",
+      "provider_sha256": "03713e676f6fc766b7dd1ea44f171067af1d1caadf0cc5f88d78c893c1a1b775",
+      "sha256": "03713e676f6fc766b7dd1ea44f171067af1d1caadf0cc5f88d78c893c1a1b775",
+      "native_size_ok": true,
+      "transparency_ok": true
+    },
+    {
+      "id": "ride_parts_6_2k_v1",
+      "scope": "pilot",
+      "model": "sourceful/riverflow-v2.5-pro",
+      "resolution": "2K",
+      "expected_usd": 0.15,
+      "reserved_usd": 0.8,
+      "output": "art/raw/ride_parts_6_2k_v1.png",
+      "references": [
+        {
+          "path": "art/reference/ride_parts_normalized/atlas_6.png",
+          "sha256": "130ec7dc996f0352e96bc366f276fe3d2f0dba6af24d387efd31b4e491fef033"
+        }
+      ],
+      "account_balance_before_usd": 6.60277,
+      "status": "generated",
+      "created_utc": "2026-10-12T03:35:15.054197+00:00",
+      "job_sha256": "3eee3870f8ac8435003c92b25ff267ae1854fcbad9516d557f2eb518e94439ff",
+      "response_id": null,
+      "usage": {
+        "prompt_tokens": 414,
+        "completion_tokens": 4175,
+        "total_tokens": 4589,
+        "cost": 0.359163,
+        "is_byok": false,
+        "prompt_tokens_details": {
+          "cached_tokens": 0
+        },
+        "cost_details": {
+          "upstream_inference_cost": 0.359163,
+          "upstream_inference_prompt_cost": 0,
+          "upstream_inference_completions_cost": 0.359163
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 0,
+          "image_tokens": 4175
+        }
+      },
+      "response_model": null,
+      "response_created": 0,
+      "elapsed_seconds": 88.14,
+      "completed_utc": "2026-10-12T03:36:43.191979+00:00",
+      "cost_usd": 0.359163,
+      "cost_exceeded_reservation": false,
+      "width": 1664,
+      "height": 2496,
+      "alpha_range": [
+        0,
+        255
+      ],
+      "provider_format": "PNG",
+      "provider_sha256": "c7b7c8728c4836524fe34f64fbd4534003fb082c8d7abd4e9773a8abb9955804",
+      "sha256": "c7b7c8728c4836524fe34f64fbd4534003fb082c8d7abd4e9773a8abb9955804",
+      "native_size_ok": true,
+      "transparency_ok": true
+    },
+    {
+      "id": "actors_full_0_2k_v1",
+      "scope": "pilot",
+      "model": "sourceful/riverflow-v2.5-pro",
+      "resolution": "2K",
+      "expected_usd": 0.15,
+      "reserved_usd": 0.8,
+      "output": "art/raw/actors_full_0_2k_v1.png",
+      "references": [
+        {
+          "path": "art/reference/actors_full/atlas_0.png",
+          "sha256": "9204c8bb1d9f35bc1d51219951ca1fc362aa3de08c5cc6f2c5a4f8327091808e"
+        }
+      ],
+      "account_balance_before_usd": 6.243607,
+      "status": "generated",
+      "created_utc": "2026-10-12T03:37:28.403228+00:00",
+      "job_sha256": "7c54c690005e37aaa8879abcb72ff0c0bd9c1c31c6a4ad8e67d1d310e1306b98",
+      "response_id": null,
+      "usage": {
+        "prompt_tokens": 544,
+        "completion_tokens": 4175,
+        "total_tokens": 4719,
+        "cost": 0.531151,
+        "is_byok": false,
+        "prompt_tokens_details": {
+          "cached_tokens": 0
+        },
+        "cost_details": {
+          "upstream_inference_cost": 0.531151,
+          "upstream_inference_prompt_cost": 0,
+          "upstream_inference_completions_cost": 0.531151
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 0,
+          "image_tokens": 4175
+        }
+      },
+      "response_model": null,
+      "response_created": 0,
+      "elapsed_seconds": 136.54,
+      "completed_utc": "2026-10-12T03:39:44.944079+00:00",
+      "cost_usd": 0.531151,
+      "cost_exceeded_reservation": false,
+      "width": 2048,
+      "height": 2048,
+      "alpha_range": [
+        0,
+        255
+      ],
+      "provider_format": "PNG",
+      "provider_sha256": "be0aa90d312d15c4b3c915e4d4832aeb1691cb050dc5ada13f1475b792d53b0b",
+      "sha256": "be0aa90d312d15c4b3c915e4d4832aeb1691cb050dc5ada13f1475b792d53b0b",
+      "native_size_ok": true,
+      "transparency_ok": true
+    },
+    {
+      "id": "scenery_parts_0_2k_v1",
+      "scope": "pilot",
+      "model": "sourceful/riverflow-v2.5-pro",
+      "resolution": "2K",
+      "expected_usd": 0.15,
+      "reserved_usd": 0.8,
+      "output": "art/raw/scenery_parts_0_2k_v1.png",
+      "references": [
+        {
+          "path": "art/reference/scenery_parts_normalized/atlas_0.png",
+          "sha256": "54e5a92ace23e3d587dc7e6f7cb1b4adfd263990f3254ba36a44c14f7a20c9cb"
+        }
+      ],
+      "account_balance_before_usd": 5.712456,
+      "status": "generated",
+      "created_utc": "2026-10-12T03:40:38.946730+00:00",
+      "job_sha256": "c8739ac157eb564a8276e96c7a65cf83660c228076d2555f5bf075b25475d4c1",
+      "response_id": null,
+      "usage": {
+        "prompt_tokens": 472,
+        "completion_tokens": 4175,
+        "total_tokens": 4647,
+        "cost": 0.525693,
+        "is_byok": false,
+        "prompt_tokens_details": {
+          "cached_tokens": 0
+        },
+        "cost_details": {
+          "upstream_inference_cost": 0.525693,
+          "upstream_inference_prompt_cost": 0,
+          "upstream_inference_completions_cost": 0.525693
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 0,
+          "image_tokens": 4175
+        }
+      },
+      "response_model": null,
+      "response_created": 0,
+      "elapsed_seconds": 145.02,
+      "completed_utc": "2026-10-12T03:43:03.965174+00:00",
+      "cost_usd": 0.525693,
+      "cost_exceeded_reservation": false,
+      "width": 1664,
+      "height": 2496,
+      "alpha_range": [
+        0,
+        255
+      ],
+      "provider_format": "PNG",
+      "provider_sha256": "3e556f2dbc1bb763dca0d26f52355505ce3379e26ea0dd461769f6f9f4bbf7c8",
+      "sha256": "3e556f2dbc1bb763dca0d26f52355505ce3379e26ea0dd461769f6f9f4bbf7c8",
+      "native_size_ok": true,
+      "transparency_ok": true
+    },
+    {
+      "id": "actors_full_1_2k_v1",
+      "scope": "pilot",
+      "model": "sourceful/riverflow-v2.5-pro",
+      "resolution": "2K",
+      "expected_usd": 0.15,
+      "reserved_usd": 0.8,
+      "output": "art/raw/actors_full_1_2k_v1.png",
+      "references": [
+        {
+          "path": "art/reference/actors_full/atlas_1.png",
+          "sha256": "df0ab3b7b49fe6b4ba87819fd3d8b42f9739eba809d9ea2c0e68800a6b7f69f1"
+        }
+      ],
+      "account_balance_before_usd": 5.186763,
+      "status": "generated",
+      "created_utc": "2026-10-12T03:44:03.975430+00:00",
+      "job_sha256": "543266c77a5d87a0f5cd798117d1302a1bb934f3cef062c2b63228396a05bb90",
+      "response_id": null,
+      "usage": {
+        "prompt_tokens": 642,
+        "completion_tokens": 4175,
+        "total_tokens": 4817,
+        "cost": 0.53199,
+        "is_byok": false,
+        "prompt_tokens_details": {
+          "cached_tokens": 0
+        },
+        "cost_details": {
+          "upstream_inference_cost": 0.53199,
+          "upstream_inference_prompt_cost": 0,
+          "upstream_inference_completions_cost": 0.53199
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 0,
+          "image_tokens": 4175
+        }
+      },
+      "response_model": null,
+      "response_created": 0,
+      "elapsed_seconds": 129.56,
+      "completed_utc": "2026-10-12T03:46:13.530931+00:00",
+      "cost_usd": 0.53199,
+      "cost_exceeded_reservation": false,
+      "width": 2048,
+      "height": 2048,
+      "alpha_range": [
+        0,
+        255
+      ],
+      "provider_format": "PNG",
+      "provider_sha256": "7a8aaa22257747ec53cb646c321b17ed87d194007f85c5c2dc3a3bebfeb82593",
+      "sha256": "7a8aaa22257747ec53cb646c321b17ed87d194007f85c5c2dc3a3bebfeb82593",
+      "native_size_ok": true,
+      "transparency_ok": true
+    },
+    {
+      "id": "actors_full_2_2k_v1",
+      "scope": "pilot",
+      "model": "sourceful/riverflow-v2.5-pro",
+      "resolution": "2K",
+      "expected_usd": 0.15,
+      "reserved_usd": 0.8,
+      "output": "art/raw/actors_full_2_2k_v1.png",
+      "references": [
+        {
+          "path": "art/reference/actors_full/atlas_2.png",
+          "sha256": "314ad24a4f2f405325d051cac59117a67f8b14c62ed1787dd581000fee378a1b"
+        }
+      ],
+      "account_balance_before_usd": 4.654773,
+      "status": "generated",
+      "created_utc": "2026-10-12T03:46:41.135988+00:00",
+      "job_sha256": "638cc4eb1668528041b3af8665c971b08d65679afbb682ce6622f2ba777e97fc",
+      "response_id": null,
+      "usage": {
+        "prompt_tokens": 652,
+        "completion_tokens": 4175,
+        "total_tokens": 4827,
+        "cost": 0.531792,
+        "is_byok": false,
+        "prompt_tokens_details": {
+          "cached_tokens": 0
+        },
+        "cost_details": {
+          "upstream_inference_cost": 0.531792,
+          "upstream_inference_prompt_cost": 0,
+          "upstream_inference_completions_cost": 0.531792
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 0,
+          "image_tokens": 4175
+        }
+      },
+      "response_model": null,
+      "response_created": 0,
+      "elapsed_seconds": 139.01,
+      "completed_utc": "2026-10-12T03:49:00.141719+00:00",
+      "cost_usd": 0.531792,
+      "cost_exceeded_reservation": false,
+      "width": 2048,
+      "height": 2048,
+      "alpha_range": [
+        0,
+        255
+      ],
+      "provider_format": "PNG",
+      "provider_sha256": "ddfba0a63047125d41f398944abb0ad8da58a7e83512e38db027d62d25e1c23a",
+      "sha256": "ddfba0a63047125d41f398944abb0ad8da58a7e83512e38db027d62d25e1c23a",
+      "native_size_ok": true,
+      "transparency_ok": true
+    },
+    {
+      "id": "actors_full_3_2k_v1",
+      "scope": "pilot",
+      "model": "sourceful/riverflow-v2.5-pro",
+      "resolution": "2K",
+      "expected_usd": 0.15,
+      "reserved_usd": 0.8,
+      "output": "art/raw/actors_full_3_2k_v1.png",
+      "references": [
+        {
+          "path": "art/reference/actors_full/atlas_3.png",
+          "sha256": "c009158dce09ced8920fe26ee24aafcbfdc821ce35960b0c018b2347f4220e7b"
+        }
+      ],
+      "account_balance_before_usd": 4.122981,
+      "status": "generated",
+      "created_utc": "2026-10-12T03:49:44.238587+00:00",
+      "job_sha256": "c0445414d012719d695decb27c648c07b6d09bbcda3864df4209ca200f9b95fc",
+      "response_id": null,
+      "usage": {
+        "prompt_tokens": 650,
+        "completion_tokens": 4175,
+        "total_tokens": 4825,
+        "cost": 0.702812,
+        "is_byok": false,
+        "prompt_tokens_details": {
+          "cached_tokens": 0
+        },
+        "cost_details": {
+          "upstream_inference_cost": 0.702812,
+          "upstream_inference_prompt_cost": 0,
+          "upstream_inference_completions_cost": 0.702812
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 0,
+          "image_tokens": 4175
+        }
+      },
+      "response_model": null,
+      "response_created": 0,
+      "elapsed_seconds": 168.72,
+      "completed_utc": "2026-10-12T03:52:32.961748+00:00",
+      "cost_usd": 0.702812,
+      "cost_exceeded_reservation": false,
+      "width": 2048,
+      "height": 2048,
+      "alpha_range": [
+        0,
+        255
+      ],
+      "provider_format": "PNG",
+      "provider_sha256": "49af7e8482b4ff31dbbe140a8171ea893cafd93e3a60da57706382098d564a35",
+      "sha256": "49af7e8482b4ff31dbbe140a8171ea893cafd93e3a60da57706382098d564a35",
+      "native_size_ok": true,
+      "transparency_ok": true
+    },
+    {
+      "id": "actors_full_4_2k_v1",
+      "scope": "pilot",
+      "model": "sourceful/riverflow-v2.5-pro",
+      "resolution": "2K",
+      "expected_usd": 0.15,
+      "reserved_usd": 0.8,
+      "output": "art/raw/actors_full_4_2k_v1.png",
+      "references": [
+        {
+          "path": "art/reference/actors_full/atlas_4.png",
+          "sha256": "509c30efc954a53926f0ae7d2b21a86cf6122c740a0e89b4310b07f8814b6f70"
+        }
+      ],
+      "account_balance_before_usd": 3.420169,
+      "status": "generated",
+      "created_utc": "2026-10-12T03:52:58.999520+00:00",
+      "job_sha256": "b357cd404de03dc0cc6563abd603c41997e15e12dbb6a3cdccb3f16237659265",
+      "response_id": null,
+      "usage": {
+        "prompt_tokens": 506,
+        "completion_tokens": 4175,
+        "total_tokens": 4681,
+        "cost": 0.530733,
+        "is_byok": false,
+        "prompt_tokens_details": {
+          "cached_tokens": 0
+        },
+        "cost_details": {
+          "upstream_inference_cost": 0.530733,
+          "upstream_inference_prompt_cost": 0,
+          "upstream_inference_completions_cost": 0.530733
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 0,
+          "image_tokens": 4175
+        }
+      },
+      "response_model": null,
+      "response_created": 0,
+      "elapsed_seconds": 135.77,
+      "completed_utc": "2026-10-12T03:55:14.768498+00:00",
+      "cost_usd": 0.530733,
+      "cost_exceeded_reservation": false,
+      "width": 2048,
+      "height": 2048,
+      "alpha_range": [
+        0,
+        255
+      ],
+      "provider_format": "PNG",
+      "provider_sha256": "c38213328998eda474ad7cbc0a0957d80f5965b4bbd92aa193696625becab36e",
+      "sha256": "c38213328998eda474ad7cbc0a0957d80f5965b4bbd92aa193696625becab36e",
+      "native_size_ok": true,
+      "transparency_ok": true
+    },
+    {
+      "id": "scenery_parts_1_2k_v1",
+      "scope": "pilot",
+      "model": "sourceful/riverflow-v2.5-pro",
+      "resolution": "2K",
+      "expected_usd": 0.15,
+      "reserved_usd": 0.8,
+      "output": "art/raw/scenery_parts_1_2k_v1.png",
+      "references": [
+        {
+          "path": "art/reference/scenery_parts_normalized/atlas_1.png",
+          "sha256": "4997ff4f16b9ebfc7aca7630dec5f432cca466b36513c84fcc7337b67ec124dc"
+        }
+      ],
+      "account_balance_before_usd": 2.889436,
+      "status": "generated",
+      "created_utc": "2026-10-12T03:56:43.410691+00:00",
+      "job_sha256": "765e0d5dcd1f46a5d52b93f2e7b51e7ecb0c6a15675366c72578229eeded6ad9",
+      "response_id": null,
+      "usage": {
+        "prompt_tokens": 510,
+        "completion_tokens": 4175,
+        "total_tokens": 4685,
+        "cost": 0.35969899999999994,
+        "is_byok": false,
+        "prompt_tokens_details": {
+          "cached_tokens": 0
+        },
+        "cost_details": {
+          "upstream_inference_cost": 0.35969899999999994,
+          "upstream_inference_prompt_cost": 0,
+          "upstream_inference_completions_cost": 0.35969899999999994
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 0,
+          "image_tokens": 4175
+        }
+      },
+      "response_model": null,
+      "response_created": 0,
+      "elapsed_seconds": 99.91,
+      "completed_utc": "2026-10-12T03:58:23.325899+00:00",
+      "cost_usd": 0.35969899999999994,
+      "cost_exceeded_reservation": false,
+      "width": 1664,
+      "height": 2496,
+      "alpha_range": [
+        0,
+        255
+      ],
+      "provider_format": "PNG",
+      "provider_sha256": "118a723a5d302362788c20b47d0b2e1997120b71f921b4fafe8814f623905a86",
+      "sha256": "118a723a5d302362788c20b47d0b2e1997120b71f921b4fafe8814f623905a86",
+      "native_size_ok": true,
+      "transparency_ok": true
+    },
+    {
+      "id": "scenery_parts_2_2k_v1",
+      "scope": "pilot",
+      "model": "sourceful/riverflow-v2.5-pro",
+      "resolution": "2K",
+      "expected_usd": 0.15,
+      "reserved_usd": 0.8,
+      "output": "art/raw/scenery_parts_2_2k_v1.png",
+      "references": [
+        {
+          "path": "art/reference/scenery_parts_normalized/atlas_2.png",
+          "sha256": "601007dd933dddf3c048f6fc7d3d6d28cf4a033549c3a370413b452d5b47bcd1"
+        }
+      ],
+      "account_balance_before_usd": 2.529737,
+      "status": "generated",
+      "created_utc": "2026-10-12T03:59:55.502999+00:00",
+      "job_sha256": "209aa845c7bd57bbaf686afa966f24a6c560cf357cbdbf427e86a7fd66cfcd66",
+      "response_id": null,
+      "usage": {
+        "prompt_tokens": 517,
+        "completion_tokens": 4175,
+        "total_tokens": 4692,
+        "cost": 0.359696,
+        "is_byok": false,
+        "prompt_tokens_details": {
+          "cached_tokens": 0
+        },
+        "cost_details": {
+          "upstream_inference_cost": 0.359696,
+          "upstream_inference_prompt_cost": 0,
+          "upstream_inference_completions_cost": 0.359696
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 0,
+          "image_tokens": 4175
+        }
+      },
+      "response_model": null,
+      "response_created": 0,
+      "elapsed_seconds": 104.85,
+      "completed_utc": "2026-10-12T04:01:40.357515+00:00",
+      "cost_usd": 0.359696,
+      "cost_exceeded_reservation": false,
+      "width": 1664,
+      "height": 2496,
+      "alpha_range": [
+        0,
+        255
+      ],
+      "provider_format": "PNG",
+      "provider_sha256": "e716786b882928fbad9a3a2f9dce1717bfe0aefb2e556f6c84ede172ccc58f6c",
+      "sha256": "e716786b882928fbad9a3a2f9dce1717bfe0aefb2e556f6c84ede172ccc58f6c",
+      "native_size_ok": true,
+      "transparency_ok": true
+    },
+    {
+      "id": "extras_parts_0_2k_v1",
+      "scope": "pilot",
+      "model": "sourceful/riverflow-v2.5-pro",
+      "resolution": "2K",
+      "expected_usd": 0.15,
+      "reserved_usd": 0.8,
+      "output": "art/raw/extras_parts_0_2k_v1.png",
+      "references": [
+        {
+          "path": "art/reference/extras_parts_normalized/atlas_0.png",
+          "sha256": "165270464d94f02599049405870504e7a3eb611ad97699077bd79905b67974a9"
+        }
+      ],
+      "account_balance_before_usd": 2.170041,
+      "status": "generated",
+      "created_utc": "2026-10-12T04:02:39.358053+00:00",
+      "job_sha256": "5b6c21451b597f5dd379570228248b830f7014a3d26c6e0cfd0627b4275d38fc",
+      "response_id": null,
+      "usage": {
+        "prompt_tokens": 483,
+        "completion_tokens": 4175,
+        "total_tokens": 4658,
+        "cost": 0.390245,
+        "is_byok": false,
+        "prompt_tokens_details": {
+          "cached_tokens": 0
+        },
+        "cost_details": {
+          "upstream_inference_cost": 0.390245,
+          "upstream_inference_prompt_cost": 0,
+          "upstream_inference_completions_cost": 0.390245
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 0,
+          "image_tokens": 4175
+        }
+      },
+      "response_model": null,
+      "response_created": 0,
+      "elapsed_seconds": 105.78,
+      "completed_utc": "2026-10-12T04:04:25.143226+00:00",
+      "cost_usd": 0.390245,
+      "cost_exceeded_reservation": false,
+      "width": 1728,
+      "height": 2304,
+      "alpha_range": [
+        0,
+        255
+      ],
+      "provider_format": "PNG",
+      "provider_sha256": "56567ca921913212887817e0386d90c7c661f0d0f135fc516c7689ffcb5c49e6",
+      "sha256": "56567ca921913212887817e0386d90c7c661f0d0f135fc516c7689ffcb5c49e6",
+      "native_size_ok": true,
+      "transparency_ok": true
+    },
+    {
+      "id": "actors_full_3_2k_v2",
+      "scope": "pilot",
+      "model": "sourceful/riverflow-v2.5-pro",
+      "resolution": "2K",
+      "expected_usd": 0.15,
+      "reserved_usd": 0.8,
+      "output": "art/raw/actors_full_3_2k_v2.png",
+      "references": [
+        {
+          "path": "art/reference/actors_full/atlas_3.png",
+          "sha256": "c009158dce09ced8920fe26ee24aafcbfdc821ce35960b0c018b2347f4220e7b"
+        },
+        {
+          "path": "art/raw/actors_full_0_2k_v1.png",
+          "sha256": "be0aa90d312d15c4b3c915e4d4832aeb1691cb050dc5ada13f1475b792d53b0b"
+        }
+      ],
+      "account_balance_before_usd": 1.779796,
+      "status": "generated",
+      "created_utc": "2026-10-12T04:05:20.031909+00:00",
+      "job_sha256": "5c2a12dd7332ed7a243bcc7d7911a7334076687563885759d3a8c17ac1b0e5d9",
+      "response_id": null,
+      "usage": {
+        "prompt_tokens": 562,
+        "completion_tokens": 4175,
+        "total_tokens": 4737,
+        "cost": 0.546506,
+        "is_byok": false,
+        "prompt_tokens_details": {
+          "cached_tokens": 0
+        },
+        "cost_details": {
+          "upstream_inference_cost": 0.546506,
+          "upstream_inference_prompt_cost": 0,
+          "upstream_inference_completions_cost": 0.546506
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 0,
+          "image_tokens": 4175
+        }
+      },
+      "response_model": null,
+      "response_created": 0,
+      "elapsed_seconds": 150.2,
+      "completed_utc": "2026-10-12T04:07:50.235488+00:00",
+      "cost_usd": 0.546506,
+      "cost_exceeded_reservation": false,
+      "width": 2048,
+      "height": 2048,
+      "alpha_range": [
+        0,
+        255
+      ],
+      "provider_format": "PNG",
+      "provider_sha256": "d1fc8fb4fa4c3760a15bdd970678e3f958bc35ea2075635db6c7a09e48371f0b",
+      "sha256": "d1fc8fb4fa4c3760a15bdd970678e3f958bc35ea2075635db6c7a09e48371f0b",
+      "native_size_ok": true,
+      "transparency_ok": true
+    }
+  ],
+  "authorized_scope_total_usd": 9.5,
+  "scope_note": "User expanded total budget to $10; root approved $9.50 work limit on 2026-10-12, retaining $0.50 contingency. One unresolved request at a time; minimum reservation $0.80.",
+  "release_paid_generation_complete": true,
+  "release_closed_utc": "2026-10-12T04:13:32.642852+00:00"
+}

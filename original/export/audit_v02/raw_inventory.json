@@ -1,0 +1,497 @@
+[
+  {
+    "jar_resource": "gpack0.dat",
+    "index": 0,
+    "byte_offset": 2,
+    "byte_length": 1245,
+    "path": "res://assets/original/packs/gpack0_0.png",
+    "size": [
+      28,
+      110
+    ],
+    "sha256": "113155d7d59ec62486d3b6deee07b3642993e9df5eff704e05acbdc03708d118",
+    "fidelity": "byte_exact"
+  },
+  {
+    "jar_resource": "gpack0.dat",
+    "index": 1,
+    "byte_offset": 1249,
+    "byte_length": 1223,
+    "path": "res://assets/original/packs/gpack0_1.png",
+    "size": [
+      30,
+      121
+    ],
+    "sha256": "b221ec6ebf105fa2a09c91e8d5a2dc6c3cec9d409ba5b79fec8de87f4778c922",
+    "fidelity": "byte_exact"
+  },
+  {
+    "jar_resource": "gpack0.dat",
+    "index": 2,
+    "byte_offset": 2474,
+    "byte_length": 1242,
+    "path": "res://assets/original/packs/gpack0_2.png",
+    "size": [
+      23,
+      125
+    ],
+    "sha256": "7d5c7e6b9ce3aaf35bae713de8c73786a25b68f12be7ece5de3199d9a02ac0e0",
+    "fidelity": "byte_exact"
+  },
+  {
+    "jar_resource": "gpack0.dat",
+    "index": 3,
+    "byte_offset": 3718,
+    "byte_length": 1226,
+    "path": "res://assets/original/packs/gpack0_3.png",
+    "size": [
+      27,
+      126
+    ],
+    "sha256": "17f2aaf9c9d837faa7c3993e755c8e7c4dac50922f0f5d82237ad1a41e1cf914",
+    "fidelity": "byte_exact"
+  },
+  {
+    "jar_resource": "gpack0.dat",
+    "index": 4,
+    "byte_offset": 4946,
+    "byte_length": 1246,
+    "path": "res://assets/original/packs/gpack0_4.png",
+    "size": [
+      24,
+      138
+    ],
+    "sha256": "11e668d4e23cf2424d53f04e9f6aa330c30470119720c8bcca13a5b177732c4f",
+    "fidelity": "byte_exact"
+  },
+  {
+    "jar_resource": "gpack0.dat",
+    "index": 5,
+    "byte_offset": 6194,
+    "byte_length": 1136,
+    "path": "res://assets/original/packs/gpack0_5.png",
+    "size": [
+      30,
+      114
+    ],
+    "sha256": "e1f1d6b850650e952d125f26c750c91e490fa1fc85d8e22d741f8f17ad2d3fdd",
+    "fidelity": "byte_exact"
+  },
+  {
+    "jar_resource": "gpack0.dat",
+    "index": 6,
+    "byte_offset": 7332,
+    "byte_length": 1074,
+    "path": "res://assets/original/packs/gpack0_6.png",
+    "size": [
+      26,
+      117
+    ],
+    "sha256": "aa404b27ccb424ae9e5443ddfed8d0b5ff13116a573e55e0d049b4647c629bfb",
+    "fidelity": "byte_exact"
+  },
+  {
+    "jar_resource": "gpack0.dat",
+    "index": 7,
+    "byte_offset": 8408,
+    "byte_length": 1221,
+    "path": "res://assets/original/packs/gpack0_7.png",
+    "size": [
+      30,
+      136
+    ],
+    "sha256": "d9d3cd76ac13349ec2750ebd1dc86f2182cb8813e81f4abe3b8e9891f9594f07",
+    "fidelity": "byte_exact"
+  },
+  {
+    "jar_resource": "gpack0.dat",
+    "index": 8,
+    "byte_offset": 9631,
+    "byte_length": 902,
+    "path": "res://assets/original/packs/gpack0_8.png",
+    "size": [
+      28,
+      72
+    ],
+    "sha256": "4f0624ce83835101d5fda872ba5a0c92feb6b528ecb0b7c2c2c6cdc72bf8390d",
+    "fidelity": "byte_exact"
+  },
+  {
+    "jar_resource": "gpack0.dat",
+    "index": 9,
+    "byte_offset": 10535,
+    "byte_length": 1067,
+    "path": "res://assets/original/packs/gpack0_9.png",
+    "size": [
+      30,
+      89
+    ],
+    "sha256": "90b18ca7a97bd4fade86b1f5545ddf4d976e99e061f74439dc73ce36d329e09b",
+    "fidelity": "byte_exact"
+  },
+  {
+    "jar_resource": "gpack0.dat",
+    "index": 10,
+    "byte_offset": 11604,
+    "byte_length": 1020,
+    "path": "res://assets/original/packs/gpack0_10.png",
+    "size": [
+      120,
+      20
+    ],
+    "sha256": "918072716636eb7accff6069a9d659541949cd829065f9e103b6c879827598be",
+    "fidelity": "byte_exact"
+  },
+  {
+    "jar_resource": "gpack1.dat",
+    "index": 0,
+    "byte_offset": 2,
+    "byte_length": 2878,
+    "path": "res://assets/original/packs/gpack1_0.png",
+    "size": [
+      64,
+      132
+    ],
+    "sha256": "a7571c9a91d065c4d2266882ac560d5e6cda4e2df7fa7f8440dbffd1a8ed9211",
+    "fidelity": "byte_exact"
+  },
+  {
+    "jar_resource": "gpack1.dat",
+    "index": 1,
+    "byte_offset": 2882,
+    "byte_length": 1195,
+    "path": "res://assets/original/packs/gpack1_1.png",
+    "size": [
+      74,
+      45
+    ],
+    "sha256": "903f7e031d5ac921a3bc6a3e805005d2047386d56e3c795aa94616c496a3b3b0",
+    "fidelity": "byte_exact"
+  },
+  {
+    "jar_resource": "gpack1.dat",
+    "index": 2,
+    "byte_offset": 4079,
+    "byte_length": 7338,
+    "path": "res://assets/original/packs/gpack1_2.png",
+    "size": [
+      125,
+      124
+    ],
+    "sha256": "c3d2f757bba5c595e12acb9c3db502ec95203b5233283efd7f6dca87713e6ffc",
+    "fidelity": "byte_exact"
+  },
+  {
+    "jar_resource": "gpack1.dat",
+    "index": 3,
+    "byte_offset": 11419,
+    "byte_length": 2499,
+    "path": "res://assets/original/packs/gpack1_3.png",
+    "size": [
+      107,
+      56
+    ],
+    "sha256": "aed75c6bc5030666d4d40fcae7d68412a7dd9b5819d9c350b402044071d53153",
+    "fidelity": "byte_exact"
+  },
+  {
+    "jar_resource": "gpack1.dat",
+    "index": 4,
+    "byte_offset": 13920,
+    "byte_length": 4598,
+    "path": "res://assets/original/packs/gpack1_4.png",
+    "size": [
+      108,
+      87
+    ],
+    "sha256": "21ab7fb527a229429894324391fb3df2a05b67ee8c54063c5bea44c4d1c0a677",
+    "fidelity": "byte_exact"
+  },
+  {
+    "jar_resource": "gpack1.dat",
+    "index": 5,
+    "byte_offset": 18520,
+    "byte_length": 1001,
+    "path": "res://assets/original/packs/gpack1_5.png",
+    "size": [
+      38,
+      58
+    ],
+    "sha256": "a843a7a4a10b58f9d9b9f06ff553a5fb5c1470700decde987f8a9bae978146cb",
+    "fidelity": "byte_exact"
+  },
+  {
+    "jar_resource": "gpack1.dat",
+    "index": 6,
+    "byte_offset": 19523,
+    "byte_length": 8114,
+    "path": "res://assets/original/packs/gpack1_6.png",
+    "size": [
+      112,
+      124
+    ],
+    "sha256": "fec481ee34b2f24f23760164e6ed76d4fce6087c4267b48eb11ad53d185090d6",
+    "fidelity": "byte_exact"
+  },
+  {
+    "jar_resource": "gpack1.dat",
+    "index": 8,
+    "byte_offset": 27641,
+    "byte_length": 746,
+    "path": "res://assets/original/packs/gpack1_8.png",
+    "size": [
+      107,
+      25
+    ],
+    "sha256": "18821f91e0b4344645338d39187e6597797a23482ab413a3bce018fff892f26b",
+    "fidelity": "byte_exact"
+  },
+  {
+    "jar_resource": "gpack1.dat",
+    "index": 9,
+    "byte_offset": 28389,
+    "byte_length": 1062,
+    "path": "res://assets/original/packs/gpack1_9.png",
+    "size": [
+      44,
+      73
+    ],
+    "sha256": "5fdd6197c7c3e95c1e9614fbcc974791f976580c8b4efea367d1ffe329c17281",
+    "fidelity": "byte_exact"
+  },
+  {
+    "jar_resource": "gpack1.dat",
+    "index": 10,
+    "byte_offset": 29453,
+    "byte_length": 541,
+    "path": "res://assets/original/packs/gpack1_10.png",
+    "size": [
+      39,
+      23
+    ],
+    "sha256": "a31d43376efc1ea9a78dfd572673eb3654cf12054c1738fb12fe39f12dd7d249",
+    "fidelity": "byte_exact"
+  },
+  {
+    "jar_resource": "gpack1.dat",
+    "index": 11,
+    "byte_offset": 29996,
+    "byte_length": 543,
+    "path": "res://assets/original/packs/gpack1_11.png",
+    "size": [
+      82,
+      16
+    ],
+    "sha256": "020b7828925c22c9f8de3449e720cae9d27c04edc40bceacf9956236b30f3587",
+    "fidelity": "byte_exact"
+  },
+  {
+    "jar_resource": "gpack1.dat",
+    "index": 12,
+    "byte_offset": 30541,
+    "byte_length": 939,
+    "path": "res://assets/original/packs/gpack1_12.png",
+    "size": [
+      33,
+      63
+    ],
+    "sha256": "747a4cfaf2e037ad7a30dd783c4792eea0cdae35c8eb45ca54f6eb13f8798fed",
+    "fidelity": "byte_exact"
+  },
+  {
+    "jar_resource": "gpack2.dat",
+    "index": 0,
+    "byte_offset": 2,
+    "byte_length": 1087,
+    "path": "res://assets/original/packs/gpack2_0.png",
+    "size": [
+      38,
+      60
+    ],
+    "sha256": "4aa98e1db03f98007ed0475dfb2e3f80149ce9a4ccbd7c3cb8cd790b4cf251d7",
+    "fidelity": "byte_exact"
+  },
+  {
+    "jar_resource": "gpack2.dat",
+    "index": 1,
+    "byte_offset": 1091,
+    "byte_length": 667,
+    "path": "res://assets/original/packs/gpack2_1.png",
+    "size": [
+      38,
+      60
+    ],
+    "sha256": "187dab475bad8a70a2c90a895e7b1d2a3ca27559b2015c1ea1d2ba1c4481820b",
+    "fidelity": "byte_exact"
+  },
+  {
+    "jar_resource": "gpack2.dat",
+    "index": 2,
+    "byte_offset": 1760,
+    "byte_length": 2470,
+    "path": "res://assets/original/packs/gpack2_2.png",
+    "size": [
+      105,
+      56
+    ],
+    "sha256": "217179de3659ca49689b5dc525301b224d52b754d8f91751ca4cc9601278a06e",
+    "fidelity": "byte_exact"
+  },
+  {
+    "jar_resource": "gpack2.dat",
+    "index": 3,
+    "byte_offset": 4232,
+    "byte_length": 6227,
+    "path": "res://assets/original/packs/gpack2_3.png",
+    "size": [
+      156,
+      116
+    ],
+    "sha256": "9f0d5cd86c907ddeeee9670a5c25197eb2e87de324dcedaa663b4e183002cf5a",
+    "fidelity": "byte_exact"
+  },
+  {
+    "jar_resource": "gpack2.dat",
+    "index": 4,
+    "byte_offset": 10461,
+    "byte_length": 801,
+    "path": "res://assets/original/packs/gpack2_4.png",
+    "size": [
+      36,
+      42
+    ],
+    "sha256": "4b199609a1f69efbde1475939e1ff48fed5e32c3600e7e5045aac8d5fc70b172",
+    "fidelity": "byte_exact"
+  },
+  {
+    "jar_resource": "gpack2.dat",
+    "index": 5,
+    "byte_offset": 11264,
+    "byte_length": 6151,
+    "path": "res://assets/original/packs/gpack2_5.png",
+    "size": [
+      148,
+      160
+    ],
+    "sha256": "749db19799e49c2e1a9badc10e255ed439af8c620a48d8f62a6fcbabc7d09809",
+    "fidelity": "byte_exact"
+  },
+  {
+    "jar_resource": "gpack2.dat",
+    "index": 6,
+    "byte_offset": 17417,
+    "byte_length": 3821,
+    "path": "res://assets/original/packs/gpack2_6.png",
+    "size": [
+      180,
+      73
+    ],
+    "sha256": "d6cb1ef6e69d85f35b9ebfcac965d3d5b7678ac02115982bedafc3d9087af798",
+    "fidelity": "byte_exact"
+  },
+  {
+    "jar_resource": "gpack2.dat",
+    "index": 7,
+    "byte_offset": 21240,
+    "byte_length": 2675,
+    "path": "res://assets/original/packs/gpack2_7.png",
+    "size": [
+      124,
+      53
+    ],
+    "sha256": "e00c532e246e2acbea37a048297fcc0690486c55e4640ea79283a806d26ab885",
+    "fidelity": "byte_exact"
+  },
+  {
+    "jar_resource": "gpack2.dat",
+    "index": 8,
+    "byte_offset": 23917,
+    "byte_length": 728,
+    "path": "res://assets/original/packs/gpack2_8.png",
+    "size": [
+      63,
+      25
+    ],
+    "sha256": "e35eb1db9eca3715cebdeb1416f7495723f67a8561049a855183b4adb0c762a2",
+    "fidelity": "byte_exact"
+  },
+  {
+    "jar_resource": "gpack2.dat",
+    "index": 9,
+    "byte_offset": 24647,
+    "byte_length": 385,
+    "path": "res://assets/original/packs/gpack2_9.png",
+    "size": [
+      38,
+      37
+    ],
+    "sha256": "54f468cdf2956fbdefb4f777e08be2295158af4d9840639cad4ef26a3a700fde",
+    "fidelity": "byte_exact"
+  },
+  {
+    "jar_resource": "gpack2.dat",
+    "index": 10,
+    "byte_offset": 25034,
+    "byte_length": 7148,
+    "path": "res://assets/original/packs/gpack2_10.png",
+    "size": [
+      133,
+      149
+    ],
+    "sha256": "4befa1211a2b7b45524ecba7a1ebe5705ce539c2e11094d145667375ce5d24bb",
+    "fidelity": "byte_exact"
+  },
+  {
+    "jar_resource": "gpack2.dat",
+    "index": 11,
+    "byte_offset": 32184,
+    "byte_length": 4656,
+    "path": "res://assets/original/packs/gpack2_11.png",
+    "size": [
+      120,
+      60
+    ],
+    "sha256": "d0ce8de87490ac948f24c22ebe741aef38b19f835122c3041405a285872ad36d",
+    "fidelity": "byte_exact"
+  },
+  {
+    "jar_resource": "icon.png",
+    "path": "res://assets/original/ui/icon.png",
+    "size": [
+      24,
+      24
+    ],
+    "source_sha256": "4ee272d9d4587a300081d0a0b1527ac130a2aad117636a728e64ead36a88b870",
+    "fidelity": "pixel_exact_RGBA_reencode"
+  },
+  {
+    "jar_resource": "splash0.png",
+    "path": "res://assets/original/ui/splash0.png",
+    "size": [
+      100,
+      33
+    ],
+    "source_sha256": "9adb74b80eff9c91eba67692f0815fff553104fca8c36bff07fb904300fa0bf5",
+    "fidelity": "pixel_exact_RGBA_reencode"
+  },
+  {
+    "jar_resource": "splash1.png",
+    "path": "res://assets/original/ui/splash1.png",
+    "size": [
+      176,
+      208
+    ],
+    "source_sha256": "eea7d0c772660222bc43911fe170e7b75d729466d4ab7adbec4405f479a94b9e",
+    "fidelity": "pixel_exact_RGBA_reencode"
+  },
+  {
+    "jar_resource": "splash2.png",
+    "path": "res://assets/original/ui/splash2.png",
+    "size": [
+      240,
+      320
+    ],
+    "source_sha256": "c87ae9722128cb0b41c552da2c03c6dc6e5587fb9f45a213a0055183cd9e5bbe",
+    "fidelity": "pixel_exact_RGBA_reencode"
+  }
+]

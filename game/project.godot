@@ -1,0 +1,34 @@
+config_version=5
+
+[application]
+config/name="Первобытный парк"
+run/main_scene="res://main.tscn"
+config/features=PackedStringArray("4.7", "Mobile")
+config/icon="res://assets/hd/ui/icon.png"
+
+[display]
+window/size/viewport_width=1080
+window/size/viewport_height=1920
+window/size/window_width_override=540
+window/size/window_height_override=960
+window/stretch/mode="canvas_items"
+window/stretch/aspect="keep_width"
+window/handheld/orientation=1
+
+[input_devices]
+pointing/emulate_mouse_from_touch=true
+
+[rendering]
+renderer/rendering_method="mobile"
+renderer/rendering_method.mobile="mobile"
+rendering_device/fallback_to_opengl3=true
+textures/vram_compression/import_etc2_astc=true
+textures/canvas_textures/default_texture_filter=0
+environment/defaults/default_clear_color=Color(0.07, 0.12, 0.08, 1)
+
+[importer_defaults]
+texture={
+"compress/mode": 0,
+"detect_3d/compress_to": 0,
+"mipmaps/generate": true
+}

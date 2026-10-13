@@ -1,0 +1,13 @@
+{
+  "id": "wheel_atlas_2k_v1",
+  "scope": "pilot",
+  "model": "sourceful/riverflow-v2.5-pro",
+  "resolution": "2K",
+  "aspect_ratio": "4:3",
+  "background": "transparent",
+  "references": [
+    "art/reference/wheel_grid_4x3.png"
+  ],
+  "output": "art/raw/wheel_atlas_2k_v1.png",
+  "prompt": "Use case: style-transfer. Asset type: native 2K transparent two-frame sprite atlas for a faithful stone-age amusement park game remaster.\nInput image 1 is the exact edit target and rigid layout template. It contains two animation phases of ONE primitive four-basket wooden amusement wheel. Repaint those two existing sprites into clean detailed bright hand-painted cartoon game art. Both phases must depict the IDENTICAL object, viewpoint, material, mast and base; only the four baskets and rotating wooden cross-arms change angle exactly as in the reference.\nLayout: one row of exactly TWO equal rectangular cells, no gutters or borders, left and right halves. Overall canvas 4:3, requested native 2K. Preserve the relative position, silhouette extent and pixel-aligned structural anchors in each cell. The central permanent mast, axle and splayed log feet must stay perfectly stationary between the two phases. Exact same camera and scale. Orthographic isometric view, not a frontal view. Original has four dark brown hanging wooden barrel/basket cabins and rough yellow-green timber spokes on a brown central vertical timber; do not turn this simple wooden cross ride into a modern Ferris wheel. Do not add an outer circular rim.\nArt: crisp coherent fine ink contours, warm sunlit wood grain and rope bindings, appealing colorful 2D illustration, gentle painted shading; detailed enough to view in 2K. Replace the source's coarse pixels with smooth intentional shapes, while retaining the mechanical design and original pose geometry. The empty centers of cabins and gaps between arms remain transparent where the reference is empty. Hanging baskets remain upright in both phases.\nBackground: genuinely transparent RGBA alpha=0 everywhere outside the ride silhouettes, including gaps. No background color, no painted checkerboard. No ground, scenery, cast shadows, fences, passengers, text, labels, numbering, watermark, extra objects, UI or extra frames. Every visible sprite must stay inside its own half, with no contact or overlap between the two phases. Native 2K output, not a small image on a large canvas."
+}

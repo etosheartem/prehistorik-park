@@ -1,0 +1,14 @@
+{
+  "id": "actors_full_3_2k_v2",
+  "scope": "pilot",
+  "model": "sourceful/riverflow-v2.5-pro",
+  "resolution": "2K",
+  "aspect_ratio": "1:1",
+  "background": "transparent",
+  "references": [
+    "art/reference/actors_full/atlas_3.png",
+    "art/raw/actors_full_0_2k_v1.png"
+  ],
+  "output": "art/raw/actors_full_3_2k_v2.png",
+  "prompt": "Use case: style-transfer. Primary task: REDRAW the two characters of image1 in the SAME polished smooth illustrated style as image2. Native 2K RGBA production sprite sheet.\nImage1 is the exact arrangement and pose template, NOT a style to preserve. Image2 is STYLE ONLY: copy its clean round contours, fully illustrated facial features, soft warm shading, rich cloth/hair detail and friendly cartoon rendering. Do not copy image2 character identities or wardrobe. Remove ALL coarse pixel blocks and staircase edges from image1; a merely enlarged or traced pixel-art image is unacceptable.\nCharacters from image1: left half is a short gray-haired caveman in blue one-shoulder prehistoric clothing; right half a short spiky black-haired caveman in a dark brown hide outfit. Keep each identity, hairstyle, clothing, relative body proportions and original skin colors. They should look like the same smooth hand-drawn game world as image2.\nLayout: EXACTLY 10 columns by 5 rows. Left5 columns are gray-haired visitor, right5 black-haired visitor. In each five-column block, row-major first18 pieces are full-body walking, sitting, leaning, reclining, upside-down poses. The final7 are isolated head pieces ONLY: local row4 columns4/5 and row5 all5. Never add bodies under heads. Heads remain small and bottom-aligned, bodies retain the original pose and direction.\nFacing constraints for EACH five-column block: local row1 columns1–3 are front-left walking; row1 columns4/5 and row2 column1 are front-right walking. Row2 columns2–4 are rear-left walking, row2 column5 and row3 columns1/2 rear-right walking. Rear views show back of hair and clothes, no front-facing face. Row3 columns3/4 are actually SITTING, not running or kneeling. Keep limbs/torso configuration from image1, including rotated poses.\nPreserve cell centers, scale, pose and spacing, while REINTERPRETING pixel contours as clean natural curved hand-drawn shapes. Do not retain jagged pixel silhouettes. Each character is a consistent model in every pose. Do not add props, people, labels or extra cells.\nBackground: real transparent alpha=0 around each piece and in holes. No painted checkerboard, floor, shadow, grid, text, watermark or border. Native square 2K output."
+}

@@ -1,0 +1,125 @@
+{
+  "schema": 1,
+  "modes": [
+    "original",
+    "original_upscaled"
+  ],
+  "scenery": {
+    "14": {
+      "frames": [
+        {
+          "path": "res://assets/original/scenery/14/working/0.png",
+          "offset": [
+            7,
+            -11
+          ],
+          "size": [
+            32,
+            30
+          ]
+        }
+      ],
+      "variants": {
+        "working": [
+          {
+            "path": "res://assets/original/scenery/14/working/0.png",
+            "offset": [
+              7,
+              -11
+            ],
+            "size": [
+              32,
+              30
+            ]
+          }
+        ],
+        "closed": [
+          {
+            "path": "res://assets/original/scenery/14/closed/0.png",
+            "offset": [
+              7,
+              -11
+            ],
+            "size": [
+              32,
+              30
+            ]
+          }
+        ],
+        "unstaffed": [
+          {
+            "path": "res://assets/original/scenery/14/unstaffed/0.png",
+            "offset": [
+              7,
+              -11
+            ],
+            "size": [
+              32,
+              30
+            ]
+          }
+        ]
+      },
+      "provenance": "dormant_JAR_rectangles_padded_outside_PNG",
+      "available_in_original_catalog": false
+    },
+    "22": {
+      "frames": [
+        {
+          "path": "res://assets/original/scenery/22/working/0.png",
+          "offset": [
+            2,
+            -10
+          ],
+          "size": [
+            32,
+            30
+          ]
+        }
+      ],
+      "variants": {
+        "working": [
+          {
+            "path": "res://assets/original/scenery/22/working/0.png",
+            "offset": [
+              2,
+              -10
+            ],
+            "size": [
+              32,
+              30
+            ]
+          }
+        ],
+        "closed": [
+          {
+            "path": "res://assets/original/scenery/22/closed/0.png",
+            "offset": [
+              2,
+              -10
+            ],
+            "size": [
+              32,
+              30
+            ]
+          }
+        ],
+        "unstaffed": [
+          {
+            "path": "res://assets/original/scenery/22/unstaffed/0.png",
+            "offset": [
+              2,
+              -10
+            ],
+            "size": [
+              32,
+              30
+            ]
+          }
+        ]
+      },
+      "provenance": "dormant_JAR_rectangles_padded_outside_PNG",
+      "available_in_original_catalog": false
+    }
+  }
+}

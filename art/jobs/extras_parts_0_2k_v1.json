@@ -1,0 +1,13 @@
+{
+  "id": "extras_parts_0_2k_v1",
+  "scope": "pilot",
+  "model": "sourceful/riverflow-v2.5-pro",
+  "resolution": "2K",
+  "aspect_ratio": "3:4",
+  "background": "transparent",
+  "references": [
+    "art/reference/extras_parts_normalized/atlas_0.png"
+  ],
+  "output": "art/raw/extras_parts_0_2k_v1.png",
+  "prompt": "Use case: style-transfer. Asset type: native 2K transparent sprite-part atlas for a faithful bright hand-drawn stone-age amusement park remaster.\nInput image1 is the exact geometry and layout template: FIVE columns by FOUR rows, portrait 3:4 canvas. Repaint the 20 pixel-art components into clean smooth detailed illustrated cartoon game art, keeping the original brown wood, pale bone, gray stone, green flowers and yellow markings.\nContents row1: wooden park bench, two straight diagonal stone border pieces, two separate curved stone corner segments. Row2: two more separate stone corner segments and three straight diagonal flower borders. Row3: fourth straight diagonal flower border, pale bone entrance arch, extremely thin curved brown gate rope, yellow entrance flag/banner attached to brown pole, other thin curved brown gate rope. Row4: opposite-facing pale bone entrance arch, opposite-facing yellow flag/banner, two FLAT yellow ground direction arrows, round stone step at the entrance. Arrows are flat painted markings, not wooden signs. Replace lettering on flags with a simple red primitive symbol; no actual text.\nCritical: keep every single piece in its original cell, exact local position, scale, silhouette, orientation, line thickness, attachment endpoints and hole shape. The four corner segments must remain SEPARATE segments, never turn them into complete circles, walls or whole flowerbeds. Straight diagonals keep exact slope. Arches preserve their doorway opening and original leg length. Thin gate ropes must stay thin and retain their exact bend, not become fence bars. Add surface detail inside the original contours; do not move, enlarge or add pieces.\nBackground: true transparent RGBA alpha=0 outside all pieces and inside holes. Retain pale gray stones, thin ropes, flowers and yellow arrows in alpha. No checkerboard, floor, cast shadow, grid lines, labels, text or watermark. Native 2K output."
+}

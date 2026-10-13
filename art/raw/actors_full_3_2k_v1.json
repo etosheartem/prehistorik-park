@@ -1,0 +1,55 @@
+{
+  "id": "actors_full_3_2k_v1",
+  "scope": "pilot",
+  "model": "sourceful/riverflow-v2.5-pro",
+  "resolution": "2K",
+  "expected_usd": 0.15,
+  "reserved_usd": 0.8,
+  "output": "art/raw/actors_full_3_2k_v1.png",
+  "references": [
+    {
+      "path": "art/reference/actors_full/atlas_3.png",
+      "sha256": "c009158dce09ced8920fe26ee24aafcbfdc821ce35960b0c018b2347f4220e7b"
+    }
+  ],
+  "account_balance_before_usd": 4.122981,
+  "status": "generated",
+  "response_id": null,
+  "usage": {
+    "prompt_tokens": 650,
+    "completion_tokens": 4175,
+    "total_tokens": 4825,
+    "cost": 0.702812,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.702812,
+      "upstream_inference_prompt_cost": 0,
+      "upstream_inference_completions_cost": 0.702812
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "image_tokens": 4175
+    }
+  },
+  "response_model": null,
+  "response_created": 0,
+  "elapsed_seconds": 168.72,
+  "completed_utc": "2026-10-12T03:52:32.961748+00:00",
+  "cost_usd": 0.702812,
+  "cost_exceeded_reservation": false,
+  "width": 2048,
+  "height": 2048,
+  "alpha_range": [
+    0,
+    255
+  ],
+  "provider_format": "PNG",
+  "provider_sha256": "49af7e8482b4ff31dbbe140a8171ea893cafd93e3a60da57706382098d564a35",
+  "sha256": "49af7e8482b4ff31dbbe140a8171ea893cafd93e3a60da57706382098d564a35",
+  "native_size_ok": true,
+  "transparency_ok": true,
+  "prompt": "Use case: identity-preserve / style-transfer. Asset type: native 2K RGBA sprite atlas for a faithful hand-drawn stone-age amusement park game remaster.\nInput image1 is the exact pixel-art pose and cell-layout template to repaint. Turn coarse pixels into clean expressive illustrated cartoon game art, with smooth contours, warm skin, readable faces, modest ink outlines and soft material shading. Preserve original character design, outfit, colors and proportions. Keep the amusing friendly original tone.\nLayout: Exactly ten columns and five rows, 50 isolated sprite PIECES, two character types. Left five columns belong to the first person; right five to the second. Within each five-column block read row-major. First 18 pieces are full bodies, including walking, seated, reclining and upside-down poses. Final SEVEN are SMALL ISOLATED HEAD COMPONENTS ONLY: row4 columns4/5 and row5 all5 columns of each block. Never add a body under an isolated head. Each head stays at its original small scale near the bottom of its cell.\nCharacters: Left five-column block: short gray-haired visitor in blue clothing. Right block: short spiky black-haired visitor in dark brown clothing. Keep the original shorter proportions.\nCritical animation invariants: keep EXACTLY every original pose, facing direction, arm/leg configuration, object, silhouette, scale, orientation and location within each cell. Front-facing poses show a face; back-facing poses show the BACK of the head and clothing, never a second face. A mirrored view must keep the original handedness. Reclining and upside-down bodies remain reclining/upside-down. Do not substitute neutral standing poses, add extra limbs, add new objects, or invent extra figures. Every figure of one character uses the same model and body proportions. Keep the original spacing and empty margin between cells.\nBackground: actual transparent alpha=0 around every isolated piece and through gaps between arms/legs. No painted checkerboard, floor, cast shadow, scenery, panels, grid, labels, text or watermark. Native 2K square output. Preserve all visible subject pixels in alpha; do not remove isolated heads or small components.\nEXACT REAR VIEWS within EACH five-column character half (one-based local row/column): row2 columns2,3,4 must show rear-left body views; row2 column5 and row3 columns1,2 must show rear-right body views, with BACK OF HAIR clearly visible and no front-facing eyes or face. Row5 columns1 and2 are isolated rear-view heads facing left and right, mainly back hair, not portrait faces. These cells must not turn toward the camera."
+}

@@ -1,0 +1,1434 @@
+{
+  "1:0:0:0:13:22": {
+    "path": "res://assets/hd/parts/rides/part_0.png",
+    "logical_size": [
+      13,
+      22
+    ],
+    "scale": 8
+  },
+  "1:0:0:22:25:3": {
+    "path": "res://assets/hd/parts/rides/part_1.png",
+    "logical_size": [
+      25,
+      3
+    ],
+    "scale": 8
+  },
+  "1:0:0:25:3:25": {
+    "path": "res://assets/hd/parts/rides/part_2.png",
+    "logical_size": [
+      3,
+      25
+    ],
+    "scale": 8
+  },
+  "1:0:0:50:21:32": {
+    "path": "res://assets/hd/parts/rides/part_3.png",
+    "logical_size": [
+      21,
+      32
+    ],
+    "scale": 8
+  },
+  "1:0:0:82:29:50": {
+    "path": "res://assets/hd/parts/rides/part_4.png",
+    "logical_size": [
+      29,
+      50
+    ],
+    "scale": 8
+  },
+  "1:0:1:62:19:20": {
+    "path": "res://assets/hd/parts/rides/part_5.png",
+    "logical_size": [
+      19,
+      20
+    ],
+    "scale": 8
+  },
+  "1:0:3:25:22:13": {
+    "path": "res://assets/hd/parts/rides/part_6.png",
+    "logical_size": [
+      22,
+      13
+    ],
+    "scale": 8
+  },
+  "1:0:3:37:22:13": {
+    "path": "res://assets/hd/parts/rides/part_7.png",
+    "logical_size": [
+      22,
+      13
+    ],
+    "scale": 8
+  },
+  "1:0:3:40:16:10": {
+    "path": "res://assets/hd/parts/rides/part_8.png",
+    "logical_size": [
+      16,
+      10
+    ],
+    "scale": 8
+  },
+  "1:0:6:22:19:3": {
+    "path": "res://assets/hd/parts/rides/part_9.png",
+    "logical_size": [
+      19,
+      3
+    ],
+    "scale": 8
+  },
+  "1:0:7:37:18:12": {
+    "path": "res://assets/hd/parts/rides/part_10.png",
+    "logical_size": [
+      18,
+      12
+    ],
+    "scale": 8
+  },
+  "1:0:9:52:12:30": {
+    "path": "res://assets/hd/parts/rides/part_11.png",
+    "logical_size": [
+      12,
+      30
+    ],
+    "scale": 8
+  },
+  "1:0:21:43:43:45": {
+    "path": "res://assets/hd/parts/rides/part_12.png",
+    "logical_size": [
+      43,
+      45
+    ],
+    "scale": 8
+  },
+  "1:0:25:0:31:37": {
+    "path": "res://assets/hd/parts/rides/part_13.png",
+    "logical_size": [
+      31,
+      37
+    ],
+    "scale": 8
+  },
+  "1:0:29:88:34:44": {
+    "path": "res://assets/hd/parts/rides/part_14.png",
+    "logical_size": [
+      34,
+      44
+    ],
+    "scale": 8
+  },
+  "1:1:0:0:4:20": {
+    "path": "res://assets/hd/parts/rides/part_15.png",
+    "logical_size": [
+      4,
+      20
+    ],
+    "scale": 8
+  },
+  "1:1:0:0:4:40": {
+    "path": "res://assets/hd/parts/rides/part_16.png",
+    "logical_size": [
+      4,
+      40
+    ],
+    "scale": 8
+  },
+  "1:1:0:0:4:45": {
+    "path": "res://assets/hd/parts/rides/part_17.png",
+    "logical_size": [
+      4,
+      45
+    ],
+    "scale": 8
+  },
+  "1:1:0:3:4:25": {
+    "path": "res://assets/hd/parts/rides/part_18.png",
+    "logical_size": [
+      4,
+      25
+    ],
+    "scale": 8
+  },
+  "1:1:0:3:4:26": {
+    "path": "res://assets/hd/parts/rides/part_19.png",
+    "logical_size": [
+      4,
+      26
+    ],
+    "scale": 8
+  },
+  "1:1:0:5:4:40": {
+    "path": "res://assets/hd/parts/rides/part_20.png",
+    "logical_size": [
+      4,
+      40
+    ],
+    "scale": 8
+  },
+  "1:1:0:25:4:20": {
+    "path": "res://assets/hd/parts/rides/part_21.png",
+    "logical_size": [
+      4,
+      20
+    ],
+    "scale": 8
+  },
+  "1:1:4:0:11:12": {
+    "path": "res://assets/hd/parts/rides/part_22.png",
+    "logical_size": [
+      11,
+      12
+    ],
+    "scale": 8
+  },
+  "1:1:4:0:16:12": {
+    "path": "res://assets/hd/parts/rides/part_23.png",
+    "logical_size": [
+      16,
+      12
+    ],
+    "scale": 8
+  },
+  "1:1:4:12:18:18": {
+    "path": "res://assets/hd/parts/rides/part_24.png",
+    "logical_size": [
+      18,
+      18
+    ],
+    "scale": 8
+  },
+  "1:1:4:12:31:18": {
+    "path": "res://assets/hd/parts/rides/part_25.png",
+    "logical_size": [
+      31,
+      18
+    ],
+    "scale": 8
+  },
+  "1:1:4:30:31:15": {
+    "path": "res://assets/hd/parts/rides/part_26.png",
+    "logical_size": [
+      31,
+      15
+    ],
+    "scale": 8
+  },
+  "1:1:4:35:18:10": {
+    "path": "res://assets/hd/parts/rides/part_27.png",
+    "logical_size": [
+      18,
+      10
+    ],
+    "scale": 8
+  },
+  "1:1:7:30:13:7": {
+    "path": "res://assets/hd/parts/rides/part_28.png",
+    "logical_size": [
+      13,
+      7
+    ],
+    "scale": 8
+  },
+  "1:1:8:0:12:11": {
+    "path": "res://assets/hd/parts/rides/part_29.png",
+    "logical_size": [
+      12,
+      11
+    ],
+    "scale": 8
+  },
+  "1:1:16:12:19:18": {
+    "path": "res://assets/hd/parts/rides/part_30.png",
+    "logical_size": [
+      19,
+      18
+    ],
+    "scale": 8
+  },
+  "1:1:16:30:19:15": {
+    "path": "res://assets/hd/parts/rides/part_31.png",
+    "logical_size": [
+      19,
+      15
+    ],
+    "scale": 8
+  },
+  "1:1:20:0:13:11": {
+    "path": "res://assets/hd/parts/rides/part_32.png",
+    "logical_size": [
+      13,
+      11
+    ],
+    "scale": 8
+  },
+  "1:1:35:18:17:10": {
+    "path": "res://assets/hd/parts/rides/part_33.png",
+    "logical_size": [
+      17,
+      10
+    ],
+    "scale": 8
+  },
+  "1:1:35:28:32:13": {
+    "path": "res://assets/hd/parts/rides/part_34.png",
+    "logical_size": [
+      32,
+      13
+    ],
+    "scale": 8
+  },
+  "1:1:40:0:12:9": {
+    "path": "res://assets/hd/parts/rides/part_35.png",
+    "logical_size": [
+      12,
+      9
+    ],
+    "scale": 8
+  },
+  "1:1:40:9:12:9": {
+    "path": "res://assets/hd/parts/rides/part_36.png",
+    "logical_size": [
+      12,
+      9
+    ],
+    "scale": 8
+  },
+  "1:1:52:0:14:28": {
+    "path": "res://assets/hd/parts/rides/part_37.png",
+    "logical_size": [
+      14,
+      28
+    ],
+    "scale": 8
+  },
+  "1:1:66:0:8:25": {
+    "path": "res://assets/hd/parts/rides/part_38.png",
+    "logical_size": [
+      8,
+      25
+    ],
+    "scale": 8
+  },
+  "1:1:67:0:7:25": {
+    "path": "res://assets/hd/parts/rides/part_39.png",
+    "logical_size": [
+      7,
+      25
+    ],
+    "scale": 8
+  },
+  "1:1:67:19:7:24": {
+    "path": "res://assets/hd/parts/rides/part_40.png",
+    "logical_size": [
+      7,
+      24
+    ],
+    "scale": 8
+  },
+  "1:1:67:19:7:25": {
+    "path": "res://assets/hd/parts/rides/part_41.png",
+    "logical_size": [
+      7,
+      25
+    ],
+    "scale": 8
+  },
+  "1:2:0:17:17:11": {
+    "path": "res://assets/hd/parts/rides/part_42.png",
+    "logical_size": [
+      17,
+      11
+    ],
+    "scale": 8
+  },
+  "1:2:35:65:17:14": {
+    "path": "res://assets/hd/parts/rides/part_43.png",
+    "logical_size": [
+      17,
+      14
+    ],
+    "scale": 8
+  },
+  "1:2:39:83:28:21": {
+    "path": "res://assets/hd/parts/rides/part_44.png",
+    "logical_size": [
+      28,
+      21
+    ],
+    "scale": 8
+  },
+  "1:2:48:29:24:18": {
+    "path": "res://assets/hd/parts/rides/part_45.png",
+    "logical_size": [
+      24,
+      18
+    ],
+    "scale": 8
+  },
+  "1:2:48:47:24:18": {
+    "path": "res://assets/hd/parts/rides/part_46.png",
+    "logical_size": [
+      24,
+      18
+    ],
+    "scale": 8
+  },
+  "1:2:51:47:21:18": {
+    "path": "res://assets/hd/parts/rides/part_47.png",
+    "logical_size": [
+      21,
+      18
+    ],
+    "scale": 8
+  },
+  "1:2:52:65:10:6": {
+    "path": "res://assets/hd/parts/local/cafe_smoke_2.png",
+    "logical_size": [
+      10,
+      6
+    ],
+    "scale": 8
+  },
+  "1:2:56:31:16:16": {
+    "path": "res://assets/hd/parts/rides/part_49.png",
+    "logical_size": [
+      16,
+      16
+    ],
+    "scale": 8
+  },
+  "1:2:66:84:24:17": {
+    "path": "res://assets/hd/parts/rides/part_50.png",
+    "logical_size": [
+      24,
+      17
+    ],
+    "scale": 8
+  },
+  "1:2:72:60:14:13": {
+    "path": "res://assets/hd/parts/rides/part_51.png",
+    "logical_size": [
+      14,
+      13
+    ],
+    "scale": 8
+  },
+  "1:2:76:103:16:8": {
+    "path": "res://assets/hd/parts/rides/part_52.png",
+    "logical_size": [
+      16,
+      8
+    ],
+    "scale": 8
+  },
+  "1:2:76:111:23:13": {
+    "path": "res://assets/hd/parts/rides/part_53.png",
+    "logical_size": [
+      23,
+      13
+    ],
+    "scale": 8
+  },
+  "1:2:86:60:14:13": {
+    "path": "res://assets/hd/parts/rides/part_54.png",
+    "logical_size": [
+      14,
+      13
+    ],
+    "scale": 8
+  },
+  "1:2:92:103:16:7": {
+    "path": "res://assets/hd/parts/rides/part_55.png",
+    "logical_size": [
+      16,
+      7
+    ],
+    "scale": 8
+  },
+  "1:2:98:111:23:13": {
+    "path": "res://assets/hd/parts/rides/part_56.png",
+    "logical_size": [
+      23,
+      13
+    ],
+    "scale": 8
+  },
+  "1:2:100:60:24:13": {
+    "path": "res://assets/hd/parts/rides/part_57.png",
+    "logical_size": [
+      24,
+      13
+    ],
+    "scale": 8
+  },
+  "1:2:104:73:13:11": {
+    "path": "res://assets/hd/parts/rides/part_58.png",
+    "logical_size": [
+      13,
+      11
+    ],
+    "scale": 8
+  },
+  "1:2:108:97:17:13": {
+    "path": "res://assets/hd/parts/rides/part_59.png",
+    "logical_size": [
+      17,
+      13
+    ],
+    "scale": 8
+  },
+  "1:2:117:72:8:13": {
+    "path": "res://assets/hd/parts/rides/part_60.png",
+    "logical_size": [
+      8,
+      13
+    ],
+    "scale": 8
+  },
+  "1:3:36:0:16:34": {
+    "path": "res://assets/hd/parts/rides/part_61.png",
+    "logical_size": [
+      16,
+      34
+    ],
+    "scale": 8
+  },
+  "1:3:52:0:15:33": {
+    "path": "res://assets/hd/parts/rides/part_62.png",
+    "logical_size": [
+      15,
+      33
+    ],
+    "scale": 8
+  },
+  "1:4:73:46:35:18": {
+    "path": "res://assets/hd/parts/rides/part_63.png",
+    "logical_size": [
+      35,
+      18
+    ],
+    "scale": 8
+  },
+  "1:4:73:64:35:15": {
+    "path": "res://assets/hd/parts/rides/part_64.png",
+    "logical_size": [
+      35,
+      15
+    ],
+    "scale": 8
+  },
+  "1:5:0:0:38:20": {
+    "path": "res://assets/hd/parts/rides/part_65.png",
+    "logical_size": [
+      38,
+      20
+    ],
+    "scale": 8
+  },
+  "1:6:0:37:44:75": {
+    "path": "res://assets/hd/parts/rides/part_66.png",
+    "logical_size": [
+      44,
+      75
+    ],
+    "scale": 8
+  },
+  "1:6:15:113:11:11": {
+    "path": "res://assets/hd/parts/rides/part_67.png",
+    "logical_size": [
+      11,
+      11
+    ],
+    "scale": 8
+  },
+  "1:6:29:113:12:6": {
+    "path": "res://assets/hd/parts/rides/part_68.png",
+    "logical_size": [
+      12,
+      6
+    ],
+    "scale": 8
+  },
+  "1:6:35:0:35:37": {
+    "path": "res://assets/hd/parts/rides/part_69.png",
+    "logical_size": [
+      35,
+      37
+    ],
+    "scale": 8
+  },
+  "1:6:41:113:18:11": {
+    "path": "res://assets/hd/parts/rides/part_70.png",
+    "logical_size": [
+      18,
+      11
+    ],
+    "scale": 8
+  },
+  "1:6:44:37:13:22": {
+    "path": "res://assets/hd/parts/rides/part_71.png",
+    "logical_size": [
+      13,
+      22
+    ],
+    "scale": 8
+  },
+  "1:6:44:59:15:54": {
+    "path": "res://assets/hd/parts/rides/part_72.png",
+    "logical_size": [
+      15,
+      54
+    ],
+    "scale": 8
+  },
+  "1:6:57:37:26:12": {
+    "path": "res://assets/hd/parts/rides/part_73.png",
+    "logical_size": [
+      26,
+      12
+    ],
+    "scale": 8
+  },
+  "1:6:70:0:11:13": {
+    "path": "res://assets/hd/parts/rides/part_74.png",
+    "logical_size": [
+      11,
+      13
+    ],
+    "scale": 8
+  },
+  "1:6:70:13:11:22": {
+    "path": "res://assets/hd/parts/rides/part_75.png",
+    "logical_size": [
+      11,
+      22
+    ],
+    "scale": 8
+  },
+  "1:6:81:0:30:44": {
+    "path": "res://assets/hd/parts/rides/part_76.png",
+    "logical_size": [
+      30,
+      44
+    ],
+    "scale": 8
+  },
+  "1:6:83:44:29:54": {
+    "path": "res://assets/hd/parts/rides/part_77.png",
+    "logical_size": [
+      29,
+      54
+    ],
+    "scale": 8
+  },
+  "1:6:83:98:20:26": {
+    "path": "res://assets/hd/parts/rides/part_78.png",
+    "logical_size": [
+      20,
+      26
+    ],
+    "scale": 8
+  },
+  "1:9:0:0:44:25": {
+    "path": "res://assets/hd/parts/rides/part_79.png",
+    "logical_size": [
+      44,
+      25
+    ],
+    "scale": 8
+  },
+  "1:9:0:24:44:25": {
+    "path": "res://assets/hd/parts/rides/part_80.png",
+    "logical_size": [
+      44,
+      25
+    ],
+    "scale": 8
+  },
+  "1:9:0:48:44:25": {
+    "path": "res://assets/hd/parts/rides/part_81.png",
+    "logical_size": [
+      44,
+      25
+    ],
+    "scale": 8
+  },
+  "1:11:0:0:17:12": {
+    "path": "res://assets/hd/parts/rides/part_82.png",
+    "logical_size": [
+      17,
+      12
+    ],
+    "scale": 8
+  },
+  "1:11:15:0:23:16": {
+    "path": "res://assets/hd/parts/rides/part_83.png",
+    "logical_size": [
+      23,
+      16
+    ],
+    "scale": 8
+  },
+  "1:11:35:0:23:16": {
+    "path": "res://assets/hd/parts/rides/part_84.png",
+    "logical_size": [
+      23,
+      16
+    ],
+    "scale": 8
+  },
+  "1:11:56:0:26:9": {
+    "path": "res://assets/hd/parts/rides/part_85.png",
+    "logical_size": [
+      26,
+      9
+    ],
+    "scale": 8
+  },
+  "1:11:69:9:13:7": {
+    "path": "res://assets/hd/parts/rides/part_86.png",
+    "logical_size": [
+      13,
+      7
+    ],
+    "scale": 8
+  },
+  "1:12:0:0:17:10": {
+    "path": "res://assets/hd/parts/rides/part_87.png",
+    "logical_size": [
+      17,
+      10
+    ],
+    "scale": 8
+  },
+  "1:12:0:10:17:14": {
+    "path": "res://assets/hd/parts/rides/part_88.png",
+    "logical_size": [
+      17,
+      14
+    ],
+    "scale": 8
+  },
+  "1:12:0:24:13:15": {
+    "path": "res://assets/hd/parts/rides/part_89.png",
+    "logical_size": [
+      13,
+      15
+    ],
+    "scale": 8
+  },
+  "1:12:0:47:9:13": {
+    "path": "res://assets/hd/parts/rides/part_90.png",
+    "logical_size": [
+      9,
+      13
+    ],
+    "scale": 8
+  },
+  "1:12:7:47:8:16": {
+    "path": "res://assets/hd/parts/rides/part_91.png",
+    "logical_size": [
+      8,
+      16
+    ],
+    "scale": 8
+  },
+  "1:12:11:39:12:8": {
+    "path": "res://assets/hd/parts/rides/part_92.png",
+    "logical_size": [
+      12,
+      8
+    ],
+    "scale": 8
+  },
+  "1:12:12:24:13:15": {
+    "path": "res://assets/hd/parts/rides/part_93.png",
+    "logical_size": [
+      13,
+      15
+    ],
+    "scale": 8
+  },
+  "1:12:16:0:17:10": {
+    "path": "res://assets/hd/parts/rides/part_94.png",
+    "logical_size": [
+      17,
+      10
+    ],
+    "scale": 8
+  },
+  "1:12:16:10:17:14": {
+    "path": "res://assets/hd/parts/rides/part_95.png",
+    "logical_size": [
+      17,
+      14
+    ],
+    "scale": 8
+  },
+  "1:12:21:47:11:6": {
+    "path": "res://assets/hd/parts/rides/part_96.png",
+    "logical_size": [
+      11,
+      6
+    ],
+    "scale": 8
+  },
+  "1:12:21:53:12:8": {
+    "path": "res://assets/hd/parts/rides/part_97.png",
+    "logical_size": [
+      12,
+      8
+    ],
+    "scale": 8
+  },
+  "1:12:25:24:8:11": {
+    "path": "res://assets/hd/parts/rides/part_98.png",
+    "logical_size": [
+      8,
+      11
+    ],
+    "scale": 8
+  },
+  "1:12:25:35:8:11": {
+    "path": "res://assets/hd/parts/rides/part_99.png",
+    "logical_size": [
+      8,
+      11
+    ],
+    "scale": 8
+  },
+  "1:2:18:0:16:25": {
+    "path": "res://assets/hd/parts/scenery/part_0.png",
+    "logical_size": [
+      16,
+      25
+    ],
+    "scale": 8
+  },
+  "1:2:53:73:14:10": {
+    "path": "res://assets/hd/parts/scenery/part_1.png",
+    "logical_size": [
+      14,
+      10
+    ],
+    "scale": 8
+  },
+  "1:2:67:73:12:10": {
+    "path": "res://assets/hd/parts/scenery/part_2.png",
+    "logical_size": [
+      12,
+      10
+    ],
+    "scale": 8
+  },
+  "1:3:0:0:36:37": {
+    "path": "res://assets/hd/parts/scenery/part_3.png",
+    "logical_size": [
+      36,
+      37
+    ],
+    "scale": 8
+  },
+  "1:3:0:37:26:18": {
+    "path": "res://assets/hd/parts/scenery/part_4.png",
+    "logical_size": [
+      26,
+      18
+    ],
+    "scale": 8
+  },
+  "1:3:27:34:35:22": {
+    "path": "res://assets/hd/parts/scenery/part_5.png",
+    "logical_size": [
+      35,
+      22
+    ],
+    "scale": 8
+  },
+  "1:3:36:0:31:34": {
+    "path": "res://assets/hd/parts/scenery/part_6.png",
+    "logical_size": [
+      31,
+      34
+    ],
+    "scale": 8
+  },
+  "1:3:41:16:11:18": {
+    "path": "res://assets/hd/parts/scenery/part_7.png",
+    "logical_size": [
+      11,
+      18
+    ],
+    "scale": 8
+  },
+  "1:3:52:14:11:19": {
+    "path": "res://assets/hd/parts/scenery/part_8.png",
+    "logical_size": [
+      11,
+      19
+    ],
+    "scale": 8
+  },
+  "1:3:62:38:18:17": {
+    "path": "res://assets/hd/parts/scenery/part_9.png",
+    "logical_size": [
+      18,
+      17
+    ],
+    "scale": 8
+  },
+  "1:3:67:0:40:37": {
+    "path": "res://assets/hd/parts/scenery/part_10.png",
+    "logical_size": [
+      40,
+      37
+    ],
+    "scale": 8
+  },
+  "1:3:80:37:19:18": {
+    "path": "res://assets/hd/parts/scenery/part_11.png",
+    "logical_size": [
+      19,
+      18
+    ],
+    "scale": 8
+  },
+  "1:4:0:0:33:38": {
+    "path": "res://assets/hd/parts/scenery/part_12.png",
+    "logical_size": [
+      33,
+      38
+    ],
+    "scale": 8
+  },
+  "1:4:0:38:31:40": {
+    "path": "res://assets/hd/parts/scenery/part_13.png",
+    "logical_size": [
+      31,
+      40
+    ],
+    "scale": 8
+  },
+  "1:4:0:78:7:9": {
+    "path": "res://assets/hd/parts/scenery/part_14.png",
+    "logical_size": [
+      7,
+      9
+    ],
+    "scale": 8
+  },
+  "1:4:13:78:7:9": {
+    "path": "res://assets/hd/parts/scenery/part_15.png",
+    "logical_size": [
+      7,
+      9
+    ],
+    "scale": 8
+  },
+  "1:4:20:78:7:9": {
+    "path": "res://assets/hd/parts/scenery/part_16.png",
+    "logical_size": [
+      7,
+      9
+    ],
+    "scale": 8
+  },
+  "1:4:27:78:7:9": {
+    "path": "res://assets/hd/parts/scenery/part_17.png",
+    "logical_size": [
+      7,
+      9
+    ],
+    "scale": 8
+  },
+  "1:4:31:40:42:34": {
+    "path": "res://assets/hd/parts/scenery/part_18.png",
+    "logical_size": [
+      42,
+      34
+    ],
+    "scale": 8
+  },
+  "1:4:33:0:33:38": {
+    "path": "res://assets/hd/parts/scenery/part_19.png",
+    "logical_size": [
+      33,
+      38
+    ],
+    "scale": 8
+  },
+  "1:4:33:78:7:9": {
+    "path": "res://assets/hd/parts/scenery/part_20.png",
+    "logical_size": [
+      7,
+      9
+    ],
+    "scale": 8
+  },
+  "1:4:40:74:11:12": {
+    "path": "res://assets/hd/parts/scenery/part_21.png",
+    "logical_size": [
+      11,
+      12
+    ],
+    "scale": 8
+  },
+  "1:4:50:74:11:12": {
+    "path": "res://assets/hd/parts/scenery/part_22.png",
+    "logical_size": [
+      11,
+      12
+    ],
+    "scale": 8
+  },
+  "1:4:66:0:42:46": {
+    "path": "res://assets/hd/parts/scenery/part_23.png",
+    "logical_size": [
+      42,
+      46
+    ],
+    "scale": 8
+  },
+  "1:5:8:5:21:9": {
+    "path": "res://assets/hd/parts/scenery/part_24.png",
+    "logical_size": [
+      21,
+      9
+    ],
+    "scale": 8
+  },
+  "1:5:8:24:21:9": {
+    "path": "res://assets/hd/parts/scenery/part_25.png",
+    "logical_size": [
+      21,
+      9
+    ],
+    "scale": 8
+  },
+  "1:5:9:7:21:9": {
+    "path": "res://assets/hd/parts/scenery/part_26.png",
+    "logical_size": [
+      21,
+      9
+    ],
+    "scale": 8
+  },
+  "1:5:9:26:21:9": {
+    "path": "res://assets/hd/parts/scenery/part_27.png",
+    "logical_size": [
+      21,
+      9
+    ],
+    "scale": 8
+  },
+  "1:6:0:0:35:37": {
+    "path": "res://assets/hd/parts/scenery/part_28.png",
+    "logical_size": [
+      35,
+      37
+    ],
+    "scale": 8
+  },
+  "1:6:59:49:21:29": {
+    "path": "res://assets/hd/parts/scenery/part_29.png",
+    "logical_size": [
+      21,
+      29
+    ],
+    "scale": 8
+  },
+  "1:6:59:108:6:15": {
+    "path": "res://assets/hd/parts/scenery/part_30.png",
+    "logical_size": [
+      6,
+      15
+    ],
+    "scale": 8
+  },
+  "1:6:64:107:6:16": {
+    "path": "res://assets/hd/parts/scenery/part_31.png",
+    "logical_size": [
+      6,
+      16
+    ],
+    "scale": 8
+  },
+  "1:6:75:107:8:17": {
+    "path": "res://assets/hd/parts/scenery/part_32.png",
+    "logical_size": [
+      8,
+      17
+    ],
+    "scale": 8
+  },
+  "1:7:61:0:8:14": {
+    "path": "res://assets/hd/parts/scenery/part_33.png",
+    "logical_size": [
+      8,
+      14
+    ],
+    "scale": 8
+  },
+  "1:7:76:0:9:16": {
+    "path": "res://assets/hd/parts/scenery/part_34.png",
+    "logical_size": [
+      9,
+      16
+    ],
+    "scale": 8
+  },
+  "1:7:85:0:14:16": {
+    "path": "res://assets/hd/parts/scenery/part_35.png",
+    "logical_size": [
+      14,
+      16
+    ],
+    "scale": 8
+  },
+  "1:8:0:0:12:12": {
+    "path": "res://assets/hd/parts/scenery/part_36.png",
+    "logical_size": [
+      12,
+      12
+    ],
+    "scale": 8
+  },
+  "1:8:12:0:10:7": {
+    "path": "res://assets/hd/parts/scenery/part_37.png",
+    "logical_size": [
+      10,
+      7
+    ],
+    "scale": 8
+  },
+  "1:8:12:0:31:25": {
+    "path": "res://assets/hd/parts/scenery/part_38.png",
+    "logical_size": [
+      31,
+      25
+    ],
+    "scale": 8
+  },
+  "1:8:17:7:7:17": {
+    "path": "res://assets/hd/parts/scenery/part_39.png",
+    "logical_size": [
+      7,
+      17
+    ],
+    "scale": 8
+  },
+  "1:8:24:9:19:16": {
+    "path": "res://assets/hd/parts/scenery/part_40.png",
+    "logical_size": [
+      19,
+      16
+    ],
+    "scale": 8
+  },
+  "1:8:43:0:32:25": {
+    "path": "res://assets/hd/parts/scenery/part_41.png",
+    "logical_size": [
+      32,
+      25
+    ],
+    "scale": 8
+  },
+  "1:8:75:0:32:25": {
+    "path": "res://assets/hd/parts/scenery/part_42.png",
+    "logical_size": [
+      32,
+      25
+    ],
+    "scale": 8
+  },
+  "1:10:0:0:39:23": {
+    "path": "res://assets/hd/parts/scenery/part_43.png",
+    "logical_size": [
+      39,
+      23
+    ],
+    "scale": 8
+  },
+  "1:2:0:0:18:17": {
+    "path": "res://assets/hd/parts/extras/part_0.png",
+    "logical_size": [
+      18,
+      17
+    ],
+    "scale": 8
+  },
+  "1:2:0:28:27:20": {
+    "path": "res://assets/hd/parts/extras/part_1.png",
+    "logical_size": [
+      27,
+      20
+    ],
+    "scale": 8
+  },
+  "1:2:0:48:27:20": {
+    "path": "res://assets/hd/parts/extras/part_2.png",
+    "logical_size": [
+      27,
+      20
+    ],
+    "scale": 8
+  },
+  "1:2:0:68:18:15": {
+    "path": "res://assets/hd/parts/extras/part_3.png",
+    "logical_size": [
+      18,
+      15
+    ],
+    "scale": 8
+  },
+  "1:2:17:68:18:15": {
+    "path": "res://assets/hd/parts/extras/part_4.png",
+    "logical_size": [
+      18,
+      15
+    ],
+    "scale": 8
+  },
+  "1:2:27:29:21:17": {
+    "path": "res://assets/hd/parts/extras/part_5.png",
+    "logical_size": [
+      21,
+      17
+    ],
+    "scale": 8
+  },
+  "1:2:27:46:20:17": {
+    "path": "res://assets/hd/parts/extras/part_6.png",
+    "logical_size": [
+      20,
+      17
+    ],
+    "scale": 8
+  },
+  "1:2:34:0:26:15": {
+    "path": "res://assets/hd/parts/extras/part_7.png",
+    "logical_size": [
+      26,
+      15
+    ],
+    "scale": 8
+  },
+  "1:2:34:15:26:14": {
+    "path": "res://assets/hd/parts/extras/part_8.png",
+    "logical_size": [
+      26,
+      14
+    ],
+    "scale": 8
+  },
+  "1:2:59:0:26:15": {
+    "path": "res://assets/hd/parts/extras/part_9.png",
+    "logical_size": [
+      26,
+      15
+    ],
+    "scale": 8
+  },
+  "1:2:59:15:26:14": {
+    "path": "res://assets/hd/parts/extras/part_10.png",
+    "logical_size": [
+      26,
+      14
+    ],
+    "scale": 8
+  },
+  "1:2:72:29:21:31": {
+    "path": "res://assets/hd/parts/extras/part_11.png",
+    "logical_size": [
+      21,
+      31
+    ],
+    "scale": 8
+  },
+  "1:2:85:20:19:8": {
+    "path": "res://assets/hd/parts/extras/part_12.png",
+    "logical_size": [
+      19,
+      8
+    ],
+    "scale": 8
+  },
+  "1:2:90:83:15:20": {
+    "path": "res://assets/hd/parts/extras/part_13.png",
+    "logical_size": [
+      15,
+      20
+    ],
+    "scale": 8
+  },
+  "1:2:93:20:19:8": {
+    "path": "res://assets/hd/parts/extras/part_14.png",
+    "logical_size": [
+      19,
+      8
+    ],
+    "scale": 8
+  },
+  "1:2:93:29:21:31": {
+    "path": "res://assets/hd/parts/extras/part_15.png",
+    "logical_size": [
+      21,
+      31
+    ],
+    "scale": 8
+  },
+  "1:2:105:84:18:13": {
+    "path": "res://assets/hd/parts/extras/part_16.png",
+    "logical_size": [
+      18,
+      13
+    ],
+    "scale": 8
+  },
+  "1:2:114:20:11:6": {
+    "path": "res://assets/hd/parts/extras/part_17.png",
+    "logical_size": [
+      11,
+      6
+    ],
+    "scale": 8
+  },
+  "1:2:114:26:11:6": {
+    "path": "res://assets/hd/parts/extras/part_18.png",
+    "logical_size": [
+      11,
+      6
+    ],
+    "scale": 8
+  },
+  "1:6:0:112:15:12": {
+    "path": "res://assets/hd/parts/extras/part_19.png",
+    "logical_size": [
+      15,
+      12
+    ],
+    "scale": 8
+  },
+  "1:2:35:79:6:4": {
+    "path": "res://assets/hd/parts/local/cafe_smoke_0.png",
+    "logical_size": [
+      6,
+      4
+    ],
+    "scale": 8
+  },
+  "1:2:62:65:8:5": {
+    "path": "res://assets/hd/parts/local/cafe_smoke_1.png",
+    "logical_size": [
+      8,
+      5
+    ],
+    "scale": 8
+  },
+  "1:0:7:42:8:7": {
+    "path": "res://assets/hd/parts/local/ride_rope_diagonal.png",
+    "logical_size": [
+      8,
+      7
+    ],
+    "scale": 8
+  },
+  "1:0:23:37:2:4": {
+    "path": "res://assets/hd/parts/local/ride_rope_knot.png",
+    "logical_size": [
+      2,
+      4
+    ],
+    "scale": 8
+  },
+  "1:4:61:74:5:8": {
+    "path": "res://assets/hd/parts/local/trampoline_post_front.png",
+    "logical_size": [
+      5,
+      8
+    ],
+    "scale": 8
+  },
+  "1:4:66:74:5:8": {
+    "path": "res://assets/hd/parts/local/trampoline_post_rear.png",
+    "logical_size": [
+      5,
+      8
+    ],
+    "scale": 8
+  },
+  "1:2:78:73:12:10": {
+    "path": "res://assets/hd/parts/scenery/part_2.png",
+    "logical_size": [
+      12,
+      10
+    ],
+    "scale": 8,
+    "flip_x": true
+  },
+  "1:2:90:73:14:10": {
+    "path": "res://assets/hd/parts/scenery/part_1.png",
+    "logical_size": [
+      14,
+      10
+    ],
+    "scale": 8,
+    "flip_x": true
+  },
+  "1:4:6:78:7:9": {
+    "path": "res://assets/hd/parts/scenery/part_14.png",
+    "logical_size": [
+      7,
+      9
+    ],
+    "scale": 8,
+    "flip_x": true
+  },
+  "1:6:59:78:21:29": {
+    "path": "res://assets/hd/parts/scenery/part_29.png",
+    "logical_size": [
+      21,
+      29
+    ],
+    "scale": 8,
+    "flip_x": true
+  },
+  "1:6:69:107:6:16": {
+    "path": "res://assets/hd/parts/scenery/part_31.png",
+    "logical_size": [
+      6,
+      16
+    ],
+    "scale": 8,
+    "flip_x": true
+  },
+  "1:7:68:0:8:14": {
+    "path": "res://assets/hd/parts/scenery/part_33.png",
+    "logical_size": [
+      8,
+      14
+    ],
+    "scale": 8,
+    "flip_x": true
+  },
+  "1:2:114:32:11:6": {
+    "path": "res://assets/hd/parts/extras/part_18.png",
+    "logical_size": [
+      11,
+      6
+    ],
+    "scale": 8,
+    "flip_x": true
+  },
+  "1:2:114:38:11:6": {
+    "path": "res://assets/hd/parts/extras/part_17.png",
+    "logical_size": [
+      11,
+      6
+    ],
+    "scale": 8,
+    "flip_x": true
+  }
+}

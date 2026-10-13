@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="16" height="32" viewBox="0 0 20 40"><defs>
+<linearGradient id="wood"><stop stop-color="#584026"/><stop offset=".25" stop-color="#ac8850"/><stop offset=".48" stop-color="#b6955e"/><stop offset=".7" stop-color="#80613b"/><stop offset="1" stop-color="#493520"/></linearGradient>
+<linearGradient id="rope" x1="0" y1="0" x2=".35" y2="1"><stop stop-color="#e2c780"/><stop offset=".45" stop-color="#b79752"/><stop offset="1" stop-color="#70532b"/></linearGradient>
+</defs><path d="M1 1Q9 0 11 8L19 15L18 25L11 31L10 39L1 38Z" fill="url(#rope)" stroke="#574328" stroke-width="1.1"/>
+<path d="M3 9L15 17M3 17L15 24M3 25L10 30" stroke="#e2c584" stroke-width="1.3" fill="none"/>
+<path d="M3 11L13 18M3 20L13 26" stroke="#70552b" stroke-width="1" fill="none"/></svg>

@@ -1,0 +1,13 @@
+{
+  "id": "ride_parts_0_2k_v1",
+  "scope": "pilot",
+  "model": "sourceful/riverflow-v2.5-pro",
+  "resolution": "2K",
+  "aspect_ratio": "2:3",
+  "background": "transparent",
+  "references": [
+    "art/reference/ride_parts_normalized/atlas_0.png"
+  ],
+  "output": "art/raw/ride_parts_0_2k_v1.png",
+  "prompt": "Use case: style-transfer. Asset type: native 2K transparent production sprite-part atlas for an illustrated stone-age amusement park videogame.\nInput image 1 is the EXACT layout and silhouette template, a 4-column by 4-row atlas containing precisely 16 isolated wooden mechanical parts. Repaint each existing part in its same cell into crisp, beautiful hand-drawn cartoon game art: golden yellow-green sunlit timber, warm brown wood grain, subtle fine ink contours, gentle shading and restrained rope lashings only at existing joints. Match a bright cheerful prehistoric amusement park, without modern machinery. These are reusable small machine parts, NOT 16 complete rides.\nCRITICAL layout and mechanics: keep all 16 parts, their exact grid order, exact local scale, position, silhouette, orientation, aspect ratio and attachment endpoints. Four columns, four rows, portrait 2:3 canvas. Straight wooden rods stay straight and just as thin; diagonal rods keep their exact slopes and endpoint positions. Empty holes and spaces between spokes remain empty transparent holes. Multipart frames retain the SAME number and arrangement of structural beams. Preserve every isolated rod, including short horizontal rods. Do not reinterpret a line as a finished object. Do not rotate, enlarge, shrink, center, tilt or move any part. Their current placement within the cells is intentional for later assembly of animated rides.\nQuality: smoothly drawn intentional shapes and rich but restrained material detail replacing coarse source pixels. Make each timber and joint readable, without chunky pixel edges, without changing its mechanical form. Native 2K detail, no blurry enlargement.\nBackground: true transparent RGBA alpha=0 everywhere between parts and inside holes. No opaque background, no painted checkerboard, no ground or cast shadow, no labels, no captions, no text, no watermark, no borders or grid lines, no extra pieces, no people, no plants, no entire rides. Render only the exact 16 parts at the exact existing positions."
+}

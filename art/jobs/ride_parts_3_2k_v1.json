@@ -1,0 +1,13 @@
+{
+  "id": "ride_parts_3_2k_v1",
+  "scope": "pilot",
+  "model": "sourceful/riverflow-v2.5-pro",
+  "resolution": "2K",
+  "aspect_ratio": "2:3",
+  "background": "transparent",
+  "references": [
+    "art/reference/ride_parts_normalized/atlas_3.png"
+  ],
+  "output": "art/raw/ride_parts_3_2k_v1.png",
+  "prompt": "Use case: style-transfer. Asset type: native 2K transparent production sprite-part atlas for a faithful illustrated stone-age amusement park game remaster.\nInput image 1 is the EXACT layout and silhouette template: 4 columns by 4 rows, portrait 2:3 canvas, 16 isolated original components. Repaint these existing components in clean detailed bright hand-drawn cartoon game art, replacing coarse pixels with smooth intentional shapes, fine ink accents and gentle material shading. Follow the original palette, materials and identity faithfully.\nContents: Gray masonry walls and thin chains, piles of pale stones, two orange-red flame elements, brown dirt mound, small wooden support, green-and-brown slanted platform, pale bone/sign shape, tan rocks, brown prehistoric decorative animal shape, and two green palm trees. The pale sign must have NO LETTERS: remove its tiny GRR lettering while retaining its contour.\nCRITICAL mechanical layout: retain all 16 components, exact grid order, local position, scale, aspect ratio, silhouette, orientation, hole shapes and attachment endpoints. The placement inside each cell is intentional. These are reusable pieces later assembled into moving objects; do NOT redesign them as standalone complete rides. Straight elements stay straight and just as thin. Diagonals retain exact slopes. Structural frames keep the exact beam/rung count. Do not rotate, enlarge, shrink, center, tilt or move any component. Keep the reference contour tight; add surface detail INSIDE that contour.\nBackground: true transparent RGBA alpha=0 in empty regions, around every component and inside its holes. No painted checkerboard or background color, no ground or cast shadows, no text or labels, no watermark, no borders or grid lines, no invented extra pieces or characters. Native 2K output."
+}

@@ -1,0 +1,5 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="192" height="144" viewBox="0 0 192 144"><defs><linearGradient id="g" x2="0" y2="1"><stop stop-color="#9b6d43"/><stop offset="1" stop-color="#795032"/></linearGradient></defs>
+    <path d="M18 7 L174 7 L187 20 L185 123 L174 138 L17 137 L5 125 L5 22 Z" fill="#30291c" opacity=".22"/>
+    <path d="M18 3 L174 3 L187 16 L185 119 L174 134 L17 133 L5 121 L5 18 Z" fill="url(#g)" stroke="#3d2c20" stroke-width="4"/>
+    <path d="M21 10 L171 10 L179 20 M13 23 L13 111 M20 124 L171 125 L178 115" fill="none" stroke="#9b6d43" stroke-width="3" opacity=".8"/>
+    <path d="M21 129 L170 130 L181 119 L182 25" fill="none" stroke="#3d2c20" stroke-width="2" opacity=".55"/><path d="M31 20 Q55 13 76 20 M120 18 Q143 24 164 18 M32 116 Q56 122 83 116 M114 120 Q136 112 163 117" fill="none" stroke="#c59159" stroke-width="2" opacity=".4"/><path d="M18 21 l3 -3 l3 2 l-1 4 l-4 0 Z" fill="#3d2c20" opacity=".45"/><path d="M168 21 l3 -3 l3 2 l-1 4 l-4 0 Z" fill="#3d2c20" opacity=".45"/><path d="M18 114 l3 -3 l3 2 l-1 4 l-4 0 Z" fill="#3d2c20" opacity=".45"/><path d="M168 114 l3 -3 l3 2 l-1 4 l-4 0 Z" fill="#3d2c20" opacity=".45"/></svg>

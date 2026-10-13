@@ -1,0 +1,13 @@
+{
+  "id": "actors_full_4_2k_v1",
+  "scope": "pilot",
+  "model": "sourceful/riverflow-v2.5-pro",
+  "resolution": "2K",
+  "aspect_ratio": "1:1",
+  "background": "transparent",
+  "references": [
+    "art/reference/actors_full/atlas_4.png"
+  ],
+  "output": "art/raw/actors_full_4_2k_v1.png",
+  "prompt": "Use case: identity-preserve / style-transfer. Asset type: native 2K RGBA sprite atlas for a faithful hand-drawn stone-age amusement park game remaster.\nInput image1 is the exact pixel-art pose and cell-layout template to repaint. Turn coarse pixels into clean expressive illustrated cartoon game art, with smooth contours, warm skin, readable faces, modest ink outlines and soft material shading. Preserve original character design, outfit, colors and proportions. Keep the amusing friendly original tone.\nLayout: Exactly six columns and four rows, 24 isolated full-body sprites, two worker types. Each character occupies three adjacent columns, three successive step phases. The four rows are the four reference-facing directions in exactly the same order.\nCharacters: Left three-column block: sturdy brown-haired bearded guard in dark blue cap and dark blue uniform. Right three-column block: sturdy brown-haired bearded repair worker in red cap and red outfit, carrying the original small yellow toolbox. Preserve clothing colors and beard across every direction.\nCritical animation invariants: keep EXACTLY every original pose, facing direction, arm/leg configuration, object, silhouette, scale, orientation and location within each cell. Front-facing poses show a face; back-facing poses show the BACK of the head and clothing, never a second face. A mirrored view must keep the original handedness. Reclining and upside-down bodies remain reclining/upside-down. Do not substitute neutral standing poses, add extra limbs, add new objects, or invent extra figures. Every figure of one character uses the same model and body proportions. Keep the original spacing and empty margin between cells.\nBackground: actual transparent alpha=0 around every isolated piece and through gaps between arms/legs. No painted checkerboard, floor, cast shadow, scenery, panels, grid, labels, text or watermark. Native 2K square output. Preserve all visible subject pixels in alpha; do not remove isolated heads or small components."
+}

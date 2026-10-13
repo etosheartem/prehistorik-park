@@ -1,0 +1,6382 @@
+{
+  "schema": 1,
+  "atlases": [
+    {
+      "id": 0,
+      "file": "atlas_0.png",
+      "size": [
+        2560,
+        2560
+      ],
+      "columns": 10,
+      "rows": 5,
+      "cell_size": [
+        256,
+        512
+      ],
+      "actors": [
+        0,
+        1
+      ],
+      "entries": 50
+    },
+    {
+      "id": 1,
+      "file": "atlas_1.png",
+      "size": [
+        2560,
+        2560
+      ],
+      "columns": 10,
+      "rows": 5,
+      "cell_size": [
+        256,
+        512
+      ],
+      "actors": [
+        2,
+        3
+      ],
+      "entries": 50
+    },
+    {
+      "id": 2,
+      "file": "atlas_2.png",
+      "size": [
+        2560,
+        2560
+      ],
+      "columns": 10,
+      "rows": 5,
+      "cell_size": [
+        256,
+        512
+      ],
+      "actors": [
+        4,
+        5
+      ],
+      "entries": 50
+    },
+    {
+      "id": 3,
+      "file": "atlas_3.png",
+      "size": [
+        2560,
+        2560
+      ],
+      "columns": 10,
+      "rows": 5,
+      "cell_size": [
+        256,
+        512
+      ],
+      "actors": [
+        6,
+        7
+      ],
+      "entries": 50
+    },
+    {
+      "id": 4,
+      "file": "atlas_4.png",
+      "size": [
+        2304,
+        2304
+      ],
+      "columns": 6,
+      "rows": 4,
+      "cell_size": [
+        384,
+        576
+      ],
+      "actors": [
+        8,
+        9
+      ],
+      "entries": 24
+    }
+  ],
+  "parts": [
+    {
+      "id": 0,
+      "actor": 0,
+      "animation": "walk_0",
+      "phase": 0,
+      "atlas": 0,
+      "cell": [
+        0,
+        0
+      ],
+      "path": "res://assets/original/actors/0/walk_0_0.png",
+      "source_size": [
+        8,
+        16
+      ],
+      "source_offset": [
+        -4,
+        -16
+      ],
+      "atlas_rect": [
+        70,
+        237,
+        117,
+        234
+      ],
+      "scale": 14.62857142857143,
+      "part_kind": "body"
+    },
+    {
+      "id": 1,
+      "actor": 0,
+      "animation": "walk_0",
+      "phase": 1,
+      "atlas": 0,
+      "cell": [
+        1,
+        0
+      ],
+      "path": "res://assets/original/actors/0/walk_0_1.png",
+      "source_size": [
+        9,
+        16
+      ],
+      "source_offset": [
+        -4,
+        -16
+      ],
+      "atlas_rect": [
+        318,
+        237,
+        132,
+        234
+      ],
+      "scale": 14.62857142857143,
+      "part_kind": "body"
+    },
+    {
+      "id": 2,
+      "actor": 0,
+      "animation": "walk_0",
+      "phase": 2,
+      "atlas": 0,
+      "cell": [
+        2,
+        0
+      ],
+      "path": "res://assets/original/actors/0/walk_0_2.png",
+      "source_size": [
+        11,
+        16
+      ],
+      "source_offset": [
+        -5,
+        -16
+      ],
+      "atlas_rect": [
+        560,
+        237,
+        161,
+        234
+      ],
+      "scale": 14.62857142857143,
+      "part_kind": "body"
+    },
+    {
+      "id": 3,
+      "actor": 0,
+      "animation": "walk_1",
+      "phase": 0,
+      "atlas": 0,
+      "cell": [
+        3,
+        0
+      ],
+      "path": "res://assets/original/actors/0/walk_1_0.png",
+      "source_size": [
+        8,
+        16
+      ],
+      "source_offset": [
+        -4,
+        -16
+      ],
+      "atlas_rect": [
+        838,
+        237,
+        117,
+        234
+      ],
+      "scale": 14.62857142857143,
+      "part_kind": "body"
+    },
+    {
+      "id": 4,
+      "actor": 0,
+      "animation": "walk_1",
+      "phase": 1,
+      "atlas": 0,
+      "cell": [
+        4,
+        0
+      ],
+      "path": "res://assets/original/actors/0/walk_1_1.png",
+      "source_size": [
+        9,
+        16
+      ],
+      "source_offset": [
+        -4,
+        -16
+      ],
+      "atlas_rect": [
+        1086,
+        237,
+        132,
+        234
+      ],
+      "scale": 14.62857142857143,
+      "part_kind": "body"
+    },
+    {
+      "id": 5,
+      "actor": 0,
+      "animation": "walk_1",
+      "phase": 2,
+      "atlas": 0,
+      "cell": [
+        0,
+        1
+      ],
+      "path": "res://assets/original/actors/0/walk_1_2.png",
+      "source_size": [
+        11,
+        16
+      ],
+      "source_offset": [
+        -5,
+        -16
+      ],
+      "atlas_rect": [
+        48,
+        749,
+        161,
+        234
+      ],
+      "scale": 14.62857142857143,
+      "part_kind": "body"
+    },
+    {
+      "id": 6,
+      "actor": 0,
+      "animation": "walk_2",
+      "phase": 0,
+      "atlas": 0,
+      "cell": [
+        1,
+        1
+      ],
+      "path": "res://assets/original/actors/0/walk_2_0.png",
+      "source_size": [
+        8,
+        16
+      ],
+      "source_offset": [
+        -4,
+        -16
+      ],
+      "atlas_rect": [
+        326,
+        749,
+        117,
+        234
+      ],
+      "scale": 14.62857142857143,
+      "part_kind": "body"
+    },
+    {
+      "id": 7,
+      "actor": 0,
+      "animation": "walk_2",
+      "phase": 1,
+      "atlas": 0,
+      "cell": [
+        2,
+        1
+      ],
+      "path": "res://assets/original/actors/0/walk_2_1.png",
+      "source_size": [
+        9,
+        16
+      ],
+      "source_offset": [
+        -4,
+        -16
+      ],
+      "atlas_rect": [
+        574,
+        749,
+        132,
+        234
+      ],
+      "scale": 14.62857142857143,
+      "part_kind": "body"
+    },
+    {
+      "id": 8,
+      "actor": 0,
+      "animation": "walk_2",
+      "phase": 2,
+      "atlas": 0,
+      "cell": [
+        3,
+        1
+      ],
+      "path": "res://assets/original/actors/0/walk_2_2.png",
+      "source_size": [
+        10,
+        16
+      ],
+      "source_offset": [
+        -5,
+        -16
+      ],
+      "atlas_rect": [
+        823,
+        749,
+        146,
+        234
+      ],
+      "scale": 14.62857142857143,
+      "part_kind": "body"
+    },
+    {
+      "id": 9,
+      "actor": 0,
+      "animation": "walk_3",
+      "phase": 0,
+      "atlas": 0,
+      "cell": [
+        4,
+        1
+      ],
+      "path": "res://assets/original/actors/0/walk_3_0.png",
+      "source_size": [
+        8,
+        16
+      ],
+      "source_offset": [
+        -4,
+        -16
+      ],
+      "atlas_rect": [
+        1094,
+        749,
+        117,
+        234
+      ],
+      "scale": 14.62857142857143,
+      "part_kind": "body"
+    },
+    {
+      "id": 10,
+      "actor": 0,
+      "animation": "walk_3",
+      "phase": 1,
+      "atlas": 0,
+      "cell": [
+        0,
+        2
+      ],
+      "path": "res://assets/original/actors/0/walk_3_1.png",
+      "source_size": [
+        9,
+        16
+      ],
+      "source_offset": [
+        -4,
+        -16
+      ],
+      "atlas_rect": [
+        62,
+        1261,
+        132,
+        234
+      ],
+      "scale": 14.62857142857143,
+      "part_kind": "body"
+    },
+    {
+      "id": 11,
+      "actor": 0,
+      "animation": "walk_3",
+      "phase": 2,
+      "atlas": 0,
+      "cell": [
+        1,
+        2
+      ],
+      "path": "res://assets/original/actors/0/walk_3_2.png",
+      "source_size": [
+        10,
+        16
+      ],
+      "source_offset": [
+        -5,
+        -16
+      ],
+      "atlas_rect": [
+        311,
+        1261,
+        146,
+        234
+      ],
+      "scale": 14.62857142857143,
+      "part_kind": "body"
+    },
+    {
+      "id": 12,
+      "actor": 0,
+      "animation": "sit",
+      "phase": 0,
+      "atlas": 0,
+      "cell": [
+        2,
+        2
+      ],
+      "path": "res://assets/original/actors/0/sit_0.png",
+      "source_size": [
+        10,
+        16
+      ],
+      "source_offset": [
+        -5,
+        -16
+      ],
+      "atlas_rect": [
+        567,
+        1261,
+        146,
+        234
+      ],
+      "scale": 14.62857142857143,
+      "part_kind": "body"
+    },
+    {
+      "id": 13,
+      "actor": 0,
+      "animation": "sit",
+      "phase": 1,
+      "atlas": 0,
+      "cell": [
+        3,
+        2
+      ],
+      "path": "res://assets/original/actors/0/sit_1.png",
+      "source_size": [
+        10,
+        16
+      ],
+      "source_offset": [
+        -5,
+        -16
+      ],
+      "atlas_rect": [
+        823,
+        1261,
+        146,
+        234
+      ],
+      "scale": 14.62857142857143,
+      "part_kind": "body"
+    },
+    {
+      "id": 14,
+      "actor": 0,
+      "animation": "ride",
+      "phase": 0,
+      "atlas": 0,
+      "cell": [
+        4,
+        2
+      ],
+      "path": "res://assets/original/actors/0/ride_0.png",
+      "source_size": [
+        11,
+        16
+      ],
+      "source_offset": [
+        0,
+        -16
+      ],
+      "atlas_rect": [
+        1072,
+        1261,
+        161,
+        234
+      ],
+      "scale": 14.62857142857143,
+      "part_kind": "body"
+    },
+    {
+      "id": 15,
+      "actor": 0,
+      "animation": "ride",
+      "phase": 1,
+      "atlas": 0,
+      "cell": [
+        0,
+        3
+      ],
+      "path": "res://assets/original/actors/0/ride_1.png",
+      "source_size": [
+        14,
+        13
+      ],
+      "source_offset": [
+        0,
+        0
+      ],
+      "atlas_rect": [
+        26,
+        1817,
+        205,
+        190
+      ],
+      "scale": 14.62857142857143,
+      "part_kind": "body"
+    },
+    {
+      "id": 16,
+      "actor": 0,
+      "animation": "ride",
+      "phase": 2,
+      "atlas": 0,
+      "cell": [
+        1,
+        3
+      ],
+      "path": "res://assets/original/actors/0/ride_2.png",
+      "source_size": [
+        7,
+        16
+      ],
+      "source_offset": [
+        0,
+        0
+      ],
+      "atlas_rect": [
+        333,
+        1773,
+        102,
+        234
+      ],
+      "scale": 14.62857142857143,
+      "part_kind": "body"
+    },
+    {
+      "id": 17,
+      "actor": 0,
+      "animation": "pose",
+      "phase": 0,
+      "atlas": 0,
+      "cell": [
+        2,
+        3
+      ],
+      "path": "res://assets/original/actors/0/pose_0.png",
+      "source_size": [
+        12,
+        16
+      ],
+      "source_offset": [
+        -6,
+        -16
+      ],
+      "atlas_rect": [
+        552,
+        1773,
+        176,
+        234
+      ],
+      "scale": 14.62857142857143,
+      "part_kind": "body"
+    },
+    {
+      "id": 18,
+      "actor": 0,
+      "animation": "special",
+      "phase": 0,
+      "atlas": 0,
+      "cell": [
+        3,
+        3
+      ],
+      "path": "res://assets/original/actors/0/special_0.png",
+      "source_size": [
+        7,
+        7
+      ],
+      "source_offset": [
+        -3,
+        -6
+      ],
+      "atlas_rect": [
+        845,
+        1905,
+        102,
+        102
+      ],
+      "scale": 14.62857142857143,
+      "part_kind": "head"
+    },
+    {
+      "id": 19,
+      "actor": 0,
+      "animation": "special",
+      "phase": 1,
+      "atlas": 0,
+      "cell": [
+        4,
+        3
+      ],
+      "path": "res://assets/original/actors/0/special_1.png",
+      "source_size": [
+        7,
+        7
+      ],
+      "source_offset": [
+        -3,
+        -6
+      ],
+      "atlas_rect": [
+        1101,
+        1905,
+        102,
+        102
+      ],
+      "scale": 14.62857142857143,
+      "part_kind": "head"
+    },
+    {
+      "id": 20,
+      "actor": 0,
+      "animation": "special",
+      "phase": 2,
+      "atlas": 0,
+      "cell": [
+        0,
+        4
+      ],
+      "path": "res://assets/original/actors/0/special_2.png",
+      "source_size": [
+        7,
+        7
+      ],
+      "source_offset": [
+        -3,
+        -6
+      ],
+      "atlas_rect": [
+        77,
+        2417,
+        102,
+        102
+      ],
+      "scale": 14.62857142857143,
+      "part_kind": "head"
+    },
+    {
+      "id": 21,
+      "actor": 0,
+      "animation": "special",
+      "phase": 3,
+      "atlas": 0,
+      "cell": [
+        1,
+        4
+      ],
+      "path": "res://assets/original/actors/0/special_3.png",
+      "source_size": [
+        7,
+        7
+      ],
+      "source_offset": [
+        -3,
+        -6
+      ],
+      "atlas_rect": [
+        333,
+        2417,
+        102,
+        102
+      ],
+      "scale": 14.62857142857143,
+      "part_kind": "head"
+    },
+    {
+      "id": 22,
+      "actor": 0,
+      "animation": "special",
+      "phase": 4,
+      "atlas": 0,
+      "cell": [
+        2,
+        4
+      ],
+      "path": "res://assets/original/actors/0/special_4.png",
+      "source_size": [
+        7,
+        7
+      ],
+      "source_offset": [
+        0,
+        -3
+      ],
+      "atlas_rect": [
+        589,
+        2417,
+        102,
+        102
+      ],
+      "scale": 14.62857142857143,
+      "part_kind": "head"
+    },
+    {
+      "id": 23,
+      "actor": 0,
+      "animation": "special",
+      "phase": 5,
+      "atlas": 0,
+      "cell": [
+        3,
+        4
+      ],
+      "path": "res://assets/original/actors/0/special_5.png",
+      "source_size": [
+        7,
+        6
+      ],
+      "source_offset": [
+        -3,
+        0
+      ],
+      "atlas_rect": [
+        845,
+        2431,
+        102,
+        88
+      ],
+      "scale": 14.62857142857143,
+      "part_kind": "head"
+    },
+    {
+      "id": 24,
+      "actor": 0,
+      "animation": "special",
+      "phase": 6,
+      "atlas": 0,
+      "cell": [
+        4,
+        4
+      ],
+      "path": "res://assets/original/actors/0/special_6.png",
+      "source_size": [
+        7,
+        8
+      ],
+      "source_offset": [
+        -6,
+        -4
+      ],
+      "atlas_rect": [
+        1101,
+        2402,
+        102,
+        117
+      ],
+      "scale": 14.62857142857143,
+      "part_kind": "head"
+    },
+    {
+      "id": 25,
+      "actor": 1,
+      "animation": "walk_0",
+      "phase": 0,
+      "atlas": 0,
+      "cell": [
+        5,
+        0
+      ],
+      "path": "res://assets/original/actors/1/walk_0_0.png",
+      "source_size": [
+        10,
+        18
+      ],
+      "source_offset": [
+        -5,
+        -18
+      ],
+      "atlas_rect": [
+        1344,
+        241,
+        128,
+        230
+      ],
+      "scale": 12.8,
+      "part_kind": "body"
+    },
+    {
+      "id": 26,
+      "actor": 1,
+      "animation": "walk_0",
+      "phase": 1,
+      "atlas": 0,
+      "cell": [
+        6,
+        0
+      ],
+      "path": "res://assets/original/actors/1/walk_0_1.png",
+      "source_size": [
+        10,
+        18
+      ],
+      "source_offset": [
+        -5,
+        -18
+      ],
+      "atlas_rect": [
+        1600,
+        241,
+        128,
+        230
+      ],
+      "scale": 12.8,
+      "part_kind": "body"
+    },
+    {
+      "id": 27,
+      "actor": 1,
+      "animation": "walk_0",
+      "phase": 2,
+      "atlas": 0,
+      "cell": [
+        7,
+        0
+      ],
+      "path": "res://assets/original/actors/1/walk_0_2.png",
+      "source_size": [
+        10,
+        18
+      ],
+      "source_offset": [
+        -5,
+        -18
+      ],
+      "atlas_rect": [
+        1856,
+        241,
+        128,
+        230
+      ],
+      "scale": 12.8,
+      "part_kind": "body"
+    },
+    {
+      "id": 28,
+      "actor": 1,
+      "animation": "walk_1",
+      "phase": 0,
+      "atlas": 0,
+      "cell": [
+        8,
+        0
+      ],
+      "path": "res://assets/original/actors/1/walk_1_0.png",
+      "source_size": [
+        10,
+        18
+      ],
+      "source_offset": [
+        -5,
+        -18
+      ],
+      "atlas_rect": [
+        2112,
+        241,
+        128,
+        230
+      ],
+      "scale": 12.8,
+      "part_kind": "body"
+    },
+    {
+      "id": 29,
+      "actor": 1,
+      "animation": "walk_1",
+      "phase": 1,
+      "atlas": 0,
+      "cell": [
+        9,
+        0
+      ],
+      "path": "res://assets/original/actors/1/walk_1_1.png",
+      "source_size": [
+        10,
+        18
+      ],
+      "source_offset": [
+        -5,
+        -18
+      ],
+      "atlas_rect": [
+        2368,
+        241,
+        128,
+        230
+      ],
+      "scale": 12.8,
+      "part_kind": "body"
+    },
+    {
+      "id": 30,
+      "actor": 1,
+      "animation": "walk_1",
+      "phase": 2,
+      "atlas": 0,
+      "cell": [
+        5,
+        1
+      ],
+      "path": "res://assets/original/actors/1/walk_1_2.png",
+      "source_size": [
+        10,
+        18
+      ],
+      "source_offset": [
+        -5,
+        -18
+      ],
+      "atlas_rect": [
+        1344,
+        753,
+        128,
+        230
+      ],
+      "scale": 12.8,
+      "part_kind": "body"
+    },
+    {
+      "id": 31,
+      "actor": 1,
+      "animation": "walk_2",
+      "phase": 0,
+      "atlas": 0,
+      "cell": [
+        6,
+        1
+      ],
+      "path": "res://assets/original/actors/1/walk_2_0.png",
+      "source_size": [
+        9,
+        18
+      ],
+      "source_offset": [
+        -4,
+        -18
+      ],
+      "atlas_rect": [
+        1606,
+        753,
+        115,
+        230
+      ],
+      "scale": 12.8,
+      "part_kind": "body"
+    },
+    {
+      "id": 32,
+      "actor": 1,
+      "animation": "walk_2",
+      "phase": 1,
+      "atlas": 0,
+      "cell": [
+        7,
+        1
+      ],
+      "path": "res://assets/original/actors/1/walk_2_1.png",
+      "source_size": [
+        10,
+        18
+      ],
+      "source_offset": [
+        -5,
+        -18
+      ],
+      "atlas_rect": [
+        1856,
+        753,
+        128,
+        230
+      ],
+      "scale": 12.8,
+      "part_kind": "body"
+    },
+    {
+      "id": 33,
+      "actor": 1,
+      "animation": "walk_2",
+      "phase": 2,
+      "atlas": 0,
+      "cell": [
+        8,
+        1
+      ],
+      "path": "res://assets/original/actors/1/walk_2_2.png",
+      "source_size": [
+        11,
+        18
+      ],
+      "source_offset": [
+        -5,
+        -18
+      ],
+      "atlas_rect": [
+        2106,
+        753,
+        141,
+        230
+      ],
+      "scale": 12.8,
+      "part_kind": "body"
+    },
+    {
+      "id": 34,
+      "actor": 1,
+      "animation": "walk_3",
+      "phase": 0,
+      "atlas": 0,
+      "cell": [
+        9,
+        1
+      ],
+      "path": "res://assets/original/actors/1/walk_3_0.png",
+      "source_size": [
+        9,
+        18
+      ],
+      "source_offset": [
+        -4,
+        -18
+      ],
+      "atlas_rect": [
+        2374,
+        753,
+        115,
+        230
+      ],
+      "scale": 12.8,
+      "part_kind": "body"
+    },
+    {
+      "id": 35,
+      "actor": 1,
+      "animation": "walk_3",
+      "phase": 1,
+      "atlas": 0,
+      "cell": [
+        5,
+        2
+      ],
+      "path": "res://assets/original/actors/1/walk_3_1.png",
+      "source_size": [
+        10,
+        18
+      ],
+      "source_offset": [
+        -5,
+        -18
+      ],
+      "atlas_rect": [
+        1344,
+        1265,
+        128,
+        230
+      ],
+      "scale": 12.8,
+      "part_kind": "body"
+    },
+    {
+      "id": 36,
+      "actor": 1,
+      "animation": "walk_3",
+      "phase": 2,
+      "atlas": 0,
+      "cell": [
+        6,
+        2
+      ],
+      "path": "res://assets/original/actors/1/walk_3_2.png",
+      "source_size": [
+        11,
+        18
+      ],
+      "source_offset": [
+        -5,
+        -18
+      ],
+      "atlas_rect": [
+        1594,
+        1265,
+        141,
+        230
+      ],
+      "scale": 12.8,
+      "part_kind": "body"
+    },
+    {
+      "id": 37,
+      "actor": 1,
+      "animation": "sit",
+      "phase": 0,
+      "atlas": 0,
+      "cell": [
+        7,
+        2
+      ],
+      "path": "res://assets/original/actors/1/sit_0.png",
+      "source_size": [
+        11,
+        18
+      ],
+      "source_offset": [
+        -5,
+        -18
+      ],
+      "atlas_rect": [
+        1850,
+        1265,
+        141,
+        230
+      ],
+      "scale": 12.8,
+      "part_kind": "body"
+    },
+    {
+      "id": 38,
+      "actor": 1,
+      "animation": "sit",
+      "phase": 1,
+      "atlas": 0,
+      "cell": [
+        8,
+        2
+      ],
+      "path": "res://assets/original/actors/1/sit_1.png",
+      "source_size": [
+        11,
+        18
+      ],
+      "source_offset": [
+        -5,
+        -18
+      ],
+      "atlas_rect": [
+        2106,
+        1265,
+        141,
+        230
+      ],
+      "scale": 12.8,
+      "part_kind": "body"
+    },
+    {
+      "id": 39,
+      "actor": 1,
+      "animation": "ride",
+      "phase": 0,
+      "atlas": 0,
+      "cell": [
+        9,
+        2
+      ],
+      "path": "res://assets/original/actors/1/ride_0.png",
+      "source_size": [
+        11,
+        18
+      ],
+      "source_offset": [
+        0,
+        -18
+      ],
+      "atlas_rect": [
+        2362,
+        1265,
+        141,
+        230
+      ],
+      "scale": 12.8,
+      "part_kind": "body"
+    },
+    {
+      "id": 40,
+      "actor": 1,
+      "animation": "ride",
+      "phase": 1,
+      "atlas": 0,
+      "cell": [
+        5,
+        3
+      ],
+      "path": "res://assets/original/actors/1/ride_1.png",
+      "source_size": [
+        16,
+        13
+      ],
+      "source_offset": [
+        0,
+        0
+      ],
+      "atlas_rect": [
+        1306,
+        1841,
+        205,
+        166
+      ],
+      "scale": 12.8,
+      "part_kind": "body"
+    },
+    {
+      "id": 41,
+      "actor": 1,
+      "animation": "ride",
+      "phase": 2,
+      "atlas": 0,
+      "cell": [
+        6,
+        3
+      ],
+      "path": "res://assets/original/actors/1/ride_2.png",
+      "source_size": [
+        8,
+        18
+      ],
+      "source_offset": [
+        0,
+        0
+      ],
+      "atlas_rect": [
+        1613,
+        1777,
+        102,
+        230
+      ],
+      "scale": 12.8,
+      "part_kind": "body"
+    },
+    {
+      "id": 42,
+      "actor": 1,
+      "animation": "pose",
+      "phase": 0,
+      "atlas": 0,
+      "cell": [
+        7,
+        3
+      ],
+      "path": "res://assets/original/actors/1/pose_0.png",
+      "source_size": [
+        11,
+        18
+      ],
+      "source_offset": [
+        -5,
+        -18
+      ],
+      "atlas_rect": [
+        1850,
+        1777,
+        141,
+        230
+      ],
+      "scale": 12.8,
+      "part_kind": "body"
+    },
+    {
+      "id": 43,
+      "actor": 1,
+      "animation": "special",
+      "phase": 0,
+      "atlas": 0,
+      "cell": [
+        8,
+        3
+      ],
+      "path": "res://assets/original/actors/1/special_0.png",
+      "source_size": [
+        10,
+        8
+      ],
+      "source_offset": [
+        -5,
+        -8
+      ],
+      "atlas_rect": [
+        2112,
+        1905,
+        128,
+        102
+      ],
+      "scale": 12.8,
+      "part_kind": "head"
+    },
+    {
+      "id": 44,
+      "actor": 1,
+      "animation": "special",
+      "phase": 1,
+      "atlas": 0,
+      "cell": [
+        9,
+        3
+      ],
+      "path": "res://assets/original/actors/1/special_1.png",
+      "source_size": [
+        10,
+        8
+      ],
+      "source_offset": [
+        -5,
+        -8
+      ],
+      "atlas_rect": [
+        2368,
+        1905,
+        128,
+        102
+      ],
+      "scale": 12.8,
+      "part_kind": "head"
+    },
+    {
+      "id": 45,
+      "actor": 1,
+      "animation": "special",
+      "phase": 2,
+      "atlas": 0,
+      "cell": [
+        5,
+        4
+      ],
+      "path": "res://assets/original/actors/1/special_2.png",
+      "source_size": [
+        9,
+        8
+      ],
+      "source_offset": [
+        -4,
+        -8
+      ],
+      "atlas_rect": [
+        1350,
+        2417,
+        115,
+        102
+      ],
+      "scale": 12.8,
+      "part_kind": "head"
+    },
+    {
+      "id": 46,
+      "actor": 1,
+      "animation": "special",
+      "phase": 3,
+      "atlas": 0,
+      "cell": [
+        6,
+        4
+      ],
+      "path": "res://assets/original/actors/1/special_3.png",
+      "source_size": [
+        9,
+        8
+      ],
+      "source_offset": [
+        -4,
+        -8
+      ],
+      "atlas_rect": [
+        1606,
+        2417,
+        115,
+        102
+      ],
+      "scale": 12.8,
+      "part_kind": "head"
+    },
+    {
+      "id": 47,
+      "actor": 1,
+      "animation": "special",
+      "phase": 4,
+      "atlas": 0,
+      "cell": [
+        7,
+        4
+      ],
+      "path": "res://assets/original/actors/1/special_4.png",
+      "source_size": [
+        8,
+        10
+      ],
+      "source_offset": [
+        0,
+        -5
+      ],
+      "atlas_rect": [
+        1869,
+        2391,
+        102,
+        128
+      ],
+      "scale": 12.8,
+      "part_kind": "head"
+    },
+    {
+      "id": 48,
+      "actor": 1,
+      "animation": "special",
+      "phase": 5,
+      "atlas": 0,
+      "cell": [
+        8,
+        4
+      ],
+      "path": "res://assets/original/actors/1/special_5.png",
+      "source_size": [
+        9,
+        9
+      ],
+      "source_offset": [
+        -4,
+        0
+      ],
+      "atlas_rect": [
+        2118,
+        2404,
+        115,
+        115
+      ],
+      "scale": 12.8,
+      "part_kind": "head"
+    },
+    {
+      "id": 49,
+      "actor": 1,
+      "animation": "special",
+      "phase": 6,
+      "atlas": 0,
+      "cell": [
+        9,
+        4
+      ],
+      "path": "res://assets/original/actors/1/special_6.png",
+      "source_size": [
+        9,
+        9
+      ],
+      "source_offset": [
+        -8,
+        -4
+      ],
+      "atlas_rect": [
+        2374,
+        2404,
+        115,
+        115
+      ],
+      "scale": 12.8,
+      "part_kind": "head"
+    },
+    {
+      "id": 50,
+      "actor": 2,
+      "animation": "walk_0",
+      "phase": 0,
+      "atlas": 1,
+      "cell": [
+        0,
+        0
+      ],
+      "path": "res://assets/original/actors/2/walk_0_0.png",
+      "source_size": [
+        7,
+        18
+      ],
+      "source_offset": [
+        -3,
+        -18
+      ],
+      "atlas_rect": [
+        80,
+        225,
+        96,
+        246
+      ],
+      "scale": 13.653333333333334,
+      "part_kind": "body"
+    },
+    {
+      "id": 51,
+      "actor": 2,
+      "animation": "walk_0",
+      "phase": 1,
+      "atlas": 1,
+      "cell": [
+        1,
+        0
+      ],
+      "path": "res://assets/original/actors/2/walk_0_1.png",
+      "source_size": [
+        8,
+        18
+      ],
+      "source_offset": [
+        -4,
+        -18
+      ],
+      "atlas_rect": [
+        330,
+        225,
+        109,
+        246
+      ],
+      "scale": 13.653333333333334,
+      "part_kind": "body"
+    },
+    {
+      "id": 52,
+      "actor": 2,
+      "animation": "walk_0",
+      "phase": 2,
+      "atlas": 1,
+      "cell": [
+        2,
+        0
+      ],
+      "path": "res://assets/original/actors/2/walk_0_2.png",
+      "source_size": [
+        8,
+        18
+      ],
+      "source_offset": [
+        -4,
+        -18
+      ],
+      "atlas_rect": [
+        586,
+        225,
+        109,
+        246
+      ],
+      "scale": 13.653333333333334,
+      "part_kind": "body"
+    },
+    {
+      "id": 53,
+      "actor": 2,
+      "animation": "walk_1",
+      "phase": 0,
+      "atlas": 1,
+      "cell": [
+        3,
+        0
+      ],
+      "path": "res://assets/original/actors/2/walk_1_0.png",
+      "source_size": [
+        7,
+        18
+      ],
+      "source_offset": [
+        -3,
+        -18
+      ],
+      "atlas_rect": [
+        848,
+        225,
+        96,
+        246
+      ],
+      "scale": 13.653333333333334,
+      "part_kind": "body"
+    },
+    {
+      "id": 54,
+      "actor": 2,
+      "animation": "walk_1",
+      "phase": 1,
+      "atlas": 1,
+      "cell": [
+        4,
+        0
+      ],
+      "path": "res://assets/original/actors/2/walk_1_1.png",
+      "source_size": [
+        8,
+        18
+      ],
+      "source_offset": [
+        -4,
+        -18
+      ],
+      "atlas_rect": [
+        1098,
+        225,
+        109,
+        246
+      ],
+      "scale": 13.653333333333334,
+      "part_kind": "body"
+    },
+    {
+      "id": 55,
+      "actor": 2,
+      "animation": "walk_1",
+      "phase": 2,
+      "atlas": 1,
+      "cell": [
+        0,
+        1
+      ],
+      "path": "res://assets/original/actors/2/walk_1_2.png",
+      "source_size": [
+        8,
+        18
+      ],
+      "source_offset": [
+        -4,
+        -18
+      ],
+      "atlas_rect": [
+        74,
+        737,
+        109,
+        246
+      ],
+      "scale": 13.653333333333334,
+      "part_kind": "body"
+    },
+    {
+      "id": 56,
+      "actor": 2,
+      "animation": "walk_2",
+      "phase": 0,
+      "atlas": 1,
+      "cell": [
+        1,
+        1
+      ],
+      "path": "res://assets/original/actors/2/walk_2_0.png",
+      "source_size": [
+        7,
+        18
+      ],
+      "source_offset": [
+        -3,
+        -18
+      ],
+      "atlas_rect": [
+        336,
+        737,
+        96,
+        246
+      ],
+      "scale": 13.653333333333334,
+      "part_kind": "body"
+    },
+    {
+      "id": 57,
+      "actor": 2,
+      "animation": "walk_2",
+      "phase": 1,
+      "atlas": 1,
+      "cell": [
+        2,
+        1
+      ],
+      "path": "res://assets/original/actors/2/walk_2_1.png",
+      "source_size": [
+        8,
+        18
+      ],
+      "source_offset": [
+        -4,
+        -18
+      ],
+      "atlas_rect": [
+        586,
+        737,
+        109,
+        246
+      ],
+      "scale": 13.653333333333334,
+      "part_kind": "body"
+    },
+    {
+      "id": 58,
+      "actor": 2,
+      "animation": "walk_2",
+      "phase": 2,
+      "atlas": 1,
+      "cell": [
+        3,
+        1
+      ],
+      "path": "res://assets/original/actors/2/walk_2_2.png",
+      "source_size": [
+        7,
+        18
+      ],
+      "source_offset": [
+        -3,
+        -18
+      ],
+      "atlas_rect": [
+        848,
+        737,
+        96,
+        246
+      ],
+      "scale": 13.653333333333334,
+      "part_kind": "body"
+    },
+    {
+      "id": 59,
+      "actor": 2,
+      "animation": "walk_3",
+      "phase": 0,
+      "atlas": 1,
+      "cell": [
+        4,
+        1
+      ],
+      "path": "res://assets/original/actors/2/walk_3_0.png",
+      "source_size": [
+        7,
+        18
+      ],
+      "source_offset": [
+        -3,
+        -18
+      ],
+      "atlas_rect": [
+        1104,
+        737,
+        96,
+        246
+      ],
+      "scale": 13.653333333333334,
+      "part_kind": "body"
+    },
+    {
+      "id": 60,
+      "actor": 2,
+      "animation": "walk_3",
+      "phase": 1,
+      "atlas": 1,
+      "cell": [
+        0,
+        2
+      ],
+      "path": "res://assets/original/actors/2/walk_3_1.png",
+      "source_size": [
+        8,
+        18
+      ],
+      "source_offset": [
+        -4,
+        -18
+      ],
+      "atlas_rect": [
+        74,
+        1249,
+        109,
+        246
+      ],
+      "scale": 13.653333333333334,
+      "part_kind": "body"
+    },
+    {
+      "id": 61,
+      "actor": 2,
+      "animation": "walk_3",
+      "phase": 2,
+      "atlas": 1,
+      "cell": [
+        1,
+        2
+      ],
+      "path": "res://assets/original/actors/2/walk_3_2.png",
+      "source_size": [
+        7,
+        18
+      ],
+      "source_offset": [
+        -3,
+        -18
+      ],
+      "atlas_rect": [
+        336,
+        1249,
+        96,
+        246
+      ],
+      "scale": 13.653333333333334,
+      "part_kind": "body"
+    },
+    {
+      "id": 62,
+      "actor": 2,
+      "animation": "sit",
+      "phase": 0,
+      "atlas": 1,
+      "cell": [
+        2,
+        2
+      ],
+      "path": "res://assets/original/actors/2/sit_0.png",
+      "source_size": [
+        9,
+        17
+      ],
+      "source_offset": [
+        -4,
+        -17
+      ],
+      "atlas_rect": [
+        578,
+        1263,
+        123,
+        232
+      ],
+      "scale": 13.653333333333334,
+      "part_kind": "body"
+    },
+    {
+      "id": 63,
+      "actor": 2,
+      "animation": "sit",
+      "phase": 1,
+      "atlas": 1,
+      "cell": [
+        3,
+        2
+      ],
+      "path": "res://assets/original/actors/2/sit_1.png",
+      "source_size": [
+        9,
+        17
+      ],
+      "source_offset": [
+        -4,
+        -17
+      ],
+      "atlas_rect": [
+        834,
+        1263,
+        123,
+        232
+      ],
+      "scale": 13.653333333333334,
+      "part_kind": "body"
+    },
+    {
+      "id": 64,
+      "actor": 2,
+      "animation": "ride",
+      "phase": 0,
+      "atlas": 1,
+      "cell": [
+        4,
+        2
+      ],
+      "path": "res://assets/original/actors/2/ride_0.png",
+      "source_size": [
+        13,
+        17
+      ],
+      "source_offset": [
+        0,
+        -17
+      ],
+      "atlas_rect": [
+        1064,
+        1263,
+        177,
+        232
+      ],
+      "scale": 13.653333333333334,
+      "part_kind": "body"
+    },
+    {
+      "id": 65,
+      "actor": 2,
+      "animation": "ride",
+      "phase": 1,
+      "atlas": 1,
+      "cell": [
+        0,
+        3
+      ],
+      "path": "res://assets/original/actors/2/ride_1.png",
+      "source_size": [
+        15,
+        13
+      ],
+      "source_offset": [
+        0,
+        0
+      ],
+      "atlas_rect": [
+        26,
+        1830,
+        205,
+        177
+      ],
+      "scale": 13.653333333333334,
+      "part_kind": "body"
+    },
+    {
+      "id": 66,
+      "actor": 2,
+      "animation": "ride",
+      "phase": 2,
+      "atlas": 1,
+      "cell": [
+        1,
+        3
+      ],
+      "path": "res://assets/original/actors/2/ride_2.png",
+      "source_size": [
+        7,
+        19
+      ],
+      "source_offset": [
+        0,
+        0
+      ],
+      "atlas_rect": [
+        336,
+        1748,
+        96,
+        259
+      ],
+      "scale": 13.653333333333334,
+      "part_kind": "body"
+    },
+    {
+      "id": 67,
+      "actor": 2,
+      "animation": "pose",
+      "phase": 0,
+      "atlas": 1,
+      "cell": [
+        2,
+        3
+      ],
+      "path": "res://assets/original/actors/2/pose_0.png",
+      "source_size": [
+        10,
+        16
+      ],
+      "source_offset": [
+        -5,
+        -16
+      ],
+      "atlas_rect": [
+        572,
+        1789,
+        137,
+        218
+      ],
+      "scale": 13.653333333333334,
+      "part_kind": "body"
+    },
+    {
+      "id": 68,
+      "actor": 2,
+      "animation": "special",
+      "phase": 0,
+      "atlas": 1,
+      "cell": [
+        3,
+        3
+      ],
+      "path": "res://assets/original/actors/2/special_0.png",
+      "source_size": [
+        7,
+        7
+      ],
+      "source_offset": [
+        -3,
+        -6
+      ],
+      "atlas_rect": [
+        848,
+        1911,
+        96,
+        96
+      ],
+      "scale": 13.653333333333334,
+      "part_kind": "head"
+    },
+    {
+      "id": 69,
+      "actor": 2,
+      "animation": "special",
+      "phase": 1,
+      "atlas": 1,
+      "cell": [
+        4,
+        3
+      ],
+      "path": "res://assets/original/actors/2/special_1.png",
+      "source_size": [
+        7,
+        7
+      ],
+      "source_offset": [
+        -3,
+        -6
+      ],
+      "atlas_rect": [
+        1104,
+        1911,
+        96,
+        96
+      ],
+      "scale": 13.653333333333334,
+      "part_kind": "head"
+    },
+    {
+      "id": 70,
+      "actor": 2,
+      "animation": "special",
+      "phase": 2,
+      "atlas": 1,
+      "cell": [
+        0,
+        4
+      ],
+      "path": "res://assets/original/actors/2/special_2.png",
+      "source_size": [
+        7,
+        7
+      ],
+      "source_offset": [
+        -3,
+        -6
+      ],
+      "atlas_rect": [
+        80,
+        2423,
+        96,
+        96
+      ],
+      "scale": 13.653333333333334,
+      "part_kind": "head"
+    },
+    {
+      "id": 71,
+      "actor": 2,
+      "animation": "special",
+      "phase": 3,
+      "atlas": 1,
+      "cell": [
+        1,
+        4
+      ],
+      "path": "res://assets/original/actors/2/special_3.png",
+      "source_size": [
+        7,
+        7
+      ],
+      "source_offset": [
+        -3,
+        -6
+      ],
+      "atlas_rect": [
+        336,
+        2423,
+        96,
+        96
+      ],
+      "scale": 13.653333333333334,
+      "part_kind": "head"
+    },
+    {
+      "id": 72,
+      "actor": 2,
+      "animation": "special",
+      "phase": 4,
+      "atlas": 1,
+      "cell": [
+        2,
+        4
+      ],
+      "path": "res://assets/original/actors/2/special_4.png",
+      "source_size": [
+        6,
+        6
+      ],
+      "source_offset": [
+        0,
+        -3
+      ],
+      "atlas_rect": [
+        599,
+        2437,
+        82,
+        82
+      ],
+      "scale": 13.653333333333334,
+      "part_kind": "head"
+    },
+    {
+      "id": 73,
+      "actor": 2,
+      "animation": "special",
+      "phase": 5,
+      "atlas": 1,
+      "cell": [
+        3,
+        4
+      ],
+      "path": "res://assets/original/actors/2/special_5.png",
+      "source_size": [
+        7,
+        7
+      ],
+      "source_offset": [
+        -3,
+        0
+      ],
+      "atlas_rect": [
+        848,
+        2423,
+        96,
+        96
+      ],
+      "scale": 13.653333333333334,
+      "part_kind": "head"
+    },
+    {
+      "id": 74,
+      "actor": 2,
+      "animation": "special",
+      "phase": 6,
+      "atlas": 1,
+      "cell": [
+        4,
+        4
+      ],
+      "path": "res://assets/original/actors/2/special_6.png",
+      "source_size": [
+        7,
+        7
+      ],
+      "source_offset": [
+        -6,
+        -3
+      ],
+      "atlas_rect": [
+        1104,
+        2423,
+        96,
+        96
+      ],
+      "scale": 13.653333333333334,
+      "part_kind": "head"
+    },
+    {
+      "id": 75,
+      "actor": 3,
+      "animation": "walk_0",
+      "phase": 0,
+      "atlas": 1,
+      "cell": [
+        5,
+        0
+      ],
+      "path": "res://assets/original/actors/3/walk_0_0.png",
+      "source_size": [
+        9,
+        18
+      ],
+      "source_offset": [
+        -4,
+        -18
+      ],
+      "atlas_rect": [
+        1350,
+        241,
+        115,
+        230
+      ],
+      "scale": 12.8,
+      "part_kind": "body"
+    },
+    {
+      "id": 76,
+      "actor": 3,
+      "animation": "walk_0",
+      "phase": 1,
+      "atlas": 1,
+      "cell": [
+        6,
+        0
+      ],
+      "path": "res://assets/original/actors/3/walk_0_1.png",
+      "source_size": [
+        9,
+        18
+      ],
+      "source_offset": [
+        -4,
+        -18
+      ],
+      "atlas_rect": [
+        1606,
+        241,
+        115,
+        230
+      ],
+      "scale": 12.8,
+      "part_kind": "body"
+    },
+    {
+      "id": 77,
+      "actor": 3,
+      "animation": "walk_0",
+      "phase": 2,
+      "atlas": 1,
+      "cell": [
+        7,
+        0
+      ],
+      "path": "res://assets/original/actors/3/walk_0_2.png",
+      "source_size": [
+        9,
+        18
+      ],
+      "source_offset": [
+        -4,
+        -18
+      ],
+      "atlas_rect": [
+        1862,
+        241,
+        115,
+        230
+      ],
+      "scale": 12.8,
+      "part_kind": "body"
+    },
+    {
+      "id": 78,
+      "actor": 3,
+      "animation": "walk_1",
+      "phase": 0,
+      "atlas": 1,
+      "cell": [
+        8,
+        0
+      ],
+      "path": "res://assets/original/actors/3/walk_1_0.png",
+      "source_size": [
+        9,
+        18
+      ],
+      "source_offset": [
+        -4,
+        -18
+      ],
+      "atlas_rect": [
+        2118,
+        241,
+        115,
+        230
+      ],
+      "scale": 12.8,
+      "part_kind": "body"
+    },
+    {
+      "id": 79,
+      "actor": 3,
+      "animation": "walk_1",
+      "phase": 1,
+      "atlas": 1,
+      "cell": [
+        9,
+        0
+      ],
+      "path": "res://assets/original/actors/3/walk_1_1.png",
+      "source_size": [
+        9,
+        18
+      ],
+      "source_offset": [
+        -4,
+        -18
+      ],
+      "atlas_rect": [
+        2374,
+        241,
+        115,
+        230
+      ],
+      "scale": 12.8,
+      "part_kind": "body"
+    },
+    {
+      "id": 80,
+      "actor": 3,
+      "animation": "walk_1",
+      "phase": 2,
+      "atlas": 1,
+      "cell": [
+        5,
+        1
+      ],
+      "path": "res://assets/original/actors/3/walk_1_2.png",
+      "source_size": [
+        9,
+        18
+      ],
+      "source_offset": [
+        -4,
+        -18
+      ],
+      "atlas_rect": [
+        1350,
+        753,
+        115,
+        230
+      ],
+      "scale": 12.8,
+      "part_kind": "body"
+    },
+    {
+      "id": 81,
+      "actor": 3,
+      "animation": "walk_2",
+      "phase": 0,
+      "atlas": 1,
+      "cell": [
+        6,
+        1
+      ],
+      "path": "res://assets/original/actors/3/walk_2_0.png",
+      "source_size": [
+        9,
+        18
+      ],
+      "source_offset": [
+        -4,
+        -18
+      ],
+      "atlas_rect": [
+        1606,
+        753,
+        115,
+        230
+      ],
+      "scale": 12.8,
+      "part_kind": "body"
+    },
+    {
+      "id": 82,
+      "actor": 3,
+      "animation": "walk_2",
+      "phase": 1,
+      "atlas": 1,
+      "cell": [
+        7,
+        1
+      ],
+      "path": "res://assets/original/actors/3/walk_2_1.png",
+      "source_size": [
+        9,
+        18
+      ],
+      "source_offset": [
+        -4,
+        -18
+      ],
+      "atlas_rect": [
+        1862,
+        753,
+        115,
+        230
+      ],
+      "scale": 12.8,
+      "part_kind": "body"
+    },
+    {
+      "id": 83,
+      "actor": 3,
+      "animation": "walk_2",
+      "phase": 2,
+      "atlas": 1,
+      "cell": [
+        8,
+        1
+      ],
+      "path": "res://assets/original/actors/3/walk_2_2.png",
+      "source_size": [
+        9,
+        18
+      ],
+      "source_offset": [
+        -4,
+        -18
+      ],
+      "atlas_rect": [
+        2118,
+        753,
+        115,
+        230
+      ],
+      "scale": 12.8,
+      "part_kind": "body"
+    },
+    {
+      "id": 84,
+      "actor": 3,
+      "animation": "walk_3",
+      "phase": 0,
+      "atlas": 1,
+      "cell": [
+        9,
+        1
+      ],
+      "path": "res://assets/original/actors/3/walk_3_0.png",
+      "source_size": [
+        9,
+        18
+      ],
+      "source_offset": [
+        -4,
+        -18
+      ],
+      "atlas_rect": [
+        2374,
+        753,
+        115,
+        230
+      ],
+      "scale": 12.8,
+      "part_kind": "body"
+    },
+    {
+      "id": 85,
+      "actor": 3,
+      "animation": "walk_3",
+      "phase": 1,
+      "atlas": 1,
+      "cell": [
+        5,
+        2
+      ],
+      "path": "res://assets/original/actors/3/walk_3_1.png",
+      "source_size": [
+        9,
+        18
+      ],
+      "source_offset": [
+        -4,
+        -18
+      ],
+      "atlas_rect": [
+        1350,
+        1265,
+        115,
+        230
+      ],
+      "scale": 12.8,
+      "part_kind": "body"
+    },
+    {
+      "id": 86,
+      "actor": 3,
+      "animation": "walk_3",
+      "phase": 2,
+      "atlas": 1,
+      "cell": [
+        6,
+        2
+      ],
+      "path": "res://assets/original/actors/3/walk_3_2.png",
+      "source_size": [
+        9,
+        18
+      ],
+      "source_offset": [
+        -4,
+        -18
+      ],
+      "atlas_rect": [
+        1606,
+        1265,
+        115,
+        230
+      ],
+      "scale": 12.8,
+      "part_kind": "body"
+    },
+    {
+      "id": 87,
+      "actor": 3,
+      "animation": "sit",
+      "phase": 0,
+      "atlas": 1,
+      "cell": [
+        7,
+        2
+      ],
+      "path": "res://assets/original/actors/3/sit_0.png",
+      "source_size": [
+        10,
+        18
+      ],
+      "source_offset": [
+        -5,
+        -18
+      ],
+      "atlas_rect": [
+        1856,
+        1265,
+        128,
+        230
+      ],
+      "scale": 12.8,
+      "part_kind": "body"
+    },
+    {
+      "id": 88,
+      "actor": 3,
+      "animation": "sit",
+      "phase": 1,
+      "atlas": 1,
+      "cell": [
+        8,
+        2
+      ],
+      "path": "res://assets/original/actors/3/sit_1.png",
+      "source_size": [
+        10,
+        18
+      ],
+      "source_offset": [
+        -5,
+        -18
+      ],
+      "atlas_rect": [
+        2112,
+        1265,
+        128,
+        230
+      ],
+      "scale": 12.8,
+      "part_kind": "body"
+    },
+    {
+      "id": 89,
+      "actor": 3,
+      "animation": "ride",
+      "phase": 0,
+      "atlas": 1,
+      "cell": [
+        9,
+        2
+      ],
+      "path": "res://assets/original/actors/3/ride_0.png",
+      "source_size": [
+        11,
+        18
+      ],
+      "source_offset": [
+        0,
+        -18
+      ],
+      "atlas_rect": [
+        2362,
+        1265,
+        141,
+        230
+      ],
+      "scale": 12.8,
+      "part_kind": "body"
+    },
+    {
+      "id": 90,
+      "actor": 3,
+      "animation": "ride",
+      "phase": 1,
+      "atlas": 1,
+      "cell": [
+        5,
+        3
+      ],
+      "path": "res://assets/original/actors/3/ride_1.png",
+      "source_size": [
+        16,
+        15
+      ],
+      "source_offset": [
+        0,
+        0
+      ],
+      "atlas_rect": [
+        1306,
+        1815,
+        205,
+        192
+      ],
+      "scale": 12.8,
+      "part_kind": "body"
+    },
+    {
+      "id": 91,
+      "actor": 3,
+      "animation": "ride",
+      "phase": 2,
+      "atlas": 1,
+      "cell": [
+        6,
+        3
+      ],
+      "path": "res://assets/original/actors/3/ride_2.png",
+      "source_size": [
+        8,
+        22
+      ],
+      "source_offset": [
+        0,
+        0
+      ],
+      "atlas_rect": [
+        1613,
+        1725,
+        102,
+        282
+      ],
+      "scale": 12.8,
+      "part_kind": "body"
+    },
+    {
+      "id": 92,
+      "actor": 3,
+      "animation": "pose",
+      "phase": 0,
+      "atlas": 1,
+      "cell": [
+        7,
+        3
+      ],
+      "path": "res://assets/original/actors/3/pose_0.png",
+      "source_size": [
+        12,
+        18
+      ],
+      "source_offset": [
+        -6,
+        -18
+      ],
+      "atlas_rect": [
+        1843,
+        1777,
+        154,
+        230
+      ],
+      "scale": 12.8,
+      "part_kind": "body"
+    },
+    {
+      "id": 93,
+      "actor": 3,
+      "animation": "special",
+      "phase": 0,
+      "atlas": 1,
+      "cell": [
+        8,
+        3
+      ],
+      "path": "res://assets/original/actors/3/special_0.png",
+      "source_size": [
+        8,
+        7
+      ],
+      "source_offset": [
+        -4,
+        -6
+      ],
+      "atlas_rect": [
+        2125,
+        1917,
+        102,
+        90
+      ],
+      "scale": 12.8,
+      "part_kind": "head"
+    },
+    {
+      "id": 94,
+      "actor": 3,
+      "animation": "special",
+      "phase": 1,
+      "atlas": 1,
+      "cell": [
+        9,
+        3
+      ],
+      "path": "res://assets/original/actors/3/special_1.png",
+      "source_size": [
+        8,
+        7
+      ],
+      "source_offset": [
+        -4,
+        -6
+      ],
+      "atlas_rect": [
+        2381,
+        1917,
+        102,
+        90
+      ],
+      "scale": 12.8,
+      "part_kind": "head"
+    },
+    {
+      "id": 95,
+      "actor": 3,
+      "animation": "special",
+      "phase": 2,
+      "atlas": 1,
+      "cell": [
+        5,
+        4
+      ],
+      "path": "res://assets/original/actors/3/special_2.png",
+      "source_size": [
+        8,
+        7
+      ],
+      "source_offset": [
+        -4,
+        -6
+      ],
+      "atlas_rect": [
+        1357,
+        2429,
+        102,
+        90
+      ],
+      "scale": 12.8,
+      "part_kind": "head"
+    },
+    {
+      "id": 96,
+      "actor": 3,
+      "animation": "special",
+      "phase": 3,
+      "atlas": 1,
+      "cell": [
+        6,
+        4
+      ],
+      "path": "res://assets/original/actors/3/special_3.png",
+      "source_size": [
+        8,
+        7
+      ],
+      "source_offset": [
+        -4,
+        -6
+      ],
+      "atlas_rect": [
+        1613,
+        2429,
+        102,
+        90
+      ],
+      "scale": 12.8,
+      "part_kind": "head"
+    },
+    {
+      "id": 97,
+      "actor": 3,
+      "animation": "special",
+      "phase": 4,
+      "atlas": 1,
+      "cell": [
+        7,
+        4
+      ],
+      "path": "res://assets/original/actors/3/special_4.png",
+      "source_size": [
+        7,
+        8
+      ],
+      "source_offset": [
+        0,
+        -4
+      ],
+      "atlas_rect": [
+        1875,
+        2417,
+        90,
+        102
+      ],
+      "scale": 12.8,
+      "part_kind": "head"
+    },
+    {
+      "id": 98,
+      "actor": 3,
+      "animation": "special",
+      "phase": 5,
+      "atlas": 1,
+      "cell": [
+        8,
+        4
+      ],
+      "path": "res://assets/original/actors/3/special_5.png",
+      "source_size": [
+        8,
+        7
+      ],
+      "source_offset": [
+        -4,
+        0
+      ],
+      "atlas_rect": [
+        2125,
+        2429,
+        102,
+        90
+      ],
+      "scale": 12.8,
+      "part_kind": "head"
+    },
+    {
+      "id": 99,
+      "actor": 3,
+      "animation": "special",
+      "phase": 6,
+      "atlas": 1,
+      "cell": [
+        9,
+        4
+      ],
+      "path": "res://assets/original/actors/3/special_6.png",
+      "source_size": [
+        8,
+        7
+      ],
+      "source_offset": [
+        -8,
+        -3
+      ],
+      "atlas_rect": [
+        2381,
+        2429,
+        102,
+        90
+      ],
+      "scale": 12.8,
+      "part_kind": "head"
+    },
+    {
+      "id": 100,
+      "actor": 4,
+      "animation": "walk_0",
+      "phase": 0,
+      "atlas": 2,
+      "cell": [
+        0,
+        0
+      ],
+      "path": "res://assets/original/actors/4/walk_0_0.png",
+      "source_size": [
+        7,
+        20
+      ],
+      "source_offset": [
+        -3,
+        -20
+      ],
+      "atlas_rect": [
+        80,
+        198,
+        96,
+        273
+      ],
+      "scale": 13.653333333333334,
+      "part_kind": "body"
+    },
+    {
+      "id": 101,
+      "actor": 4,
+      "animation": "walk_0",
+      "phase": 1,
+      "atlas": 2,
+      "cell": [
+        1,
+        0
+      ],
+      "path": "res://assets/original/actors/4/walk_0_1.png",
+      "source_size": [
+        8,
+        20
+      ],
+      "source_offset": [
+        -4,
+        -20
+      ],
+      "atlas_rect": [
+        330,
+        198,
+        109,
+        273
+      ],
+      "scale": 13.653333333333334,
+      "part_kind": "body"
+    },
+    {
+      "id": 102,
+      "actor": 4,
+      "animation": "walk_0",
+      "phase": 2,
+      "atlas": 2,
+      "cell": [
+        2,
+        0
+      ],
+      "path": "res://assets/original/actors/4/walk_0_2.png",
+      "source_size": [
+        8,
+        20
+      ],
+      "source_offset": [
+        -4,
+        -20
+      ],
+      "atlas_rect": [
+        586,
+        198,
+        109,
+        273
+      ],
+      "scale": 13.653333333333334,
+      "part_kind": "body"
+    },
+    {
+      "id": 103,
+      "actor": 4,
+      "animation": "walk_1",
+      "phase": 0,
+      "atlas": 2,
+      "cell": [
+        3,
+        0
+      ],
+      "path": "res://assets/original/actors/4/walk_1_0.png",
+      "source_size": [
+        7,
+        20
+      ],
+      "source_offset": [
+        -3,
+        -20
+      ],
+      "atlas_rect": [
+        848,
+        198,
+        96,
+        273
+      ],
+      "scale": 13.653333333333334,
+      "part_kind": "body"
+    },
+    {
+      "id": 104,
+      "actor": 4,
+      "animation": "walk_1",
+      "phase": 1,
+      "atlas": 2,
+      "cell": [
+        4,
+        0
+      ],
+      "path": "res://assets/original/actors/4/walk_1_1.png",
+      "source_size": [
+        8,
+        20
+      ],
+      "source_offset": [
+        -4,
+        -20
+      ],
+      "atlas_rect": [
+        1098,
+        198,
+        109,
+        273
+      ],
+      "scale": 13.653333333333334,
+      "part_kind": "body"
+    },
+    {
+      "id": 105,
+      "actor": 4,
+      "animation": "walk_1",
+      "phase": 2,
+      "atlas": 2,
+      "cell": [
+        0,
+        1
+      ],
+      "path": "res://assets/original/actors/4/walk_1_2.png",
+      "source_size": [
+        8,
+        20
+      ],
+      "source_offset": [
+        -4,
+        -20
+      ],
+      "atlas_rect": [
+        74,
+        710,
+        109,
+        273
+      ],
+      "scale": 13.653333333333334,
+      "part_kind": "body"
+    },
+    {
+      "id": 106,
+      "actor": 4,
+      "animation": "walk_2",
+      "phase": 0,
+      "atlas": 2,
+      "cell": [
+        1,
+        1
+      ],
+      "path": "res://assets/original/actors/4/walk_2_0.png",
+      "source_size": [
+        7,
+        20
+      ],
+      "source_offset": [
+        -3,
+        -20
+      ],
+      "atlas_rect": [
+        336,
+        710,
+        96,
+        273
+      ],
+      "scale": 13.653333333333334,
+      "part_kind": "body"
+    },
+    {
+      "id": 107,
+      "actor": 4,
+      "animation": "walk_2",
+      "phase": 1,
+      "atlas": 2,
+      "cell": [
+        2,
+        1
+      ],
+      "path": "res://assets/original/actors/4/walk_2_1.png",
+      "source_size": [
+        8,
+        20
+      ],
+      "source_offset": [
+        -4,
+        -20
+      ],
+      "atlas_rect": [
+        586,
+        710,
+        109,
+        273
+      ],
+      "scale": 13.653333333333334,
+      "part_kind": "body"
+    },
+    {
+      "id": 108,
+      "actor": 4,
+      "animation": "walk_2",
+      "phase": 2,
+      "atlas": 2,
+      "cell": [
+        3,
+        1
+      ],
+      "path": "res://assets/original/actors/4/walk_2_2.png",
+      "source_size": [
+        8,
+        20
+      ],
+      "source_offset": [
+        -4,
+        -20
+      ],
+      "atlas_rect": [
+        842,
+        710,
+        109,
+        273
+      ],
+      "scale": 13.653333333333334,
+      "part_kind": "body"
+    },
+    {
+      "id": 109,
+      "actor": 4,
+      "animation": "walk_3",
+      "phase": 0,
+      "atlas": 2,
+      "cell": [
+        4,
+        1
+      ],
+      "path": "res://assets/original/actors/4/walk_3_0.png",
+      "source_size": [
+        7,
+        20
+      ],
+      "source_offset": [
+        -3,
+        -20
+      ],
+      "atlas_rect": [
+        1104,
+        710,
+        96,
+        273
+      ],
+      "scale": 13.653333333333334,
+      "part_kind": "body"
+    },
+    {
+      "id": 110,
+      "actor": 4,
+      "animation": "walk_3",
+      "phase": 1,
+      "atlas": 2,
+      "cell": [
+        0,
+        2
+      ],
+      "path": "res://assets/original/actors/4/walk_3_1.png",
+      "source_size": [
+        8,
+        20
+      ],
+      "source_offset": [
+        -4,
+        -20
+      ],
+      "atlas_rect": [
+        74,
+        1222,
+        109,
+        273
+      ],
+      "scale": 13.653333333333334,
+      "part_kind": "body"
+    },
+    {
+      "id": 111,
+      "actor": 4,
+      "animation": "walk_3",
+      "phase": 2,
+      "atlas": 2,
+      "cell": [
+        1,
+        2
+      ],
+      "path": "res://assets/original/actors/4/walk_3_2.png",
+      "source_size": [
+        8,
+        20
+      ],
+      "source_offset": [
+        -4,
+        -20
+      ],
+      "atlas_rect": [
+        330,
+        1222,
+        109,
+        273
+      ],
+      "scale": 13.653333333333334,
+      "part_kind": "body"
+    },
+    {
+      "id": 112,
+      "actor": 4,
+      "animation": "sit",
+      "phase": 0,
+      "atlas": 2,
+      "cell": [
+        2,
+        2
+      ],
+      "path": "res://assets/original/actors/4/sit_0.png",
+      "source_size": [
+        9,
+        19
+      ],
+      "source_offset": [
+        -4,
+        -19
+      ],
+      "atlas_rect": [
+        578,
+        1236,
+        123,
+        259
+      ],
+      "scale": 13.653333333333334,
+      "part_kind": "body"
+    },
+    {
+      "id": 113,
+      "actor": 4,
+      "animation": "sit",
+      "phase": 1,
+      "atlas": 2,
+      "cell": [
+        3,
+        2
+      ],
+      "path": "res://assets/original/actors/4/sit_1.png",
+      "source_size": [
+        9,
+        19
+      ],
+      "source_offset": [
+        -4,
+        -19
+      ],
+      "atlas_rect": [
+        834,
+        1236,
+        123,
+        259
+      ],
+      "scale": 13.653333333333334,
+      "part_kind": "body"
+    },
+    {
+      "id": 114,
+      "actor": 4,
+      "animation": "ride",
+      "phase": 0,
+      "atlas": 2,
+      "cell": [
+        4,
+        2
+      ],
+      "path": "res://assets/original/actors/4/ride_0.png",
+      "source_size": [
+        13,
+        18
+      ],
+      "source_offset": [
+        0,
+        -18
+      ],
+      "atlas_rect": [
+        1064,
+        1249,
+        177,
+        246
+      ],
+      "scale": 13.653333333333334,
+      "part_kind": "body"
+    },
+    {
+      "id": 115,
+      "actor": 4,
+      "animation": "ride",
+      "phase": 1,
+      "atlas": 2,
+      "cell": [
+        0,
+        3
+      ],
+      "path": "res://assets/original/actors/4/ride_1.png",
+      "source_size": [
+        15,
+        14
+      ],
+      "source_offset": [
+        0,
+        0
+      ],
+      "atlas_rect": [
+        26,
+        1816,
+        205,
+        191
+      ],
+      "scale": 13.653333333333334,
+      "part_kind": "body"
+    },
+    {
+      "id": 116,
+      "actor": 4,
+      "animation": "ride",
+      "phase": 2,
+      "atlas": 2,
+      "cell": [
+        1,
+        3
+      ],
+      "path": "res://assets/original/actors/4/ride_2.png",
+      "source_size": [
+        7,
+        19
+      ],
+      "source_offset": [
+        0,
+        0
+      ],
+      "atlas_rect": [
+        336,
+        1748,
+        96,
+        259
+      ],
+      "scale": 13.653333333333334,
+      "part_kind": "body"
+    },
+    {
+      "id": 117,
+      "actor": 4,
+      "animation": "pose",
+      "phase": 0,
+      "atlas": 2,
+      "cell": [
+        2,
+        3
+      ],
+      "path": "res://assets/original/actors/4/pose_0.png",
+      "source_size": [
+        11,
+        18
+      ],
+      "source_offset": [
+        -5,
+        -18
+      ],
+      "atlas_rect": [
+        565,
+        1761,
+        150,
+        246
+      ],
+      "scale": 13.653333333333334,
+      "part_kind": "body"
+    },
+    {
+      "id": 118,
+      "actor": 4,
+      "animation": "special",
+      "phase": 0,
+      "atlas": 2,
+      "cell": [
+        3,
+        3
+      ],
+      "path": "res://assets/original/actors/4/special_0.png",
+      "source_size": [
+        7,
+        8
+      ],
+      "source_offset": [
+        -3,
+        -8
+      ],
+      "atlas_rect": [
+        848,
+        1898,
+        96,
+        109
+      ],
+      "scale": 13.653333333333334,
+      "part_kind": "head"
+    },
+    {
+      "id": 119,
+      "actor": 4,
+      "animation": "special",
+      "phase": 1,
+      "atlas": 2,
+      "cell": [
+        4,
+        3
+      ],
+      "path": "res://assets/original/actors/4/special_1.png",
+      "source_size": [
+        7,
+        8
+      ],
+      "source_offset": [
+        -3,
+        -8
+      ],
+      "atlas_rect": [
+        1104,
+        1898,
+        96,
+        109
+      ],
+      "scale": 13.653333333333334,
+      "part_kind": "head"
+    },
+    {
+      "id": 120,
+      "actor": 4,
+      "animation": "special",
+      "phase": 2,
+      "atlas": 2,
+      "cell": [
+        0,
+        4
+      ],
+      "path": "res://assets/original/actors/4/special_2.png",
+      "source_size": [
+        7,
+        8
+      ],
+      "source_offset": [
+        -3,
+        -8
+      ],
+      "atlas_rect": [
+        80,
+        2410,
+        96,
+        109
+      ],
+      "scale": 13.653333333333334,
+      "part_kind": "head"
+    },
+    {
+      "id": 121,
+      "actor": 4,
+      "animation": "special",
+      "phase": 3,
+      "atlas": 2,
+      "cell": [
+        1,
+        4
+      ],
+      "path": "res://assets/original/actors/4/special_3.png",
+      "source_size": [
+        7,
+        8
+      ],
+      "source_offset": [
+        -3,
+        -8
+      ],
+      "atlas_rect": [
+        336,
+        2410,
+        96,
+        109
+      ],
+      "scale": 13.653333333333334,
+      "part_kind": "head"
+    },
+    {
+      "id": 122,
+      "actor": 4,
+      "animation": "special",
+      "phase": 4,
+      "atlas": 2,
+      "cell": [
+        2,
+        4
+      ],
+      "path": "res://assets/original/actors/4/special_4.png",
+      "source_size": [
+        7,
+        7
+      ],
+      "source_offset": [
+        0,
+        -3
+      ],
+      "atlas_rect": [
+        592,
+        2423,
+        96,
+        96
+      ],
+      "scale": 13.653333333333334,
+      "part_kind": "head"
+    },
+    {
+      "id": 123,
+      "actor": 4,
+      "animation": "special",
+      "phase": 5,
+      "atlas": 2,
+      "cell": [
+        3,
+        4
+      ],
+      "path": "res://assets/original/actors/4/special_5.png",
+      "source_size": [
+        7,
+        8
+      ],
+      "source_offset": [
+        -3,
+        0
+      ],
+      "atlas_rect": [
+        848,
+        2410,
+        96,
+        109
+      ],
+      "scale": 13.653333333333334,
+      "part_kind": "head"
+    },
+    {
+      "id": 124,
+      "actor": 4,
+      "animation": "special",
+      "phase": 6,
+      "atlas": 2,
+      "cell": [
+        4,
+        4
+      ],
+      "path": "res://assets/original/actors/4/special_6.png",
+      "source_size": [
+        10,
+        7
+      ],
+      "source_offset": [
+        -10,
+        -3
+      ],
+      "atlas_rect": [
+        1084,
+        2423,
+        137,
+        96
+      ],
+      "scale": 13.653333333333334,
+      "part_kind": "head"
+    },
+    {
+      "id": 125,
+      "actor": 5,
+      "animation": "walk_0",
+      "phase": 0,
+      "atlas": 2,
+      "cell": [
+        5,
+        0
+      ],
+      "path": "res://assets/original/actors/5/walk_0_0.png",
+      "source_size": [
+        10,
+        17
+      ],
+      "source_offset": [
+        -5,
+        -17
+      ],
+      "atlas_rect": [
+        1344,
+        253,
+        128,
+        218
+      ],
+      "scale": 12.8,
+      "part_kind": "body"
+    },
+    {
+      "id": 126,
+      "actor": 5,
+      "animation": "walk_0",
+      "phase": 1,
+      "atlas": 2,
+      "cell": [
+        6,
+        0
+      ],
+      "path": "res://assets/original/actors/5/walk_0_1.png",
+      "source_size": [
+        10,
+        17
+      ],
+      "source_offset": [
+        -5,
+        -17
+      ],
+      "atlas_rect": [
+        1600,
+        253,
+        128,
+        218
+      ],
+      "scale": 12.8,
+      "part_kind": "body"
+    },
+    {
+      "id": 127,
+      "actor": 5,
+      "animation": "walk_0",
+      "phase": 2,
+      "atlas": 2,
+      "cell": [
+        7,
+        0
+      ],
+      "path": "res://assets/original/actors/5/walk_0_2.png",
+      "source_size": [
+        10,
+        17
+      ],
+      "source_offset": [
+        -5,
+        -17
+      ],
+      "atlas_rect": [
+        1856,
+        253,
+        128,
+        218
+      ],
+      "scale": 12.8,
+      "part_kind": "body"
+    },
+    {
+      "id": 128,
+      "actor": 5,
+      "animation": "walk_1",
+      "phase": 0,
+      "atlas": 2,
+      "cell": [
+        8,
+        0
+      ],
+      "path": "res://assets/original/actors/5/walk_1_0.png",
+      "source_size": [
+        10,
+        17
+      ],
+      "source_offset": [
+        -5,
+        -17
+      ],
+      "atlas_rect": [
+        2112,
+        253,
+        128,
+        218
+      ],
+      "scale": 12.8,
+      "part_kind": "body"
+    },
+    {
+      "id": 129,
+      "actor": 5,
+      "animation": "walk_1",
+      "phase": 1,
+      "atlas": 2,
+      "cell": [
+        9,
+        0
+      ],
+      "path": "res://assets/original/actors/5/walk_1_1.png",
+      "source_size": [
+        10,
+        17
+      ],
+      "source_offset": [
+        -5,
+        -17
+      ],
+      "atlas_rect": [
+        2368,
+        253,
+        128,
+        218
+      ],
+      "scale": 12.8,
+      "part_kind": "body"
+    },
+    {
+      "id": 130,
+      "actor": 5,
+      "animation": "walk_1",
+      "phase": 2,
+      "atlas": 2,
+      "cell": [
+        5,
+        1
+      ],
+      "path": "res://assets/original/actors/5/walk_1_2.png",
+      "source_size": [
+        10,
+        17
+      ],
+      "source_offset": [
+        -5,
+        -17
+      ],
+      "atlas_rect": [
+        1344,
+        765,
+        128,
+        218
+      ],
+      "scale": 12.8,
+      "part_kind": "body"
+    },
+    {
+      "id": 131,
+      "actor": 5,
+      "animation": "walk_2",
+      "phase": 0,
+      "atlas": 2,
+      "cell": [
+        6,
+        1
+      ],
+      "path": "res://assets/original/actors/5/walk_2_0.png",
+      "source_size": [
+        10,
+        17
+      ],
+      "source_offset": [
+        -5,
+        -17
+      ],
+      "atlas_rect": [
+        1600,
+        765,
+        128,
+        218
+      ],
+      "scale": 12.8,
+      "part_kind": "body"
+    },
+    {
+      "id": 132,
+      "actor": 5,
+      "animation": "walk_2",
+      "phase": 1,
+      "atlas": 2,
+      "cell": [
+        7,
+        1
+      ],
+      "path": "res://assets/original/actors/5/walk_2_1.png",
+      "source_size": [
+        10,
+        17
+      ],
+      "source_offset": [
+        -5,
+        -17
+      ],
+      "atlas_rect": [
+        1856,
+        765,
+        128,
+        218
+      ],
+      "scale": 12.8,
+      "part_kind": "body"
+    },
+    {
+      "id": 133,
+      "actor": 5,
+      "animation": "walk_2",
+      "phase": 2,
+      "atlas": 2,
+      "cell": [
+        8,
+        1
+      ],
+      "path": "res://assets/original/actors/5/walk_2_2.png",
+      "source_size": [
+        10,
+        17
+      ],
+      "source_offset": [
+        -5,
+        -17
+      ],
+      "atlas_rect": [
+        2112,
+        765,
+        128,
+        218
+      ],
+      "scale": 12.8,
+      "part_kind": "body"
+    },
+    {
+      "id": 134,
+      "actor": 5,
+      "animation": "walk_3",
+      "phase": 0,
+      "atlas": 2,
+      "cell": [
+        9,
+        1
+      ],
+      "path": "res://assets/original/actors/5/walk_3_0.png",
+      "source_size": [
+        10,
+        17
+      ],
+      "source_offset": [
+        -5,
+        -17
+      ],
+      "atlas_rect": [
+        2368,
+        765,
+        128,
+        218
+      ],
+      "scale": 12.8,
+      "part_kind": "body"
+    },
+    {
+      "id": 135,
+      "actor": 5,
+      "animation": "walk_3",
+      "phase": 1,
+      "atlas": 2,
+      "cell": [
+        5,
+        2
+      ],
+      "path": "res://assets/original/actors/5/walk_3_1.png",
+      "source_size": [
+        10,
+        17
+      ],
+      "source_offset": [
+        -5,
+        -17
+      ],
+      "atlas_rect": [
+        1344,
+        1277,
+        128,
+        218
+      ],
+      "scale": 12.8,
+      "part_kind": "body"
+    },
+    {
+      "id": 136,
+      "actor": 5,
+      "animation": "walk_3",
+      "phase": 2,
+      "atlas": 2,
+      "cell": [
+        6,
+        2
+      ],
+      "path": "res://assets/original/actors/5/walk_3_2.png",
+      "source_size": [
+        10,
+        17
+      ],
+      "source_offset": [
+        -5,
+        -17
+      ],
+      "atlas_rect": [
+        1600,
+        1277,
+        128,
+        218
+      ],
+      "scale": 12.8,
+      "part_kind": "body"
+    },
+    {
+      "id": 137,
+      "actor": 5,
+      "animation": "sit",
+      "phase": 0,
+      "atlas": 2,
+      "cell": [
+        7,
+        2
+      ],
+      "path": "res://assets/original/actors/5/sit_0.png",
+      "source_size": [
+        11,
+        16
+      ],
+      "source_offset": [
+        -5,
+        -16
+      ],
+      "atlas_rect": [
+        1850,
+        1290,
+        141,
+        205
+      ],
+      "scale": 12.8,
+      "part_kind": "body"
+    },
+    {
+      "id": 138,
+      "actor": 5,
+      "animation": "sit",
+      "phase": 1,
+      "atlas": 2,
+      "cell": [
+        8,
+        2
+      ],
+      "path": "res://assets/original/actors/5/sit_1.png",
+      "source_size": [
+        11,
+        16
+      ],
+      "source_offset": [
+        -5,
+        -16
+      ],
+      "atlas_rect": [
+        2106,
+        1290,
+        141,
+        205
+      ],
+      "scale": 12.8,
+      "part_kind": "body"
+    },
+    {
+      "id": 139,
+      "actor": 5,
+      "animation": "ride",
+      "phase": 0,
+      "atlas": 2,
+      "cell": [
+        9,
+        2
+      ],
+      "path": "res://assets/original/actors/5/ride_0.png",
+      "source_size": [
+        12,
+        16
+      ],
+      "source_offset": [
+        0,
+        -16
+      ],
+      "atlas_rect": [
+        2355,
+        1290,
+        154,
+        205
+      ],
+      "scale": 12.8,
+      "part_kind": "body"
+    },
+    {
+      "id": 140,
+      "actor": 5,
+      "animation": "ride",
+      "phase": 1,
+      "atlas": 2,
+      "cell": [
+        5,
+        3
+      ],
+      "path": "res://assets/original/actors/5/ride_1.png",
+      "source_size": [
+        16,
+        14
+      ],
+      "source_offset": [
+        0,
+        0
+      ],
+      "atlas_rect": [
+        1306,
+        1828,
+        205,
+        179
+      ],
+      "scale": 12.8,
+      "part_kind": "body"
+    },
+    {
+      "id": 141,
+      "actor": 5,
+      "animation": "ride",
+      "phase": 2,
+      "atlas": 2,
+      "cell": [
+        6,
+        3
+      ],
+      "path": "res://assets/original/actors/5/ride_2.png",
+      "source_size": [
+        8,
+        19
+      ],
+      "source_offset": [
+        0,
+        0
+      ],
+      "atlas_rect": [
+        1613,
+        1764,
+        102,
+        243
+      ],
+      "scale": 12.8,
+      "part_kind": "body"
+    },
+    {
+      "id": 142,
+      "actor": 5,
+      "animation": "pose",
+      "phase": 0,
+      "atlas": 2,
+      "cell": [
+        7,
+        3
+      ],
+      "path": "res://assets/original/actors/5/pose_0.png",
+      "source_size": [
+        12,
+        16
+      ],
+      "source_offset": [
+        -6,
+        -16
+      ],
+      "atlas_rect": [
+        1843,
+        1802,
+        154,
+        205
+      ],
+      "scale": 12.8,
+      "part_kind": "body"
+    },
+    {
+      "id": 143,
+      "actor": 5,
+      "animation": "special",
+      "phase": 0,
+      "atlas": 2,
+      "cell": [
+        8,
+        3
+      ],
+      "path": "res://assets/original/actors/5/special_0.png",
+      "source_size": [
+        10,
+        7
+      ],
+      "source_offset": [
+        -5,
+        -6
+      ],
+      "atlas_rect": [
+        2112,
+        1917,
+        128,
+        90
+      ],
+      "scale": 12.8,
+      "part_kind": "head"
+    },
+    {
+      "id": 144,
+      "actor": 5,
+      "animation": "special",
+      "phase": 1,
+      "atlas": 2,
+      "cell": [
+        9,
+        3
+      ],
+      "path": "res://assets/original/actors/5/special_1.png",
+      "source_size": [
+        10,
+        7
+      ],
+      "source_offset": [
+        -5,
+        -6
+      ],
+      "atlas_rect": [
+        2368,
+        1917,
+        128,
+        90
+      ],
+      "scale": 12.8,
+      "part_kind": "head"
+    },
+    {
+      "id": 145,
+      "actor": 5,
+      "animation": "special",
+      "phase": 2,
+      "atlas": 2,
+      "cell": [
+        5,
+        4
+      ],
+      "path": "res://assets/original/actors/5/special_2.png",
+      "source_size": [
+        10,
+        7
+      ],
+      "source_offset": [
+        -5,
+        -6
+      ],
+      "atlas_rect": [
+        1344,
+        2429,
+        128,
+        90
+      ],
+      "scale": 12.8,
+      "part_kind": "head"
+    },
+    {
+      "id": 146,
+      "actor": 5,
+      "animation": "special",
+      "phase": 3,
+      "atlas": 2,
+      "cell": [
+        6,
+        4
+      ],
+      "path": "res://assets/original/actors/5/special_3.png",
+      "source_size": [
+        10,
+        7
+      ],
+      "source_offset": [
+        -5,
+        -6
+      ],
+      "atlas_rect": [
+        1600,
+        2429,
+        128,
+        90
+      ],
+      "scale": 12.8,
+      "part_kind": "head"
+    },
+    {
+      "id": 147,
+      "actor": 5,
+      "animation": "special",
+      "phase": 4,
+      "atlas": 2,
+      "cell": [
+        7,
+        4
+      ],
+      "path": "res://assets/original/actors/5/special_4.png",
+      "source_size": [
+        6,
+        11
+      ],
+      "source_offset": [
+        0,
+        -5
+      ],
+      "atlas_rect": [
+        1882,
+        2378,
+        77,
+        141
+      ],
+      "scale": 12.8,
+      "part_kind": "head"
+    },
+    {
+      "id": 148,
+      "actor": 5,
+      "animation": "special",
+      "phase": 5,
+      "atlas": 2,
+      "cell": [
+        8,
+        4
+      ],
+      "path": "res://assets/original/actors/5/special_5.png",
+      "source_size": [
+        8,
+        7
+      ],
+      "source_offset": [
+        -4,
+        0
+      ],
+      "atlas_rect": [
+        2125,
+        2429,
+        102,
+        90
+      ],
+      "scale": 12.8,
+      "part_kind": "head"
+    },
+    {
+      "id": 149,
+      "actor": 5,
+      "animation": "special",
+      "phase": 6,
+      "atlas": 2,
+      "cell": [
+        9,
+        4
+      ],
+      "path": "res://assets/original/actors/5/special_6.png",
+      "source_size": [
+        8,
+        7
+      ],
+      "source_offset": [
+        -8,
+        -3
+      ],
+      "atlas_rect": [
+        2381,
+        2429,
+        102,
+        90
+      ],
+      "scale": 12.8,
+      "part_kind": "head"
+    },
+    {
+      "id": 150,
+      "actor": 6,
+      "animation": "walk_0",
+      "phase": 0,
+      "atlas": 3,
+      "cell": [
+        0,
+        0
+      ],
+      "path": "res://assets/original/actors/6/walk_0_0.png",
+      "source_size": [
+        9,
+        17
+      ],
+      "source_offset": [
+        -4,
+        -17
+      ],
+      "atlas_rect": [
+        66,
+        239,
+        123,
+        232
+      ],
+      "scale": 13.653333333333334,
+      "part_kind": "body"
+    },
+    {
+      "id": 151,
+      "actor": 6,
+      "animation": "walk_0",
+      "phase": 1,
+      "atlas": 3,
+      "cell": [
+        1,
+        0
+      ],
+      "path": "res://assets/original/actors/6/walk_0_1.png",
+      "source_size": [
+        9,
+        17
+      ],
+      "source_offset": [
+        -4,
+        -17
+      ],
+      "atlas_rect": [
+        322,
+        239,
+        123,
+        232
+      ],
+      "scale": 13.653333333333334,
+      "part_kind": "body"
+    },
+    {
+      "id": 152,
+      "actor": 6,
+      "animation": "walk_0",
+      "phase": 2,
+      "atlas": 3,
+      "cell": [
+        2,
+        0
+      ],
+      "path": "res://assets/original/actors/6/walk_0_2.png",
+      "source_size": [
+        9,
+        17
+      ],
+      "source_offset": [
+        -4,
+        -17
+      ],
+      "atlas_rect": [
+        578,
+        239,
+        123,
+        232
+      ],
+      "scale": 13.653333333333334,
+      "part_kind": "body"
+    },
+    {
+      "id": 153,
+      "actor": 6,
+      "animation": "walk_1",
+      "phase": 0,
+      "atlas": 3,
+      "cell": [
+        3,
+        0
+      ],
+      "path": "res://assets/original/actors/6/walk_1_0.png",
+      "source_size": [
+        9,
+        17
+      ],
+      "source_offset": [
+        -4,
+        -17
+      ],
+      "atlas_rect": [
+        834,
+        239,
+        123,
+        232
+      ],
+      "scale": 13.653333333333334,
+      "part_kind": "body"
+    },
+    {
+      "id": 154,
+      "actor": 6,
+      "animation": "walk_1",
+      "phase": 1,
+      "atlas": 3,
+      "cell": [
+        4,
+        0
+      ],
+      "path": "res://assets/original/actors/6/walk_1_1.png",
+      "source_size": [
+        9,
+        17
+      ],
+      "source_offset": [
+        -4,
+        -17
+      ],
+      "atlas_rect": [
+        1090,
+        239,
+        123,
+        232
+      ],
+      "scale": 13.653333333333334,
+      "part_kind": "body"
+    },
+    {
+      "id": 155,
+      "actor": 6,
+      "animation": "walk_1",
+      "phase": 2,
+      "atlas": 3,
+      "cell": [
+        0,
+        1
+      ],
+      "path": "res://assets/original/actors/6/walk_1_2.png",
+      "source_size": [
+        9,
+        17
+      ],
+      "source_offset": [
+        -4,
+        -17
+      ],
+      "atlas_rect": [
+        66,
+        751,
+        123,
+        232
+      ],
+      "scale": 13.653333333333334,
+      "part_kind": "body"
+    },
+    {
+      "id": 156,
+      "actor": 6,
+      "animation": "walk_2",
+      "phase": 0,
+      "atlas": 3,
+      "cell": [
+        1,
+        1
+      ],
+      "path": "res://assets/original/actors/6/walk_2_0.png",
+      "source_size": [
+        8,
+        17
+      ],
+      "source_offset": [
+        -4,
+        -17
+      ],
+      "atlas_rect": [
+        330,
+        751,
+        109,
+        232
+      ],
+      "scale": 13.653333333333334,
+      "part_kind": "body"
+    },
+    {
+      "id": 157,
+      "actor": 6,
+      "animation": "walk_2",
+      "phase": 1,
+      "atlas": 3,
+      "cell": [
+        2,
+        1
+      ],
+      "path": "res://assets/original/actors/6/walk_2_1.png",
+      "source_size": [
+        9,
+        17
+      ],
+      "source_offset": [
+        -4,
+        -17
+      ],
+      "atlas_rect": [
+        578,
+        751,
+        123,
+        232
+      ],
+      "scale": 13.653333333333334,
+      "part_kind": "body"
+    },
+    {
+      "id": 158,
+      "actor": 6,
+      "animation": "walk_2",
+      "phase": 2,
+      "atlas": 3,
+      "cell": [
+        3,
+        1
+      ],
+      "path": "res://assets/original/actors/6/walk_2_2.png",
+      "source_size": [
+        9,
+        17
+      ],
+      "source_offset": [
+        -4,
+        -17
+      ],
+      "atlas_rect": [
+        834,
+        751,
+        123,
+        232
+      ],
+      "scale": 13.653333333333334,
+      "part_kind": "body"
+    },
+    {
+      "id": 159,
+      "actor": 6,
+      "animation": "walk_3",
+      "phase": 0,
+      "atlas": 3,
+      "cell": [
+        4,
+        1
+      ],
+      "path": "res://assets/original/actors/6/walk_3_0.png",
+      "source_size": [
+        8,
+        17
+      ],
+      "source_offset": [
+        -4,
+        -17
+      ],
+      "atlas_rect": [
+        1098,
+        751,
+        109,
+        232
+      ],
+      "scale": 13.653333333333334,
+      "part_kind": "body"
+    },
+    {
+      "id": 160,
+      "actor": 6,
+      "animation": "walk_3",
+      "phase": 1,
+      "atlas": 3,
+      "cell": [
+        0,
+        2
+      ],
+      "path": "res://assets/original/actors/6/walk_3_1.png",
+      "source_size": [
+        9,
+        17
+      ],
+      "source_offset": [
+        -4,
+        -17
+      ],
+      "atlas_rect": [
+        66,
+        1263,
+        123,
+        232
+      ],
+      "scale": 13.653333333333334,
+      "part_kind": "body"
+    },
+    {
+      "id": 161,
+      "actor": 6,
+      "animation": "walk_3",
+      "phase": 2,
+      "atlas": 3,
+      "cell": [
+        1,
+        2
+      ],
+      "path": "res://assets/original/actors/6/walk_3_2.png",
+      "source_size": [
+        9,
+        17
+      ],
+      "source_offset": [
+        -4,
+        -17
+      ],
+      "atlas_rect": [
+        322,
+        1263,
+        123,
+        232
+      ],
+      "scale": 13.653333333333334,
+      "part_kind": "body"
+    },
+    {
+      "id": 162,
+      "actor": 6,
+      "animation": "sit",
+      "phase": 0,
+      "atlas": 3,
+      "cell": [
+        2,
+        2
+      ],
+      "path": "res://assets/original/actors/6/sit_0.png",
+      "source_size": [
+        10,
+        16
+      ],
+      "source_offset": [
+        -5,
+        -16
+      ],
+      "atlas_rect": [
+        572,
+        1277,
+        137,
+        218
+      ],
+      "scale": 13.653333333333334,
+      "part_kind": "body"
+    },
+    {
+      "id": 163,
+      "actor": 6,
+      "animation": "sit",
+      "phase": 1,
+      "atlas": 3,
+      "cell": [
+        3,
+        2
+      ],
+      "path": "res://assets/original/actors/6/sit_1.png",
+      "source_size": [
+        10,
+        16
+      ],
+      "source_offset": [
+        -5,
+        -16
+      ],
+      "atlas_rect": [
+        828,
+        1277,
+        137,
+        218
+      ],
+      "scale": 13.653333333333334,
+      "part_kind": "body"
+    },
+    {
+      "id": 164,
+      "actor": 6,
+      "animation": "ride",
+      "phase": 0,
+      "atlas": 3,
+      "cell": [
+        4,
+        2
+      ],
+      "path": "res://assets/original/actors/6/ride_0.png",
+      "source_size": [
+        11,
+        15
+      ],
+      "source_offset": [
+        0,
+        -15
+      ],
+      "atlas_rect": [
+        1077,
+        1290,
+        150,
+        205
+      ],
+      "scale": 13.653333333333334,
+      "part_kind": "body"
+    },
+    {
+      "id": 165,
+      "actor": 6,
+      "animation": "ride",
+      "phase": 1,
+      "atlas": 3,
+      "cell": [
+        0,
+        3
+      ],
+      "path": "res://assets/original/actors/6/ride_1.png",
+      "source_size": [
+        15,
+        14
+      ],
+      "source_offset": [
+        0,
+        0
+      ],
+      "atlas_rect": [
+        26,
+        1816,
+        205,
+        191
+      ],
+      "scale": 13.653333333333334,
+      "part_kind": "body"
+    },
+    {
+      "id": 166,
+      "actor": 6,
+      "animation": "ride",
+      "phase": 2,
+      "atlas": 3,
+      "cell": [
+        1,
+        3
+      ],
+      "path": "res://assets/original/actors/6/ride_2.png",
+      "source_size": [
+        7,
+        18
+      ],
+      "source_offset": [
+        0,
+        0
+      ],
+      "atlas_rect": [
+        336,
+        1761,
+        96,
+        246
+      ],
+      "scale": 13.653333333333334,
+      "part_kind": "body"
+    },
+    {
+      "id": 167,
+      "actor": 6,
+      "animation": "pose",
+      "phase": 0,
+      "atlas": 3,
+      "cell": [
+        2,
+        3
+      ],
+      "path": "res://assets/original/actors/6/pose_0.png",
+      "source_size": [
+        11,
+        16
+      ],
+      "source_offset": [
+        -5,
+        -16
+      ],
+      "atlas_rect": [
+        565,
+        1789,
+        150,
+        218
+      ],
+      "scale": 13.653333333333334,
+      "part_kind": "body"
+    },
+    {
+      "id": 168,
+      "actor": 6,
+      "animation": "special",
+      "phase": 0,
+      "atlas": 3,
+      "cell": [
+        3,
+        3
+      ],
+      "path": "res://assets/original/actors/6/special_0.png",
+      "source_size": [
+        9,
+        7
+      ],
+      "source_offset": [
+        -4,
+        -6
+      ],
+      "atlas_rect": [
+        834,
+        1911,
+        123,
+        96
+      ],
+      "scale": 13.653333333333334,
+      "part_kind": "head"
+    },
+    {
+      "id": 169,
+      "actor": 6,
+      "animation": "special",
+      "phase": 1,
+      "atlas": 3,
+      "cell": [
+        4,
+        3
+      ],
+      "path": "res://assets/original/actors/6/special_1.png",
+      "source_size": [
+        9,
+        7
+      ],
+      "source_offset": [
+        -4,
+        -6
+      ],
+      "atlas_rect": [
+        1090,
+        1911,
+        123,
+        96
+      ],
+      "scale": 13.653333333333334,
+      "part_kind": "head"
+    },
+    {
+      "id": 170,
+      "actor": 6,
+      "animation": "special",
+      "phase": 2,
+      "atlas": 3,
+      "cell": [
+        0,
+        4
+      ],
+      "path": "res://assets/original/actors/6/special_2.png",
+      "source_size": [
+        8,
+        7
+      ],
+      "source_offset": [
+        -4,
+        -6
+      ],
+      "atlas_rect": [
+        74,
+        2423,
+        109,
+        96
+      ],
+      "scale": 13.653333333333334,
+      "part_kind": "head"
+    },
+    {
+      "id": 171,
+      "actor": 6,
+      "animation": "special",
+      "phase": 3,
+      "atlas": 3,
+      "cell": [
+        1,
+        4
+      ],
+      "path": "res://assets/original/actors/6/special_3.png",
+      "source_size": [
+        8,
+        7
+      ],
+      "source_offset": [
+        -4,
+        -6
+      ],
+      "atlas_rect": [
+        330,
+        2423,
+        109,
+        96
+      ],
+      "scale": 13.653333333333334,
+      "part_kind": "head"
+    },
+    {
+      "id": 172,
+      "actor": 6,
+      "animation": "special",
+      "phase": 4,
+      "atlas": 3,
+      "cell": [
+        2,
+        4
+      ],
+      "path": "res://assets/original/actors/6/special_4.png",
+      "source_size": [
+        7,
+        9
+      ],
+      "source_offset": [
+        0,
+        -4
+      ],
+      "atlas_rect": [
+        592,
+        2396,
+        96,
+        123
+      ],
+      "scale": 13.653333333333334,
+      "part_kind": "head"
+    },
+    {
+      "id": 173,
+      "actor": 6,
+      "animation": "special",
+      "phase": 5,
+      "atlas": 3,
+      "cell": [
+        3,
+        4
+      ],
+      "path": "res://assets/original/actors/6/special_5.png",
+      "source_size": [
+        8,
+        7
+      ],
+      "source_offset": [
+        -4,
+        0
+      ],
+      "atlas_rect": [
+        842,
+        2423,
+        109,
+        96
+      ],
+      "scale": 13.653333333333334,
+      "part_kind": "head"
+    },
+    {
+      "id": 174,
+      "actor": 6,
+      "animation": "special",
+      "phase": 6,
+      "atlas": 3,
+      "cell": [
+        4,
+        4
+      ],
+      "path": "res://assets/original/actors/6/special_6.png",
+      "source_size": [
+        8,
+        7
+      ],
+      "source_offset": [
+        -8,
+        -3
+      ],
+      "atlas_rect": [
+        1098,
+        2423,
+        109,
+        96
+      ],
+      "scale": 13.653333333333334,
+      "part_kind": "head"
+    },
+    {
+      "id": 175,
+      "actor": 7,
+      "animation": "walk_0",
+      "phase": 0,
+      "atlas": 3,
+      "cell": [
+        5,
+        0
+      ],
+      "path": "res://assets/original/actors/7/walk_0_0.png",
+      "source_size": [
+        10,
+        20
+      ],
+      "source_offset": [
+        -5,
+        -20
+      ],
+      "atlas_rect": [
+        1348,
+        230,
+        120,
+        241
+      ],
+      "scale": 12.047058823529412,
+      "part_kind": "body"
+    },
+    {
+      "id": 176,
+      "actor": 7,
+      "animation": "walk_0",
+      "phase": 1,
+      "atlas": 3,
+      "cell": [
+        6,
+        0
+      ],
+      "path": "res://assets/original/actors/7/walk_0_1.png",
+      "source_size": [
+        10,
+        20
+      ],
+      "source_offset": [
+        -5,
+        -20
+      ],
+      "atlas_rect": [
+        1604,
+        230,
+        120,
+        241
+      ],
+      "scale": 12.047058823529412,
+      "part_kind": "body"
+    },
+    {
+      "id": 177,
+      "actor": 7,
+      "animation": "walk_0",
+      "phase": 2,
+      "atlas": 3,
+      "cell": [
+        7,
+        0
+      ],
+      "path": "res://assets/original/actors/7/walk_0_2.png",
+      "source_size": [
+        10,
+        20
+      ],
+      "source_offset": [
+        -5,
+        -20
+      ],
+      "atlas_rect": [
+        1860,
+        230,
+        120,
+        241
+      ],
+      "scale": 12.047058823529412,
+      "part_kind": "body"
+    },
+    {
+      "id": 178,
+      "actor": 7,
+      "animation": "walk_1",
+      "phase": 0,
+      "atlas": 3,
+      "cell": [
+        8,
+        0
+      ],
+      "path": "res://assets/original/actors/7/walk_1_0.png",
+      "source_size": [
+        10,
+        20
+      ],
+      "source_offset": [
+        -5,
+        -20
+      ],
+      "atlas_rect": [
+        2116,
+        230,
+        120,
+        241
+      ],
+      "scale": 12.047058823529412,
+      "part_kind": "body"
+    },
+    {
+      "id": 179,
+      "actor": 7,
+      "animation": "walk_1",
+      "phase": 1,
+      "atlas": 3,
+      "cell": [
+        9,
+        0
+      ],
+      "path": "res://assets/original/actors/7/walk_1_1.png",
+      "source_size": [
+        10,
+        20
+      ],
+      "source_offset": [
+        -5,
+        -20
+      ],
+      "atlas_rect": [
+        2372,
+        230,
+        120,
+        241
+      ],
+      "scale": 12.047058823529412,
+      "part_kind": "body"
+    },
+    {
+      "id": 180,
+      "actor": 7,
+      "animation": "walk_1",
+      "phase": 2,
+      "atlas": 3,
+      "cell": [
+        5,
+        1
+      ],
+      "path": "res://assets/original/actors/7/walk_1_2.png",
+      "source_size": [
+        10,
+        20
+      ],
+      "source_offset": [
+        -5,
+        -20
+      ],
+      "atlas_rect": [
+        1348,
+        742,
+        120,
+        241
+      ],
+      "scale": 12.047058823529412,
+      "part_kind": "body"
+    },
+    {
+      "id": 181,
+      "actor": 7,
+      "animation": "walk_2",
+      "phase": 0,
+      "atlas": 3,
+      "cell": [
+        6,
+        1
+      ],
+      "path": "res://assets/original/actors/7/walk_2_0.png",
+      "source_size": [
+        9,
+        20
+      ],
+      "source_offset": [
+        -4,
+        -20
+      ],
+      "atlas_rect": [
+        1610,
+        742,
+        108,
+        241
+      ],
+      "scale": 12.047058823529412,
+      "part_kind": "body"
+    },
+    {
+      "id": 182,
+      "actor": 7,
+      "animation": "walk_2",
+      "phase": 1,
+      "atlas": 3,
+      "cell": [
+        7,
+        1
+      ],
+      "path": "res://assets/original/actors/7/walk_2_1.png",
+      "source_size": [
+        10,
+        20
+      ],
+      "source_offset": [
+        -5,
+        -20
+      ],
+      "atlas_rect": [
+        1860,
+        742,
+        120,
+        241
+      ],
+      "scale": 12.047058823529412,
+      "part_kind": "body"
+    },
+    {
+      "id": 183,
+      "actor": 7,
+      "animation": "walk_2",
+      "phase": 2,
+      "atlas": 3,
+      "cell": [
+        8,
+        1
+      ],
+      "path": "res://assets/original/actors/7/walk_2_2.png",
+      "source_size": [
+        10,
+        20
+      ],
+      "source_offset": [
+        -5,
+        -20
+      ],
+      "atlas_rect": [
+        2116,
+        742,
+        120,
+        241
+      ],
+      "scale": 12.047058823529412,
+      "part_kind": "body"
+    },
+    {
+      "id": 184,
+      "actor": 7,
+      "animation": "walk_3",
+      "phase": 0,
+      "atlas": 3,
+      "cell": [
+        9,
+        1
+      ],
+      "path": "res://assets/original/actors/7/walk_3_0.png",
+      "source_size": [
+        9,
+        20
+      ],
+      "source_offset": [
+        -4,
+        -20
+      ],
+      "atlas_rect": [
+        2378,
+        742,
+        108,
+        241
+      ],
+      "scale": 12.047058823529412,
+      "part_kind": "body"
+    },
+    {
+      "id": 185,
+      "actor": 7,
+      "animation": "walk_3",
+      "phase": 1,
+      "atlas": 3,
+      "cell": [
+        5,
+        2
+      ],
+      "path": "res://assets/original/actors/7/walk_3_1.png",
+      "source_size": [
+        10,
+        20
+      ],
+      "source_offset": [
+        -5,
+        -20
+      ],
+      "atlas_rect": [
+        1348,
+        1254,
+        120,
+        241
+      ],
+      "scale": 12.047058823529412,
+      "part_kind": "body"
+    },
+    {
+      "id": 186,
+      "actor": 7,
+      "animation": "walk_3",
+      "phase": 2,
+      "atlas": 3,
+      "cell": [
+        6,
+        2
+      ],
+      "path": "res://assets/original/actors/7/walk_3_2.png",
+      "source_size": [
+        10,
+        20
+      ],
+      "source_offset": [
+        -5,
+        -20
+      ],
+      "atlas_rect": [
+        1604,
+        1254,
+        120,
+        241
+      ],
+      "scale": 12.047058823529412,
+      "part_kind": "body"
+    },
+    {
+      "id": 187,
+      "actor": 7,
+      "animation": "sit",
+      "phase": 0,
+      "atlas": 3,
+      "cell": [
+        7,
+        2
+      ],
+      "path": "res://assets/original/actors/7/sit_0.png",
+      "source_size": [
+        11,
+        19
+      ],
+      "source_offset": [
+        -5,
+        -19
+      ],
+      "atlas_rect": [
+        1854,
+        1266,
+        133,
+        229
+      ],
+      "scale": 12.047058823529412,
+      "part_kind": "body"
+    },
+    {
+      "id": 188,
+      "actor": 7,
+      "animation": "sit",
+      "phase": 1,
+      "atlas": 3,
+      "cell": [
+        8,
+        2
+      ],
+      "path": "res://assets/original/actors/7/sit_1.png",
+      "source_size": [
+        11,
+        19
+      ],
+      "source_offset": [
+        -5,
+        -19
+      ],
+      "atlas_rect": [
+        2110,
+        1266,
+        133,
+        229
+      ],
+      "scale": 12.047058823529412,
+      "part_kind": "body"
+    },
+    {
+      "id": 189,
+      "actor": 7,
+      "animation": "ride",
+      "phase": 0,
+      "atlas": 3,
+      "cell": [
+        9,
+        2
+      ],
+      "path": "res://assets/original/actors/7/ride_0.png",
+      "source_size": [
+        13,
+        18
+      ],
+      "source_offset": [
+        0,
+        -18
+      ],
+      "atlas_rect": [
+        2354,
+        1278,
+        157,
+        217
+      ],
+      "scale": 12.047058823529412,
+      "part_kind": "body"
+    },
+    {
+      "id": 190,
+      "actor": 7,
+      "animation": "ride",
+      "phase": 1,
+      "atlas": 3,
+      "cell": [
+        5,
+        3
+      ],
+      "path": "res://assets/original/actors/7/ride_1.png",
+      "source_size": [
+        17,
+        15
+      ],
+      "source_offset": [
+        0,
+        0
+      ],
+      "atlas_rect": [
+        1306,
+        1826,
+        205,
+        181
+      ],
+      "scale": 12.047058823529412,
+      "part_kind": "body"
+    },
+    {
+      "id": 191,
+      "actor": 7,
+      "animation": "ride",
+      "phase": 2,
+      "atlas": 3,
+      "cell": [
+        6,
+        3
+      ],
+      "path": "res://assets/original/actors/7/ride_2.png",
+      "source_size": [
+        9,
+        21
+      ],
+      "source_offset": [
+        0,
+        0
+      ],
+      "atlas_rect": [
+        1610,
+        1754,
+        108,
+        253
+      ],
+      "scale": 12.047058823529412,
+      "part_kind": "body"
+    },
+    {
+      "id": 192,
+      "actor": 7,
+      "animation": "pose",
+      "phase": 0,
+      "atlas": 3,
+      "cell": [
+        7,
+        3
+      ],
+      "path": "res://assets/original/actors/7/pose_0.png",
+      "source_size": [
+        12,
+        18
+      ],
+      "source_offset": [
+        -6,
+        -18
+      ],
+      "atlas_rect": [
+        1848,
+        1790,
+        145,
+        217
+      ],
+      "scale": 12.047058823529412,
+      "part_kind": "body"
+    },
+    {
+      "id": 193,
+      "actor": 7,
+      "animation": "special",
+      "phase": 0,
+      "atlas": 3,
+      "cell": [
+        8,
+        3
+      ],
+      "path": "res://assets/original/actors/7/special_0.png",
+      "source_size": [
+        10,
+        8
+      ],
+      "source_offset": [
+        -5,
+        -8
+      ],
+      "atlas_rect": [
+        2116,
+        1911,
+        120,
+        96
+      ],
+      "scale": 12.047058823529412,
+      "part_kind": "head"
+    },
+    {
+      "id": 194,
+      "actor": 7,
+      "animation": "special",
+      "phase": 1,
+      "atlas": 3,
+      "cell": [
+        9,
+        3
+      ],
+      "path": "res://assets/original/actors/7/special_1.png",
+      "source_size": [
+        10,
+        8
+      ],
+      "source_offset": [
+        -5,
+        -8
+      ],
+      "atlas_rect": [
+        2372,
+        1911,
+        120,
+        96
+      ],
+      "scale": 12.047058823529412,
+      "part_kind": "head"
+    },
+    {
+      "id": 195,
+      "actor": 7,
+      "animation": "special",
+      "phase": 2,
+      "atlas": 3,
+      "cell": [
+        5,
+        4
+      ],
+      "path": "res://assets/original/actors/7/special_2.png",
+      "source_size": [
+        9,
+        8
+      ],
+      "source_offset": [
+        -4,
+        -8
+      ],
+      "atlas_rect": [
+        1354,
+        2423,
+        108,
+        96
+      ],
+      "scale": 12.047058823529412,
+      "part_kind": "head"
+    },
+    {
+      "id": 196,
+      "actor": 7,
+      "animation": "special",
+      "phase": 3,
+      "atlas": 3,
+      "cell": [
+        6,
+        4
+      ],
+      "path": "res://assets/original/actors/7/special_3.png",
+      "source_size": [
+        9,
+        8
+      ],
+      "source_offset": [
+        -4,
+        -8
+      ],
+      "atlas_rect": [
+        1610,
+        2423,
+        108,
+        96
+      ],
+      "scale": 12.047058823529412,
+      "part_kind": "head"
+    },
+    {
+      "id": 197,
+      "actor": 7,
+      "animation": "special",
+      "phase": 4,
+      "atlas": 3,
+      "cell": [
+        7,
+        4
+      ],
+      "path": "res://assets/original/actors/7/special_4.png",
+      "source_size": [
+        8,
+        10
+      ],
+      "source_offset": [
+        0,
+        -5
+      ],
+      "atlas_rect": [
+        1872,
+        2399,
+        96,
+        120
+      ],
+      "scale": 12.047058823529412,
+      "part_kind": "head"
+    },
+    {
+      "id": 198,
+      "actor": 7,
+      "animation": "special",
+      "phase": 5,
+      "atlas": 3,
+      "cell": [
+        8,
+        4
+      ],
+      "path": "res://assets/original/actors/7/special_5.png",
+      "source_size": [
+        9,
+        8
+      ],
+      "source_offset": [
+        -4,
+        0
+      ],
+      "atlas_rect": [
+        2122,
+        2423,
+        108,
+        96
+      ],
+      "scale": 12.047058823529412,
+      "part_kind": "head"
+    },
+    {
+      "id": 199,
+      "actor": 7,
+      "animation": "special",
+      "phase": 6,
+      "atlas": 3,
+      "cell": [
+        9,
+        4
+      ],
+      "path": "res://assets/original/actors/7/special_6.png",
+      "source_size": [
+        9,
+        8
+      ],
+      "source_offset": [
+        -8,
+        -4
+      ],
+      "atlas_rect": [
+        2378,
+        2423,
+        108,
+        96
+      ],
+      "scale": 12.047058823529412,
+      "part_kind": "head"
+    },
+    {
+      "id": 200,
+      "actor": 8,
+      "animation": "walk_0",
+      "phase": 0,
+      "atlas": 4,
+      "cell": [
+        0,
+        0
+      ],
+      "path": "res://assets/original/actors/8/walk_0_0.png",
+      "source_size": [
+        8,
+        18
+      ],
+      "source_offset": [
+        -4,
+        -18
+      ],
+      "atlas_rect": [
+        87,
+        58,
+        210,
+        472
+      ],
+      "scale": 26.24,
+      "part_kind": "body"
+    },
+    {
+      "id": 201,
+      "actor": 8,
+      "animation": "walk_0",
+      "phase": 1,
+      "atlas": 4,
+      "cell": [
+        1,
+        0
+      ],
+      "path": "res://assets/original/actors/8/walk_0_1.png",
+      "source_size": [
+        9,
+        18
+      ],
+      "source_offset": [
+        -4,
+        -18
+      ],
+      "atlas_rect": [
+        458,
+        58,
+        236,
+        472
+      ],
+      "scale": 26.24,
+      "part_kind": "body"
+    },
+    {
+      "id": 202,
+      "actor": 8,
+      "animation": "walk_0",
+      "phase": 2,
+      "atlas": 4,
+      "cell": [
+        2,
+        0
+      ],
+      "path": "res://assets/original/actors/8/walk_0_2.png",
+      "source_size": [
+        11,
+        18
+      ],
+      "source_offset": [
+        -5,
+        -18
+      ],
+      "atlas_rect": [
+        816,
+        58,
+        289,
+        472
+      ],
+      "scale": 26.24,
+      "part_kind": "body"
+    },
+    {
+      "id": 203,
+      "actor": 8,
+      "animation": "walk_1",
+      "phase": 0,
+      "atlas": 4,
+      "cell": [
+        0,
+        1
+      ],
+      "path": "res://assets/original/actors/8/walk_1_0.png",
+      "source_size": [
+        8,
+        18
+      ],
+      "source_offset": [
+        -4,
+        -18
+      ],
+      "atlas_rect": [
+        87,
+        634,
+        210,
+        472
+      ],
+      "scale": 26.24,
+      "part_kind": "body"
+    },
+    {
+      "id": 204,
+      "actor": 8,
+      "animation": "walk_1",
+      "phase": 1,
+      "atlas": 4,
+      "cell": [
+        1,
+        1
+      ],
+      "path": "res://assets/original/actors/8/walk_1_1.png",
+      "source_size": [
+        9,
+        18
+      ],
+      "source_offset": [
+        -4,
+        -18
+      ],
+      "atlas_rect": [
+        458,
+        634,
+        236,
+        472
+      ],
+      "scale": 26.24,
+      "part_kind": "body"
+    },
+    {
+      "id": 205,
+      "actor": 8,
+      "animation": "walk_1",
+      "phase": 2,
+      "atlas": 4,
+      "cell": [
+        2,
+        1
+      ],
+      "path": "res://assets/original/actors/8/walk_1_2.png",
+      "source_size": [
+        11,
+        18
+      ],
+      "source_offset": [
+        -5,
+        -18
+      ],
+      "atlas_rect": [
+        816,
+        634,
+        289,
+        472
+      ],
+      "scale": 26.24,
+      "part_kind": "body"
+    },
+    {
+      "id": 206,
+      "actor": 8,
+      "animation": "walk_2",
+      "phase": 0,
+      "atlas": 4,
+      "cell": [
+        0,
+        2
+      ],
+      "path": "res://assets/original/actors/8/walk_2_0.png",
+      "source_size": [
+        8,
+        18
+      ],
+      "source_offset": [
+        -4,
+        -18
+      ],
+      "atlas_rect": [
+        87,
+        1210,
+        210,
+        472
+      ],
+      "scale": 26.24,
+      "part_kind": "body"
+    },
+    {
+      "id": 207,
+      "actor": 8,
+      "animation": "walk_2",
+      "phase": 1,
+      "atlas": 4,
+      "cell": [
+        1,
+        2
+      ],
+      "path": "res://assets/original/actors/8/walk_2_1.png",
+      "source_size": [
+        9,
+        18
+      ],
+      "source_offset": [
+        -4,
+        -18
+      ],
+      "atlas_rect": [
+        458,
+        1210,
+        236,
+        472
+      ],
+      "scale": 26.24,
+      "part_kind": "body"
+    },
+    {
+      "id": 208,
+      "actor": 8,
+      "animation": "walk_2",
+      "phase": 2,
+      "atlas": 4,
+      "cell": [
+        2,
+        2
+      ],
+      "path": "res://assets/original/actors/8/walk_2_2.png",
+      "source_size": [
+        10,
+        18
+      ],
+      "source_offset": [
+        -5,
+        -18
+      ],
+      "atlas_rect": [
+        829,
+        1210,
+        262,
+        472
+      ],
+      "scale": 26.24,
+      "part_kind": "body"
+    },
+    {
+      "id": 209,
+      "actor": 8,
+      "animation": "walk_3",
+      "phase": 0,
+      "atlas": 4,
+      "cell": [
+        0,
+        3
+      ],
+      "path": "res://assets/original/actors/8/walk_3_0.png",
+      "source_size": [
+        8,
+        18
+      ],
+      "source_offset": [
+        -4,
+        -18
+      ],
+      "atlas_rect": [
+        87,
+        1786,
+        210,
+        472
+      ],
+      "scale": 26.24,
+      "part_kind": "body"
+    },
+    {
+      "id": 210,
+      "actor": 8,
+      "animation": "walk_3",
+      "phase": 1,
+      "atlas": 4,
+      "cell": [
+        1,
+        3
+      ],
+      "path": "res://assets/original/actors/8/walk_3_1.png",
+      "source_size": [
+        9,
+        18
+      ],
+      "source_offset": [
+        -4,
+        -18
+      ],
+      "atlas_rect": [
+        458,
+        1786,
+        236,
+        472
+      ],
+      "scale": 26.24,
+      "part_kind": "body"
+    },
+    {
+      "id": 211,
+      "actor": 8,
+      "animation": "walk_3",
+      "phase": 2,
+      "atlas": 4,
+      "cell": [
+        2,
+        3
+      ],
+      "path": "res://assets/original/actors/8/walk_3_2.png",
+      "source_size": [
+        10,
+        18
+      ],
+      "source_offset": [
+        -5,
+        -18
+      ],
+      "atlas_rect": [
+        829,
+        1786,
+        262,
+        472
+      ],
+      "scale": 26.24,
+      "part_kind": "body"
+    },
+    {
+      "id": 212,
+      "actor": 9,
+      "animation": "walk_0",
+      "phase": 0,
+      "atlas": 4,
+      "cell": [
+        3,
+        0
+      ],
+      "path": "res://assets/original/actors/9/walk_0_0.png",
+      "source_size": [
+        9,
+        18
+      ],
+      "source_offset": [
+        -4,
+        -18
+      ],
+      "atlas_rect": [
+        1229,
+        69,
+        230,
+        461
+      ],
+      "scale": 25.600000000000005,
+      "part_kind": "body"
+    },
+    {
+      "id": 213,
+      "actor": 9,
+      "animation": "walk_0",
+      "phase": 1,
+      "atlas": 4,
+      "cell": [
+        4,
+        0
+      ],
+      "path": "res://assets/original/actors/9/walk_0_1.png",
+      "source_size": [
+        9,
+        18
+      ],
+      "source_offset": [
+        -4,
+        -18
+      ],
+      "atlas_rect": [
+        1613,
+        69,
+        230,
+        461
+      ],
+      "scale": 25.600000000000005,
+      "part_kind": "body"
+    },
+    {
+      "id": 214,
+      "actor": 9,
+      "animation": "walk_0",
+      "phase": 2,
+      "atlas": 4,
+      "cell": [
+        5,
+        0
+      ],
+      "path": "res://assets/original/actors/9/walk_0_2.png",
+      "source_size": [
+        12,
+        18
+      ],
+      "source_offset": [
+        -6,
+        -18
+      ],
+      "atlas_rect": [
+        1958,
+        69,
+        307,
+        461
+      ],
+      "scale": 25.600000000000005,
+      "part_kind": "body"
+    },
+    {
+      "id": 215,
+      "actor": 9,
+      "animation": "walk_1",
+      "phase": 0,
+      "atlas": 4,
+      "cell": [
+        3,
+        1
+      ],
+      "path": "res://assets/original/actors/9/walk_1_0.png",
+      "source_size": [
+        9,
+        18
+      ],
+      "source_offset": [
+        -4,
+        -18
+      ],
+      "atlas_rect": [
+        1229,
+        645,
+        230,
+        461
+      ],
+      "scale": 25.600000000000005,
+      "part_kind": "body"
+    },
+    {
+      "id": 216,
+      "actor": 9,
+      "animation": "walk_1",
+      "phase": 1,
+      "atlas": 4,
+      "cell": [
+        4,
+        1
+      ],
+      "path": "res://assets/original/actors/9/walk_1_1.png",
+      "source_size": [
+        9,
+        18
+      ],
+      "source_offset": [
+        -4,
+        -18
+      ],
+      "atlas_rect": [
+        1613,
+        645,
+        230,
+        461
+      ],
+      "scale": 25.600000000000005,
+      "part_kind": "body"
+    },
+    {
+      "id": 217,
+      "actor": 9,
+      "animation": "walk_1",
+      "phase": 2,
+      "atlas": 4,
+      "cell": [
+        5,
+        1
+      ],
+      "path": "res://assets/original/actors/9/walk_1_2.png",
+      "source_size": [
+        11,
+        18
+      ],
+      "source_offset": [
+        -5,
+        -18
+      ],
+      "atlas_rect": [
+        1971,
+        645,
+        282,
+        461
+      ],
+      "scale": 25.600000000000005,
+      "part_kind": "body"
+    },
+    {
+      "id": 218,
+      "actor": 9,
+      "animation": "walk_2",
+      "phase": 0,
+      "atlas": 4,
+      "cell": [
+        3,
+        2
+      ],
+      "path": "res://assets/original/actors/9/walk_2_0.png",
+      "source_size": [
+        8,
+        17
+      ],
+      "source_offset": [
+        -4,
+        -17
+      ],
+      "atlas_rect": [
+        1242,
+        1247,
+        205,
+        435
+      ],
+      "scale": 25.600000000000005,
+      "part_kind": "body"
+    },
+    {
+      "id": 219,
+      "actor": 9,
+      "animation": "walk_2",
+      "phase": 1,
+      "atlas": 4,
+      "cell": [
+        4,
+        2
+      ],
+      "path": "res://assets/original/actors/9/walk_2_1.png",
+      "source_size": [
+        9,
+        17
+      ],
+      "source_offset": [
+        -4,
+        -17
+      ],
+      "atlas_rect": [
+        1613,
+        1247,
+        230,
+        435
+      ],
+      "scale": 25.600000000000005,
+      "part_kind": "body"
+    },
+    {
+      "id": 220,
+      "actor": 9,
+      "animation": "walk_2",
+      "phase": 2,
+      "atlas": 4,
+      "cell": [
+        5,
+        2
+      ],
+      "path": "res://assets/original/actors/9/walk_2_2.png",
+      "source_size": [
+        10,
+        17
+      ],
+      "source_offset": [
+        -5,
+        -17
+      ],
+      "atlas_rect": [
+        1984,
+        1247,
+        256,
+        435
+      ],
+      "scale": 25.600000000000005,
+      "part_kind": "body"
+    },
+    {
+      "id": 221,
+      "actor": 9,
+      "animation": "walk_3",
+      "phase": 0,
+      "atlas": 4,
+      "cell": [
+        3,
+        3
+      ],
+      "path": "res://assets/original/actors/9/walk_3_0.png",
+      "source_size": [
+        8,
+        17
+      ],
+      "source_offset": [
+        -4,
+        -17
+      ],
+      "atlas_rect": [
+        1242,
+        1823,
+        205,
+        435
+      ],
+      "scale": 25.600000000000005,
+      "part_kind": "body"
+    },
+    {
+      "id": 222,
+      "actor": 9,
+      "animation": "walk_3",
+      "phase": 1,
+      "atlas": 4,
+      "cell": [
+        4,
+        3
+      ],
+      "path": "res://assets/original/actors/9/walk_3_1.png",
+      "source_size": [
+        9,
+        17
+      ],
+      "source_offset": [
+        -4,
+        -17
+      ],
+      "atlas_rect": [
+        1613,
+        1823,
+        230,
+        435
+      ],
+      "scale": 25.600000000000005,
+      "part_kind": "body"
+    },
+    {
+      "id": 223,
+      "actor": 9,
+      "animation": "walk_3",
+      "phase": 2,
+      "atlas": 4,
+      "cell": [
+        5,
+        3
+      ],
+      "path": "res://assets/original/actors/9/walk_3_2.png",
+      "source_size": [
+        10,
+        17
+      ],
+      "source_offset": [
+        -5,
+        -17
+      ],
+      "atlas_rect": [
+        1984,
+        1823,
+        256,
+        435
+      ],
+      "scale": 25.600000000000005,
+      "part_kind": "body"
+    }
+  ],
+  "contract": [
+    "Guests: each five-column half belongs to one character; 25 pieces each.",
+    "First 18 pieces of each guest are body poses; final seven are isolated head pieces, never add bodies to those.",
+    "Workers: three adjacent columns per actor, rows are the four original directions.",
+    "All pieces of an actor share scale. Keep every pose, side, orientation, silhouette and alpha hole.",
+    "Restore source_size and source_offset at runtime; atlas placement is for generation only.",
+    "Actor10 cook is intentionally excluded: its unused walking table contains five empty pieces."
+  ]
+}

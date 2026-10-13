@@ -1,0 +1,350 @@
+{
+  "schema": 1,
+  "jar_sha256": "2fc4dcadf67c429cf15d27bd61c2ae1c05fbd1dee043b3d717567fa451ca6fae",
+  "source_hashes": {
+    "arr.dat": "09ca177090339087a97ccd646b5932bbfd022ede0b79f17d6aa6916d6e2d97da",
+    "arrsi.dat": "d31f27b2f47b694bc64e9f0266388f71e039606a5b5632f59e9eaa1cf7f6dc79",
+    "e.class": "1d912f7ce69a395cfba2a2398a6f1a46a6669c6c74eafdc19d5b67d045117794",
+    "b.class": "3cbdc7111b7700ff6b1aa697d225942d297c872f9732b044f536d0121bc41cfe",
+    "c.class": "337b5d64dcff96e64a2e7bf408e3bf09dde94f39fb44209babf0f4f5ecb4ac45",
+    "d.class": "cd519a69c9aae7cf22750d1a6518d396085a2f99b42b54c87600a6f7e61766f9",
+    "gpack0.dat": "96bb9509ce1a78f26703513e811664fccdda487d4985b22a87d99ea66dd79c80",
+    "gpack1.dat": "fa18a1fdd85915ca3d62f3344c543934fe427b3e577fd8cc5f072ff417e6490e",
+    "gpack2.dat": "16de980905f9f2af3417a4e93d478fbfb58065cbaf3229d4202009fb81babcd9",
+    "icon.png": "4ee272d9d4587a300081d0a0b1527ac130a2aad117636a728e64ead36a88b870",
+    "splash0.png": "9adb74b80eff9c91eba67692f0815fff553104fca8c36bff07fb904300fa0bf5",
+    "splash1.png": "eea7d0c772660222bc43911fe170e7b75d729466d4ab7adbec4405f479a94b9e",
+    "splash2.png": "c87ae9722128cb0b41c552da2c03c6dc6e5587fb9f45a213a0055183cd9e5bbe"
+  },
+  "byte_exact_packed_pngs": 35,
+  "pixel_exact_direct_pngs": 4,
+  "pack_alias": {
+    "1:7": "0:10"
+  },
+  "catalogs": [
+    [
+      {
+        "kind": "ride",
+        "id": 6
+      },
+      {
+        "kind": "ride",
+        "id": 14
+      },
+      {
+        "kind": "ride",
+        "id": 11
+      },
+      {
+        "kind": "ride",
+        "id": 8
+      },
+      {
+        "kind": "ride",
+        "id": 10
+      },
+      {
+        "kind": "ride",
+        "id": 5
+      },
+      {
+        "kind": "ride",
+        "id": 7
+      },
+      {
+        "kind": "ride",
+        "id": 22
+      },
+      {
+        "kind": "ride",
+        "id": 16
+      },
+      {
+        "kind": "ride",
+        "id": 12
+      },
+      {
+        "kind": "ride",
+        "id": 1
+      },
+      {
+        "kind": "ride",
+        "id": 9
+      },
+      {
+        "kind": "ride",
+        "id": 17
+      },
+      {
+        "kind": "ride",
+        "id": 4
+      },
+      {
+        "kind": "ride",
+        "id": 13
+      },
+      {
+        "kind": "ride",
+        "id": 15
+      },
+      {
+        "kind": "ride",
+        "id": 0
+      },
+      {
+        "kind": "ride",
+        "id": 2
+      },
+      {
+        "kind": "ride",
+        "id": 21
+      },
+      {
+        "kind": "ride",
+        "id": 3
+      },
+      {
+        "kind": "ride",
+        "id": 18
+      },
+      {
+        "kind": "ride",
+        "id": 20
+      },
+      {
+        "kind": "ride",
+        "id": 19
+      },
+      {
+        "kind": "prop",
+        "id": 26
+      }
+    ],
+    [
+      {
+        "kind": "prop",
+        "id": 15
+      },
+      {
+        "kind": "prop",
+        "id": 17
+      },
+      {
+        "kind": "prop",
+        "id": 19
+      },
+      {
+        "kind": "prop",
+        "id": 23
+      },
+      {
+        "kind": "prop",
+        "id": 25
+      },
+      {
+        "kind": "ride",
+        "id": 23
+      },
+      {
+        "kind": "prop",
+        "id": 20
+      }
+    ],
+    [
+      {
+        "kind": "prop",
+        "id": 0
+      },
+      {
+        "kind": "prop",
+        "id": 4
+      },
+      {
+        "kind": "prop",
+        "id": 8
+      },
+      {
+        "kind": "prop",
+        "id": 10
+      },
+      {
+        "kind": "prop",
+        "id": 12
+      },
+      {
+        "kind": "prop",
+        "id": 13
+      },
+      {
+        "kind": "path",
+        "id": 2
+      }
+    ],
+    [
+      {
+        "kind": "staff",
+        "id": 8
+      },
+      {
+        "kind": "staff",
+        "id": 9
+      },
+      {
+        "kind": "staff",
+        "id": 10
+      },
+      {
+        "kind": "staff",
+        "id": 10
+      },
+      {
+        "kind": "staff",
+        "id": 10
+      },
+      {
+        "kind": "staff",
+        "id": 10
+      }
+    ],
+    [
+      {
+        "kind": "path",
+        "id": 0
+      },
+      {
+        "kind": "path",
+        "id": 4
+      },
+      {
+        "kind": "path",
+        "id": 13
+      }
+    ]
+  ],
+  "prop_rotation_deltas": [
+    1,
+    1,
+    1,
+    -3,
+    1,
+    1,
+    1,
+    -3,
+    1,
+    -1,
+    1,
+    -1,
+    0,
+    0,
+    8,
+    1,
+    -1,
+    1,
+    -1,
+    0,
+    1,
+    -1,
+    -8,
+    0,
+    0,
+    0,
+    0
+  ],
+  "reachable_props": [
+    0,
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12,
+    13,
+    15,
+    16,
+    17,
+    18,
+    19,
+    20,
+    21,
+    23,
+    25,
+    26
+  ],
+  "unreachable_props": [
+    14,
+    22,
+    24
+  ],
+  "tickets": [
+    {
+      "id": 14,
+      "source_pack": 1,
+      "source_index": 4,
+      "rect": [
+        0,
+        38,
+        32,
+        30
+      ],
+      "sheet_size": [
+        108,
+        87
+      ],
+      "within_source": true,
+      "source_offset": [
+        7,
+        -11
+      ],
+      "in_menu_or_rotation_closure": false,
+      "unstaffed_marker": [
+        102,
+        80,
+        7,
+        13
+      ]
+    },
+    {
+      "id": 22,
+      "source_pack": 1,
+      "source_index": 4,
+      "rect": [
+        0,
+        68,
+        32,
+        30
+      ],
+      "sheet_size": [
+        108,
+        87
+      ],
+      "within_source": false,
+      "source_offset": [
+        2,
+        -10
+      ],
+      "in_menu_or_rotation_closure": false,
+      "unstaffed_marker": [
+        102,
+        93,
+        7,
+        13
+      ]
+    }
+  ],
+  "synthetic_original_assets": [
+    "scenery/14/ticket_*.svg",
+    "scenery/22/ticket_*.svg"
+  ],
+  "font_adaptations": [
+    "4x nearest repack of gpack2[6] into BMFont",
+    "lowercase aliases uppercase native glyphs",
+    "Ё/ё adds two code-drawn yellow dots to native Е"
+  ],
+  "runtime_assets_modified": false
+}

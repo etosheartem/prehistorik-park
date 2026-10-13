@@ -1,0 +1,59 @@
+{
+  "id": "menu_portrait_4k_v1",
+  "scope": "pilot",
+  "model": "bytedance-seed/seedream-5-0-lite",
+  "resolution": "4K",
+  "expected_usd": 0.035,
+  "reserved_usd": 0.8,
+  "output": "art/raw/menu_portrait_4k_v1.png",
+  "references": [
+    {
+      "path": "original/jar/splash2.png",
+      "sha256": "c87ae9722128cb0b41c552da2c03c6dc6e5587fb9f45a213a0055183cd9e5bbe"
+    },
+    {
+      "path": "game/assets/hd/ui/menu_background_hd.png",
+      "sha256": "93e097b55913aef382fc8dda8e706aa0a73dd9cd39f824ca24ce7b6864ddf4c6"
+    }
+  ],
+  "account_balance_before_usd": 8.413986,
+  "status": "generated",
+  "response_id": null,
+  "usage": {
+    "prompt_tokens": 469,
+    "completion_tokens": 36864,
+    "total_tokens": 37333,
+    "cost": 0.035,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.035,
+      "upstream_inference_prompt_cost": 0,
+      "upstream_inference_completions_cost": 0.035
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "image_tokens": 36864
+    }
+  },
+  "response_model": null,
+  "response_created": 1791775237,
+  "elapsed_seconds": 49.94,
+  "completed_utc": "2026-10-12T03:20:38.797711+00:00",
+  "cost_usd": 0.035,
+  "cost_exceeded_reservation": false,
+  "width": 2304,
+  "height": 4096,
+  "alpha_range": [
+    255,
+    255
+  ],
+  "provider_format": "JPEG",
+  "provider_sha256": "c80db8fa19f081fe1ddea736e35e429d82713e90ec554df111a1e658feb796a1",
+  "sha256": "a76e6777224d66091890aeb516ac442d90e97c5a849d52cafc5576b61e68d6c1",
+  "native_size_ok": true,
+  "transparency_ok": true,
+  "prompt": "Use case: illustration-story. Asset type: native 4K PORTRAIT 9:16 menu background for a faithful illustrated stone-age amusement park game remaster.\nInput image 1 is the original game cover, defining character identity, era and attraction design. Input image 2 is the approved new landscape illustration and defines the exact colorful ink-and-paint art style. Create its beautiful matching portrait composition for a smartphone held vertically.\nKeep the recognizable friendly scruffy brown-haired smiling caveman park owner, broad stubbly jaw, round belly, yellow spotted animal-skin outfit, bare feet, holding a stick with the green chameleon. Preserve his face, costume, wooden basket wheel, timber roller-coaster structure, log ride car and cheerful prehistoric park setting. Clean lively ink contours, bright blue sky, vivid warm greens, golden timber, gentle painted shading; no realism or scary mood.\nPortrait UI composition is CRITICAL: put the full-body owner, chameleon and the main attraction silhouettes in the UPPER RIGHT portion, mostly between 18% and 55% of the image height. Keep the TOP 15% mostly calm blue sky for the separately drawn title. Keep the LOWER 42% a quiet broad softly shaded green lawn with very little detail: a solid readable area behind a vertical stack of the game's buttons. Do not put faces, rides, tracks, props or important shapes behind the buttons in the lower half. Distant foliage may frame the extreme side edges. Full-bleed coherent natural scene, no blank white panels. The owner must be completely in frame, including head and feet, and recognizable at phone size.\nRemove ALL lettering from reference1. No words, signs, logos, captions, UI panels, buttons, watermark or text anywhere. No modern machines, no extra foreground people. Native4K portrait9:16, detailed smooth illustration, not pixel art and not blurry upscale."
+}

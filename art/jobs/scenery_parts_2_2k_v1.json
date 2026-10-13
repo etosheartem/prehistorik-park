@@ -1,0 +1,13 @@
+{
+  "id": "scenery_parts_2_2k_v1",
+  "scope": "pilot",
+  "model": "sourceful/riverflow-v2.5-pro",
+  "resolution": "2K",
+  "aspect_ratio": "2:3",
+  "background": "transparent",
+  "references": [
+    "art/reference/scenery_parts_normalized/atlas_2.png"
+  ],
+  "output": "art/raw/scenery_parts_2_2k_v1.png",
+  "prompt": "Use case: style-transfer. Asset type: native 2K transparent production sprite-part atlas for a faithful illustrated stone-age amusement park remaster.\nInput image1 is the EXACT layout, color and silhouette template: four columns by four rows, portrait 2:3 canvas. Repaint the existing pixel-art pieces as clean detailed bright hand-drawn cartoon game art with smooth contours, subtle ink accents and gentle material shading. Preserve recognizable original materials, palette and humor.\nContents: 12 components only; fourth row stays completely empty. Row1: narrow blue curving fountain water stream; small green-clothed service worker; two white-clothed doctor poses, one standing and one leaning horizontally. Row2: separate suspended brown/white component, small green dinosaur-body fragment, green dinosaur with a small rider, tall green dinosaur-body fragment. Row3: partial green dinosaur and rider, two full green dinosaur-and-rider poses, low colorful flowerbed. Keep partial bodies partial: these are reusable animation parts. Preserve exact view, pose, clothing, orientation and size of all people and dinosaur pieces; do not add missing body sections.\nCritical assembly invariants: keep every original piece in its exact cell, at the same size, location, scale, view, silhouette and orientation. Maintain holes, attachment endpoints, branches, limbs, edge angles and the original number of structural members. Pieces are assembled later at exact old offsets, so add detail INSIDE their contour. Do not move, enlarge, center, rotate, duplicate or omit anything. Do not turn fragments into complete objects. No surrounding ground or cast shadows.\nBackground: true transparent RGBA alpha=0 around every component and in holes. Ensure all subject pixels including small isolated details, blue water and pale pieces remain in the alpha channel. No painted checkerboard, background, labels, lettering, watermark, grid or borders. Remove illegible writing from signs but preserve sign structure; the simple red cross is an icon and remains. Native 2K output."
+}

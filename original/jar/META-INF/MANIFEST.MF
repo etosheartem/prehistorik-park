@@ -1,0 +1,12 @@
+Manifest-Version: 1.0
+MicroEdition-Configuration: CLDC-1.0
+MIDlet-Name: Park SEfan.RU
+MIDlet-Info-URL: http://sefan.ru
+MIDlet-Icon: /icon.png
+Created-By: 1.4.2_10-b03 (Sun Microsystems Inc.)
+Ant-Version: Apache Ant 1.6.5
+MIDlet-Vendor: Gear Games
+MIDlet-1: Park SEfan.RU, icon.png, Park
+MIDlet-Version: 1.09
+MicroEdition-Profile: MIDP-2.0
+

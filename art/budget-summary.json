@@ -1,0 +1,22 @@
+{
+  "closed_utc": "2026-10-12T04:13:32.957845+00:00",
+  "actual_spend_usd": 8.665693,
+  "authorized_work_limit_usd": 9.5,
+  "user_total_budget_usd": 10,
+  "remaining_to_work_limit_usd": 0.834307,
+  "openrouter_account_balance_usd": 1.23329,
+  "image_requests": 20,
+  "pending_requests": [],
+  "automatic_retries": 0,
+  "paid_generation_closed": true,
+  "cost_by_model_usd": {
+    "bytedance-seed/seedream-5-0-lite": 0.07,
+    "sourceful/riverflow-v2.5-pro": 8.595693
+  },
+  "unused_outputs": {
+    "wheel_atlas_2k_v1": "Initial style/transparency pilot; installed reusable components instead",
+    "actors_full_3_2k_v1": "Rejected pixel-like style; one targeted correction accepted as v2"
+  },
+  "installed_actor_parts": 224,
+  "actor_qa_warnings": 0
+}

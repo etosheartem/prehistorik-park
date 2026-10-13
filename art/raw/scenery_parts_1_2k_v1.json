@@ -1,0 +1,55 @@
+{
+  "id": "scenery_parts_1_2k_v1",
+  "scope": "pilot",
+  "model": "sourceful/riverflow-v2.5-pro",
+  "resolution": "2K",
+  "expected_usd": 0.15,
+  "reserved_usd": 0.8,
+  "output": "art/raw/scenery_parts_1_2k_v1.png",
+  "references": [
+    {
+      "path": "art/reference/scenery_parts_normalized/atlas_1.png",
+      "sha256": "4997ff4f16b9ebfc7aca7630dec5f432cca466b36513c84fcc7337b67ec124dc"
+    }
+  ],
+  "account_balance_before_usd": 2.889436,
+  "status": "generated",
+  "response_id": null,
+  "usage": {
+    "prompt_tokens": 510,
+    "completion_tokens": 4175,
+    "total_tokens": 4685,
+    "cost": 0.35969899999999994,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.35969899999999994,
+      "upstream_inference_prompt_cost": 0,
+      "upstream_inference_completions_cost": 0.35969899999999994
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "image_tokens": 4175
+    }
+  },
+  "response_model": null,
+  "response_created": 0,
+  "elapsed_seconds": 99.91,
+  "completed_utc": "2026-10-12T03:58:23.325899+00:00",
+  "cost_usd": 0.35969899999999994,
+  "cost_exceeded_reservation": false,
+  "width": 1664,
+  "height": 2496,
+  "alpha_range": [
+    0,
+    255
+  ],
+  "provider_format": "PNG",
+  "provider_sha256": "118a723a5d302362788c20b47d0b2e1997120b71f921b4fafe8814f623905a86",
+  "sha256": "118a723a5d302362788c20b47d0b2e1997120b71f921b4fafe8814f623905a86",
+  "native_size_ok": true,
+  "transparency_ok": true,
+  "prompt": "Use case: style-transfer. Asset type: native 2K transparent production sprite-part atlas for a faithful illustrated stone-age amusement park remaster.\nInput image1 is the EXACT layout, color and silhouette template: four columns by four rows, portrait 2:3 canvas. Repaint the existing pixel-art pieces as clean detailed bright hand-drawn cartoon game art with smooth contours, subtle ink accents and gentle material shading. Preserve recognizable original materials, palette and humor.\nContents: 16 components. Row1: two small brown/yellow structural pieces, small primitive medical tent with red-cross emblem, round brown service kiosk. Row2: small yellow/brown component, two white Y-shaped parts, festive prehistoric souvenir kiosk with colored decorations. Row3: four separate blue WATER SURFACE RECTANGLES, all must retain their identical exact rectangular shape and coherent ripple texture for animation. Row4: rocky water fountain with blue stream, primitive stone booth, two separate brown narrow upright parts. Keep even the tiny abstract pieces as the shapes in the reference; do not invent complete objects in those cells.\nCritical assembly invariants: keep every original piece in its exact cell, at the same size, location, scale, view, silhouette and orientation. Maintain holes, attachment endpoints, branches, limbs, edge angles and the original number of structural members. Pieces are assembled later at exact old offsets, so add detail INSIDE their contour. Do not move, enlarge, center, rotate, duplicate or omit anything. Do not turn fragments into complete objects. No surrounding ground or cast shadows.\nBackground: true transparent RGBA alpha=0 around every component and in holes. Ensure all subject pixels including small isolated details, blue water and pale pieces remain in the alpha channel. No painted checkerboard, background, labels, lettering, watermark, grid or borders. Remove illegible writing from signs but preserve sign structure; the simple red cross is an icon and remains. Native 2K output."
+}

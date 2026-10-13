@@ -1,0 +1,13 @@
+{
+  "id": "actors_full_0_2k_v1",
+  "scope": "pilot",
+  "model": "sourceful/riverflow-v2.5-pro",
+  "resolution": "2K",
+  "aspect_ratio": "1:1",
+  "background": "transparent",
+  "references": [
+    "art/reference/actors_full/atlas_0.png"
+  ],
+  "output": "art/raw/actors_full_0_2k_v1.png",
+  "prompt": "Use case: identity-preserve / style-transfer. Asset type: native 2K RGBA sprite atlas for a faithful hand-drawn stone-age amusement park game remaster.\nInput image1 is the exact pixel-art pose and cell-layout template to repaint. Turn coarse pixels into clean expressive illustrated cartoon game art, with smooth contours, warm skin, readable faces, modest ink outlines and soft material shading. Preserve original character design, outfit, colors and proportions. Keep the amusing friendly original tone.\nLayout: Exactly ten columns and five rows, 50 isolated sprite PIECES, two character types. Left five columns belong to the first person; right five to the second. Within each five-column block read row-major. First 18 pieces are full bodies, including walking, seated, reclining and upside-down poses. Final SEVEN are SMALL ISOLATED HEAD COMPONENTS ONLY: row4 columns4/5 and row5 all5 columns of each block. Never add a body under an isolated head. Each head stays at its original small scale near the bottom of its cell.\nCharacters: Left five-column block: brown-haired bearded adult man in a yellow black-spotted prehistoric tunic. Right block: slim spiky black-haired adult man in a dark brown hide outfit.\nCritical animation invariants: keep EXACTLY every original pose, facing direction, arm/leg configuration, object, silhouette, scale, orientation and location within each cell. Front-facing poses show a face; back-facing poses show the BACK of the head and clothing, never a second face. A mirrored view must keep the original handedness. Reclining and upside-down bodies remain reclining/upside-down. Do not substitute neutral standing poses, add extra limbs, add new objects, or invent extra figures. Every figure of one character uses the same model and body proportions. Keep the original spacing and empty margin between cells.\nBackground: actual transparent alpha=0 around every isolated piece and through gaps between arms/legs. No painted checkerboard, floor, cast shadow, scenery, panels, grid, labels, text or watermark. Native 2K square output. Preserve all visible subject pixels in alpha; do not remove isolated heads or small components."
+}

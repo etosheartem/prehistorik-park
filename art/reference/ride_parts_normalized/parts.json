@@ -1,0 +1,4047 @@
+{
+  "schema": 1,
+  "scale": 8,
+  "columns": 4,
+  "rows": 4,
+  "cell_native_size": [
+    64,
+    96
+  ],
+  "cell_hd_size": [
+    512,
+    768
+  ],
+  "atlases": [
+    {
+      "id": 0,
+      "file": "atlas_0.png",
+      "size": [
+        2048,
+        3072
+      ],
+      "parts": 16
+    },
+    {
+      "id": 1,
+      "file": "atlas_1.png",
+      "size": [
+        2048,
+        3072
+      ],
+      "parts": 16
+    },
+    {
+      "id": 2,
+      "file": "atlas_2.png",
+      "size": [
+        2048,
+        3072
+      ],
+      "parts": 16
+    },
+    {
+      "id": 3,
+      "file": "atlas_3.png",
+      "size": [
+        2048,
+        3072
+      ],
+      "parts": 16
+    },
+    {
+      "id": 4,
+      "file": "atlas_4.png",
+      "size": [
+        2048,
+        3072
+      ],
+      "parts": 16
+    },
+    {
+      "id": 5,
+      "file": "atlas_5.png",
+      "size": [
+        2048,
+        3072
+      ],
+      "parts": 16
+    },
+    {
+      "id": 6,
+      "file": "atlas_6.png",
+      "size": [
+        2048,
+        3072
+      ],
+      "parts": 4
+    }
+  ],
+  "parts": [
+    {
+      "source_pack": 1,
+      "source_index": 0,
+      "source_rect": [
+        0,
+        0,
+        13,
+        22
+      ],
+      "ride_ids": [
+        19,
+        20
+      ],
+      "references": 158,
+      "id": 0,
+      "atlas": 0,
+      "cell": [
+        0,
+        0
+      ],
+      "atlas_rect_native": [
+        8,
+        8,
+        47,
+        80
+      ],
+      "atlas_rect_hd": [
+        64,
+        64,
+        376,
+        640
+      ],
+      "part_scale_xy": [
+        28.923076923076923,
+        29.09090909090909
+      ],
+      "sha256_rgba": "0246180168f1a9fa46e9c7b79b964cd20bf4dd1b8ca6a044e8d4f0b6f8aa1c60",
+      "reference_sha256_rgba": "313c35b57320677fc2db6e5a73d6b228179e5f06351fd7838b1825b5561eed95"
+    },
+    {
+      "source_pack": 1,
+      "source_index": 0,
+      "source_rect": [
+        0,
+        22,
+        25,
+        3
+      ],
+      "ride_ids": [
+        19,
+        21
+      ],
+      "references": 156,
+      "id": 1,
+      "atlas": 0,
+      "cell": [
+        1,
+        0
+      ],
+      "atlas_rect_native": [
+        72,
+        82,
+        48,
+        6
+      ],
+      "atlas_rect_hd": [
+        576,
+        656,
+        384,
+        48
+      ],
+      "part_scale_xy": [
+        15.36,
+        16.0
+      ],
+      "sha256_rgba": "e63c8ea9255ec875e33e4e54cc231df98cc11a2676d1f7414eb45d01a2d254b1",
+      "reference_sha256_rgba": "6b6ffd569eccdbe1e6b93851bf2bbdbf484555ffd46cc4e2e75ed1d74daf5318"
+    },
+    {
+      "source_pack": 1,
+      "source_index": 0,
+      "source_rect": [
+        0,
+        25,
+        3,
+        25
+      ],
+      "ride_ids": [
+        21
+      ],
+      "references": 104,
+      "id": 2,
+      "atlas": 0,
+      "cell": [
+        2,
+        0
+      ],
+      "atlas_rect_native": [
+        155,
+        8,
+        10,
+        80
+      ],
+      "atlas_rect_hd": [
+        1240,
+        64,
+        80,
+        640
+      ],
+      "part_scale_xy": [
+        26.666666666666668,
+        25.6
+      ],
+      "sha256_rgba": "75daf739da953f5943b0891d4cd3ab029a86578a5d00576aad55ad9335a98b98",
+      "reference_sha256_rgba": "71d8e9d9e63c62347fde5db6f231188d22fb664d1c45bc50e90bc3df53d19b8a"
+    },
+    {
+      "source_pack": 1,
+      "source_index": 0,
+      "source_rect": [
+        0,
+        50,
+        21,
+        32
+      ],
+      "ride_ids": [
+        16,
+        19,
+        20,
+        21
+      ],
+      "references": 1520,
+      "id": 3,
+      "atlas": 0,
+      "cell": [
+        3,
+        0
+      ],
+      "atlas_rect_native": [
+        200,
+        15,
+        48,
+        73
+      ],
+      "atlas_rect_hd": [
+        1600,
+        120,
+        384,
+        584
+      ],
+      "part_scale_xy": [
+        18.285714285714285,
+        18.25
+      ],
+      "sha256_rgba": "dde65c13c04fd5273ca7c2e7d48b887d15120d6aab1759801f01d028de0d124c",
+      "reference_sha256_rgba": "0907c0b3f6fcad68094cdb7e511b2e29192766e82bdf3d0e2372e89a8f4f5c62"
+    },
+    {
+      "source_pack": 1,
+      "source_index": 0,
+      "source_rect": [
+        0,
+        82,
+        29,
+        50
+      ],
+      "ride_ids": [
+        0
+      ],
+      "references": 1,
+      "id": 4,
+      "atlas": 0,
+      "cell": [
+        0,
+        1
+      ],
+      "atlas_rect_native": [
+        9,
+        104,
+        46,
+        80
+      ],
+      "atlas_rect_hd": [
+        72,
+        832,
+        368,
+        640
+      ],
+      "part_scale_xy": [
+        12.689655172413794,
+        12.8
+      ],
+      "sha256_rgba": "4c6daf075ae5a27d2871e076c18e60d26d3687d0e7481b6da9c6500e7181ea85",
+      "reference_sha256_rgba": "2d191fbf07e9ca4619e1275b61c4bc1be93cdd44326facda98a5f69aeb6c3698"
+    },
+    {
+      "source_pack": 1,
+      "source_index": 0,
+      "source_rect": [
+        1,
+        62,
+        19,
+        20
+      ],
+      "ride_ids": [
+        21
+      ],
+      "references": 52,
+      "id": 5,
+      "atlas": 0,
+      "cell": [
+        1,
+        1
+      ],
+      "atlas_rect_native": [
+        72,
+        133,
+        48,
+        51
+      ],
+      "atlas_rect_hd": [
+        576,
+        1064,
+        384,
+        408
+      ],
+      "part_scale_xy": [
+        20.210526315789473,
+        20.4
+      ],
+      "sha256_rgba": "ce32428acbe5777cc5ecad0142eb7d6244cf51af40f0ca93fbc4fac633149a3e",
+      "reference_sha256_rgba": "41f832518b12964482b62e89f6adede8a223d2603b732e75890b750cf4d71e05"
+    },
+    {
+      "source_pack": 1,
+      "source_index": 0,
+      "source_rect": [
+        3,
+        25,
+        22,
+        13
+      ],
+      "ride_ids": [
+        19,
+        20
+      ],
+      "references": 366,
+      "id": 6,
+      "atlas": 0,
+      "cell": [
+        2,
+        1
+      ],
+      "atlas_rect_native": [
+        136,
+        156,
+        48,
+        28
+      ],
+      "atlas_rect_hd": [
+        1088,
+        1248,
+        384,
+        224
+      ],
+      "part_scale_xy": [
+        17.454545454545453,
+        17.23076923076923
+      ],
+      "sha256_rgba": "e4b2ab947467bcd4df83c5573792c20c77bf4f887a32381595e7f933865313cc",
+      "reference_sha256_rgba": "015d7de25f12a44f2223612d9d7352a132b5039ac3f19c4f4c3acaae42543762"
+    },
+    {
+      "source_pack": 1,
+      "source_index": 0,
+      "source_rect": [
+        3,
+        37,
+        22,
+        13
+      ],
+      "ride_ids": [
+        6,
+        16,
+        19,
+        20,
+        21
+      ],
+      "references": 590,
+      "id": 7,
+      "atlas": 0,
+      "cell": [
+        3,
+        1
+      ],
+      "atlas_rect_native": [
+        200,
+        156,
+        48,
+        28
+      ],
+      "atlas_rect_hd": [
+        1600,
+        1248,
+        384,
+        224
+      ],
+      "part_scale_xy": [
+        17.454545454545453,
+        17.23076923076923
+      ],
+      "sha256_rgba": "737fecbcaa19a3917ab86116e41b5b86dbe9a659a33e830016c72ee95a47fd0a",
+      "reference_sha256_rgba": "b017975065d4770117f13538da29bb19b8bdb08f209cbadbe50136a52b246e84"
+    },
+    {
+      "source_pack": 1,
+      "source_index": 0,
+      "source_rect": [
+        3,
+        40,
+        16,
+        10
+      ],
+      "ride_ids": [
+        14
+      ],
+      "references": 8,
+      "id": 8,
+      "atlas": 0,
+      "cell": [
+        0,
+        2
+      ],
+      "atlas_rect_native": [
+        8,
+        250,
+        48,
+        30
+      ],
+      "atlas_rect_hd": [
+        64,
+        2000,
+        384,
+        240
+      ],
+      "part_scale_xy": [
+        24.0,
+        24.0
+      ],
+      "sha256_rgba": "ea40dfa11a68cdb10f6632a900ddd93f372af23811fa1cfdd2513ea5466ed193",
+      "reference_sha256_rgba": "669fd8a130aca87326a6c42a39e62c16665f73fb3aedcba30f55181364402e38"
+    },
+    {
+      "source_pack": 1,
+      "source_index": 0,
+      "source_rect": [
+        6,
+        22,
+        19,
+        3
+      ],
+      "ride_ids": [
+        16
+      ],
+      "references": 54,
+      "id": 9,
+      "atlas": 0,
+      "cell": [
+        1,
+        2
+      ],
+      "atlas_rect_native": [
+        72,
+        272,
+        48,
+        8
+      ],
+      "atlas_rect_hd": [
+        576,
+        2176,
+        384,
+        64
+      ],
+      "part_scale_xy": [
+        20.210526315789473,
+        21.333333333333332
+      ],
+      "sha256_rgba": "fe80c66ae95e334797820e6fd670ef73b128fa5d6f6642722bdb926477769fd1",
+      "reference_sha256_rgba": "872b08e7ab54f469c9ab42174c1b0ccae39aa1bce589a1be3220b70fc1373b49"
+    },
+    {
+      "source_pack": 1,
+      "source_index": 0,
+      "source_rect": [
+        7,
+        37,
+        18,
+        12
+      ],
+      "ride_ids": [
+        2
+      ],
+      "references": 95,
+      "id": 10,
+      "atlas": 0,
+      "cell": [
+        2,
+        2
+      ],
+      "atlas_rect_native": [
+        136,
+        248,
+        48,
+        32
+      ],
+      "atlas_rect_hd": [
+        1088,
+        1984,
+        384,
+        256
+      ],
+      "part_scale_xy": [
+        21.333333333333332,
+        21.333333333333332
+      ],
+      "sha256_rgba": "924c6965cce7fc411c4b66f7542abda22554ab869f54c00a80867848eeff3d03",
+      "reference_sha256_rgba": "ad193494229ca26381cdaaa542676863d0479a676baf6940e2751dd25911f318"
+    },
+    {
+      "source_pack": 1,
+      "source_index": 0,
+      "source_rect": [
+        9,
+        52,
+        12,
+        30
+      ],
+      "ride_ids": [
+        20
+      ],
+      "references": 108,
+      "id": 11,
+      "atlas": 0,
+      "cell": [
+        3,
+        2
+      ],
+      "atlas_rect_native": [
+        208,
+        200,
+        32,
+        80
+      ],
+      "atlas_rect_hd": [
+        1664,
+        1600,
+        256,
+        640
+      ],
+      "part_scale_xy": [
+        21.333333333333332,
+        21.333333333333332
+      ],
+      "sha256_rgba": "d49a9c54afcfebb5419add23eeec59e9e48bd4b5238e683685d69426237f4a2d",
+      "reference_sha256_rgba": "8a1763144e06acb8bac60bfc651ffafc05dd45e4d6cc083412bf8476858b7505"
+    },
+    {
+      "source_pack": 1,
+      "source_index": 0,
+      "source_rect": [
+        21,
+        43,
+        43,
+        45
+      ],
+      "ride_ids": [
+        3
+      ],
+      "references": 455,
+      "id": 12,
+      "atlas": 0,
+      "cell": [
+        0,
+        3
+      ],
+      "atlas_rect_native": [
+        8,
+        326,
+        48,
+        50
+      ],
+      "atlas_rect_hd": [
+        64,
+        2608,
+        384,
+        400
+      ],
+      "part_scale_xy": [
+        8.930232558139535,
+        8.88888888888889
+      ],
+      "sha256_rgba": "89c88a23fa6769067c5bd27a694001134f857e43f4add37745b1808721e4d47c",
+      "reference_sha256_rgba": "d12c80809391e2bda435504bfe2eedd52aea466283b0c4eb7972bce60d87d378"
+    },
+    {
+      "source_pack": 1,
+      "source_index": 0,
+      "source_rect": [
+        25,
+        0,
+        31,
+        37
+      ],
+      "ride_ids": [
+        4,
+        15,
+        16
+      ],
+      "references": 622,
+      "id": 13,
+      "atlas": 0,
+      "cell": [
+        1,
+        3
+      ],
+      "atlas_rect_native": [
+        72,
+        319,
+        48,
+        57
+      ],
+      "atlas_rect_hd": [
+        576,
+        2552,
+        384,
+        456
+      ],
+      "part_scale_xy": [
+        12.387096774193548,
+        12.324324324324325
+      ],
+      "sha256_rgba": "87853e1cb1825f0d8ec4216b7985a0666e6587156f195439891dd905782f753a",
+      "reference_sha256_rgba": "9e9310e2eaffeddd8307ee9e211ca1c372781dda2bcab21829299b913a24ecad"
+    },
+    {
+      "source_pack": 1,
+      "source_index": 0,
+      "source_rect": [
+        29,
+        88,
+        34,
+        44
+      ],
+      "ride_ids": [
+        0
+      ],
+      "references": 1,
+      "id": 14,
+      "atlas": 0,
+      "cell": [
+        2,
+        3
+      ],
+      "atlas_rect_native": [
+        136,
+        314,
+        48,
+        62
+      ],
+      "atlas_rect_hd": [
+        1088,
+        2512,
+        384,
+        496
+      ],
+      "part_scale_xy": [
+        11.294117647058824,
+        11.272727272727273
+      ],
+      "sha256_rgba": "2aaff78761fd995080ab87d443ce34e326f2d648493ea8b3917d7d6555b3ed90",
+      "reference_sha256_rgba": "7a48c8ec0b11bab9ce4cd890a7f1ab2c377dfa9acc05e5771a1e89202e127c41"
+    },
+    {
+      "source_pack": 1,
+      "source_index": 1,
+      "source_rect": [
+        0,
+        0,
+        4,
+        20
+      ],
+      "ride_ids": [
+        1
+      ],
+      "references": 120,
+      "id": 15,
+      "atlas": 0,
+      "cell": [
+        3,
+        3
+      ],
+      "atlas_rect_native": [
+        216,
+        296,
+        16,
+        80
+      ],
+      "atlas_rect_hd": [
+        1728,
+        2368,
+        128,
+        640
+      ],
+      "part_scale_xy": [
+        32.0,
+        32.0
+      ],
+      "sha256_rgba": "a336972bd8adbd764f644242db2f0c9f5fd0fff2c157b7f63c7cd07d01f602c1",
+      "reference_sha256_rgba": "c6467e275973f156b9be354fe562fe0930410332e6ef2f0f1dcb88949cd49926"
+    },
+    {
+      "source_pack": 1,
+      "source_index": 1,
+      "source_rect": [
+        0,
+        0,
+        4,
+        40
+      ],
+      "ride_ids": [
+        2
+      ],
+      "references": 190,
+      "id": 16,
+      "atlas": 1,
+      "cell": [
+        0,
+        0
+      ],
+      "atlas_rect_native": [
+        28,
+        8,
+        8,
+        80
+      ],
+      "atlas_rect_hd": [
+        224,
+        64,
+        64,
+        640
+      ],
+      "part_scale_xy": [
+        16.0,
+        16.0
+      ],
+      "sha256_rgba": "5b4e079ab1bed222531a4a89896e691032e1f8ecc0229f0f9e676b53269e9a75",
+      "reference_sha256_rgba": "5115e49ab5b75292589904b82560e6e46932f3d25d04f209acfb76ae7bf6e00b"
+    },
+    {
+      "source_pack": 1,
+      "source_index": 1,
+      "source_rect": [
+        0,
+        0,
+        4,
+        45
+      ],
+      "ride_ids": [
+        18
+      ],
+      "references": 498,
+      "id": 17,
+      "atlas": 1,
+      "cell": [
+        1,
+        0
+      ],
+      "atlas_rect_native": [
+        92,
+        8,
+        7,
+        80
+      ],
+      "atlas_rect_hd": [
+        736,
+        64,
+        56,
+        640
+      ],
+      "part_scale_xy": [
+        14.0,
+        14.222222222222221
+      ],
+      "sha256_rgba": "852b848c73cd6cec4c72fa70f33566b653c35728ef354bc3ba27af24bba47c33",
+      "reference_sha256_rgba": "6c3ebe1952d818648a9aca792d5211fa5c4ce6501ca99f0eb84dfddd105308e8"
+    },
+    {
+      "source_pack": 1,
+      "source_index": 1,
+      "source_rect": [
+        0,
+        3,
+        4,
+        25
+      ],
+      "ride_ids": [
+        13
+      ],
+      "references": 6,
+      "id": 18,
+      "atlas": 1,
+      "cell": [
+        2,
+        0
+      ],
+      "atlas_rect_native": [
+        153,
+        8,
+        13,
+        80
+      ],
+      "atlas_rect_hd": [
+        1224,
+        64,
+        104,
+        640
+      ],
+      "part_scale_xy": [
+        26.0,
+        25.6
+      ],
+      "sha256_rgba": "87ec5c64f8aa43bf49a5f80dc3e3177089a6d1a86e7a791af3792cbc313b6634",
+      "reference_sha256_rgba": "1ac7cfc5c154ab84b4034b1ffcb85d33e0c47a7e53588ad9eb5c90be929dce3b"
+    },
+    {
+      "source_pack": 1,
+      "source_index": 1,
+      "source_rect": [
+        0,
+        3,
+        4,
+        26
+      ],
+      "ride_ids": [
+        13
+      ],
+      "references": 12,
+      "id": 19,
+      "atlas": 1,
+      "cell": [
+        3,
+        0
+      ],
+      "atlas_rect_native": [
+        218,
+        8,
+        12,
+        80
+      ],
+      "atlas_rect_hd": [
+        1744,
+        64,
+        96,
+        640
+      ],
+      "part_scale_xy": [
+        24.0,
+        24.615384615384617
+      ],
+      "sha256_rgba": "14b7cf565bff45d73e7f0de86e38f872a8054975cd4145d7ccf88a1be3a0d6d9",
+      "reference_sha256_rgba": "95b2e0bf0bb7c92deaecfc86a4947e8806ee582ec7d70c03fda34dba045c49b7"
+    },
+    {
+      "source_pack": 1,
+      "source_index": 1,
+      "source_rect": [
+        0,
+        5,
+        4,
+        40
+      ],
+      "ride_ids": [
+        2
+      ],
+      "references": 190,
+      "id": 20,
+      "atlas": 1,
+      "cell": [
+        0,
+        1
+      ],
+      "atlas_rect_native": [
+        28,
+        104,
+        8,
+        80
+      ],
+      "atlas_rect_hd": [
+        224,
+        832,
+        64,
+        640
+      ],
+      "part_scale_xy": [
+        16.0,
+        16.0
+      ],
+      "sha256_rgba": "759ce158f343a8c866471f3e30f77ca543cf03f63747832e7647ec6aec4fcdf6",
+      "reference_sha256_rgba": "dfbbbd4eddb261599ec29c5dc4ab20aaca691f4734b89c08964a487f495c1762"
+    },
+    {
+      "source_pack": 1,
+      "source_index": 1,
+      "source_rect": [
+        0,
+        25,
+        4,
+        20
+      ],
+      "ride_ids": [
+        1
+      ],
+      "references": 120,
+      "id": 21,
+      "atlas": 1,
+      "cell": [
+        1,
+        1
+      ],
+      "atlas_rect_native": [
+        88,
+        104,
+        16,
+        80
+      ],
+      "atlas_rect_hd": [
+        704,
+        832,
+        128,
+        640
+      ],
+      "part_scale_xy": [
+        32.0,
+        32.0
+      ],
+      "sha256_rgba": "f0d9f124ea71a1c763e334302f23ff25eb61a08d932e381bba9b8dfa58c27a2f",
+      "reference_sha256_rgba": "12c1da488e3533d964bfe1b4dd5a19efc785459c17bb33e3c6b8cd78f70424b1"
+    },
+    {
+      "source_pack": 1,
+      "source_index": 1,
+      "source_rect": [
+        4,
+        0,
+        11,
+        12
+      ],
+      "ride_ids": [
+        1
+      ],
+      "references": 60,
+      "id": 22,
+      "atlas": 1,
+      "cell": [
+        2,
+        1
+      ],
+      "atlas_rect_native": [
+        136,
+        132,
+        48,
+        52
+      ],
+      "atlas_rect_hd": [
+        1088,
+        1056,
+        384,
+        416
+      ],
+      "part_scale_xy": [
+        34.90909090909091,
+        34.666666666666664
+      ],
+      "sha256_rgba": "8f8a08ed521aa19544792a36c087f2a5a19c30f94e4818773fcd93275054cd78",
+      "reference_sha256_rgba": "3c006f428550dfdf79e6bb861de418040c5b093405a163b4940fe823c27fbc3f"
+    },
+    {
+      "source_pack": 1,
+      "source_index": 1,
+      "source_rect": [
+        4,
+        0,
+        16,
+        12
+      ],
+      "ride_ids": [
+        2,
+        6
+      ],
+      "references": 202,
+      "id": 23,
+      "atlas": 1,
+      "cell": [
+        3,
+        1
+      ],
+      "atlas_rect_native": [
+        200,
+        148,
+        48,
+        36
+      ],
+      "atlas_rect_hd": [
+        1600,
+        1184,
+        384,
+        288
+      ],
+      "part_scale_xy": [
+        24.0,
+        24.0
+      ],
+      "sha256_rgba": "85fd1bfab41ebf5e309a685aa698b61e611a2105e13f0c7342c57f9ea0844c2c",
+      "reference_sha256_rgba": "f224309de05847310c8a9f44205651a8521b402e84ed81af3e92e7018a285dbb"
+    },
+    {
+      "source_pack": 1,
+      "source_index": 1,
+      "source_rect": [
+        4,
+        12,
+        18,
+        18
+      ],
+      "ride_ids": [
+        2
+      ],
+      "references": 95,
+      "id": 24,
+      "atlas": 1,
+      "cell": [
+        0,
+        2
+      ],
+      "atlas_rect_native": [
+        8,
+        232,
+        48,
+        48
+      ],
+      "atlas_rect_hd": [
+        64,
+        1856,
+        384,
+        384
+      ],
+      "part_scale_xy": [
+        21.333333333333332,
+        21.333333333333332
+      ],
+      "sha256_rgba": "2f5cb14c692035754c19250d4f2c91a2b534a0933d52ecad233310c33eb9b847",
+      "reference_sha256_rgba": "d2aa8e1ed4c6d1dd09a7680d08641b2862fb4904898f4b237ea526f8b8fb31dc"
+    },
+    {
+      "source_pack": 1,
+      "source_index": 1,
+      "source_rect": [
+        4,
+        12,
+        31,
+        18
+      ],
+      "ride_ids": [
+        1,
+        3,
+        4,
+        15,
+        16,
+        18
+      ],
+      "references": 430,
+      "id": 25,
+      "atlas": 1,
+      "cell": [
+        1,
+        2
+      ],
+      "atlas_rect_native": [
+        72,
+        252,
+        48,
+        28
+      ],
+      "atlas_rect_hd": [
+        576,
+        2016,
+        384,
+        224
+      ],
+      "part_scale_xy": [
+        12.387096774193548,
+        12.444444444444445
+      ],
+      "sha256_rgba": "a7667700ffe45b36dd5986e2eb1acedb8a0caab497b748c8bdf3793d325fadec",
+      "reference_sha256_rgba": "3588adf18e0c4adf7de5356fcc129d89f9cff1115040dd4aad50190e95ca53dd"
+    },
+    {
+      "source_pack": 1,
+      "source_index": 1,
+      "source_rect": [
+        4,
+        30,
+        31,
+        15
+      ],
+      "ride_ids": [
+        1,
+        18
+      ],
+      "references": 143,
+      "id": 26,
+      "atlas": 1,
+      "cell": [
+        2,
+        2
+      ],
+      "atlas_rect_native": [
+        136,
+        257,
+        48,
+        23
+      ],
+      "atlas_rect_hd": [
+        1088,
+        2056,
+        384,
+        184
+      ],
+      "part_scale_xy": [
+        12.387096774193548,
+        12.266666666666667
+      ],
+      "sha256_rgba": "4a63d963dcb0e890e5c36c3d1d28c1871b6db0f3de373945395dd2df75e91638",
+      "reference_sha256_rgba": "5af5d335d66b149a28006f7c1be85bfa76438fc639dc3797fde306953093084a"
+    },
+    {
+      "source_pack": 1,
+      "source_index": 1,
+      "source_rect": [
+        4,
+        35,
+        18,
+        10
+      ],
+      "ride_ids": [
+        2
+      ],
+      "references": 95,
+      "id": 27,
+      "atlas": 1,
+      "cell": [
+        3,
+        2
+      ],
+      "atlas_rect_native": [
+        200,
+        253,
+        48,
+        27
+      ],
+      "atlas_rect_hd": [
+        1600,
+        2024,
+        384,
+        216
+      ],
+      "part_scale_xy": [
+        21.333333333333332,
+        21.6
+      ],
+      "sha256_rgba": "a6bfdd36e07e41f9abba3bd92e61246bffad2098cc7375744e894f7b999160b7",
+      "reference_sha256_rgba": "a1b9db6dd636c5c1718ba50e5454aafa269d21c0c40b32df1103a126bf9bda19"
+    },
+    {
+      "source_pack": 1,
+      "source_index": 1,
+      "source_rect": [
+        7,
+        30,
+        13,
+        7
+      ],
+      "ride_ids": [
+        15
+      ],
+      "references": 62,
+      "id": 28,
+      "atlas": 1,
+      "cell": [
+        0,
+        3
+      ],
+      "atlas_rect_native": [
+        8,
+        350,
+        48,
+        26
+      ],
+      "atlas_rect_hd": [
+        64,
+        2800,
+        384,
+        208
+      ],
+      "part_scale_xy": [
+        29.53846153846154,
+        29.714285714285715
+      ],
+      "sha256_rgba": "f82df2da76a4d7ebfed63366ce0b65e64ef765517b04dd6217f8558b194279ef",
+      "reference_sha256_rgba": "c5dc6ad189df186acd6fabec080f07a3719bdc21c49965792ad9a5a38b41a65a"
+    },
+    {
+      "source_pack": 1,
+      "source_index": 1,
+      "source_rect": [
+        8,
+        0,
+        12,
+        11
+      ],
+      "ride_ids": [
+        1
+      ],
+      "references": 60,
+      "id": 29,
+      "atlas": 1,
+      "cell": [
+        1,
+        3
+      ],
+      "atlas_rect_native": [
+        72,
+        332,
+        48,
+        44
+      ],
+      "atlas_rect_hd": [
+        576,
+        2656,
+        384,
+        352
+      ],
+      "part_scale_xy": [
+        32.0,
+        32.0
+      ],
+      "sha256_rgba": "b7d9b1183a925e358f6a2b4f177a3675e1d619f1cdd74c577e0df938a24ea745",
+      "reference_sha256_rgba": "48458bbddc79d00bca5a4704fd2c76a46e4fd7a734a0df40320e531db0846d83"
+    },
+    {
+      "source_pack": 1,
+      "source_index": 1,
+      "source_rect": [
+        16,
+        12,
+        19,
+        18
+      ],
+      "ride_ids": [
+        2
+      ],
+      "references": 95,
+      "id": 30,
+      "atlas": 1,
+      "cell": [
+        2,
+        3
+      ],
+      "atlas_rect_native": [
+        136,
+        331,
+        48,
+        45
+      ],
+      "atlas_rect_hd": [
+        1088,
+        2648,
+        384,
+        360
+      ],
+      "part_scale_xy": [
+        20.210526315789473,
+        20.0
+      ],
+      "sha256_rgba": "b7d6bd678743bd879f3f923f902310af1fedba0d2e565b24d801ac3848dcd878",
+      "reference_sha256_rgba": "c16afff59796c9ccdc7ac305dd719f2b62e653e73e80a4926453544e135f26f0"
+    },
+    {
+      "source_pack": 1,
+      "source_index": 1,
+      "source_rect": [
+        16,
+        30,
+        19,
+        15
+      ],
+      "ride_ids": [
+        2
+      ],
+      "references": 95,
+      "id": 31,
+      "atlas": 1,
+      "cell": [
+        3,
+        3
+      ],
+      "atlas_rect_native": [
+        200,
+        338,
+        48,
+        38
+      ],
+      "atlas_rect_hd": [
+        1600,
+        2704,
+        384,
+        304
+      ],
+      "part_scale_xy": [
+        20.210526315789473,
+        20.266666666666666
+      ],
+      "sha256_rgba": "2e2362258b799e7775d1dd3ea929527bb441b1243a6bdd371061b013a158bc56",
+      "reference_sha256_rgba": "411d3f180cdfb6c19b28c8da3fb2ecc3d1503ba2e063a151a1c7d82e9f220912"
+    },
+    {
+      "source_pack": 1,
+      "source_index": 1,
+      "source_rect": [
+        20,
+        0,
+        13,
+        11
+      ],
+      "ride_ids": [
+        3,
+        4
+      ],
+      "references": 262,
+      "id": 32,
+      "atlas": 2,
+      "cell": [
+        0,
+        0
+      ],
+      "atlas_rect_native": [
+        8,
+        47,
+        48,
+        41
+      ],
+      "atlas_rect_hd": [
+        64,
+        376,
+        384,
+        328
+      ],
+      "part_scale_xy": [
+        29.53846153846154,
+        29.818181818181817
+      ],
+      "sha256_rgba": "7fb604961536ea65b9335717b1a9b45d3f05633599bf1e91bf1314698fdd76eb",
+      "reference_sha256_rgba": "223c46643399096af16882ab4c45d0e7d1ea3f8a0232cc224d95f95b7f7b48d4"
+    },
+    {
+      "source_pack": 1,
+      "source_index": 1,
+      "source_rect": [
+        35,
+        18,
+        17,
+        10
+      ],
+      "ride_ids": [
+        0
+      ],
+      "references": 2,
+      "id": 33,
+      "atlas": 2,
+      "cell": [
+        1,
+        0
+      ],
+      "atlas_rect_native": [
+        72,
+        60,
+        48,
+        28
+      ],
+      "atlas_rect_hd": [
+        576,
+        480,
+        384,
+        224
+      ],
+      "part_scale_xy": [
+        22.58823529411765,
+        22.4
+      ],
+      "sha256_rgba": "94bb83247d0e613842507e2cb46a1d5e8136f789cb1c06b390f61a1362d0551f",
+      "reference_sha256_rgba": "88ae084643a86f11be4630d14b57df8d03f3ecc3ac9005e665a410dbff673ca1"
+    },
+    {
+      "source_pack": 1,
+      "source_index": 1,
+      "source_rect": [
+        35,
+        28,
+        32,
+        13
+      ],
+      "ride_ids": [
+        0
+      ],
+      "references": 2,
+      "id": 34,
+      "atlas": 2,
+      "cell": [
+        2,
+        0
+      ],
+      "atlas_rect_native": [
+        136,
+        68,
+        48,
+        20
+      ],
+      "atlas_rect_hd": [
+        1088,
+        544,
+        384,
+        160
+      ],
+      "part_scale_xy": [
+        12.0,
+        12.307692307692308
+      ],
+      "sha256_rgba": "7884dd27a8553a72f882e8d0567cbc44374030100ca8a0f90be67c084bbca3e4",
+      "reference_sha256_rgba": "75860cf98b1834641712e2bc9d2db3439eff95204797cc06e146dc31d3efb4f2"
+    },
+    {
+      "source_pack": 1,
+      "source_index": 1,
+      "source_rect": [
+        40,
+        0,
+        12,
+        9
+      ],
+      "ride_ids": [
+        0,
+        3,
+        4,
+        12,
+        13,
+        15,
+        19,
+        20,
+        21
+      ],
+      "references": 1159,
+      "id": 35,
+      "atlas": 2,
+      "cell": [
+        3,
+        0
+      ],
+      "atlas_rect_native": [
+        200,
+        52,
+        48,
+        36
+      ],
+      "atlas_rect_hd": [
+        1600,
+        416,
+        384,
+        288
+      ],
+      "part_scale_xy": [
+        32.0,
+        32.0
+      ],
+      "sha256_rgba": "85b4bb28f3c2f111bee64e5957f562d5551ab1a3de7ff8fba67b743b2cd658c5",
+      "reference_sha256_rgba": "54ec02909228c1721c96fe6dec26948e7e44883efcf8776ae9d372937e9aa93c"
+    },
+    {
+      "source_pack": 1,
+      "source_index": 1,
+      "source_rect": [
+        40,
+        9,
+        12,
+        9
+      ],
+      "ride_ids": [
+        0
+      ],
+      "references": 8,
+      "id": 36,
+      "atlas": 2,
+      "cell": [
+        0,
+        1
+      ],
+      "atlas_rect_native": [
+        8,
+        148,
+        48,
+        36
+      ],
+      "atlas_rect_hd": [
+        64,
+        1184,
+        384,
+        288
+      ],
+      "part_scale_xy": [
+        32.0,
+        32.0
+      ],
+      "sha256_rgba": "bd38d2808de207848fdd00ea6f408d80e0fd87559c87ac5ed0eb1840d28d1adc",
+      "reference_sha256_rgba": "1c0937d3c497bdb703da1d03bc2db313b4e9bdcbe2409f115bb2cee1fe7b0fb5"
+    },
+    {
+      "source_pack": 1,
+      "source_index": 1,
+      "source_rect": [
+        52,
+        0,
+        14,
+        28
+      ],
+      "ride_ids": [
+        0
+      ],
+      "references": 2,
+      "id": 37,
+      "atlas": 2,
+      "cell": [
+        1,
+        1
+      ],
+      "atlas_rect_native": [
+        76,
+        104,
+        40,
+        80
+      ],
+      "atlas_rect_hd": [
+        608,
+        832,
+        320,
+        640
+      ],
+      "part_scale_xy": [
+        22.857142857142858,
+        22.857142857142858
+      ],
+      "sha256_rgba": "5adee42d362b9e56ba2893b0fe36efef66a4e6b8773ca798cd1fecb75fe4d881",
+      "reference_sha256_rgba": "62686c13f620643146a990130234dec120978019baf62971b54f941d0abb2956"
+    },
+    {
+      "source_pack": 1,
+      "source_index": 1,
+      "source_rect": [
+        66,
+        0,
+        8,
+        25
+      ],
+      "ride_ids": [
+        6
+      ],
+      "references": 48,
+      "id": 38,
+      "atlas": 2,
+      "cell": [
+        2,
+        1
+      ],
+      "atlas_rect_native": [
+        147,
+        104,
+        26,
+        80
+      ],
+      "atlas_rect_hd": [
+        1176,
+        832,
+        208,
+        640
+      ],
+      "part_scale_xy": [
+        26.0,
+        25.6
+      ],
+      "sha256_rgba": "adc9630cb674f85f1ba58814e7346bf9471efc36b46f89fadfaa1afaa88960fe",
+      "reference_sha256_rgba": "43089e5f8fe333886e857c769d788bf044bd074dfd6bb0a73cdd1744671980c4"
+    },
+    {
+      "source_pack": 1,
+      "source_index": 1,
+      "source_rect": [
+        67,
+        0,
+        7,
+        25
+      ],
+      "ride_ids": [
+        14
+      ],
+      "references": 16,
+      "id": 39,
+      "atlas": 2,
+      "cell": [
+        3,
+        1
+      ],
+      "atlas_rect_native": [
+        213,
+        104,
+        22,
+        80
+      ],
+      "atlas_rect_hd": [
+        1704,
+        832,
+        176,
+        640
+      ],
+      "part_scale_xy": [
+        25.142857142857142,
+        25.6
+      ],
+      "sha256_rgba": "d518e9a15e4eb2df481e84ab197a2b14f19ee0508a706d8c2ffdee0fe5811c43",
+      "reference_sha256_rgba": "549454534db9a62d94af11ec9e44336ec1f94bc5531c6b54a274edf36b623ce9"
+    },
+    {
+      "source_pack": 1,
+      "source_index": 1,
+      "source_rect": [
+        67,
+        19,
+        7,
+        24
+      ],
+      "ride_ids": [
+        14
+      ],
+      "references": 16,
+      "id": 40,
+      "atlas": 2,
+      "cell": [
+        0,
+        2
+      ],
+      "atlas_rect_native": [
+        20,
+        200,
+        23,
+        80
+      ],
+      "atlas_rect_hd": [
+        160,
+        1600,
+        184,
+        640
+      ],
+      "part_scale_xy": [
+        26.285714285714285,
+        26.666666666666668
+      ],
+      "sha256_rgba": "48da385faa238aeabb88114b4b926700b8c4081125cad32fc696a8e5aa760a2d",
+      "reference_sha256_rgba": "85ea2ed4185bb5ed22aad5d3205fb9e7850e0a5ea13af550ad59ca32eb68fd65"
+    },
+    {
+      "source_pack": 1,
+      "source_index": 1,
+      "source_rect": [
+        67,
+        19,
+        7,
+        25
+      ],
+      "ride_ids": [
+        6
+      ],
+      "references": 48,
+      "id": 41,
+      "atlas": 2,
+      "cell": [
+        1,
+        2
+      ],
+      "atlas_rect_native": [
+        85,
+        200,
+        22,
+        80
+      ],
+      "atlas_rect_hd": [
+        680,
+        1600,
+        176,
+        640
+      ],
+      "part_scale_xy": [
+        25.142857142857142,
+        25.6
+      ],
+      "sha256_rgba": "f7fa2dc1014142652b732ec66584d1eef3fcc156690494d63e7f4b615277c573",
+      "reference_sha256_rgba": "6404a964f51c7dfc890c28a282754f467713432cd085c2693511c349ace0098d"
+    },
+    {
+      "source_pack": 1,
+      "source_index": 2,
+      "source_rect": [
+        0,
+        17,
+        17,
+        11
+      ],
+      "ride_ids": [
+        23
+      ],
+      "references": 10,
+      "id": 42,
+      "atlas": 2,
+      "cell": [
+        2,
+        2
+      ],
+      "atlas_rect_native": [
+        136,
+        249,
+        48,
+        31
+      ],
+      "atlas_rect_hd": [
+        1088,
+        1992,
+        384,
+        248
+      ],
+      "part_scale_xy": [
+        22.58823529411765,
+        22.545454545454547
+      ],
+      "sha256_rgba": "4ca507d912ee6cc6d6d0e41f6a4ce8c8c999fde858bed7d91b5e338183593ce7",
+      "reference_sha256_rgba": "03ab1ff241c5aec9a4e9339f12a39e6e19c85745b36853ba806466d55e09e460"
+    },
+    {
+      "source_pack": 1,
+      "source_index": 2,
+      "source_rect": [
+        35,
+        65,
+        17,
+        14
+      ],
+      "ride_ids": [
+        23
+      ],
+      "references": 10,
+      "id": 43,
+      "atlas": 2,
+      "cell": [
+        3,
+        2
+      ],
+      "atlas_rect_native": [
+        200,
+        240,
+        48,
+        40
+      ],
+      "atlas_rect_hd": [
+        1600,
+        1920,
+        384,
+        320
+      ],
+      "part_scale_xy": [
+        22.58823529411765,
+        22.857142857142858
+      ],
+      "sha256_rgba": "f137bce1ed749419d1f777623ceb7c20ddcdd2665b66ac23727d0cbd8c45de36",
+      "reference_sha256_rgba": "dd52c0e743d9a9963fdf7e7d3b0ef9a731df12193f6ffc3e8293466ef314a29b"
+    },
+    {
+      "source_pack": 1,
+      "source_index": 2,
+      "source_rect": [
+        39,
+        83,
+        28,
+        21
+      ],
+      "ride_ids": [
+        3,
+        4,
+        8,
+        10
+      ],
+      "references": 4,
+      "id": 44,
+      "atlas": 2,
+      "cell": [
+        0,
+        3
+      ],
+      "atlas_rect_native": [
+        8,
+        340,
+        48,
+        36
+      ],
+      "atlas_rect_hd": [
+        64,
+        2720,
+        384,
+        288
+      ],
+      "part_scale_xy": [
+        13.714285714285714,
+        13.714285714285714
+      ],
+      "sha256_rgba": "712b99a3d0a9439dbfc7c9a8545bf7c8c082ea3c3574f91d309aa86edb990e37",
+      "reference_sha256_rgba": "e239688fbf5d6db1434319b295737134389d0cfb0a584f2dcea8b743a7a632f8"
+    },
+    {
+      "source_pack": 1,
+      "source_index": 2,
+      "source_rect": [
+        48,
+        29,
+        24,
+        18
+      ],
+      "ride_ids": [
+        7
+      ],
+      "references": 130,
+      "id": 45,
+      "atlas": 2,
+      "cell": [
+        1,
+        3
+      ],
+      "atlas_rect_native": [
+        72,
+        340,
+        48,
+        36
+      ],
+      "atlas_rect_hd": [
+        576,
+        2720,
+        384,
+        288
+      ],
+      "part_scale_xy": [
+        16.0,
+        16.0
+      ],
+      "sha256_rgba": "98a6e0ffbddfa008e780d0b5f2b08112c7796f2a58a8c6644952a8371e8c2e19",
+      "reference_sha256_rgba": "6b84c2186bf291c53dc2e13adf5cdbcea06d0e516f801443c88bae9ce273b43a"
+    },
+    {
+      "source_pack": 1,
+      "source_index": 2,
+      "source_rect": [
+        48,
+        47,
+        24,
+        18
+      ],
+      "ride_ids": [
+        7
+      ],
+      "references": 65,
+      "id": 46,
+      "atlas": 2,
+      "cell": [
+        2,
+        3
+      ],
+      "atlas_rect_native": [
+        136,
+        340,
+        48,
+        36
+      ],
+      "atlas_rect_hd": [
+        1088,
+        2720,
+        384,
+        288
+      ],
+      "part_scale_xy": [
+        16.0,
+        16.0
+      ],
+      "sha256_rgba": "895813d266c93b12cc883dd29882019bfa6ba32718ed328d5f90a2382a6babdd",
+      "reference_sha256_rgba": "3c97b486af33a95a1a9665e81742d3e9212d8b7e53d7f017ec1c61c8c5f9c2ba"
+    },
+    {
+      "source_pack": 1,
+      "source_index": 2,
+      "source_rect": [
+        51,
+        47,
+        21,
+        18
+      ],
+      "ride_ids": [
+        7
+      ],
+      "references": 65,
+      "id": 47,
+      "atlas": 2,
+      "cell": [
+        3,
+        3
+      ],
+      "atlas_rect_native": [
+        200,
+        335,
+        48,
+        41
+      ],
+      "atlas_rect_hd": [
+        1600,
+        2680,
+        384,
+        328
+      ],
+      "part_scale_xy": [
+        18.285714285714285,
+        18.22222222222222
+      ],
+      "sha256_rgba": "849e4a9a4307ff12c3fde85a3ab935ba3eed31c0c3b466a1e44f9ff7c2dcc164",
+      "reference_sha256_rgba": "1b34db256751bb0295c3254e815ee3ddbdb4d780fa6da1809a35768f8e18f410"
+    },
+    {
+      "source_pack": 1,
+      "source_index": 2,
+      "source_rect": [
+        52,
+        65,
+        10,
+        6
+      ],
+      "ride_ids": [
+        23
+      ],
+      "references": 7,
+      "id": 48,
+      "atlas": 3,
+      "cell": [
+        0,
+        0
+      ],
+      "atlas_rect_native": [
+        8,
+        59,
+        48,
+        29
+      ],
+      "atlas_rect_hd": [
+        64,
+        472,
+        384,
+        232
+      ],
+      "part_scale_xy": [
+        38.4,
+        38.666666666666664
+      ],
+      "sha256_rgba": "f3dfbccc3e54f5282b4becfda147dab34f341a8f02420cd071b2fafbcf3dea76",
+      "reference_sha256_rgba": "3d3f8306d7d922ef5363682c3877592ab1b9a7ccb4e7e783fcf41ad6d3f4e291"
+    },
+    {
+      "source_pack": 1,
+      "source_index": 2,
+      "source_rect": [
+        56,
+        31,
+        16,
+        16
+      ],
+      "ride_ids": [
+        7
+      ],
+      "references": 130,
+      "id": 49,
+      "atlas": 3,
+      "cell": [
+        1,
+        0
+      ],
+      "atlas_rect_native": [
+        72,
+        40,
+        48,
+        48
+      ],
+      "atlas_rect_hd": [
+        576,
+        320,
+        384,
+        384
+      ],
+      "part_scale_xy": [
+        24.0,
+        24.0
+      ],
+      "sha256_rgba": "7dcc18265c4b83a04d0db6c957d15e5047f7196b843d6feeb1b7c6faec352175",
+      "reference_sha256_rgba": "87dcbcc58078baa4a023bcab99f55cf96f0a8d3d02977ddc846dd422deae6c4d"
+    },
+    {
+      "source_pack": 1,
+      "source_index": 2,
+      "source_rect": [
+        66,
+        84,
+        24,
+        17
+      ],
+      "ride_ids": [
+        3,
+        4,
+        8,
+        10
+      ],
+      "references": 4,
+      "id": 50,
+      "atlas": 3,
+      "cell": [
+        2,
+        0
+      ],
+      "atlas_rect_native": [
+        136,
+        54,
+        48,
+        34
+      ],
+      "atlas_rect_hd": [
+        1088,
+        432,
+        384,
+        272
+      ],
+      "part_scale_xy": [
+        16.0,
+        16.0
+      ],
+      "sha256_rgba": "2427b00b4000384b78bb100dc2a826a6b8a4aef7c1e3b6100f43ed2af00602e3",
+      "reference_sha256_rgba": "02044a26f43b9627953d48e5b55593ae48e3d71b2c50b30b68ebc419b9f777bb"
+    },
+    {
+      "source_pack": 1,
+      "source_index": 2,
+      "source_rect": [
+        72,
+        60,
+        14,
+        13
+      ],
+      "ride_ids": [
+        23
+      ],
+      "references": 5,
+      "id": 51,
+      "atlas": 3,
+      "cell": [
+        3,
+        0
+      ],
+      "atlas_rect_native": [
+        200,
+        43,
+        48,
+        45
+      ],
+      "atlas_rect_hd": [
+        1600,
+        344,
+        384,
+        360
+      ],
+      "part_scale_xy": [
+        27.428571428571427,
+        27.692307692307693
+      ],
+      "sha256_rgba": "07db3b8b1d9d090bbf292a7990ab8fdedc5237739cc940e4a77088b4d5cb6a46",
+      "reference_sha256_rgba": "62160e96862cf18be3906b15ccf1bd4ae0f296571f42c0f906d76e13b7665914"
+    },
+    {
+      "source_pack": 1,
+      "source_index": 2,
+      "source_rect": [
+        76,
+        103,
+        16,
+        8
+      ],
+      "ride_ids": [
+        17
+      ],
+      "references": 27,
+      "id": 52,
+      "atlas": 3,
+      "cell": [
+        0,
+        1
+      ],
+      "atlas_rect_native": [
+        8,
+        160,
+        48,
+        24
+      ],
+      "atlas_rect_hd": [
+        64,
+        1280,
+        384,
+        192
+      ],
+      "part_scale_xy": [
+        24.0,
+        24.0
+      ],
+      "sha256_rgba": "cbf4d8bf2edfabdd8fcf6e13fdd5bdd138e7f459291b022b195de95431052996",
+      "reference_sha256_rgba": "17751a20f6ff47a7f99d3c321f357039ea6660e74e2629d29f301c291e2f812c"
+    },
+    {
+      "source_pack": 1,
+      "source_index": 2,
+      "source_rect": [
+        76,
+        111,
+        23,
+        13
+      ],
+      "ride_ids": [
+        9,
+        15,
+        16
+      ],
+      "references": 602,
+      "id": 53,
+      "atlas": 3,
+      "cell": [
+        1,
+        1
+      ],
+      "atlas_rect_native": [
+        72,
+        157,
+        48,
+        27
+      ],
+      "atlas_rect_hd": [
+        576,
+        1256,
+        384,
+        216
+      ],
+      "part_scale_xy": [
+        16.695652173913043,
+        16.615384615384617
+      ],
+      "sha256_rgba": "09ef94f5f875eeebf1d2da9616fa22c4ee51b1469b961a9ac3b11a39f3850f97",
+      "reference_sha256_rgba": "8ed6fd3972bd5758b995f22f3f7eb92ae6328f3bab14882e21d51035c2bb2407"
+    },
+    {
+      "source_pack": 1,
+      "source_index": 2,
+      "source_rect": [
+        86,
+        60,
+        14,
+        13
+      ],
+      "ride_ids": [
+        23
+      ],
+      "references": 5,
+      "id": 54,
+      "atlas": 3,
+      "cell": [
+        2,
+        1
+      ],
+      "atlas_rect_native": [
+        136,
+        139,
+        48,
+        45
+      ],
+      "atlas_rect_hd": [
+        1088,
+        1112,
+        384,
+        360
+      ],
+      "part_scale_xy": [
+        27.428571428571427,
+        27.692307692307693
+      ],
+      "sha256_rgba": "46628b486583630690dc739180592fd410b38f65ff8a281dae6d6d6381370b57",
+      "reference_sha256_rgba": "504fc5327b2c3d1b1d9f6589ac14beaa615b057023c7ed98cc817e63ce436702"
+    },
+    {
+      "source_pack": 1,
+      "source_index": 2,
+      "source_rect": [
+        92,
+        103,
+        16,
+        7
+      ],
+      "ride_ids": [
+        17
+      ],
+      "references": 27,
+      "id": 55,
+      "atlas": 3,
+      "cell": [
+        3,
+        1
+      ],
+      "atlas_rect_native": [
+        200,
+        163,
+        48,
+        21
+      ],
+      "atlas_rect_hd": [
+        1600,
+        1304,
+        384,
+        168
+      ],
+      "part_scale_xy": [
+        24.0,
+        24.0
+      ],
+      "sha256_rgba": "1d99c802c1ebdc7bdb165cabf6c69d47a887bc493db032ed82f7ca58913ebb7d",
+      "reference_sha256_rgba": "2c6009643d692e849864c6579fc30de4d96b45c42ce21638f63e00bb36939790"
+    },
+    {
+      "source_pack": 1,
+      "source_index": 2,
+      "source_rect": [
+        98,
+        111,
+        23,
+        13
+      ],
+      "ride_ids": [
+        9,
+        15,
+        16
+      ],
+      "references": 478,
+      "id": 56,
+      "atlas": 3,
+      "cell": [
+        0,
+        2
+      ],
+      "atlas_rect_native": [
+        8,
+        253,
+        48,
+        27
+      ],
+      "atlas_rect_hd": [
+        64,
+        2024,
+        384,
+        216
+      ],
+      "part_scale_xy": [
+        16.695652173913043,
+        16.615384615384617
+      ],
+      "sha256_rgba": "caa3c312567e278660c266fef70c0cfc8802e375e90d73644519ec9d06547f10",
+      "reference_sha256_rgba": "83d6922b303020ea8f98978375063693b3f9d5788d67963382912a9e126d57fe"
+    },
+    {
+      "source_pack": 1,
+      "source_index": 2,
+      "source_rect": [
+        100,
+        60,
+        24,
+        13
+      ],
+      "ride_ids": [
+        5
+      ],
+      "references": 10,
+      "id": 57,
+      "atlas": 3,
+      "cell": [
+        1,
+        2
+      ],
+      "atlas_rect_native": [
+        72,
+        254,
+        48,
+        26
+      ],
+      "atlas_rect_hd": [
+        576,
+        2032,
+        384,
+        208
+      ],
+      "part_scale_xy": [
+        16.0,
+        16.0
+      ],
+      "sha256_rgba": "bbcb685880e3ae5fb8cf59e5a9eadb227b2a0f0bb63ce4e4d7d0919000759b3e",
+      "reference_sha256_rgba": "b5198aa680493916b2787711e6a5ad99033388055fd3acfe8a4e1682d8c74317"
+    },
+    {
+      "source_pack": 1,
+      "source_index": 2,
+      "source_rect": [
+        104,
+        73,
+        13,
+        11
+      ],
+      "ride_ids": [
+        3,
+        4,
+        8,
+        10
+      ],
+      "references": 4,
+      "id": 58,
+      "atlas": 3,
+      "cell": [
+        2,
+        2
+      ],
+      "atlas_rect_native": [
+        136,
+        239,
+        48,
+        41
+      ],
+      "atlas_rect_hd": [
+        1088,
+        1912,
+        384,
+        328
+      ],
+      "part_scale_xy": [
+        29.53846153846154,
+        29.818181818181817
+      ],
+      "sha256_rgba": "adb7a7bbb1fdec827404f9e0ee7dd0bf1c417c424f250de46c2c3647b70c4362",
+      "reference_sha256_rgba": "63bad4e5dd8472a23997fd1d153c01ed9db61b9ebf77331d21026be8fd79744f"
+    },
+    {
+      "source_pack": 1,
+      "source_index": 2,
+      "source_rect": [
+        108,
+        97,
+        17,
+        13
+      ],
+      "ride_ids": [
+        17
+      ],
+      "references": 31,
+      "id": 59,
+      "atlas": 3,
+      "cell": [
+        3,
+        2
+      ],
+      "atlas_rect_native": [
+        200,
+        243,
+        48,
+        37
+      ],
+      "atlas_rect_hd": [
+        1600,
+        1944,
+        384,
+        296
+      ],
+      "part_scale_xy": [
+        22.58823529411765,
+        22.76923076923077
+      ],
+      "sha256_rgba": "eeb69659a9bdfb7191e8843eb1d41eaa435972d306c5f26df2d25fc6e3e3c0cf",
+      "reference_sha256_rgba": "0ca5eefa452f8b90a724f1aae401953f7c79ca137619ee0496d6f0582c6fa30e"
+    },
+    {
+      "source_pack": 1,
+      "source_index": 2,
+      "source_rect": [
+        117,
+        72,
+        8,
+        13
+      ],
+      "ride_ids": [
+        17
+      ],
+      "references": 116,
+      "id": 60,
+      "atlas": 3,
+      "cell": [
+        0,
+        3
+      ],
+      "atlas_rect_native": [
+        8,
+        298,
+        48,
+        78
+      ],
+      "atlas_rect_hd": [
+        64,
+        2384,
+        384,
+        624
+      ],
+      "part_scale_xy": [
+        48.0,
+        48.0
+      ],
+      "sha256_rgba": "28081e0eff6dc9efb6ab81a0ee065624210c4e619ce1cc11bbda0a1e1c8c56c0",
+      "reference_sha256_rgba": "e8fc38a0b0cf749de535538457c82d7e137d9a07bae9bd2abba907e7c924509d"
+    },
+    {
+      "source_pack": 1,
+      "source_index": 3,
+      "source_rect": [
+        36,
+        0,
+        16,
+        34
+      ],
+      "ride_ids": [
+        23
+      ],
+      "references": 10,
+      "id": 61,
+      "atlas": 3,
+      "cell": [
+        1,
+        3
+      ],
+      "atlas_rect_native": [
+        77,
+        296,
+        38,
+        80
+      ],
+      "atlas_rect_hd": [
+        616,
+        2368,
+        304,
+        640
+      ],
+      "part_scale_xy": [
+        19.0,
+        18.823529411764707
+      ],
+      "sha256_rgba": "62fc694a6b64efb657cd61cb70a489f7a2e6bcd4b6eb1e132e90a2fc3c92d711",
+      "reference_sha256_rgba": "acbb0e7e6d3784b1d5173a16a230ae064b934115d9cfcf079b7e2c49805631a5"
+    },
+    {
+      "source_pack": 1,
+      "source_index": 3,
+      "source_rect": [
+        52,
+        0,
+        15,
+        33
+      ],
+      "ride_ids": [
+        23
+      ],
+      "references": 10,
+      "id": 62,
+      "atlas": 3,
+      "cell": [
+        2,
+        3
+      ],
+      "atlas_rect_native": [
+        142,
+        296,
+        36,
+        80
+      ],
+      "atlas_rect_hd": [
+        1136,
+        2368,
+        288,
+        640
+      ],
+      "part_scale_xy": [
+        19.2,
+        19.393939393939394
+      ],
+      "sha256_rgba": "5ac3ee97a539a97fa6ebfa7a25531e887afb2c9c5a525dcfe1cc4388db276030",
+      "reference_sha256_rgba": "f10ef75ce2e6bdcf61872e44e87367c777abcc24fa9434c872230942e8b73a6e"
+    },
+    {
+      "source_pack": 1,
+      "source_index": 4,
+      "source_rect": [
+        73,
+        46,
+        35,
+        18
+      ],
+      "ride_ids": [
+        8,
+        11
+      ],
+      "references": 123,
+      "id": 63,
+      "atlas": 3,
+      "cell": [
+        3,
+        3
+      ],
+      "atlas_rect_native": [
+        200,
+        351,
+        48,
+        25
+      ],
+      "atlas_rect_hd": [
+        1600,
+        2808,
+        384,
+        200
+      ],
+      "part_scale_xy": [
+        10.971428571428572,
+        11.11111111111111
+      ],
+      "sha256_rgba": "820b13a002cea61fa6319951985b7e9df99af3acbeebdd078a45c61cab13b664",
+      "reference_sha256_rgba": "f001d842f5c1eff1f9928b7893bfbea1c9b81c94f598a420465439214bb15c9c"
+    },
+    {
+      "source_pack": 1,
+      "source_index": 4,
+      "source_rect": [
+        73,
+        64,
+        35,
+        15
+      ],
+      "ride_ids": [
+        8,
+        11
+      ],
+      "references": 13,
+      "id": 64,
+      "atlas": 4,
+      "cell": [
+        0,
+        0
+      ],
+      "atlas_rect_native": [
+        8,
+        67,
+        48,
+        21
+      ],
+      "atlas_rect_hd": [
+        64,
+        536,
+        384,
+        168
+      ],
+      "part_scale_xy": [
+        10.971428571428572,
+        11.2
+      ],
+      "sha256_rgba": "e7540abf4e7eb9aa381031adc6613b0e7de7e20d4f55523948076a2155377b32",
+      "reference_sha256_rgba": "942ab9ea11359fc0520adaba35d8bfff88716138db1c337db311b6ae41ea5675"
+    },
+    {
+      "source_pack": 1,
+      "source_index": 5,
+      "source_rect": [
+        0,
+        0,
+        38,
+        20
+      ],
+      "ride_ids": [
+        7,
+        9,
+        15,
+        16,
+        22
+      ],
+      "references": 541,
+      "id": 65,
+      "atlas": 4,
+      "cell": [
+        1,
+        0
+      ],
+      "atlas_rect_native": [
+        72,
+        63,
+        48,
+        25
+      ],
+      "atlas_rect_hd": [
+        576,
+        504,
+        384,
+        200
+      ],
+      "part_scale_xy": [
+        10.105263157894736,
+        10.0
+      ],
+      "sha256_rgba": "2374bf02503796116b73b48eee4593635ba6885fac3b48f02c5222a7f8a5657f",
+      "reference_sha256_rgba": "220f9bfb7ec47844c7c70bdb602e7832b3dcbd898f150f4d86a1e55f07e4fce3"
+    },
+    {
+      "source_pack": 1,
+      "source_index": 6,
+      "source_rect": [
+        0,
+        37,
+        44,
+        75
+      ],
+      "ride_ids": [
+        9,
+        10
+      ],
+      "references": 138,
+      "id": 66,
+      "atlas": 4,
+      "cell": [
+        2,
+        0
+      ],
+      "atlas_rect_native": [
+        136,
+        8,
+        47,
+        80
+      ],
+      "atlas_rect_hd": [
+        1088,
+        64,
+        376,
+        640
+      ],
+      "part_scale_xy": [
+        8.545454545454545,
+        8.533333333333333
+      ],
+      "sha256_rgba": "5d5e533b9fc95d25a85dcdd68ff3b312a92584ae6f6e0a1d2f6302d9bad5fdba",
+      "reference_sha256_rgba": "42aa4153ef5603a06339e907df1acafb9becfe7a0ff9c7197519b921ebdb1479"
+    },
+    {
+      "source_pack": 1,
+      "source_index": 6,
+      "source_rect": [
+        15,
+        113,
+        11,
+        11
+      ],
+      "ride_ids": [
+        19
+      ],
+      "references": 104,
+      "id": 67,
+      "atlas": 4,
+      "cell": [
+        3,
+        0
+      ],
+      "atlas_rect_native": [
+        200,
+        40,
+        48,
+        48
+      ],
+      "atlas_rect_hd": [
+        1600,
+        320,
+        384,
+        384
+      ],
+      "part_scale_xy": [
+        34.90909090909091,
+        34.90909090909091
+      ],
+      "sha256_rgba": "c0e287fbd5aa44033195b3158aea2b29231bc06ac3bbffce3d4ed2f88d2619c6",
+      "reference_sha256_rgba": "326c3b2cfaf38957dfbbae9fd415c72e4e4863884df47c4ea7609bb172a4ea8c"
+    },
+    {
+      "source_pack": 1,
+      "source_index": 6,
+      "source_rect": [
+        29,
+        113,
+        12,
+        6
+      ],
+      "ride_ids": [
+        5
+      ],
+      "references": 20,
+      "id": 68,
+      "atlas": 4,
+      "cell": [
+        0,
+        1
+      ],
+      "atlas_rect_native": [
+        8,
+        160,
+        48,
+        24
+      ],
+      "atlas_rect_hd": [
+        64,
+        1280,
+        384,
+        192
+      ],
+      "part_scale_xy": [
+        32.0,
+        32.0
+      ],
+      "sha256_rgba": "3082fe0fa97f8fa9bee255b21a7c8210b891664e671a799ebfdc7f9f244d59c8",
+      "reference_sha256_rgba": "b6b5fac2b6c6842fbf237f3a2e830ec5c6f2de56b38cb52bd34d6b6752cdfb52"
+    },
+    {
+      "source_pack": 1,
+      "source_index": 6,
+      "source_rect": [
+        35,
+        0,
+        35,
+        37
+      ],
+      "ride_ids": [
+        7,
+        8
+      ],
+      "references": 121,
+      "id": 69,
+      "atlas": 4,
+      "cell": [
+        1,
+        1
+      ],
+      "atlas_rect_native": [
+        72,
+        133,
+        48,
+        51
+      ],
+      "atlas_rect_hd": [
+        576,
+        1064,
+        384,
+        408
+      ],
+      "part_scale_xy": [
+        10.971428571428572,
+        11.027027027027026
+      ],
+      "sha256_rgba": "08f8add2169bb03e773f991570da63f6cfbc2d3b50967ea72398933ca9d812fb",
+      "reference_sha256_rgba": "11f6e52e7f0dd4bb2187fe7d84aed80fbd43d70f1630408de83716505c7d8726"
+    },
+    {
+      "source_pack": 1,
+      "source_index": 6,
+      "source_rect": [
+        41,
+        113,
+        18,
+        11
+      ],
+      "ride_ids": [
+        5
+      ],
+      "references": 10,
+      "id": 70,
+      "atlas": 4,
+      "cell": [
+        2,
+        1
+      ],
+      "atlas_rect_native": [
+        136,
+        155,
+        48,
+        29
+      ],
+      "atlas_rect_hd": [
+        1088,
+        1240,
+        384,
+        232
+      ],
+      "part_scale_xy": [
+        21.333333333333332,
+        21.09090909090909
+      ],
+      "sha256_rgba": "9cbb387c6f396a11560b0b3952efc126fb119dc32ed9fd16f61b21461146e53b",
+      "reference_sha256_rgba": "9ae846c8e5528ceac857263788058169a562fe4540984f702d4a06fab81e1ce6"
+    },
+    {
+      "source_pack": 1,
+      "source_index": 6,
+      "source_rect": [
+        44,
+        37,
+        13,
+        22
+      ],
+      "ride_ids": [
+        9,
+        10
+      ],
+      "references": 138,
+      "id": 71,
+      "atlas": 4,
+      "cell": [
+        3,
+        1
+      ],
+      "atlas_rect_native": [
+        200,
+        104,
+        47,
+        80
+      ],
+      "atlas_rect_hd": [
+        1600,
+        832,
+        376,
+        640
+      ],
+      "part_scale_xy": [
+        28.923076923076923,
+        29.09090909090909
+      ],
+      "sha256_rgba": "05dbc2aeeb33618b4ff1114e8bac01ff97e289a935b493cb71956fa9744ea60a",
+      "reference_sha256_rgba": "9f58c2668ae001741138b4bea229ffe1ec16e3ac23e153b7975a4bcc37f0d7a8"
+    },
+    {
+      "source_pack": 1,
+      "source_index": 6,
+      "source_rect": [
+        44,
+        59,
+        15,
+        54
+      ],
+      "ride_ids": [
+        9,
+        10
+      ],
+      "references": 138,
+      "id": 72,
+      "atlas": 4,
+      "cell": [
+        0,
+        2
+      ],
+      "atlas_rect_native": [
+        21,
+        200,
+        22,
+        80
+      ],
+      "atlas_rect_hd": [
+        168,
+        1600,
+        176,
+        640
+      ],
+      "part_scale_xy": [
+        11.733333333333333,
+        11.851851851851851
+      ],
+      "sha256_rgba": "1d5872c0861fbe5297a3ca9286503277ce1d0bd7117635d062f18a48319b8586",
+      "reference_sha256_rgba": "bfdbbc870f2e1fba8456998343a9be61cbe69162efd18692c52a94124e6b77ff"
+    },
+    {
+      "source_pack": 1,
+      "source_index": 6,
+      "source_rect": [
+        57,
+        37,
+        26,
+        12
+      ],
+      "ride_ids": [
+        7,
+        8
+      ],
+      "references": 121,
+      "id": 73,
+      "atlas": 4,
+      "cell": [
+        1,
+        2
+      ],
+      "atlas_rect_native": [
+        72,
+        258,
+        48,
+        22
+      ],
+      "atlas_rect_hd": [
+        576,
+        2064,
+        384,
+        176
+      ],
+      "part_scale_xy": [
+        14.76923076923077,
+        14.666666666666666
+      ],
+      "sha256_rgba": "bf37da3545a9ecf2608b257871d81851e836892f1297978b368839252430d02d",
+      "reference_sha256_rgba": "867fd02054bdc896b0030005633a4226de8980a12ba9fa26c6610803e82ee063"
+    },
+    {
+      "source_pack": 1,
+      "source_index": 6,
+      "source_rect": [
+        70,
+        0,
+        11,
+        13
+      ],
+      "ride_ids": [
+        7
+      ],
+      "references": 65,
+      "id": 74,
+      "atlas": 4,
+      "cell": [
+        2,
+        2
+      ],
+      "atlas_rect_native": [
+        136,
+        223,
+        48,
+        57
+      ],
+      "atlas_rect_hd": [
+        1088,
+        1784,
+        384,
+        456
+      ],
+      "part_scale_xy": [
+        34.90909090909091,
+        35.07692307692308
+      ],
+      "sha256_rgba": "e4b1ab2c5ee27d108a71d255eb41f2fe9f2e389148b9608afdba409ed3dfe0ff",
+      "reference_sha256_rgba": "ab6dc3aff52f2b6f326747cf7f695dc9f31c3f483b808a1005ab44270ee1a640"
+    },
+    {
+      "source_pack": 1,
+      "source_index": 6,
+      "source_rect": [
+        70,
+        13,
+        11,
+        22
+      ],
+      "ride_ids": [
+        7,
+        8
+      ],
+      "references": 121,
+      "id": 75,
+      "atlas": 4,
+      "cell": [
+        3,
+        2
+      ],
+      "atlas_rect_native": [
+        204,
+        200,
+        40,
+        80
+      ],
+      "atlas_rect_hd": [
+        1632,
+        1600,
+        320,
+        640
+      ],
+      "part_scale_xy": [
+        29.09090909090909,
+        29.09090909090909
+      ],
+      "sha256_rgba": "2733879b6ff13157fa9b5d50a625082597a9e3efccc7d226f22b91b829713abd",
+      "reference_sha256_rgba": "b4227e83ad6beb88536aac90b520a3d49f4652faa676d6538c7b8df53c3b2197"
+    },
+    {
+      "source_pack": 1,
+      "source_index": 6,
+      "source_rect": [
+        81,
+        0,
+        30,
+        44
+      ],
+      "ride_ids": [
+        5
+      ],
+      "references": 20,
+      "id": 76,
+      "atlas": 4,
+      "cell": [
+        0,
+        3
+      ],
+      "atlas_rect_native": [
+        8,
+        306,
+        48,
+        70
+      ],
+      "atlas_rect_hd": [
+        64,
+        2448,
+        384,
+        560
+      ],
+      "part_scale_xy": [
+        12.8,
+        12.727272727272727
+      ],
+      "sha256_rgba": "8acabfe06f0e6bebc8f482a003499bbb86ad6804b17831abd85f6e55aec1957f",
+      "reference_sha256_rgba": "9d6159d5257da984b8484cb6c6e3dc32ccff2698f8875b7b38f954e004d74d08"
+    },
+    {
+      "source_pack": 1,
+      "source_index": 6,
+      "source_rect": [
+        83,
+        44,
+        29,
+        54
+      ],
+      "ride_ids": [
+        5
+      ],
+      "references": 20,
+      "id": 77,
+      "atlas": 4,
+      "cell": [
+        1,
+        3
+      ],
+      "atlas_rect_native": [
+        74,
+        296,
+        43,
+        80
+      ],
+      "atlas_rect_hd": [
+        592,
+        2368,
+        344,
+        640
+      ],
+      "part_scale_xy": [
+        11.862068965517242,
+        11.851851851851851
+      ],
+      "sha256_rgba": "4d5a045e06e39b2ed53f492a8bf4f861b405551a49f2bbfeeba02eb4f1f32b2a",
+      "reference_sha256_rgba": "85f5866491a608e289c8c677ddb39bda850dcf8c2434606d5439da6701be7882"
+    },
+    {
+      "source_pack": 1,
+      "source_index": 6,
+      "source_rect": [
+        83,
+        98,
+        20,
+        26
+      ],
+      "ride_ids": [
+        5
+      ],
+      "references": 20,
+      "id": 78,
+      "atlas": 4,
+      "cell": [
+        2,
+        3
+      ],
+      "atlas_rect_native": [
+        136,
+        314,
+        48,
+        62
+      ],
+      "atlas_rect_hd": [
+        1088,
+        2512,
+        384,
+        496
+      ],
+      "part_scale_xy": [
+        19.2,
+        19.076923076923077
+      ],
+      "sha256_rgba": "d9ecdca60eb4d9e04b6755770280ae0537b5b66bd26c32ba7c1482caf119e1e8",
+      "reference_sha256_rgba": "3ef7d50bc633c6d4d4705946f1f5c66bf927446d728fbe46e9e56a1e0fb45326"
+    },
+    {
+      "source_pack": 1,
+      "source_index": 9,
+      "source_rect": [
+        0,
+        0,
+        44,
+        25
+      ],
+      "ride_ids": [
+        12,
+        13
+      ],
+      "references": 24,
+      "id": 79,
+      "atlas": 4,
+      "cell": [
+        3,
+        3
+      ],
+      "atlas_rect_native": [
+        200,
+        349,
+        48,
+        27
+      ],
+      "atlas_rect_hd": [
+        1600,
+        2792,
+        384,
+        216
+      ],
+      "part_scale_xy": [
+        8.727272727272727,
+        8.64
+      ],
+      "sha256_rgba": "8ec3e43a455c239879bc44b2df5abafc1472b5339b817c15e16f3932a88d5ab9",
+      "reference_sha256_rgba": "3ba1ac6ff8204d9ae402768fe9cfaccd531d07c120caaa1ce380b37cf3037c0b"
+    },
+    {
+      "source_pack": 1,
+      "source_index": 9,
+      "source_rect": [
+        0,
+        24,
+        44,
+        25
+      ],
+      "ride_ids": [
+        12,
+        13
+      ],
+      "references": 24,
+      "id": 80,
+      "atlas": 5,
+      "cell": [
+        0,
+        0
+      ],
+      "atlas_rect_native": [
+        8,
+        61,
+        48,
+        27
+      ],
+      "atlas_rect_hd": [
+        64,
+        488,
+        384,
+        216
+      ],
+      "part_scale_xy": [
+        8.727272727272727,
+        8.64
+      ],
+      "sha256_rgba": "792524c8b671dd757610e76dedabd40c4061714cf2de0084b435fe2aad0a30b2",
+      "reference_sha256_rgba": "1bd47b981eed1786c6d1b40f778c1375993fc16d3e1c6bc4867e95546951b7df"
+    },
+    {
+      "source_pack": 1,
+      "source_index": 9,
+      "source_rect": [
+        0,
+        48,
+        44,
+        25
+      ],
+      "ride_ids": [
+        12,
+        13
+      ],
+      "references": 24,
+      "id": 81,
+      "atlas": 5,
+      "cell": [
+        1,
+        0
+      ],
+      "atlas_rect_native": [
+        72,
+        61,
+        48,
+        27
+      ],
+      "atlas_rect_hd": [
+        576,
+        488,
+        384,
+        216
+      ],
+      "part_scale_xy": [
+        8.727272727272727,
+        8.64
+      ],
+      "sha256_rgba": "3527eb56544d6f16813b0650eec91c2e5f144bc53631edef51a06743b4b04445",
+      "reference_sha256_rgba": "5e3777d950ceedadcd7964ec4e6809c5e9d4d55dc9341018bb4d6970c4248bac"
+    },
+    {
+      "source_pack": 1,
+      "source_index": 11,
+      "source_rect": [
+        0,
+        0,
+        17,
+        12
+      ],
+      "ride_ids": [
+        7,
+        9,
+        15,
+        16
+      ],
+      "references": 4,
+      "id": 82,
+      "atlas": 5,
+      "cell": [
+        2,
+        0
+      ],
+      "atlas_rect_native": [
+        136,
+        54,
+        48,
+        34
+      ],
+      "atlas_rect_hd": [
+        1088,
+        432,
+        384,
+        272
+      ],
+      "part_scale_xy": [
+        22.58823529411765,
+        22.666666666666668
+      ],
+      "sha256_rgba": "681fbfebcff3755ee356f2884366310fe557758cdcda1403915da246b0549374",
+      "reference_sha256_rgba": "5256eaf15ad98fdc20a1ca06585f4b5f5da70668c96f42ddc2e840fff29ea8d5"
+    },
+    {
+      "source_pack": 1,
+      "source_index": 11,
+      "source_rect": [
+        15,
+        0,
+        23,
+        16
+      ],
+      "ride_ids": [
+        7,
+        9,
+        15,
+        16
+      ],
+      "references": 4,
+      "id": 83,
+      "atlas": 5,
+      "cell": [
+        3,
+        0
+      ],
+      "atlas_rect_native": [
+        200,
+        55,
+        48,
+        33
+      ],
+      "atlas_rect_hd": [
+        1600,
+        440,
+        384,
+        264
+      ],
+      "part_scale_xy": [
+        16.695652173913043,
+        16.5
+      ],
+      "sha256_rgba": "e6d7c5e6874f45287563c51bdc4f4a0ecad0f13ea1bd4b9a3e90ffbba15c5f7d",
+      "reference_sha256_rgba": "b11584789a57dbb617542529cef2a3f6130f2bfde60d74bd9b6cc846a38eb850"
+    },
+    {
+      "source_pack": 1,
+      "source_index": 11,
+      "source_rect": [
+        35,
+        0,
+        23,
+        16
+      ],
+      "ride_ids": [
+        7,
+        9,
+        15,
+        16
+      ],
+      "references": 4,
+      "id": 84,
+      "atlas": 5,
+      "cell": [
+        0,
+        1
+      ],
+      "atlas_rect_native": [
+        8,
+        151,
+        48,
+        33
+      ],
+      "atlas_rect_hd": [
+        64,
+        1208,
+        384,
+        264
+      ],
+      "part_scale_xy": [
+        16.695652173913043,
+        16.5
+      ],
+      "sha256_rgba": "3e4ce5dd1eceb24ddad6083785ac17d80a27ca5e1e8df36dfb7d800228472fae",
+      "reference_sha256_rgba": "0dbd0764e005f692bb2b77c3c1d17e381a9ba0153bdfcf66f7304f1958b26224"
+    },
+    {
+      "source_pack": 1,
+      "source_index": 11,
+      "source_rect": [
+        56,
+        0,
+        26,
+        9
+      ],
+      "ride_ids": [
+        7,
+        9,
+        15,
+        16
+      ],
+      "references": 4,
+      "id": 85,
+      "atlas": 5,
+      "cell": [
+        1,
+        1
+      ],
+      "atlas_rect_native": [
+        72,
+        167,
+        48,
+        17
+      ],
+      "atlas_rect_hd": [
+        576,
+        1336,
+        384,
+        136
+      ],
+      "part_scale_xy": [
+        14.76923076923077,
+        15.11111111111111
+      ],
+      "sha256_rgba": "9526efb79fd347dc2ae25048f4b3bd13fbcdc99bbd1351d772d48496dd667b22",
+      "reference_sha256_rgba": "1e7d2be7447fa80cafc01ed71b718b65249bde59f167cb5013b19b602d717aa8"
+    },
+    {
+      "source_pack": 1,
+      "source_index": 11,
+      "source_rect": [
+        69,
+        9,
+        13,
+        7
+      ],
+      "ride_ids": [
+        7,
+        9,
+        15,
+        16
+      ],
+      "references": 4,
+      "id": 86,
+      "atlas": 5,
+      "cell": [
+        2,
+        1
+      ],
+      "atlas_rect_native": [
+        136,
+        158,
+        48,
+        26
+      ],
+      "atlas_rect_hd": [
+        1088,
+        1264,
+        384,
+        208
+      ],
+      "part_scale_xy": [
+        29.53846153846154,
+        29.714285714285715
+      ],
+      "sha256_rgba": "1d44c4562f513ba9b2524165de12affd33ed5de6b3146da1fb77211cbff8895a",
+      "reference_sha256_rgba": "20b2642e0bea2a073a38a0cafbf624fdba1d3e9505e832133a5ef5b289b80655"
+    },
+    {
+      "source_pack": 1,
+      "source_index": 12,
+      "source_rect": [
+        0,
+        0,
+        17,
+        10
+      ],
+      "ride_ids": [
+        19,
+        20,
+        21
+      ],
+      "references": 1836,
+      "id": 87,
+      "atlas": 5,
+      "cell": [
+        3,
+        1
+      ],
+      "atlas_rect_native": [
+        200,
+        156,
+        48,
+        28
+      ],
+      "atlas_rect_hd": [
+        1600,
+        1248,
+        384,
+        224
+      ],
+      "part_scale_xy": [
+        22.58823529411765,
+        22.4
+      ],
+      "sha256_rgba": "2a8f6d40c97e149bd395e03c925328f78cbf45bd484de95fc8e0cc584da44b6b",
+      "reference_sha256_rgba": "7a8e5a3ab780fcdfa9bbd2c3d2c1d72cbe487a6a935b689155c20f297d2a715b"
+    },
+    {
+      "source_pack": 1,
+      "source_index": 12,
+      "source_rect": [
+        0,
+        10,
+        17,
+        14
+      ],
+      "ride_ids": [
+        19,
+        20,
+        21
+      ],
+      "references": 992,
+      "id": 88,
+      "atlas": 5,
+      "cell": [
+        0,
+        2
+      ],
+      "atlas_rect_native": [
+        8,
+        240,
+        48,
+        40
+      ],
+      "atlas_rect_hd": [
+        64,
+        1920,
+        384,
+        320
+      ],
+      "part_scale_xy": [
+        22.58823529411765,
+        22.857142857142858
+      ],
+      "sha256_rgba": "9f5378de09fde2a8f6fe4e34d311a218f2ee913f5c9ba64310dc7a659857819e",
+      "reference_sha256_rgba": "a28f8458ba2acd8aee1b66c49c7eeb5c0424af0096d59368c1746cea0145cc97"
+    },
+    {
+      "source_pack": 1,
+      "source_index": 12,
+      "source_rect": [
+        0,
+        24,
+        13,
+        15
+      ],
+      "ride_ids": [
+        16,
+        19,
+        20
+      ],
+      "references": 1518,
+      "id": 89,
+      "atlas": 5,
+      "cell": [
+        1,
+        2
+      ],
+      "atlas_rect_native": [
+        72,
+        225,
+        48,
+        55
+      ],
+      "atlas_rect_hd": [
+        576,
+        1800,
+        384,
+        440
+      ],
+      "part_scale_xy": [
+        29.53846153846154,
+        29.333333333333332
+      ],
+      "sha256_rgba": "f530250f86e8d3f3fd4be32457b69481bfd57d5c7f4bed14264b03333ac6142e",
+      "reference_sha256_rgba": "93e6277cd13f6dd1822b38bb2483330dcd6ea59e4a0b90169000da0d69a6c7bc"
+    },
+    {
+      "source_pack": 1,
+      "source_index": 12,
+      "source_rect": [
+        0,
+        47,
+        9,
+        13
+      ],
+      "ride_ids": [
+        19,
+        20,
+        21
+      ],
+      "references": 840,
+      "id": 90,
+      "atlas": 5,
+      "cell": [
+        2,
+        2
+      ],
+      "atlas_rect_native": [
+        136,
+        211,
+        48,
+        69
+      ],
+      "atlas_rect_hd": [
+        1088,
+        1688,
+        384,
+        552
+      ],
+      "part_scale_xy": [
+        42.666666666666664,
+        42.46153846153846
+      ],
+      "sha256_rgba": "4d7b719a856266a8314ccf13152e9d3f46fcf7f8dc1016d3d1eb2f6427850f25",
+      "reference_sha256_rgba": "e56ae4c89e647f44b5bc4369262fe131cf1282ba6a4244961298fae56bc52d18"
+    },
+    {
+      "source_pack": 1,
+      "source_index": 12,
+      "source_rect": [
+        7,
+        47,
+        8,
+        16
+      ],
+      "ride_ids": [
+        19
+      ],
+      "references": 208,
+      "id": 91,
+      "atlas": 5,
+      "cell": [
+        3,
+        2
+      ],
+      "atlas_rect_native": [
+        204,
+        200,
+        40,
+        80
+      ],
+      "atlas_rect_hd": [
+        1632,
+        1600,
+        320,
+        640
+      ],
+      "part_scale_xy": [
+        40.0,
+        40.0
+      ],
+      "sha256_rgba": "be42c8e52460fe6157c2955733f9ae77bdeae3d282e8459e42d048645a95e67d",
+      "reference_sha256_rgba": "6a43d4e1c677bf90a4ceda45bf3dc36ead49575f00cf0673b64c874d01ed7efa"
+    },
+    {
+      "source_pack": 1,
+      "source_index": 12,
+      "source_rect": [
+        11,
+        39,
+        12,
+        8
+      ],
+      "ride_ids": [
+        19
+      ],
+      "references": 312,
+      "id": 92,
+      "atlas": 5,
+      "cell": [
+        0,
+        3
+      ],
+      "atlas_rect_native": [
+        8,
+        344,
+        48,
+        32
+      ],
+      "atlas_rect_hd": [
+        64,
+        2752,
+        384,
+        256
+      ],
+      "part_scale_xy": [
+        32.0,
+        32.0
+      ],
+      "sha256_rgba": "ce9855752d94bb7279910011e3b550374ff3813c1ab757b554ea93e38a96bcd2",
+      "reference_sha256_rgba": "861dda52a8be6923482df1f4628321c0e671a820a83d1a22a4862f7973eaf8a9"
+    },
+    {
+      "source_pack": 1,
+      "source_index": 12,
+      "source_rect": [
+        12,
+        24,
+        13,
+        15
+      ],
+      "ride_ids": [
+        19,
+        20,
+        21
+      ],
+      "references": 1470,
+      "id": 93,
+      "atlas": 5,
+      "cell": [
+        1,
+        3
+      ],
+      "atlas_rect_native": [
+        72,
+        321,
+        48,
+        55
+      ],
+      "atlas_rect_hd": [
+        576,
+        2568,
+        384,
+        440
+      ],
+      "part_scale_xy": [
+        29.53846153846154,
+        29.333333333333332
+      ],
+      "sha256_rgba": "15cbf16ba4c4a37b7a91b29843bad043e928b23b786faef1ade2c67993659de1",
+      "reference_sha256_rgba": "aeac6635cb65c29161a4b33434ea69515b91f42de29190cff1e29063daef7dcd"
+    },
+    {
+      "source_pack": 1,
+      "source_index": 12,
+      "source_rect": [
+        16,
+        0,
+        17,
+        10
+      ],
+      "ride_ids": [
+        19,
+        20,
+        21
+      ],
+      "references": 992,
+      "id": 94,
+      "atlas": 5,
+      "cell": [
+        2,
+        3
+      ],
+      "atlas_rect_native": [
+        136,
+        348,
+        48,
+        28
+      ],
+      "atlas_rect_hd": [
+        1088,
+        2784,
+        384,
+        224
+      ],
+      "part_scale_xy": [
+        22.58823529411765,
+        22.4
+      ],
+      "sha256_rgba": "92a73c82cfd055c1f55de593a679dea3ab594884a0a2de1eea6ed830fed11d0c",
+      "reference_sha256_rgba": "1efec6daaf9e18fc320807081fe7d17d6c058df4a1460973881756163bc765cb"
+    },
+    {
+      "source_pack": 1,
+      "source_index": 12,
+      "source_rect": [
+        16,
+        10,
+        17,
+        14
+      ],
+      "ride_ids": [
+        19,
+        20,
+        21
+      ],
+      "references": 998,
+      "id": 95,
+      "atlas": 5,
+      "cell": [
+        3,
+        3
+      ],
+      "atlas_rect_native": [
+        200,
+        336,
+        48,
+        40
+      ],
+      "atlas_rect_hd": [
+        1600,
+        2688,
+        384,
+        320
+      ],
+      "part_scale_xy": [
+        22.58823529411765,
+        22.857142857142858
+      ],
+      "sha256_rgba": "e6de87310da8eba04d12802412a0a68453b6a7cd860d488990458640389ce183",
+      "reference_sha256_rgba": "6c7fc3fbc6129051be209e5d95c52f6e7cae82b5d634ce4c5fd060e5f667e1bb"
+    },
+    {
+      "source_pack": 1,
+      "source_index": 12,
+      "source_rect": [
+        21,
+        47,
+        11,
+        6
+      ],
+      "ride_ids": [
+        19,
+        20,
+        21
+      ],
+      "references": 1050,
+      "id": 96,
+      "atlas": 6,
+      "cell": [
+        0,
+        0
+      ],
+      "atlas_rect_native": [
+        8,
+        62,
+        48,
+        26
+      ],
+      "atlas_rect_hd": [
+        64,
+        496,
+        384,
+        208
+      ],
+      "part_scale_xy": [
+        34.90909090909091,
+        34.666666666666664
+      ],
+      "sha256_rgba": "63c5ead3f7ceb873c45e43b7e3bd9efde54d936eb900ec515f7ad9ea6b85b959",
+      "reference_sha256_rgba": "bb6b39921eb92737c39bf770f26cf974cafd9ca1862a665ad86e60acdad96e24"
+    },
+    {
+      "source_pack": 1,
+      "source_index": 12,
+      "source_rect": [
+        21,
+        53,
+        12,
+        8
+      ],
+      "ride_ids": [
+        19
+      ],
+      "references": 14,
+      "id": 97,
+      "atlas": 6,
+      "cell": [
+        1,
+        0
+      ],
+      "atlas_rect_native": [
+        72,
+        56,
+        48,
+        32
+      ],
+      "atlas_rect_hd": [
+        576,
+        448,
+        384,
+        256
+      ],
+      "part_scale_xy": [
+        32.0,
+        32.0
+      ],
+      "sha256_rgba": "a820340833e18f0ba4240b73aee08b9526d1ddeeffd2a0ab38af516c62cfa505",
+      "reference_sha256_rgba": "20e3db269184d3f06ce73249182a5f9ae432fbf4296655033916f0c9e1ec66c6"
+    },
+    {
+      "source_pack": 1,
+      "source_index": 12,
+      "source_rect": [
+        25,
+        24,
+        8,
+        11
+      ],
+      "ride_ids": [
+        19
+      ],
+      "references": 6,
+      "id": 98,
+      "atlas": 6,
+      "cell": [
+        2,
+        0
+      ],
+      "atlas_rect_native": [
+        136,
+        22,
+        48,
+        66
+      ],
+      "atlas_rect_hd": [
+        1088,
+        176,
+        384,
+        528
+      ],
+      "part_scale_xy": [
+        48.0,
+        48.0
+      ],
+      "sha256_rgba": "9945d098c9aa4679050cf6b86564b152ebc2ae0d0faf257d0d38cf0ea03b6fe7",
+      "reference_sha256_rgba": "a376da158752adaaf8bb54d04f9a9cb41d840c7c5734efb24807489a63f765d8"
+    },
+    {
+      "source_pack": 1,
+      "source_index": 12,
+      "source_rect": [
+        25,
+        35,
+        8,
+        11
+      ],
+      "ride_ids": [
+        19
+      ],
+      "references": 10,
+      "id": 99,
+      "atlas": 6,
+      "cell": [
+        3,
+        0
+      ],
+      "atlas_rect_native": [
+        200,
+        22,
+        48,
+        66
+      ],
+      "atlas_rect_hd": [
+        1600,
+        176,
+        384,
+        528
+      ],
+      "part_scale_xy": [
+        48.0,
+        48.0
+      ],
+      "sha256_rgba": "1aa0e2ff61af655f9bdba93fd894e1ea1adec454544c12efd028f61dc6e05185",
+      "reference_sha256_rgba": "f3c210a485f2acc4f47e35d22717fd5f3eb3b34cf0de4882b12b5a8b08b4a00e"
+    }
+  ],
+  "cost_usd": 0,
+  "normalized": true,
+  "keep_local": [
+    {
+      "source_pack": 1,
+      "source_index": 0,
+      "source_rect": [
+        7,
+        42,
+        8,
+        7
+      ],
+      "reason": "Tiny line or peg: preserve original pixels or draw locally; do not spend API budget."
+    },
+    {
+      "source_pack": 1,
+      "source_index": 0,
+      "source_rect": [
+        23,
+        37,
+        2,
+        4
+      ],
+      "reason": "Tiny line or peg: preserve original pixels or draw locally; do not spend API budget."
+    },
+    {
+      "source_pack": 1,
+      "source_index": 2,
+      "source_rect": [
+        35,
+        79,
+        6,
+        4
+      ],
+      "reason": "Tiny line or peg: preserve original pixels or draw locally; do not spend API budget."
+    },
+    {
+      "source_pack": 1,
+      "source_index": 2,
+      "source_rect": [
+        62,
+        65,
+        8,
+        5
+      ],
+      "reason": "Tiny line or peg: preserve original pixels or draw locally; do not spend API budget."
+    },
+    {
+      "source_pack": 1,
+      "source_index": 4,
+      "source_rect": [
+        61,
+        74,
+        5,
+        8
+      ],
+      "reason": "Tiny line or peg: preserve original pixels or draw locally; do not spend API budget."
+    },
+    {
+      "source_pack": 1,
+      "source_index": 4,
+      "source_rect": [
+        66,
+        74,
+        5,
+        8
+      ],
+      "reason": "Tiny line or peg: preserve original pixels or draw locally; do not spend API budget."
+    }
+  ],
+  "contract": [
+    "Cells and part rectangles must never move or be trimmed independently.",
+    "Return true transparent alpha; no ground, captions, labels or baked shadows.",
+    "Each source rectangle is a reusable part; retain connection endpoints for rails and supports.",
+    "Original sprite offset and depth are per command, not per atlas part.",
+    "Source drawLine commands remain vector lines; these are not image parts.",
+    "Rescale the extracted HD crop to source_rect.size in world units.",
+    "Do not install an AI result before reviewing seams, alpha, anchors and every affected animation."
+  ]
+}

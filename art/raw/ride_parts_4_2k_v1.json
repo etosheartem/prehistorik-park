@@ -1,0 +1,55 @@
+{
+  "id": "ride_parts_4_2k_v1",
+  "scope": "pilot",
+  "model": "sourceful/riverflow-v2.5-pro",
+  "resolution": "2K",
+  "expected_usd": 0.15,
+  "reserved_usd": 0.8,
+  "output": "art/raw/ride_parts_4_2k_v1.png",
+  "references": [
+    {
+      "path": "art/reference/ride_parts_normalized/atlas_4.png",
+      "sha256": "c905fef776eeab395c37f863b350a86917e322695975c6606e0e20e722bc28e4"
+    }
+  ],
+  "account_balance_before_usd": 7.490981,
+  "status": "generated",
+  "response_id": null,
+  "usage": {
+    "prompt_tokens": 433,
+    "completion_tokens": 4175,
+    "total_tokens": 4608,
+    "cost": 0.359377,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.359377,
+      "upstream_inference_prompt_cost": 0,
+      "upstream_inference_completions_cost": 0.359377
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "image_tokens": 4175
+    }
+  },
+  "response_model": null,
+  "response_created": 0,
+  "elapsed_seconds": 104.69,
+  "completed_utc": "2026-10-12T03:28:49.456311+00:00",
+  "cost_usd": 0.359377,
+  "cost_exceeded_reservation": false,
+  "width": 1664,
+  "height": 2496,
+  "alpha_range": [
+    0,
+    255
+  ],
+  "provider_format": "PNG",
+  "provider_sha256": "f8000ccd903753bc856b4b72bab990940118e4c3806d03f691c2fa826b152fe5",
+  "sha256": "f8000ccd903753bc856b4b72bab990940118e4c3806d03f691c2fa826b152fe5",
+  "native_size_ok": true,
+  "transparency_ok": true,
+  "prompt": "Use case: style-transfer. Asset type: native 2K transparent production sprite-part atlas for a faithful illustrated stone-age amusement park game remaster.\nInput image 1 is the EXACT layout and silhouette template: 4 columns by 4 rows, portrait 2:3 canvas, 16 isolated original components. Repaint these existing components in clean detailed bright hand-drawn cartoon game art, replacing coarse pixels with smooth intentional shapes, fine ink accents and gentle material shading. Follow the original palette, materials and identity faithfully.\nContents: Pale tan pointed canopy/seat piece, flat blue water diamond, gray rocky cave and cliff fragments with green foliage, white stone/ivory part with red detail, thin gray rock facets, gray stone prehistoric animal figure. Do not turn stone into wood; retain reference colors.\nCRITICAL mechanical layout: retain all 16 components, exact grid order, local position, scale, aspect ratio, silhouette, orientation, hole shapes and attachment endpoints. The placement inside each cell is intentional. These are reusable pieces later assembled into moving objects; do NOT redesign them as standalone complete rides. Straight elements stay straight and just as thin. Diagonals retain exact slopes. Structural frames keep the exact beam/rung count. Do not rotate, enlarge, shrink, center, tilt or move any component. Keep the reference contour tight; add surface detail INSIDE that contour.\nBackground: true transparent RGBA alpha=0 in empty regions, around every component and inside its holes. No painted checkerboard or background color, no ground or cast shadows, no text or labels, no watermark, no borders or grid lines, no invented extra pieces or characters. Native 2K output."
+}

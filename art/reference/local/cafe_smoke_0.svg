@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="48" height="32" viewBox="0 0 100 60">
+<defs><linearGradient id="tone" x2="0" y2="1"><stop stop-color="#fbf9ee"/><stop offset="1" stop-color="#b8b5ac"/></linearGradient>
+<filter id="soft" x="-20%" y="-30%" width="140%" height="160%"><feGaussianBlur stdDeviation="1.5"/></filter></defs>
+<g fill="url(#tone)" opacity="0.68" filter="url(#soft)">
+<path d="M10 43C4 34 11 24 24 26C20 15 31 8 43 14C46 4 64 6 68 20C79 14 92 22 87 33C103 43 89 53 76 49C66 58 54 52 48 50C31 57 24 48 10 43Z"/>
+</g></svg>

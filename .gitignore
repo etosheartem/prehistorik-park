@@ -1,0 +1,31 @@
+# Generated engine data and local builds
+.godot/
+build/
+__pycache__/
+*.pyc
+*.tmp
+*.lock
+core
+core.*
+.DS_Store
+
+# Credentials and signing material always stay outside version control
+.env
+.env.*
+*.keystore
+*.jks
+*.p12
+*.pem
+*.key
+export_credentials.cfg
+art/pricing/
+
+# Large reproducible review renders; the acceptance save is a test fixture
+art/review/*
+!art/review/acceptance_park.json
+art/upscale/pilot/
+art/upscale/runs/
+
+# Local editor settings
+.idea/
+.vscode/

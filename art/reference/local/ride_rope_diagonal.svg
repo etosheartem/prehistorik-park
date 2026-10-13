@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="64" height="56" viewBox="0 0 80 70"><defs>
+<linearGradient id="wood"><stop stop-color="#584026"/><stop offset=".25" stop-color="#ac8850"/><stop offset=".48" stop-color="#b6955e"/><stop offset=".7" stop-color="#80613b"/><stop offset="1" stop-color="#493520"/></linearGradient>
+<linearGradient id="rope" x1="0" y1="0" x2=".35" y2="1"><stop stop-color="#e2c780"/><stop offset=".45" stop-color="#b79752"/><stop offset="1" stop-color="#70532b"/></linearGradient>
+</defs><path d="M1 67L1 40Q20 33 36 21Q53 8 79 1L79 22Q64 28 51 35L28 52L1 67Z" fill="url(#rope)" stroke="#554327" stroke-width="1.2" stroke-linejoin="round"/>
+<path d="M3 51Q23 40 42 27Q58 16 77 11" fill="none" stroke="#ebd496" stroke-width="1.8"/>
+<g fill="none" stroke="#766034" stroke-width="1.15"><path d="M6 38Q14 40 16 55M19 32Q27 34 29 48M32 24Q40 27 43 40M46 16Q52 20 55 32M60 8Q68 12 69 26"/></g>
+<g fill="none" stroke="#d4b570" stroke-width="1"><path d="M9 38Q17 41 19 54M22 31Q30 34 32 46M35 23Q43 27 46 38M49 15Q55 19 58 31M63 8Q71 12 72 24"/></g></svg>

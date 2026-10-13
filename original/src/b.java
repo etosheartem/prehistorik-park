@@ -1,0 +1,102 @@
+/*
+ * Decompiled with CFR 0.152.
+ */
+/*
+ * Duplicate member names - consider using --renamedupmembers true
+ */
+public final class b {
+    static final short[][] a = new short[][]{{2, 13, 22, 31, 38, 49, 56, 68, 77, 86, 95, 103, 113, 126, 135, 144, 153, 161}, {2, 10, 19, 29, 41, 49, 60, 68, 82, 97, 107, 118, 126, 135, 147, 156, 163, 180}, {2, 13, 20, 30, 40, 51, 62, 72, 83, 94, 102, 106, 111, 116, 120, 129, 132, 139, 146, 149, 158, 172}};
+    static final byte[] a = new byte[]{0, 19, 36};
+    static final byte[] b = new byte[]{19, 17, 19};
+    static final byte[] c = new byte[]{126};
+    static final short[] a = new short[]{2, 15, 22, 31, 41, 52, 63, 74, 85, 96, 106, 110, 120, 129};
+    static final byte[] d = new byte[]{71, 79, 6, 4};
+    static final byte[] e = new byte[]{92, 92};
+    static final byte[] f = new byte[]{58, 0};
+    static final byte[] g = new byte[]{64, 64};
+    static final byte[] h = new byte[]{58, 58};
+    static final byte[] i = new byte[]{109, 37, 15, 15};
+    static final byte[] j = new byte[]{24, 7, 7, 6, 3};
+    static final byte[] k = new byte[]{2, 2, 2};
+    static final byte[] l = new byte[]{4, 6, 8};
+    static final byte[][][] a = new byte[][][]{new byte[][]{{0, 1}, {1, 2}}, new byte[][]{{0, 2}, {0, 2}}};
+    static final byte[][][] b = new byte[][][]{new byte[][]{{0, 2}, {0, 2}}, new byte[][]{{0, 1}, {1, 2}}};
+    static final byte[] m = new byte[]{2, 1, 2, 0};
+    static final byte[] n = new byte[]{1, 4, 2, 0};
+    static final byte[] o = new byte[]{-35, 25};
+    static final byte[] p = new byte[]{14, 0};
+    static final byte[][] a = new byte[][]{{0, 0}, {72, 86}};
+    static final byte[] q = new byte[]{74, 60};
+    static final byte[] r = new byte[]{0, 100};
+    static final byte[] s = new byte[]{100, 60};
+    static final short[][] b = new short[][]{{0, q[0]}, {(short)(240 - q[0]), (short)(240 - q[0] - q[1])}};
+    static final byte[] t = new byte[]{0, 5};
+    static final byte[][] b = new byte[][]{{5, 10}, {5}};
+    static final byte[][] c = new byte[][]{{2, 2}, {7}};
+    static final byte[][] d = new byte[][]{{0, 2}, {0}};
+    static final byte[] u = new byte[]{2, 1};
+    static final byte[] v = new byte[]{114, 117, 120};
+    static final byte[] w = new byte[]{18, 18, 18};
+    static final byte[] x = new byte[]{55, 55};
+    static final byte[] y = new byte[]{5, 9};
+    static final byte[] z = new byte[]{8, 8};
+    static final byte[] A = new byte[]{5, 5};
+    static final byte[] B = new byte[]{40, 20};
+    static final byte[] C = new byte[]{100, 14, 87};
+    static final byte[] D = new byte[]{12, 25, 15};
+    static final byte[] E = new byte[]{14, 12, 13};
+    static final byte[] F = new byte[]{15, 14, 14};
+    static final byte[] G = new byte[]{(byte)((B[0] - E[0]) / 2), (byte)(E[0] / 2), 6};
+    static final byte[] H = new byte[]{(byte)((B[1] - F[0]) / 2), 0, (byte)(F[2] - 2)};
+    static final byte[] I = new byte[]{89, 100};
+    static final byte[] J = new byte[]{0, 0};
+    static final byte[] K = new byte[]{11, 15};
+    static final byte[] L = new byte[]{15, 12};
+    static final byte[] M = new byte[]{(byte)(B[0] / 2), (byte)(B[0] / 2 - 2)};
+    static final byte[] N = new byte[]{2, 5};
+    static final byte[] O = new byte[]{0, 38};
+    static final byte[] P = new byte[]{104, 104};
+    static final byte[] Q = new byte[]{3, 3};
+    static final byte[] R = new byte[]{90, 105};
+    static final byte[] S = new byte[]{83, 84};
+    static final byte[] T = new byte[]{15, 18};
+    static final byte[] U = new byte[]{20, 13};
+    static final byte[] V = new byte[]{-19, -4};
+    static final byte[] W = new byte[]{-44, -33};
+    static final byte[] X = new byte[]{2, 1};
+    static final byte[] Y = new byte[]{1, 2};
+    static final byte[] Z = new byte[]{7, 13};
+    static final byte[] aa = new byte[]{0, 20};
+    static final byte[] ab = new byte[]{83, 83};
+    static final byte[] ac = new byte[]{20, 19};
+    static final byte[] ad = new byte[]{18, 20};
+    static final byte[] ae = new byte[]{0, 1};
+    static final byte[] af = new byte[]{1, 12};
+    static final byte[] ag = new byte[]{70, 70};
+    static final byte[] ah = new byte[]{11, 14};
+    static final byte[] ai = new byte[]{19, 17};
+    static final short[][] c = new short[][]{{133, 149}, {120, 60}};
+    static final byte[][] e = new byte[][]{{114, 44, 7, 5, 0, -4}, {114, 49, 7, 5, 0, -3}, {114, 54, 8, 5, 0, -4}};
+    static final byte[] aj = new byte[]{8, 10};
+    static final int[] a = new int[]{1382, 16840, 14375083, 16093905, 0x42C242, 9038473, 15879977, 15633783, 13086997, 15783712, 5061913, 11443791};
+    static final byte[] ak = new byte[]{11, 10};
+    static final short[] b = new short[]{85, 25, 75, 75, 75, 75, 50, 18, 500, 8};
+    static final byte[] al = new byte[]{13, 14, 15, 17, 16};
+    static final byte[] am = new byte[]{1, 1, 2, 4, 1};
+    static final byte[] an = new byte[]{0, 1, 2, 4, 8, 9};
+    static final byte[][] f = new byte[][]{{Z[0], 13}, {6, Z[0]}};
+    static final int[][] a = new int[][]{new int[0], {0}, {0}, {0}, {0}, new int[0], new int[0], new int[0], new int[0], new int[0], new int[0], new int[0], new int[0], new int[0], new int[0], {0}, new int[0], {8022300, 8022300}, new int[0], new int[0], new int[0], new int[0], new int[0], new int[0]};
+    static final int[][] b = new int[][]{new int[0], {0}, {0}, {0, 0, 0, 0}, {0, 0, 0, 0}, new int[0], {0, 0, 0}, new int[0], new int[0], new int[0], new int[0], new int[0], new int[0], new int[0], {2166272, 2166272, 3745030, 3745030, 2166272, 2166272, 3745030}, new int[0], {0}, {0}, {0, 0, 0, 0}, new int[0], new int[0], new int[0], new int[0], new int[0]};
+    static final byte[] ao = new byte[]{0, 1};
+    static final byte[][] g = new byte[][]{{Z[0], 18}, {0, Z[0]}};
+    static final byte[] ap = new byte[]{0, 50, 15, 25};
+    static final byte[] aq = new byte[]{3, 5, 4, 4, 8, 9};
+    static final byte[] ar = new byte[]{0, 1, 1, 1, 1, 0, 1};
+    static final byte[][] h = new byte[][]{{-28, -28}, {-27, -28}};
+    static final byte[][] i = new byte[][]{{4, 5}, {4, 5}};
+    static final byte[] as = new byte[]{0, 1};
+    static final byte[] at = new byte[]{0, 1, 1, 2};
+    static final byte[] au = new byte[]{5, 5, 5, 5, 5, 5};
+    static final byte[] av = new byte[]{80, 40};
+}
+

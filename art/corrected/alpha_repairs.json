@@ -1,0 +1,65 @@
+[
+  {
+    "source": "art/raw/ride_parts_2_2k_v1.png",
+    "source_sha256": "e15407c43eb31bf76ed7db1084aa78f427d1b31e10399a53ea95da6d7896cc64",
+    "output": "art/corrected/ride_parts_2_2k_v1.png",
+    "output_sha256": "9bdb9c03726696a2bb170d46cd9d0812ced57500c2ef5cbf9796fc1dc689eb63",
+    "cells": [
+      {
+        "cell": [
+          0,
+          3
+        ],
+        "alpha_pixels_before": 0,
+        "alpha_pixels_after": 23116,
+        "method": "chroma + small highlight holes"
+      }
+    ],
+    "api_cost_usd": 0
+  },
+  {
+    "source": "art/raw/ride_parts_5_2k_v1.png",
+    "source_sha256": "03713e676f6fc766b7dd1ea44f171067af1d1caadf0cc5f88d78c893c1a1b775",
+    "output": "art/corrected/ride_parts_5_2k_v1.png",
+    "output_sha256": "60d54e2add3cf0832b14f0c65ef8b71fca9a14ea63960e051879bceaa7a83a7f",
+    "cells": [
+      {
+        "cell": [
+          2,
+          0
+        ],
+        "alpha_pixels_before": 683,
+        "alpha_pixels_after": 31806,
+        "method": "chroma + small highlight holes"
+      },
+      {
+        "cell": [
+          3,
+          0
+        ],
+        "alpha_pixels_before": 1558,
+        "alpha_pixels_after": 25513,
+        "method": "chroma + small highlight holes"
+      },
+      {
+        "cell": [
+          0,
+          1
+        ],
+        "alpha_pixels_before": 0,
+        "alpha_pixels_after": 23258,
+        "method": "chroma + small highlight holes"
+      },
+      {
+        "cell": [
+          1,
+          1
+        ],
+        "alpha_pixels_before": 0,
+        "alpha_pixels_after": 9913,
+        "method": "chroma + small highlight holes"
+      }
+    ],
+    "api_cost_usd": 0
+  }
+]

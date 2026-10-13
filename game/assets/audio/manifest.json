@@ -1,0 +1,62 @@
+{
+  "format_version": 1,
+  "api_calls": 0,
+  "cost_usd": 0,
+  "music": {
+    "file": "entry.ogg",
+    "source": "original/jar/sound/entry.mid",
+    "source_sha256": "2bb3b7cbeebc790ea75612ab57e7856564895456ffcbda525e8d3301b98592fc",
+    "sha256": "200c05642636cbe9dd041efeb7f91b098f478db4cba78387c21ea1ef2f181090",
+    "seconds": 65.178095,
+    "renderer": "Installed OpenJDK Gervill Emergency GM sound set (local procedural soundbank)",
+    "description": "Original notes, tempo and instruments preserved; rendered timbre differs from phone MIDI synths.",
+    "target_lufs": -20,
+    "sample_rate": 44100,
+    "channels": 2
+  },
+  "effects": {
+    "click": {
+      "file": "click.wav",
+      "seconds": 0.12,
+      "peak_dbfs": -9.02,
+      "sha256": "184d6a4992cd9d8bcee3e7046f42b4f72f744692e20fac61dfd7f5ceb3cfd3cd"
+    },
+    "build": {
+      "file": "build.wav",
+      "seconds": 0.4,
+      "peak_dbfs": -6.76,
+      "sha256": "2843819baca2f9fc104f2283c3aebff8887bfe92f195c7177ea6b6ac325982a7"
+    },
+    "demolish": {
+      "file": "demolish.wav",
+      "seconds": 0.42,
+      "peak_dbfs": -3.83,
+      "sha256": "4265dd550043060f79f7372069aae020a0f67ada15b2500d20e7cfae73470507"
+    },
+    "coin": {
+      "file": "coin.wav",
+      "seconds": 0.36,
+      "peak_dbfs": -11.51,
+      "sha256": "b331cf77f832a952467df80549efd8572d15409cb277a6674005f903b9ac4c88"
+    },
+    "error": {
+      "file": "error.wav",
+      "seconds": 0.28,
+      "peak_dbfs": -12.95,
+      "sha256": "07ce4f13e3d815bd70f0be819369bd0c1f5d06f3fd9d1310f945f693c2643a67"
+    },
+    "notification": {
+      "file": "notification.wav",
+      "seconds": 0.63,
+      "peak_dbfs": -11.91,
+      "sha256": "6c773b2d7ad4eb30da5582a32d4f8fe649747a68bc763ee8f5bd52dd5e980f27"
+    },
+    "success": {
+      "file": "success.wav",
+      "seconds": 0.85,
+      "peak_dbfs": -11.75,
+      "sha256": "607c79bd02e78d64e4f76f58fa11ea6838e2c7e0f6661652ec58fed3a41b645a"
+    }
+  },
+  "notes": "SFX are local deterministic synthesis, not samples from original game. No voices were present in the JAR."
+}

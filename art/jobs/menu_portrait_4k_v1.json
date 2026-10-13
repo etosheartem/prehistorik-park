@@ -1,0 +1,13 @@
+{
+  "id": "menu_portrait_4k_v1",
+  "scope": "pilot",
+  "model": "bytedance-seed/seedream-5-0-lite",
+  "resolution": "4K",
+  "aspect_ratio": "9:16",
+  "references": [
+    "original/jar/splash2.png",
+    "game/assets/hd/ui/menu_background_hd.png"
+  ],
+  "output": "art/raw/menu_portrait_4k_v1.png",
+  "prompt": "Use case: illustration-story. Asset type: native 4K PORTRAIT 9:16 menu background for a faithful illustrated stone-age amusement park game remaster.\nInput image 1 is the original game cover, defining character identity, era and attraction design. Input image 2 is the approved new landscape illustration and defines the exact colorful ink-and-paint art style. Create its beautiful matching portrait composition for a smartphone held vertically.\nKeep the recognizable friendly scruffy brown-haired smiling caveman park owner, broad stubbly jaw, round belly, yellow spotted animal-skin outfit, bare feet, holding a stick with the green chameleon. Preserve his face, costume, wooden basket wheel, timber roller-coaster structure, log ride car and cheerful prehistoric park setting. Clean lively ink contours, bright blue sky, vivid warm greens, golden timber, gentle painted shading; no realism or scary mood.\nPortrait UI composition is CRITICAL: put the full-body owner, chameleon and the main attraction silhouettes in the UPPER RIGHT portion, mostly between 18% and 55% of the image height. Keep the TOP 15% mostly calm blue sky for the separately drawn title. Keep the LOWER 42% a quiet broad softly shaded green lawn with very little detail: a solid readable area behind a vertical stack of the game's buttons. Do not put faces, rides, tracks, props or important shapes behind the buttons in the lower half. Distant foliage may frame the extreme side edges. Full-bleed coherent natural scene, no blank white panels. The owner must be completely in frame, including head and feet, and recognizable at phone size.\nRemove ALL lettering from reference1. No words, signs, logos, captions, UI panels, buttons, watermark or text anywhere. No modern machines, no extra foreground people. Native4K portrait9:16, detailed smooth illustration, not pixel art and not blurry upscale."
+}

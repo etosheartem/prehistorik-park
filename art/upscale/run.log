@@ -1,0 +1,6 @@
+GPU START realesrgan-x4plus-anime 4 sheets
+GPU START realesr-animevideov3 36 sheets
+GPU DONE realesrgan-x4plus-anime 2.59 seconds
+GPU DONE realesr-animevideov3 3.67 seconds
+INSTALLED 518 mapped resources; original files untouched
+UPSCALE OK: 2232 checks; 40 GPU sources; 518 mapped resources; API $0

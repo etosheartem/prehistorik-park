@@ -1,0 +1,51 @@
+{
+  "id": "menu_4k_v1",
+  "scope": "pilot",
+  "model": "bytedance-seed/seedream-5-0-lite",
+  "resolution": "4K",
+  "expected_usd": 0.035,
+  "reserved_usd": 0.05,
+  "output": "art/raw/menu_4k_v1.png",
+  "references": [
+    {
+      "path": "original/jar/splash2.png",
+      "sha256": "c87ae9722128cb0b41c552da2c03c6dc6e5587fb9f45a213a0055183cd9e5bbe"
+    }
+  ],
+  "status": "generated",
+  "response_id": null,
+  "usage": {
+    "prompt_tokens": 456,
+    "completion_tokens": 36864,
+    "total_tokens": 37320,
+    "cost": 0.035,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.035,
+      "upstream_inference_prompt_cost": 0,
+      "upstream_inference_completions_cost": 0.035
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "image_tokens": 36864
+    }
+  },
+  "elapsed_seconds": 45.52,
+  "completed_utc": "2026-10-12T03:04:33.723255+00:00",
+  "cost_usd": 0.035,
+  "width": 4096,
+  "height": 2304,
+  "alpha_range": [
+    255,
+    255
+  ],
+  "sha256": "1fa9180bc8e0eabcbe33324d656b40a4890d6fab062ead2c7b2b90eabb347fb8",
+  "native_size_ok": true,
+  "transparency_ok": true,
+  "prompt": "Use case: illustration-story. Asset type: native 4K landscape menu background for a faithful modern remaster of the attached 2007 stone-age amusement park game.\nInput image 1 is the original cover and the reference for character identity, era, attraction design and cheerful colors. Repaint the same recognizable scene in gorgeous clean hand-drawn cartoon game art at full native 4K detail, NOT pixel art.\nSubject: friendly scruffy brown-haired smiling caveman park owner, stubbly broad jaw, round belly, yellow spotted animal-skin sleeveless tunic, bare feet, holding up a tiny green chameleon balanced on a wooden stick. Preserve his quirky warm face and outfit. Behind him: wooden primitive Ferris wheel with baskets, a curved wooden roller coaster track, green prehistoric vegetation and simple log ride cars. Stone-age construction, wooden beams and rope lashings, bright blue sky and soft clouds.\nComposition: 16:9 wide full-bleed panorama. Put the full-body owner and strongest attraction silhouettes in the RIGHT half, leaving the LEFT 40 percent mostly calm sky and softly painted low vegetation so the game's separately drawn menu buttons remain readable. Attractive depth and painterly terrain, no empty black sidebars. Character must be entirely in frame.\nStyle: high quality colorful illustrated 2D game concept art, strong readable silhouettes, subtle textured paint, clean ink accents, warm sunlight, natural warm greens and honey wood. Humorous and welcoming, faithful to the original rather than cinematic realism.\nText: none. Completely omit the Russian title lettering from the reference. No words, signs, labels, logos, UI controls, watermarks or text anywhere. No modern machines, metal rides, scary dinosaurs, extra foreground people, photo-realism or blurry upscaling. Render directly at 4K.",
+  "provider_format": "JPEG",
+  "provider_sha256": "7520cda2c611e9ea680cffb3d20704e52a2dbc08647e7c69ec339c193d8b36f0"
+}

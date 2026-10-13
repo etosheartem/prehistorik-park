@@ -1,0 +1,3189 @@
+{
+  "res://assets/original/actors/0/walk_0_0.png": {
+    "path": "res://assets/hd/actors/0/walk_0_0.png",
+    "installer": "actors",
+    "logical_size": [
+      8,
+      16
+    ],
+    "original_offset": [
+      -4,
+      -16
+    ],
+    "scale": 8
+  },
+  "res://assets/original/actors/0/walk_0_1.png": {
+    "path": "res://assets/hd/actors/0/walk_0_1.png",
+    "installer": "actors",
+    "logical_size": [
+      9,
+      16
+    ],
+    "original_offset": [
+      -4,
+      -16
+    ],
+    "scale": 8
+  },
+  "res://assets/original/actors/0/walk_0_2.png": {
+    "path": "res://assets/hd/actors/0/walk_0_2.png",
+    "installer": "actors",
+    "logical_size": [
+      11,
+      16
+    ],
+    "original_offset": [
+      -5,
+      -16
+    ],
+    "scale": 8
+  },
+  "res://assets/original/actors/0/walk_1_0.png": {
+    "path": "res://assets/hd/actors/0/walk_1_0.png",
+    "installer": "actors",
+    "logical_size": [
+      8,
+      16
+    ],
+    "original_offset": [
+      -4,
+      -16
+    ],
+    "scale": 8
+  },
+  "res://assets/original/actors/0/walk_1_1.png": {
+    "path": "res://assets/hd/actors/0/walk_1_1.png",
+    "installer": "actors",
+    "logical_size": [
+      9,
+      16
+    ],
+    "original_offset": [
+      -4,
+      -16
+    ],
+    "scale": 8
+  },
+  "res://assets/original/actors/0/walk_1_2.png": {
+    "path": "res://assets/hd/actors/0/walk_1_2.png",
+    "installer": "actors",
+    "logical_size": [
+      11,
+      16
+    ],
+    "original_offset": [
+      -5,
+      -16
+    ],
+    "scale": 8
+  },
+  "res://assets/original/actors/0/walk_2_0.png": {
+    "path": "res://assets/hd/actors/0/walk_2_0.png",
+    "installer": "actors",
+    "logical_size": [
+      8,
+      16
+    ],
+    "original_offset": [
+      -4,
+      -16
+    ],
+    "scale": 8
+  },
+  "res://assets/original/actors/0/walk_2_1.png": {
+    "path": "res://assets/hd/actors/0/walk_2_1.png",
+    "installer": "actors",
+    "logical_size": [
+      9,
+      16
+    ],
+    "original_offset": [
+      -4,
+      -16
+    ],
+    "scale": 8
+  },
+  "res://assets/original/actors/0/walk_2_2.png": {
+    "path": "res://assets/hd/actors/0/walk_2_2.png",
+    "installer": "actors",
+    "logical_size": [
+      10,
+      16
+    ],
+    "original_offset": [
+      -5,
+      -16
+    ],
+    "scale": 8
+  },
+  "res://assets/original/actors/0/walk_3_0.png": {
+    "path": "res://assets/hd/actors/0/walk_3_0.png",
+    "installer": "actors",
+    "logical_size": [
+      8,
+      16
+    ],
+    "original_offset": [
+      -4,
+      -16
+    ],
+    "scale": 8
+  },
+  "res://assets/original/actors/0/walk_3_1.png": {
+    "path": "res://assets/hd/actors/0/walk_3_1.png",
+    "installer": "actors",
+    "logical_size": [
+      9,
+      16
+    ],
+    "original_offset": [
+      -4,
+      -16
+    ],
+    "scale": 8
+  },
+  "res://assets/original/actors/0/walk_3_2.png": {
+    "path": "res://assets/hd/actors/0/walk_3_2.png",
+    "installer": "actors",
+    "logical_size": [
+      10,
+      16
+    ],
+    "original_offset": [
+      -5,
+      -16
+    ],
+    "scale": 8
+  },
+  "res://assets/original/actors/0/sit_0.png": {
+    "path": "res://assets/hd/actors/0/sit_0.png",
+    "installer": "actors",
+    "logical_size": [
+      10,
+      16
+    ],
+    "original_offset": [
+      -5,
+      -16
+    ],
+    "scale": 8
+  },
+  "res://assets/original/actors/0/sit_1.png": {
+    "path": "res://assets/hd/actors/0/sit_1.png",
+    "installer": "actors",
+    "logical_size": [
+      10,
+      16
+    ],
+    "original_offset": [
+      -5,
+      -16
+    ],
+    "scale": 8
+  },
+  "res://assets/original/actors/0/ride_0.png": {
+    "path": "res://assets/hd/actors/0/ride_0.png",
+    "installer": "actors",
+    "logical_size": [
+      11,
+      16
+    ],
+    "original_offset": [
+      0,
+      -16
+    ],
+    "scale": 8
+  },
+  "res://assets/original/actors/0/ride_1.png": {
+    "path": "res://assets/hd/actors/0/ride_1.png",
+    "installer": "actors",
+    "logical_size": [
+      14,
+      13
+    ],
+    "original_offset": [
+      0,
+      0
+    ],
+    "scale": 8
+  },
+  "res://assets/original/actors/0/ride_2.png": {
+    "path": "res://assets/hd/actors/0/ride_2.png",
+    "installer": "actors",
+    "logical_size": [
+      7,
+      16
+    ],
+    "original_offset": [
+      0,
+      0
+    ],
+    "scale": 8
+  },
+  "res://assets/original/actors/0/pose_0.png": {
+    "path": "res://assets/hd/actors/0/pose_0.png",
+    "installer": "actors",
+    "logical_size": [
+      12,
+      16
+    ],
+    "original_offset": [
+      -6,
+      -16
+    ],
+    "scale": 8
+  },
+  "res://assets/original/actors/0/special_0.png": {
+    "path": "res://assets/hd/actors/0/special_0.png",
+    "installer": "actors",
+    "logical_size": [
+      7,
+      7
+    ],
+    "original_offset": [
+      -3,
+      -6
+    ],
+    "scale": 8
+  },
+  "res://assets/original/actors/0/special_1.png": {
+    "path": "res://assets/hd/actors/0/special_1.png",
+    "installer": "actors",
+    "logical_size": [
+      7,
+      7
+    ],
+    "original_offset": [
+      -3,
+      -6
+    ],
+    "scale": 8
+  },
+  "res://assets/original/actors/0/special_2.png": {
+    "path": "res://assets/hd/actors/0/special_2.png",
+    "installer": "actors",
+    "logical_size": [
+      7,
+      7
+    ],
+    "original_offset": [
+      -3,
+      -6
+    ],
+    "scale": 8
+  },
+  "res://assets/original/actors/0/special_3.png": {
+    "path": "res://assets/hd/actors/0/special_3.png",
+    "installer": "actors",
+    "logical_size": [
+      7,
+      7
+    ],
+    "original_offset": [
+      -3,
+      -6
+    ],
+    "scale": 8
+  },
+  "res://assets/original/actors/0/special_4.png": {
+    "path": "res://assets/hd/actors/0/special_4.png",
+    "installer": "actors",
+    "logical_size": [
+      7,
+      7
+    ],
+    "original_offset": [
+      0,
+      -3
+    ],
+    "scale": 8
+  },
+  "res://assets/original/actors/0/special_5.png": {
+    "path": "res://assets/hd/actors/0/special_5.png",
+    "installer": "actors",
+    "logical_size": [
+      7,
+      6
+    ],
+    "original_offset": [
+      -3,
+      0
+    ],
+    "scale": 8
+  },
+  "res://assets/original/actors/0/special_6.png": {
+    "path": "res://assets/hd/actors/0/special_6.png",
+    "installer": "actors",
+    "logical_size": [
+      7,
+      8
+    ],
+    "original_offset": [
+      -6,
+      -4
+    ],
+    "scale": 8
+  },
+  "res://assets/original/actors/1/walk_0_0.png": {
+    "path": "res://assets/hd/actors/1/walk_0_0.png",
+    "installer": "actors",
+    "logical_size": [
+      10,
+      18
+    ],
+    "original_offset": [
+      -5,
+      -18
+    ],
+    "scale": 8
+  },
+  "res://assets/original/actors/1/walk_0_1.png": {
+    "path": "res://assets/hd/actors/1/walk_0_1.png",
+    "installer": "actors",
+    "logical_size": [
+      10,
+      18
+    ],
+    "original_offset": [
+      -5,
+      -18
+    ],
+    "scale": 8
+  },
+  "res://assets/original/actors/1/walk_0_2.png": {
+    "path": "res://assets/hd/actors/1/walk_0_2.png",
+    "installer": "actors",
+    "logical_size": [
+      10,
+      18
+    ],
+    "original_offset": [
+      -5,
+      -18
+    ],
+    "scale": 8
+  },
+  "res://assets/original/actors/1/walk_1_0.png": {
+    "path": "res://assets/hd/actors/1/walk_1_0.png",
+    "installer": "actors",
+    "logical_size": [
+      10,
+      18
+    ],
+    "original_offset": [
+      -5,
+      -18
+    ],
+    "scale": 8
+  },
+  "res://assets/original/actors/1/walk_1_1.png": {
+    "path": "res://assets/hd/actors/1/walk_1_1.png",
+    "installer": "actors",
+    "logical_size": [
+      10,
+      18
+    ],
+    "original_offset": [
+      -5,
+      -18
+    ],
+    "scale": 8
+  },
+  "res://assets/original/actors/1/walk_1_2.png": {
+    "path": "res://assets/hd/actors/1/walk_1_2.png",
+    "installer": "actors",
+    "logical_size": [
+      10,
+      18
+    ],
+    "original_offset": [
+      -5,
+      -18
+    ],
+    "scale": 8
+  },
+  "res://assets/original/actors/1/walk_2_0.png": {
+    "path": "res://assets/hd/actors/1/walk_2_0.png",
+    "installer": "actors",
+    "logical_size": [
+      9,
+      18
+    ],
+    "original_offset": [
+      -4,
+      -18
+    ],
+    "scale": 8
+  },
+  "res://assets/original/actors/1/walk_2_1.png": {
+    "path": "res://assets/hd/actors/1/walk_2_1.png",
+    "installer": "actors",
+    "logical_size": [
+      10,
+      18
+    ],
+    "original_offset": [
+      -5,
+      -18
+    ],
+    "scale": 8
+  },
+  "res://assets/original/actors/1/walk_2_2.png": {
+    "path": "res://assets/hd/actors/1/walk_2_2.png",
+    "installer": "actors",
+    "logical_size": [
+      11,
+      18
+    ],
+    "original_offset": [
+      -5,
+      -18
+    ],
+    "scale": 8
+  },
+  "res://assets/original/actors/1/walk_3_0.png": {
+    "path": "res://assets/hd/actors/1/walk_3_0.png",
+    "installer": "actors",
+    "logical_size": [
+      9,
+      18
+    ],
+    "original_offset": [
+      -4,
+      -18
+    ],
+    "scale": 8
+  },
+  "res://assets/original/actors/1/walk_3_1.png": {
+    "path": "res://assets/hd/actors/1/walk_3_1.png",
+    "installer": "actors",
+    "logical_size": [
+      10,
+      18
+    ],
+    "original_offset": [
+      -5,
+      -18
+    ],
+    "scale": 8
+  },
+  "res://assets/original/actors/1/walk_3_2.png": {
+    "path": "res://assets/hd/actors/1/walk_3_2.png",
+    "installer": "actors",
+    "logical_size": [
+      11,
+      18
+    ],
+    "original_offset": [
+      -5,
+      -18
+    ],
+    "scale": 8
+  },
+  "res://assets/original/actors/1/sit_0.png": {
+    "path": "res://assets/hd/actors/1/sit_0.png",
+    "installer": "actors",
+    "logical_size": [
+      11,
+      18
+    ],
+    "original_offset": [
+      -5,
+      -18
+    ],
+    "scale": 8
+  },
+  "res://assets/original/actors/1/sit_1.png": {
+    "path": "res://assets/hd/actors/1/sit_1.png",
+    "installer": "actors",
+    "logical_size": [
+      11,
+      18
+    ],
+    "original_offset": [
+      -5,
+      -18
+    ],
+    "scale": 8
+  },
+  "res://assets/original/actors/1/ride_0.png": {
+    "path": "res://assets/hd/actors/1/ride_0.png",
+    "installer": "actors",
+    "logical_size": [
+      11,
+      18
+    ],
+    "original_offset": [
+      0,
+      -18
+    ],
+    "scale": 8
+  },
+  "res://assets/original/actors/1/ride_1.png": {
+    "path": "res://assets/hd/actors/1/ride_1.png",
+    "installer": "actors",
+    "logical_size": [
+      16,
+      13
+    ],
+    "original_offset": [
+      0,
+      0
+    ],
+    "scale": 8
+  },
+  "res://assets/original/actors/1/ride_2.png": {
+    "path": "res://assets/hd/actors/1/ride_2.png",
+    "installer": "actors",
+    "logical_size": [
+      8,
+      18
+    ],
+    "original_offset": [
+      0,
+      0
+    ],
+    "scale": 8
+  },
+  "res://assets/original/actors/1/pose_0.png": {
+    "path": "res://assets/hd/actors/1/pose_0.png",
+    "installer": "actors",
+    "logical_size": [
+      11,
+      18
+    ],
+    "original_offset": [
+      -5,
+      -18
+    ],
+    "scale": 8
+  },
+  "res://assets/original/actors/1/special_0.png": {
+    "path": "res://assets/hd/actors/1/special_0.png",
+    "installer": "actors",
+    "logical_size": [
+      10,
+      8
+    ],
+    "original_offset": [
+      -5,
+      -8
+    ],
+    "scale": 8
+  },
+  "res://assets/original/actors/1/special_1.png": {
+    "path": "res://assets/hd/actors/1/special_1.png",
+    "installer": "actors",
+    "logical_size": [
+      10,
+      8
+    ],
+    "original_offset": [
+      -5,
+      -8
+    ],
+    "scale": 8
+  },
+  "res://assets/original/actors/1/special_2.png": {
+    "path": "res://assets/hd/actors/1/special_2.png",
+    "installer": "actors",
+    "logical_size": [
+      9,
+      8
+    ],
+    "original_offset": [
+      -4,
+      -8
+    ],
+    "scale": 8
+  },
+  "res://assets/original/actors/1/special_3.png": {
+    "path": "res://assets/hd/actors/1/special_3.png",
+    "installer": "actors",
+    "logical_size": [
+      9,
+      8
+    ],
+    "original_offset": [
+      -4,
+      -8
+    ],
+    "scale": 8
+  },
+  "res://assets/original/actors/1/special_4.png": {
+    "path": "res://assets/hd/actors/1/special_4.png",
+    "installer": "actors",
+    "logical_size": [
+      8,
+      10
+    ],
+    "original_offset": [
+      0,
+      -5
+    ],
+    "scale": 8
+  },
+  "res://assets/original/actors/1/special_5.png": {
+    "path": "res://assets/hd/actors/1/special_5.png",
+    "installer": "actors",
+    "logical_size": [
+      9,
+      9
+    ],
+    "original_offset": [
+      -4,
+      0
+    ],
+    "scale": 8
+  },
+  "res://assets/original/actors/1/special_6.png": {
+    "path": "res://assets/hd/actors/1/special_6.png",
+    "installer": "actors",
+    "logical_size": [
+      9,
+      9
+    ],
+    "original_offset": [
+      -8,
+      -4
+    ],
+    "scale": 8
+  },
+  "res://assets/original/actors/2/walk_0_0.png": {
+    "path": "res://assets/hd/actors/2/walk_0_0.png",
+    "installer": "actors",
+    "logical_size": [
+      7,
+      18
+    ],
+    "original_offset": [
+      -3,
+      -18
+    ],
+    "scale": 8
+  },
+  "res://assets/original/actors/2/walk_0_1.png": {
+    "path": "res://assets/hd/actors/2/walk_0_1.png",
+    "installer": "actors",
+    "logical_size": [
+      8,
+      18
+    ],
+    "original_offset": [
+      -4,
+      -18
+    ],
+    "scale": 8
+  },
+  "res://assets/original/actors/2/walk_0_2.png": {
+    "path": "res://assets/hd/actors/2/walk_0_2.png",
+    "installer": "actors",
+    "logical_size": [
+      8,
+      18
+    ],
+    "original_offset": [
+      -4,
+      -18
+    ],
+    "scale": 8
+  },
+  "res://assets/original/actors/2/walk_1_0.png": {
+    "path": "res://assets/hd/actors/2/walk_1_0.png",
+    "installer": "actors",
+    "logical_size": [
+      7,
+      18
+    ],
+    "original_offset": [
+      -3,
+      -18
+    ],
+    "scale": 8
+  },
+  "res://assets/original/actors/2/walk_1_1.png": {
+    "path": "res://assets/hd/actors/2/walk_1_1.png",
+    "installer": "actors",
+    "logical_size": [
+      8,
+      18
+    ],
+    "original_offset": [
+      -4,
+      -18
+    ],
+    "scale": 8
+  },
+  "res://assets/original/actors/2/walk_1_2.png": {
+    "path": "res://assets/hd/actors/2/walk_1_2.png",
+    "installer": "actors",
+    "logical_size": [
+      8,
+      18
+    ],
+    "original_offset": [
+      -4,
+      -18
+    ],
+    "scale": 8
+  },
+  "res://assets/original/actors/2/walk_2_0.png": {
+    "path": "res://assets/hd/actors/2/walk_2_0.png",
+    "installer": "actors",
+    "logical_size": [
+      7,
+      18
+    ],
+    "original_offset": [
+      -3,
+      -18
+    ],
+    "scale": 8
+  },
+  "res://assets/original/actors/2/walk_2_1.png": {
+    "path": "res://assets/hd/actors/2/walk_2_1.png",
+    "installer": "actors",
+    "logical_size": [
+      8,
+      18
+    ],
+    "original_offset": [
+      -4,
+      -18
+    ],
+    "scale": 8
+  },
+  "res://assets/original/actors/2/walk_2_2.png": {
+    "path": "res://assets/hd/actors/2/walk_2_2.png",
+    "installer": "actors",
+    "logical_size": [
+      7,
+      18
+    ],
+    "original_offset": [
+      -3,
+      -18
+    ],
+    "scale": 8
+  },
+  "res://assets/original/actors/2/walk_3_0.png": {
+    "path": "res://assets/hd/actors/2/walk_3_0.png",
+    "installer": "actors",
+    "logical_size": [
+      7,
+      18
+    ],
+    "original_offset": [
+      -3,
+      -18
+    ],
+    "scale": 8
+  },
+  "res://assets/original/actors/2/walk_3_1.png": {
+    "path": "res://assets/hd/actors/2/walk_3_1.png",
+    "installer": "actors",
+    "logical_size": [
+      8,
+      18
+    ],
+    "original_offset": [
+      -4,
+      -18
+    ],
+    "scale": 8
+  },
+  "res://assets/original/actors/2/walk_3_2.png": {
+    "path": "res://assets/hd/actors/2/walk_3_2.png",
+    "installer": "actors",
+    "logical_size": [
+      7,
+      18
+    ],
+    "original_offset": [
+      -3,
+      -18
+    ],
+    "scale": 8
+  },
+  "res://assets/original/actors/2/sit_0.png": {
+    "path": "res://assets/hd/actors/2/sit_0.png",
+    "installer": "actors",
+    "logical_size": [
+      9,
+      17
+    ],
+    "original_offset": [
+      -4,
+      -17
+    ],
+    "scale": 8
+  },
+  "res://assets/original/actors/2/sit_1.png": {
+    "path": "res://assets/hd/actors/2/sit_1.png",
+    "installer": "actors",
+    "logical_size": [
+      9,
+      17
+    ],
+    "original_offset": [
+      -4,
+      -17
+    ],
+    "scale": 8
+  },
+  "res://assets/original/actors/2/ride_0.png": {
+    "path": "res://assets/hd/actors/2/ride_0.png",
+    "installer": "actors",
+    "logical_size": [
+      13,
+      17
+    ],
+    "original_offset": [
+      0,
+      -17
+    ],
+    "scale": 8
+  },
+  "res://assets/original/actors/2/ride_1.png": {
+    "path": "res://assets/hd/actors/2/ride_1.png",
+    "installer": "actors",
+    "logical_size": [
+      15,
+      13
+    ],
+    "original_offset": [
+      0,
+      0
+    ],
+    "scale": 8
+  },
+  "res://assets/original/actors/2/ride_2.png": {
+    "path": "res://assets/hd/actors/2/ride_2.png",
+    "installer": "actors",
+    "logical_size": [
+      7,
+      19
+    ],
+    "original_offset": [
+      0,
+      0
+    ],
+    "scale": 8
+  },
+  "res://assets/original/actors/2/pose_0.png": {
+    "path": "res://assets/hd/actors/2/pose_0.png",
+    "installer": "actors",
+    "logical_size": [
+      10,
+      16
+    ],
+    "original_offset": [
+      -5,
+      -16
+    ],
+    "scale": 8
+  },
+  "res://assets/original/actors/2/special_0.png": {
+    "path": "res://assets/hd/actors/2/special_0.png",
+    "installer": "actors",
+    "logical_size": [
+      7,
+      7
+    ],
+    "original_offset": [
+      -3,
+      -6
+    ],
+    "scale": 8
+  },
+  "res://assets/original/actors/2/special_1.png": {
+    "path": "res://assets/hd/actors/2/special_1.png",
+    "installer": "actors",
+    "logical_size": [
+      7,
+      7
+    ],
+    "original_offset": [
+      -3,
+      -6
+    ],
+    "scale": 8
+  },
+  "res://assets/original/actors/2/special_2.png": {
+    "path": "res://assets/hd/actors/2/special_2.png",
+    "installer": "actors",
+    "logical_size": [
+      7,
+      7
+    ],
+    "original_offset": [
+      -3,
+      -6
+    ],
+    "scale": 8
+  },
+  "res://assets/original/actors/2/special_3.png": {
+    "path": "res://assets/hd/actors/2/special_3.png",
+    "installer": "actors",
+    "logical_size": [
+      7,
+      7
+    ],
+    "original_offset": [
+      -3,
+      -6
+    ],
+    "scale": 8
+  },
+  "res://assets/original/actors/2/special_4.png": {
+    "path": "res://assets/hd/actors/2/special_4.png",
+    "installer": "actors",
+    "logical_size": [
+      6,
+      6
+    ],
+    "original_offset": [
+      0,
+      -3
+    ],
+    "scale": 8
+  },
+  "res://assets/original/actors/2/special_5.png": {
+    "path": "res://assets/hd/actors/2/special_5.png",
+    "installer": "actors",
+    "logical_size": [
+      7,
+      7
+    ],
+    "original_offset": [
+      -3,
+      0
+    ],
+    "scale": 8
+  },
+  "res://assets/original/actors/2/special_6.png": {
+    "path": "res://assets/hd/actors/2/special_6.png",
+    "installer": "actors",
+    "logical_size": [
+      7,
+      7
+    ],
+    "original_offset": [
+      -6,
+      -3
+    ],
+    "scale": 8
+  },
+  "res://assets/original/actors/3/walk_0_0.png": {
+    "path": "res://assets/hd/actors/3/walk_0_0.png",
+    "installer": "actors",
+    "logical_size": [
+      9,
+      18
+    ],
+    "original_offset": [
+      -4,
+      -18
+    ],
+    "scale": 8
+  },
+  "res://assets/original/actors/3/walk_0_1.png": {
+    "path": "res://assets/hd/actors/3/walk_0_1.png",
+    "installer": "actors",
+    "logical_size": [
+      9,
+      18
+    ],
+    "original_offset": [
+      -4,
+      -18
+    ],
+    "scale": 8
+  },
+  "res://assets/original/actors/3/walk_0_2.png": {
+    "path": "res://assets/hd/actors/3/walk_0_2.png",
+    "installer": "actors",
+    "logical_size": [
+      9,
+      18
+    ],
+    "original_offset": [
+      -4,
+      -18
+    ],
+    "scale": 8
+  },
+  "res://assets/original/actors/3/walk_1_0.png": {
+    "path": "res://assets/hd/actors/3/walk_1_0.png",
+    "installer": "actors",
+    "logical_size": [
+      9,
+      18
+    ],
+    "original_offset": [
+      -4,
+      -18
+    ],
+    "scale": 8
+  },
+  "res://assets/original/actors/3/walk_1_1.png": {
+    "path": "res://assets/hd/actors/3/walk_1_1.png",
+    "installer": "actors",
+    "logical_size": [
+      9,
+      18
+    ],
+    "original_offset": [
+      -4,
+      -18
+    ],
+    "scale": 8
+  },
+  "res://assets/original/actors/3/walk_1_2.png": {
+    "path": "res://assets/hd/actors/3/walk_1_2.png",
+    "installer": "actors",
+    "logical_size": [
+      9,
+      18
+    ],
+    "original_offset": [
+      -4,
+      -18
+    ],
+    "scale": 8
+  },
+  "res://assets/original/actors/3/walk_2_0.png": {
+    "path": "res://assets/hd/actors/3/walk_2_0.png",
+    "installer": "actors",
+    "logical_size": [
+      9,
+      18
+    ],
+    "original_offset": [
+      -4,
+      -18
+    ],
+    "scale": 8
+  },
+  "res://assets/original/actors/3/walk_2_1.png": {
+    "path": "res://assets/hd/actors/3/walk_2_1.png",
+    "installer": "actors",
+    "logical_size": [
+      9,
+      18
+    ],
+    "original_offset": [
+      -4,
+      -18
+    ],
+    "scale": 8
+  },
+  "res://assets/original/actors/3/walk_2_2.png": {
+    "path": "res://assets/hd/actors/3/walk_2_2.png",
+    "installer": "actors",
+    "logical_size": [
+      9,
+      18
+    ],
+    "original_offset": [
+      -4,
+      -18
+    ],
+    "scale": 8
+  },
+  "res://assets/original/actors/3/walk_3_0.png": {
+    "path": "res://assets/hd/actors/3/walk_3_0.png",
+    "installer": "actors",
+    "logical_size": [
+      9,
+      18
+    ],
+    "original_offset": [
+      -4,
+      -18
+    ],
+    "scale": 8
+  },
+  "res://assets/original/actors/3/walk_3_1.png": {
+    "path": "res://assets/hd/actors/3/walk_3_1.png",
+    "installer": "actors",
+    "logical_size": [
+      9,
+      18
+    ],
+    "original_offset": [
+      -4,
+      -18
+    ],
+    "scale": 8
+  },
+  "res://assets/original/actors/3/walk_3_2.png": {
+    "path": "res://assets/hd/actors/3/walk_3_2.png",
+    "installer": "actors",
+    "logical_size": [
+      9,
+      18
+    ],
+    "original_offset": [
+      -4,
+      -18
+    ],
+    "scale": 8
+  },
+  "res://assets/original/actors/3/sit_0.png": {
+    "path": "res://assets/hd/actors/3/sit_0.png",
+    "installer": "actors",
+    "logical_size": [
+      10,
+      18
+    ],
+    "original_offset": [
+      -5,
+      -18
+    ],
+    "scale": 8
+  },
+  "res://assets/original/actors/3/sit_1.png": {
+    "path": "res://assets/hd/actors/3/sit_1.png",
+    "installer": "actors",
+    "logical_size": [
+      10,
+      18
+    ],
+    "original_offset": [
+      -5,
+      -18
+    ],
+    "scale": 8
+  },
+  "res://assets/original/actors/3/ride_0.png": {
+    "path": "res://assets/hd/actors/3/ride_0.png",
+    "installer": "actors",
+    "logical_size": [
+      11,
+      18
+    ],
+    "original_offset": [
+      0,
+      -18
+    ],
+    "scale": 8
+  },
+  "res://assets/original/actors/3/ride_1.png": {
+    "path": "res://assets/hd/actors/3/ride_1.png",
+    "installer": "actors",
+    "logical_size": [
+      16,
+      15
+    ],
+    "original_offset": [
+      0,
+      0
+    ],
+    "scale": 8
+  },
+  "res://assets/original/actors/3/ride_2.png": {
+    "path": "res://assets/hd/actors/3/ride_2.png",
+    "installer": "actors",
+    "logical_size": [
+      8,
+      22
+    ],
+    "original_offset": [
+      0,
+      0
+    ],
+    "scale": 8
+  },
+  "res://assets/original/actors/3/pose_0.png": {
+    "path": "res://assets/hd/actors/3/pose_0.png",
+    "installer": "actors",
+    "logical_size": [
+      12,
+      18
+    ],
+    "original_offset": [
+      -6,
+      -18
+    ],
+    "scale": 8
+  },
+  "res://assets/original/actors/3/special_0.png": {
+    "path": "res://assets/hd/actors/3/special_0.png",
+    "installer": "actors",
+    "logical_size": [
+      8,
+      7
+    ],
+    "original_offset": [
+      -4,
+      -6
+    ],
+    "scale": 8
+  },
+  "res://assets/original/actors/3/special_1.png": {
+    "path": "res://assets/hd/actors/3/special_1.png",
+    "installer": "actors",
+    "logical_size": [
+      8,
+      7
+    ],
+    "original_offset": [
+      -4,
+      -6
+    ],
+    "scale": 8
+  },
+  "res://assets/original/actors/3/special_2.png": {
+    "path": "res://assets/hd/actors/3/special_2.png",
+    "installer": "actors",
+    "logical_size": [
+      8,
+      7
+    ],
+    "original_offset": [
+      -4,
+      -6
+    ],
+    "scale": 8
+  },
+  "res://assets/original/actors/3/special_3.png": {
+    "path": "res://assets/hd/actors/3/special_3.png",
+    "installer": "actors",
+    "logical_size": [
+      8,
+      7
+    ],
+    "original_offset": [
+      -4,
+      -6
+    ],
+    "scale": 8
+  },
+  "res://assets/original/actors/3/special_4.png": {
+    "path": "res://assets/hd/actors/3/special_4.png",
+    "installer": "actors",
+    "logical_size": [
+      7,
+      8
+    ],
+    "original_offset": [
+      0,
+      -4
+    ],
+    "scale": 8
+  },
+  "res://assets/original/actors/3/special_5.png": {
+    "path": "res://assets/hd/actors/3/special_5.png",
+    "installer": "actors",
+    "logical_size": [
+      8,
+      7
+    ],
+    "original_offset": [
+      -4,
+      0
+    ],
+    "scale": 8
+  },
+  "res://assets/original/actors/3/special_6.png": {
+    "path": "res://assets/hd/actors/3/special_6.png",
+    "installer": "actors",
+    "logical_size": [
+      8,
+      7
+    ],
+    "original_offset": [
+      -8,
+      -3
+    ],
+    "scale": 8
+  },
+  "res://assets/original/actors/4/walk_0_0.png": {
+    "path": "res://assets/hd/actors/4/walk_0_0.png",
+    "installer": "actors",
+    "logical_size": [
+      7,
+      20
+    ],
+    "original_offset": [
+      -3,
+      -20
+    ],
+    "scale": 8
+  },
+  "res://assets/original/actors/4/walk_0_1.png": {
+    "path": "res://assets/hd/actors/4/walk_0_1.png",
+    "installer": "actors",
+    "logical_size": [
+      8,
+      20
+    ],
+    "original_offset": [
+      -4,
+      -20
+    ],
+    "scale": 8
+  },
+  "res://assets/original/actors/4/walk_0_2.png": {
+    "path": "res://assets/hd/actors/4/walk_0_2.png",
+    "installer": "actors",
+    "logical_size": [
+      8,
+      20
+    ],
+    "original_offset": [
+      -4,
+      -20
+    ],
+    "scale": 8
+  },
+  "res://assets/original/actors/4/walk_1_0.png": {
+    "path": "res://assets/hd/actors/4/walk_1_0.png",
+    "installer": "actors",
+    "logical_size": [
+      7,
+      20
+    ],
+    "original_offset": [
+      -3,
+      -20
+    ],
+    "scale": 8
+  },
+  "res://assets/original/actors/4/walk_1_1.png": {
+    "path": "res://assets/hd/actors/4/walk_1_1.png",
+    "installer": "actors",
+    "logical_size": [
+      8,
+      20
+    ],
+    "original_offset": [
+      -4,
+      -20
+    ],
+    "scale": 8
+  },
+  "res://assets/original/actors/4/walk_1_2.png": {
+    "path": "res://assets/hd/actors/4/walk_1_2.png",
+    "installer": "actors",
+    "logical_size": [
+      8,
+      20
+    ],
+    "original_offset": [
+      -4,
+      -20
+    ],
+    "scale": 8
+  },
+  "res://assets/original/actors/4/walk_2_0.png": {
+    "path": "res://assets/hd/actors/4/walk_2_0.png",
+    "installer": "actors",
+    "logical_size": [
+      7,
+      20
+    ],
+    "original_offset": [
+      -3,
+      -20
+    ],
+    "scale": 8
+  },
+  "res://assets/original/actors/4/walk_2_1.png": {
+    "path": "res://assets/hd/actors/4/walk_2_1.png",
+    "installer": "actors",
+    "logical_size": [
+      8,
+      20
+    ],
+    "original_offset": [
+      -4,
+      -20
+    ],
+    "scale": 8
+  },
+  "res://assets/original/actors/4/walk_2_2.png": {
+    "path": "res://assets/hd/actors/4/walk_2_2.png",
+    "installer": "actors",
+    "logical_size": [
+      8,
+      20
+    ],
+    "original_offset": [
+      -4,
+      -20
+    ],
+    "scale": 8
+  },
+  "res://assets/original/actors/4/walk_3_0.png": {
+    "path": "res://assets/hd/actors/4/walk_3_0.png",
+    "installer": "actors",
+    "logical_size": [
+      7,
+      20
+    ],
+    "original_offset": [
+      -3,
+      -20
+    ],
+    "scale": 8
+  },
+  "res://assets/original/actors/4/walk_3_1.png": {
+    "path": "res://assets/hd/actors/4/walk_3_1.png",
+    "installer": "actors",
+    "logical_size": [
+      8,
+      20
+    ],
+    "original_offset": [
+      -4,
+      -20
+    ],
+    "scale": 8
+  },
+  "res://assets/original/actors/4/walk_3_2.png": {
+    "path": "res://assets/hd/actors/4/walk_3_2.png",
+    "installer": "actors",
+    "logical_size": [
+      8,
+      20
+    ],
+    "original_offset": [
+      -4,
+      -20
+    ],
+    "scale": 8
+  },
+  "res://assets/original/actors/4/sit_0.png": {
+    "path": "res://assets/hd/actors/4/sit_0.png",
+    "installer": "actors",
+    "logical_size": [
+      9,
+      19
+    ],
+    "original_offset": [
+      -4,
+      -19
+    ],
+    "scale": 8
+  },
+  "res://assets/original/actors/4/sit_1.png": {
+    "path": "res://assets/hd/actors/4/sit_1.png",
+    "installer": "actors",
+    "logical_size": [
+      9,
+      19
+    ],
+    "original_offset": [
+      -4,
+      -19
+    ],
+    "scale": 8
+  },
+  "res://assets/original/actors/4/ride_0.png": {
+    "path": "res://assets/hd/actors/4/ride_0.png",
+    "installer": "actors",
+    "logical_size": [
+      13,
+      18
+    ],
+    "original_offset": [
+      0,
+      -18
+    ],
+    "scale": 8
+  },
+  "res://assets/original/actors/4/ride_1.png": {
+    "path": "res://assets/hd/actors/4/ride_1.png",
+    "installer": "actors",
+    "logical_size": [
+      15,
+      14
+    ],
+    "original_offset": [
+      0,
+      0
+    ],
+    "scale": 8
+  },
+  "res://assets/original/actors/4/ride_2.png": {
+    "path": "res://assets/hd/actors/4/ride_2.png",
+    "installer": "actors",
+    "logical_size": [
+      7,
+      19
+    ],
+    "original_offset": [
+      0,
+      0
+    ],
+    "scale": 8
+  },
+  "res://assets/original/actors/4/pose_0.png": {
+    "path": "res://assets/hd/actors/4/pose_0.png",
+    "installer": "actors",
+    "logical_size": [
+      11,
+      18
+    ],
+    "original_offset": [
+      -5,
+      -18
+    ],
+    "scale": 8
+  },
+  "res://assets/original/actors/4/special_0.png": {
+    "path": "res://assets/hd/actors/4/special_0.png",
+    "installer": "actors",
+    "logical_size": [
+      7,
+      8
+    ],
+    "original_offset": [
+      -3,
+      -8
+    ],
+    "scale": 8
+  },
+  "res://assets/original/actors/4/special_1.png": {
+    "path": "res://assets/hd/actors/4/special_1.png",
+    "installer": "actors",
+    "logical_size": [
+      7,
+      8
+    ],
+    "original_offset": [
+      -3,
+      -8
+    ],
+    "scale": 8
+  },
+  "res://assets/original/actors/4/special_2.png": {
+    "path": "res://assets/hd/actors/4/special_2.png",
+    "installer": "actors",
+    "logical_size": [
+      7,
+      8
+    ],
+    "original_offset": [
+      -3,
+      -8
+    ],
+    "scale": 8
+  },
+  "res://assets/original/actors/4/special_3.png": {
+    "path": "res://assets/hd/actors/4/special_3.png",
+    "installer": "actors",
+    "logical_size": [
+      7,
+      8
+    ],
+    "original_offset": [
+      -3,
+      -8
+    ],
+    "scale": 8
+  },
+  "res://assets/original/actors/4/special_4.png": {
+    "path": "res://assets/hd/actors/4/special_4.png",
+    "installer": "actors",
+    "logical_size": [
+      7,
+      7
+    ],
+    "original_offset": [
+      0,
+      -3
+    ],
+    "scale": 8
+  },
+  "res://assets/original/actors/4/special_5.png": {
+    "path": "res://assets/hd/actors/4/special_5.png",
+    "installer": "actors",
+    "logical_size": [
+      7,
+      8
+    ],
+    "original_offset": [
+      -3,
+      0
+    ],
+    "scale": 8
+  },
+  "res://assets/original/actors/4/special_6.png": {
+    "path": "res://assets/hd/actors/4/special_6.png",
+    "installer": "actors",
+    "logical_size": [
+      10,
+      7
+    ],
+    "original_offset": [
+      -10,
+      -3
+    ],
+    "scale": 8
+  },
+  "res://assets/original/actors/5/walk_0_0.png": {
+    "path": "res://assets/hd/actors/5/walk_0_0.png",
+    "installer": "actors",
+    "logical_size": [
+      10,
+      17
+    ],
+    "original_offset": [
+      -5,
+      -17
+    ],
+    "scale": 8
+  },
+  "res://assets/original/actors/5/walk_0_1.png": {
+    "path": "res://assets/hd/actors/5/walk_0_1.png",
+    "installer": "actors",
+    "logical_size": [
+      10,
+      17
+    ],
+    "original_offset": [
+      -5,
+      -17
+    ],
+    "scale": 8
+  },
+  "res://assets/original/actors/5/walk_0_2.png": {
+    "path": "res://assets/hd/actors/5/walk_0_2.png",
+    "installer": "actors",
+    "logical_size": [
+      10,
+      17
+    ],
+    "original_offset": [
+      -5,
+      -17
+    ],
+    "scale": 8
+  },
+  "res://assets/original/actors/5/walk_1_0.png": {
+    "path": "res://assets/hd/actors/5/walk_1_0.png",
+    "installer": "actors",
+    "logical_size": [
+      10,
+      17
+    ],
+    "original_offset": [
+      -5,
+      -17
+    ],
+    "scale": 8
+  },
+  "res://assets/original/actors/5/walk_1_1.png": {
+    "path": "res://assets/hd/actors/5/walk_1_1.png",
+    "installer": "actors",
+    "logical_size": [
+      10,
+      17
+    ],
+    "original_offset": [
+      -5,
+      -17
+    ],
+    "scale": 8
+  },
+  "res://assets/original/actors/5/walk_1_2.png": {
+    "path": "res://assets/hd/actors/5/walk_1_2.png",
+    "installer": "actors",
+    "logical_size": [
+      10,
+      17
+    ],
+    "original_offset": [
+      -5,
+      -17
+    ],
+    "scale": 8
+  },
+  "res://assets/original/actors/5/walk_2_0.png": {
+    "path": "res://assets/hd/actors/5/walk_2_0.png",
+    "installer": "actors",
+    "logical_size": [
+      10,
+      17
+    ],
+    "original_offset": [
+      -5,
+      -17
+    ],
+    "scale": 8
+  },
+  "res://assets/original/actors/5/walk_2_1.png": {
+    "path": "res://assets/hd/actors/5/walk_2_1.png",
+    "installer": "actors",
+    "logical_size": [
+      10,
+      17
+    ],
+    "original_offset": [
+      -5,
+      -17
+    ],
+    "scale": 8
+  },
+  "res://assets/original/actors/5/walk_2_2.png": {
+    "path": "res://assets/hd/actors/5/walk_2_2.png",
+    "installer": "actors",
+    "logical_size": [
+      10,
+      17
+    ],
+    "original_offset": [
+      -5,
+      -17
+    ],
+    "scale": 8
+  },
+  "res://assets/original/actors/5/walk_3_0.png": {
+    "path": "res://assets/hd/actors/5/walk_3_0.png",
+    "installer": "actors",
+    "logical_size": [
+      10,
+      17
+    ],
+    "original_offset": [
+      -5,
+      -17
+    ],
+    "scale": 8
+  },
+  "res://assets/original/actors/5/walk_3_1.png": {
+    "path": "res://assets/hd/actors/5/walk_3_1.png",
+    "installer": "actors",
+    "logical_size": [
+      10,
+      17
+    ],
+    "original_offset": [
+      -5,
+      -17
+    ],
+    "scale": 8
+  },
+  "res://assets/original/actors/5/walk_3_2.png": {
+    "path": "res://assets/hd/actors/5/walk_3_2.png",
+    "installer": "actors",
+    "logical_size": [
+      10,
+      17
+    ],
+    "original_offset": [
+      -5,
+      -17
+    ],
+    "scale": 8
+  },
+  "res://assets/original/actors/5/sit_0.png": {
+    "path": "res://assets/hd/actors/5/sit_0.png",
+    "installer": "actors",
+    "logical_size": [
+      11,
+      16
+    ],
+    "original_offset": [
+      -5,
+      -16
+    ],
+    "scale": 8
+  },
+  "res://assets/original/actors/5/sit_1.png": {
+    "path": "res://assets/hd/actors/5/sit_1.png",
+    "installer": "actors",
+    "logical_size": [
+      11,
+      16
+    ],
+    "original_offset": [
+      -5,
+      -16
+    ],
+    "scale": 8
+  },
+  "res://assets/original/actors/5/ride_0.png": {
+    "path": "res://assets/hd/actors/5/ride_0.png",
+    "installer": "actors",
+    "logical_size": [
+      12,
+      16
+    ],
+    "original_offset": [
+      0,
+      -16
+    ],
+    "scale": 8
+  },
+  "res://assets/original/actors/5/ride_1.png": {
+    "path": "res://assets/hd/actors/5/ride_1.png",
+    "installer": "actors",
+    "logical_size": [
+      16,
+      14
+    ],
+    "original_offset": [
+      0,
+      0
+    ],
+    "scale": 8
+  },
+  "res://assets/original/actors/5/ride_2.png": {
+    "path": "res://assets/hd/actors/5/ride_2.png",
+    "installer": "actors",
+    "logical_size": [
+      8,
+      19
+    ],
+    "original_offset": [
+      0,
+      0
+    ],
+    "scale": 8
+  },
+  "res://assets/original/actors/5/pose_0.png": {
+    "path": "res://assets/hd/actors/5/pose_0.png",
+    "installer": "actors",
+    "logical_size": [
+      12,
+      16
+    ],
+    "original_offset": [
+      -6,
+      -16
+    ],
+    "scale": 8
+  },
+  "res://assets/original/actors/5/special_0.png": {
+    "path": "res://assets/hd/actors/5/special_0.png",
+    "installer": "actors",
+    "logical_size": [
+      10,
+      7
+    ],
+    "original_offset": [
+      -5,
+      -6
+    ],
+    "scale": 8
+  },
+  "res://assets/original/actors/5/special_1.png": {
+    "path": "res://assets/hd/actors/5/special_1.png",
+    "installer": "actors",
+    "logical_size": [
+      10,
+      7
+    ],
+    "original_offset": [
+      -5,
+      -6
+    ],
+    "scale": 8
+  },
+  "res://assets/original/actors/5/special_2.png": {
+    "path": "res://assets/hd/actors/5/special_2.png",
+    "installer": "actors",
+    "logical_size": [
+      10,
+      7
+    ],
+    "original_offset": [
+      -5,
+      -6
+    ],
+    "scale": 8
+  },
+  "res://assets/original/actors/5/special_3.png": {
+    "path": "res://assets/hd/actors/5/special_3.png",
+    "installer": "actors",
+    "logical_size": [
+      10,
+      7
+    ],
+    "original_offset": [
+      -5,
+      -6
+    ],
+    "scale": 8
+  },
+  "res://assets/original/actors/5/special_4.png": {
+    "path": "res://assets/hd/actors/5/special_4.png",
+    "installer": "actors",
+    "logical_size": [
+      6,
+      11
+    ],
+    "original_offset": [
+      0,
+      -5
+    ],
+    "scale": 8
+  },
+  "res://assets/original/actors/5/special_5.png": {
+    "path": "res://assets/hd/actors/5/special_5.png",
+    "installer": "actors",
+    "logical_size": [
+      8,
+      7
+    ],
+    "original_offset": [
+      -4,
+      0
+    ],
+    "scale": 8
+  },
+  "res://assets/original/actors/5/special_6.png": {
+    "path": "res://assets/hd/actors/5/special_6.png",
+    "installer": "actors",
+    "logical_size": [
+      8,
+      7
+    ],
+    "original_offset": [
+      -8,
+      -3
+    ],
+    "scale": 8
+  },
+  "res://assets/original/actors/8/walk_0_0.png": {
+    "path": "res://assets/hd/actors/8/walk_0_0.png",
+    "installer": "actors",
+    "logical_size": [
+      8,
+      18
+    ],
+    "original_offset": [
+      -4,
+      -18
+    ],
+    "scale": 8
+  },
+  "res://assets/original/actors/8/walk_0_1.png": {
+    "path": "res://assets/hd/actors/8/walk_0_1.png",
+    "installer": "actors",
+    "logical_size": [
+      9,
+      18
+    ],
+    "original_offset": [
+      -4,
+      -18
+    ],
+    "scale": 8
+  },
+  "res://assets/original/actors/8/walk_0_2.png": {
+    "path": "res://assets/hd/actors/8/walk_0_2.png",
+    "installer": "actors",
+    "logical_size": [
+      11,
+      18
+    ],
+    "original_offset": [
+      -5,
+      -18
+    ],
+    "scale": 8
+  },
+  "res://assets/original/actors/8/walk_1_0.png": {
+    "path": "res://assets/hd/actors/8/walk_1_0.png",
+    "installer": "actors",
+    "logical_size": [
+      8,
+      18
+    ],
+    "original_offset": [
+      -4,
+      -18
+    ],
+    "scale": 8
+  },
+  "res://assets/original/actors/8/walk_1_1.png": {
+    "path": "res://assets/hd/actors/8/walk_1_1.png",
+    "installer": "actors",
+    "logical_size": [
+      9,
+      18
+    ],
+    "original_offset": [
+      -4,
+      -18
+    ],
+    "scale": 8
+  },
+  "res://assets/original/actors/8/walk_1_2.png": {
+    "path": "res://assets/hd/actors/8/walk_1_2.png",
+    "installer": "actors",
+    "logical_size": [
+      11,
+      18
+    ],
+    "original_offset": [
+      -5,
+      -18
+    ],
+    "scale": 8
+  },
+  "res://assets/original/actors/8/walk_2_0.png": {
+    "path": "res://assets/hd/actors/8/walk_2_0.png",
+    "installer": "actors",
+    "logical_size": [
+      8,
+      18
+    ],
+    "original_offset": [
+      -4,
+      -18
+    ],
+    "scale": 8
+  },
+  "res://assets/original/actors/8/walk_2_1.png": {
+    "path": "res://assets/hd/actors/8/walk_2_1.png",
+    "installer": "actors",
+    "logical_size": [
+      9,
+      18
+    ],
+    "original_offset": [
+      -4,
+      -18
+    ],
+    "scale": 8
+  },
+  "res://assets/original/actors/8/walk_2_2.png": {
+    "path": "res://assets/hd/actors/8/walk_2_2.png",
+    "installer": "actors",
+    "logical_size": [
+      10,
+      18
+    ],
+    "original_offset": [
+      -5,
+      -18
+    ],
+    "scale": 8
+  },
+  "res://assets/original/actors/8/walk_3_0.png": {
+    "path": "res://assets/hd/actors/8/walk_3_0.png",
+    "installer": "actors",
+    "logical_size": [
+      8,
+      18
+    ],
+    "original_offset": [
+      -4,
+      -18
+    ],
+    "scale": 8
+  },
+  "res://assets/original/actors/8/walk_3_1.png": {
+    "path": "res://assets/hd/actors/8/walk_3_1.png",
+    "installer": "actors",
+    "logical_size": [
+      9,
+      18
+    ],
+    "original_offset": [
+      -4,
+      -18
+    ],
+    "scale": 8
+  },
+  "res://assets/original/actors/8/walk_3_2.png": {
+    "path": "res://assets/hd/actors/8/walk_3_2.png",
+    "installer": "actors",
+    "logical_size": [
+      10,
+      18
+    ],
+    "original_offset": [
+      -5,
+      -18
+    ],
+    "scale": 8
+  },
+  "res://assets/original/actors/9/walk_0_0.png": {
+    "path": "res://assets/hd/actors/9/walk_0_0.png",
+    "installer": "actors",
+    "logical_size": [
+      9,
+      18
+    ],
+    "original_offset": [
+      -4,
+      -18
+    ],
+    "scale": 8
+  },
+  "res://assets/original/actors/9/walk_0_1.png": {
+    "path": "res://assets/hd/actors/9/walk_0_1.png",
+    "installer": "actors",
+    "logical_size": [
+      9,
+      18
+    ],
+    "original_offset": [
+      -4,
+      -18
+    ],
+    "scale": 8
+  },
+  "res://assets/original/actors/9/walk_0_2.png": {
+    "path": "res://assets/hd/actors/9/walk_0_2.png",
+    "installer": "actors",
+    "logical_size": [
+      12,
+      18
+    ],
+    "original_offset": [
+      -6,
+      -18
+    ],
+    "scale": 8
+  },
+  "res://assets/original/actors/9/walk_1_0.png": {
+    "path": "res://assets/hd/actors/9/walk_1_0.png",
+    "installer": "actors",
+    "logical_size": [
+      9,
+      18
+    ],
+    "original_offset": [
+      -4,
+      -18
+    ],
+    "scale": 8
+  },
+  "res://assets/original/actors/9/walk_1_1.png": {
+    "path": "res://assets/hd/actors/9/walk_1_1.png",
+    "installer": "actors",
+    "logical_size": [
+      9,
+      18
+    ],
+    "original_offset": [
+      -4,
+      -18
+    ],
+    "scale": 8
+  },
+  "res://assets/original/actors/9/walk_1_2.png": {
+    "path": "res://assets/hd/actors/9/walk_1_2.png",
+    "installer": "actors",
+    "logical_size": [
+      11,
+      18
+    ],
+    "original_offset": [
+      -5,
+      -18
+    ],
+    "scale": 8
+  },
+  "res://assets/original/actors/9/walk_2_0.png": {
+    "path": "res://assets/hd/actors/9/walk_2_0.png",
+    "installer": "actors",
+    "logical_size": [
+      8,
+      17
+    ],
+    "original_offset": [
+      -4,
+      -17
+    ],
+    "scale": 8
+  },
+  "res://assets/original/actors/9/walk_2_1.png": {
+    "path": "res://assets/hd/actors/9/walk_2_1.png",
+    "installer": "actors",
+    "logical_size": [
+      9,
+      17
+    ],
+    "original_offset": [
+      -4,
+      -17
+    ],
+    "scale": 8
+  },
+  "res://assets/original/actors/9/walk_2_2.png": {
+    "path": "res://assets/hd/actors/9/walk_2_2.png",
+    "installer": "actors",
+    "logical_size": [
+      10,
+      17
+    ],
+    "original_offset": [
+      -5,
+      -17
+    ],
+    "scale": 8
+  },
+  "res://assets/original/actors/9/walk_3_0.png": {
+    "path": "res://assets/hd/actors/9/walk_3_0.png",
+    "installer": "actors",
+    "logical_size": [
+      8,
+      17
+    ],
+    "original_offset": [
+      -4,
+      -17
+    ],
+    "scale": 8
+  },
+  "res://assets/original/actors/9/walk_3_1.png": {
+    "path": "res://assets/hd/actors/9/walk_3_1.png",
+    "installer": "actors",
+    "logical_size": [
+      9,
+      17
+    ],
+    "original_offset": [
+      -4,
+      -17
+    ],
+    "scale": 8
+  },
+  "res://assets/original/actors/9/walk_3_2.png": {
+    "path": "res://assets/hd/actors/9/walk_3_2.png",
+    "installer": "actors",
+    "logical_size": [
+      10,
+      17
+    ],
+    "original_offset": [
+      -5,
+      -17
+    ],
+    "scale": 8
+  },
+  "res://assets/original/scenery/14/ticket_working.svg": {
+    "path": "res://assets/hd/scenery/14/ticket_working.svg",
+    "installer": "ticket_vectors",
+    "scale": 8
+  },
+  "res://assets/original/scenery/14/ticket_closed.svg": {
+    "path": "res://assets/hd/scenery/14/ticket_closed.svg",
+    "installer": "ticket_vectors",
+    "scale": 8
+  },
+  "res://assets/original/scenery/14/ticket_unstaffed.svg": {
+    "path": "res://assets/hd/scenery/14/ticket_unstaffed.svg",
+    "installer": "ticket_vectors",
+    "scale": 8
+  },
+  "res://assets/original/scenery/22/ticket_working.svg": {
+    "path": "res://assets/hd/scenery/22/ticket_working.svg",
+    "installer": "ticket_vectors",
+    "scale": 8
+  },
+  "res://assets/original/scenery/22/ticket_closed.svg": {
+    "path": "res://assets/hd/scenery/22/ticket_closed.svg",
+    "installer": "ticket_vectors",
+    "scale": 8
+  },
+  "res://assets/original/scenery/22/ticket_unstaffed.svg": {
+    "path": "res://assets/hd/scenery/22/ticket_unstaffed.svg",
+    "installer": "ticket_vectors",
+    "scale": 8
+  },
+  "res://assets/original/actors/6/walk_0_0.png": {
+    "path": "res://assets/hd/actors/6/walk_0_0.png",
+    "installer": "actors",
+    "logical_size": [
+      9,
+      17
+    ],
+    "original_offset": [
+      -4,
+      -17
+    ],
+    "scale": 8
+  },
+  "res://assets/original/actors/6/walk_0_1.png": {
+    "path": "res://assets/hd/actors/6/walk_0_1.png",
+    "installer": "actors",
+    "logical_size": [
+      9,
+      17
+    ],
+    "original_offset": [
+      -4,
+      -17
+    ],
+    "scale": 8
+  },
+  "res://assets/original/actors/6/walk_0_2.png": {
+    "path": "res://assets/hd/actors/6/walk_0_2.png",
+    "installer": "actors",
+    "logical_size": [
+      9,
+      17
+    ],
+    "original_offset": [
+      -4,
+      -17
+    ],
+    "scale": 8
+  },
+  "res://assets/original/actors/6/walk_1_0.png": {
+    "path": "res://assets/hd/actors/6/walk_1_0.png",
+    "installer": "actors",
+    "logical_size": [
+      9,
+      17
+    ],
+    "original_offset": [
+      -4,
+      -17
+    ],
+    "scale": 8
+  },
+  "res://assets/original/actors/6/walk_1_1.png": {
+    "path": "res://assets/hd/actors/6/walk_1_1.png",
+    "installer": "actors",
+    "logical_size": [
+      9,
+      17
+    ],
+    "original_offset": [
+      -4,
+      -17
+    ],
+    "scale": 8
+  },
+  "res://assets/original/actors/6/walk_1_2.png": {
+    "path": "res://assets/hd/actors/6/walk_1_2.png",
+    "installer": "actors",
+    "logical_size": [
+      9,
+      17
+    ],
+    "original_offset": [
+      -4,
+      -17
+    ],
+    "scale": 8
+  },
+  "res://assets/original/actors/6/walk_2_0.png": {
+    "path": "res://assets/hd/actors/6/walk_2_0.png",
+    "installer": "actors",
+    "logical_size": [
+      8,
+      17
+    ],
+    "original_offset": [
+      -4,
+      -17
+    ],
+    "scale": 8
+  },
+  "res://assets/original/actors/6/walk_2_1.png": {
+    "path": "res://assets/hd/actors/6/walk_2_1.png",
+    "installer": "actors",
+    "logical_size": [
+      9,
+      17
+    ],
+    "original_offset": [
+      -4,
+      -17
+    ],
+    "scale": 8
+  },
+  "res://assets/original/actors/6/walk_2_2.png": {
+    "path": "res://assets/hd/actors/6/walk_2_2.png",
+    "installer": "actors",
+    "logical_size": [
+      9,
+      17
+    ],
+    "original_offset": [
+      -4,
+      -17
+    ],
+    "scale": 8
+  },
+  "res://assets/original/actors/6/walk_3_0.png": {
+    "path": "res://assets/hd/actors/6/walk_3_0.png",
+    "installer": "actors",
+    "logical_size": [
+      8,
+      17
+    ],
+    "original_offset": [
+      -4,
+      -17
+    ],
+    "scale": 8
+  },
+  "res://assets/original/actors/6/walk_3_1.png": {
+    "path": "res://assets/hd/actors/6/walk_3_1.png",
+    "installer": "actors",
+    "logical_size": [
+      9,
+      17
+    ],
+    "original_offset": [
+      -4,
+      -17
+    ],
+    "scale": 8
+  },
+  "res://assets/original/actors/6/walk_3_2.png": {
+    "path": "res://assets/hd/actors/6/walk_3_2.png",
+    "installer": "actors",
+    "logical_size": [
+      9,
+      17
+    ],
+    "original_offset": [
+      -4,
+      -17
+    ],
+    "scale": 8
+  },
+  "res://assets/original/actors/6/sit_0.png": {
+    "path": "res://assets/hd/actors/6/sit_0.png",
+    "installer": "actors",
+    "logical_size": [
+      10,
+      16
+    ],
+    "original_offset": [
+      -5,
+      -16
+    ],
+    "scale": 8
+  },
+  "res://assets/original/actors/6/sit_1.png": {
+    "path": "res://assets/hd/actors/6/sit_1.png",
+    "installer": "actors",
+    "logical_size": [
+      10,
+      16
+    ],
+    "original_offset": [
+      -5,
+      -16
+    ],
+    "scale": 8
+  },
+  "res://assets/original/actors/6/ride_0.png": {
+    "path": "res://assets/hd/actors/6/ride_0.png",
+    "installer": "actors",
+    "logical_size": [
+      11,
+      15
+    ],
+    "original_offset": [
+      0,
+      -15
+    ],
+    "scale": 8
+  },
+  "res://assets/original/actors/6/ride_1.png": {
+    "path": "res://assets/hd/actors/6/ride_1.png",
+    "installer": "actors",
+    "logical_size": [
+      15,
+      14
+    ],
+    "original_offset": [
+      0,
+      0
+    ],
+    "scale": 8
+  },
+  "res://assets/original/actors/6/ride_2.png": {
+    "path": "res://assets/hd/actors/6/ride_2.png",
+    "installer": "actors",
+    "logical_size": [
+      7,
+      18
+    ],
+    "original_offset": [
+      0,
+      0
+    ],
+    "scale": 8
+  },
+  "res://assets/original/actors/6/pose_0.png": {
+    "path": "res://assets/hd/actors/6/pose_0.png",
+    "installer": "actors",
+    "logical_size": [
+      11,
+      16
+    ],
+    "original_offset": [
+      -5,
+      -16
+    ],
+    "scale": 8
+  },
+  "res://assets/original/actors/6/special_0.png": {
+    "path": "res://assets/hd/actors/6/special_0.png",
+    "installer": "actors",
+    "logical_size": [
+      9,
+      7
+    ],
+    "original_offset": [
+      -4,
+      -6
+    ],
+    "scale": 8
+  },
+  "res://assets/original/actors/6/special_1.png": {
+    "path": "res://assets/hd/actors/6/special_1.png",
+    "installer": "actors",
+    "logical_size": [
+      9,
+      7
+    ],
+    "original_offset": [
+      -4,
+      -6
+    ],
+    "scale": 8
+  },
+  "res://assets/original/actors/6/special_2.png": {
+    "path": "res://assets/hd/actors/6/special_2.png",
+    "installer": "actors",
+    "logical_size": [
+      8,
+      7
+    ],
+    "original_offset": [
+      -4,
+      -6
+    ],
+    "scale": 8
+  },
+  "res://assets/original/actors/6/special_3.png": {
+    "path": "res://assets/hd/actors/6/special_3.png",
+    "installer": "actors",
+    "logical_size": [
+      8,
+      7
+    ],
+    "original_offset": [
+      -4,
+      -6
+    ],
+    "scale": 8
+  },
+  "res://assets/original/actors/6/special_4.png": {
+    "path": "res://assets/hd/actors/6/special_4.png",
+    "installer": "actors",
+    "logical_size": [
+      7,
+      9
+    ],
+    "original_offset": [
+      0,
+      -4
+    ],
+    "scale": 8
+  },
+  "res://assets/original/actors/6/special_5.png": {
+    "path": "res://assets/hd/actors/6/special_5.png",
+    "installer": "actors",
+    "logical_size": [
+      8,
+      7
+    ],
+    "original_offset": [
+      -4,
+      0
+    ],
+    "scale": 8
+  },
+  "res://assets/original/actors/6/special_6.png": {
+    "path": "res://assets/hd/actors/6/special_6.png",
+    "installer": "actors",
+    "logical_size": [
+      8,
+      7
+    ],
+    "original_offset": [
+      -8,
+      -3
+    ],
+    "scale": 8
+  },
+  "res://assets/original/actors/7/walk_0_0.png": {
+    "path": "res://assets/hd/actors/7/walk_0_0.png",
+    "installer": "actors",
+    "logical_size": [
+      10,
+      20
+    ],
+    "original_offset": [
+      -5,
+      -20
+    ],
+    "scale": 8
+  },
+  "res://assets/original/actors/7/walk_0_1.png": {
+    "path": "res://assets/hd/actors/7/walk_0_1.png",
+    "installer": "actors",
+    "logical_size": [
+      10,
+      20
+    ],
+    "original_offset": [
+      -5,
+      -20
+    ],
+    "scale": 8
+  },
+  "res://assets/original/actors/7/walk_0_2.png": {
+    "path": "res://assets/hd/actors/7/walk_0_2.png",
+    "installer": "actors",
+    "logical_size": [
+      10,
+      20
+    ],
+    "original_offset": [
+      -5,
+      -20
+    ],
+    "scale": 8
+  },
+  "res://assets/original/actors/7/walk_1_0.png": {
+    "path": "res://assets/hd/actors/7/walk_1_0.png",
+    "installer": "actors",
+    "logical_size": [
+      10,
+      20
+    ],
+    "original_offset": [
+      -5,
+      -20
+    ],
+    "scale": 8
+  },
+  "res://assets/original/actors/7/walk_1_1.png": {
+    "path": "res://assets/hd/actors/7/walk_1_1.png",
+    "installer": "actors",
+    "logical_size": [
+      10,
+      20
+    ],
+    "original_offset": [
+      -5,
+      -20
+    ],
+    "scale": 8
+  },
+  "res://assets/original/actors/7/walk_1_2.png": {
+    "path": "res://assets/hd/actors/7/walk_1_2.png",
+    "installer": "actors",
+    "logical_size": [
+      10,
+      20
+    ],
+    "original_offset": [
+      -5,
+      -20
+    ],
+    "scale": 8
+  },
+  "res://assets/original/actors/7/walk_2_0.png": {
+    "path": "res://assets/hd/actors/7/walk_2_0.png",
+    "installer": "actors",
+    "logical_size": [
+      9,
+      20
+    ],
+    "original_offset": [
+      -4,
+      -20
+    ],
+    "scale": 8
+  },
+  "res://assets/original/actors/7/walk_2_1.png": {
+    "path": "res://assets/hd/actors/7/walk_2_1.png",
+    "installer": "actors",
+    "logical_size": [
+      10,
+      20
+    ],
+    "original_offset": [
+      -5,
+      -20
+    ],
+    "scale": 8
+  },
+  "res://assets/original/actors/7/walk_2_2.png": {
+    "path": "res://assets/hd/actors/7/walk_2_2.png",
+    "installer": "actors",
+    "logical_size": [
+      10,
+      20
+    ],
+    "original_offset": [
+      -5,
+      -20
+    ],
+    "scale": 8
+  },
+  "res://assets/original/actors/7/walk_3_0.png": {
+    "path": "res://assets/hd/actors/7/walk_3_0.png",
+    "installer": "actors",
+    "logical_size": [
+      9,
+      20
+    ],
+    "original_offset": [
+      -4,
+      -20
+    ],
+    "scale": 8
+  },
+  "res://assets/original/actors/7/walk_3_1.png": {
+    "path": "res://assets/hd/actors/7/walk_3_1.png",
+    "installer": "actors",
+    "logical_size": [
+      10,
+      20
+    ],
+    "original_offset": [
+      -5,
+      -20
+    ],
+    "scale": 8
+  },
+  "res://assets/original/actors/7/walk_3_2.png": {
+    "path": "res://assets/hd/actors/7/walk_3_2.png",
+    "installer": "actors",
+    "logical_size": [
+      10,
+      20
+    ],
+    "original_offset": [
+      -5,
+      -20
+    ],
+    "scale": 8
+  },
+  "res://assets/original/actors/7/sit_0.png": {
+    "path": "res://assets/hd/actors/7/sit_0.png",
+    "installer": "actors",
+    "logical_size": [
+      11,
+      19
+    ],
+    "original_offset": [
+      -5,
+      -19
+    ],
+    "scale": 8
+  },
+  "res://assets/original/actors/7/sit_1.png": {
+    "path": "res://assets/hd/actors/7/sit_1.png",
+    "installer": "actors",
+    "logical_size": [
+      11,
+      19
+    ],
+    "original_offset": [
+      -5,
+      -19
+    ],
+    "scale": 8
+  },
+  "res://assets/original/actors/7/ride_0.png": {
+    "path": "res://assets/hd/actors/7/ride_0.png",
+    "installer": "actors",
+    "logical_size": [
+      13,
+      18
+    ],
+    "original_offset": [
+      0,
+      -18
+    ],
+    "scale": 8
+  },
+  "res://assets/original/actors/7/ride_1.png": {
+    "path": "res://assets/hd/actors/7/ride_1.png",
+    "installer": "actors",
+    "logical_size": [
+      17,
+      15
+    ],
+    "original_offset": [
+      0,
+      0
+    ],
+    "scale": 8
+  },
+  "res://assets/original/actors/7/ride_2.png": {
+    "path": "res://assets/hd/actors/7/ride_2.png",
+    "installer": "actors",
+    "logical_size": [
+      9,
+      21
+    ],
+    "original_offset": [
+      0,
+      0
+    ],
+    "scale": 8
+  },
+  "res://assets/original/actors/7/pose_0.png": {
+    "path": "res://assets/hd/actors/7/pose_0.png",
+    "installer": "actors",
+    "logical_size": [
+      12,
+      18
+    ],
+    "original_offset": [
+      -6,
+      -18
+    ],
+    "scale": 8
+  },
+  "res://assets/original/actors/7/special_0.png": {
+    "path": "res://assets/hd/actors/7/special_0.png",
+    "installer": "actors",
+    "logical_size": [
+      10,
+      8
+    ],
+    "original_offset": [
+      -5,
+      -8
+    ],
+    "scale": 8
+  },
+  "res://assets/original/actors/7/special_1.png": {
+    "path": "res://assets/hd/actors/7/special_1.png",
+    "installer": "actors",
+    "logical_size": [
+      10,
+      8
+    ],
+    "original_offset": [
+      -5,
+      -8
+    ],
+    "scale": 8
+  },
+  "res://assets/original/actors/7/special_2.png": {
+    "path": "res://assets/hd/actors/7/special_2.png",
+    "installer": "actors",
+    "logical_size": [
+      9,
+      8
+    ],
+    "original_offset": [
+      -4,
+      -8
+    ],
+    "scale": 8
+  },
+  "res://assets/original/actors/7/special_3.png": {
+    "path": "res://assets/hd/actors/7/special_3.png",
+    "installer": "actors",
+    "logical_size": [
+      9,
+      8
+    ],
+    "original_offset": [
+      -4,
+      -8
+    ],
+    "scale": 8
+  },
+  "res://assets/original/actors/7/special_4.png": {
+    "path": "res://assets/hd/actors/7/special_4.png",
+    "installer": "actors",
+    "logical_size": [
+      8,
+      10
+    ],
+    "original_offset": [
+      0,
+      -5
+    ],
+    "scale": 8
+  },
+  "res://assets/original/actors/7/special_5.png": {
+    "path": "res://assets/hd/actors/7/special_5.png",
+    "installer": "actors",
+    "logical_size": [
+      9,
+      8
+    ],
+    "original_offset": [
+      -4,
+      0
+    ],
+    "scale": 8
+  },
+  "res://assets/original/actors/7/special_6.png": {
+    "path": "res://assets/hd/actors/7/special_6.png",
+    "installer": "actors",
+    "logical_size": [
+      9,
+      8
+    ],
+    "original_offset": [
+      -8,
+      -4
+    ],
+    "scale": 8
+  },
+  "res://assets/original/rides/0/0.png": {
+    "path": "res://assets/hd/catalog/rides/0/working/0.png",
+    "installer": "part_cards",
+    "scale": 8
+  },
+  "res://assets/original/rides/1/0.png": {
+    "path": "res://assets/hd/catalog/rides/1/working/0.png",
+    "installer": "part_cards",
+    "scale": 8
+  },
+  "res://assets/original/rides/2/0.png": {
+    "path": "res://assets/hd/catalog/rides/2/working/0.png",
+    "installer": "part_cards",
+    "scale": 8
+  },
+  "res://assets/original/rides/3/0.png": {
+    "path": "res://assets/hd/catalog/rides/3/working/0.png",
+    "installer": "part_cards",
+    "scale": 8
+  },
+  "res://assets/original/rides/4/0.png": {
+    "path": "res://assets/hd/catalog/rides/4/working/0.png",
+    "installer": "part_cards",
+    "scale": 8
+  },
+  "res://assets/original/rides/5/0.png": {
+    "path": "res://assets/hd/catalog/rides/5/working/0.png",
+    "installer": "part_cards",
+    "scale": 8
+  },
+  "res://assets/original/rides/6/0.png": {
+    "path": "res://assets/hd/catalog/rides/6/working/0.png",
+    "installer": "part_cards",
+    "scale": 8
+  },
+  "res://assets/original/rides/7/0.png": {
+    "path": "res://assets/hd/catalog/rides/7/working/0.png",
+    "installer": "part_cards",
+    "scale": 8
+  },
+  "res://assets/original/rides/8/0.png": {
+    "path": "res://assets/hd/catalog/rides/8/working/0.png",
+    "installer": "part_cards",
+    "scale": 8
+  },
+  "res://assets/original/rides/9/0.png": {
+    "path": "res://assets/hd/catalog/rides/9/working/0.png",
+    "installer": "part_cards",
+    "scale": 8
+  },
+  "res://assets/original/rides/10/0.png": {
+    "path": "res://assets/hd/catalog/rides/10/working/0.png",
+    "installer": "part_cards",
+    "scale": 8
+  },
+  "res://assets/original/rides/11/0.png": {
+    "path": "res://assets/hd/catalog/rides/11/working/0.png",
+    "installer": "part_cards",
+    "scale": 8
+  },
+  "res://assets/original/rides/12/0.png": {
+    "path": "res://assets/hd/catalog/rides/12/working/0.png",
+    "installer": "part_cards",
+    "scale": 8
+  },
+  "res://assets/original/rides/13/0.png": {
+    "path": "res://assets/hd/catalog/rides/13/working/0.png",
+    "installer": "part_cards",
+    "scale": 8
+  },
+  "res://assets/original/rides/14/0.png": {
+    "path": "res://assets/hd/catalog/rides/14/working/0.png",
+    "installer": "part_cards",
+    "scale": 8
+  },
+  "res://assets/original/rides/15/0.png": {
+    "path": "res://assets/hd/catalog/rides/15/working/0.png",
+    "installer": "part_cards",
+    "scale": 8
+  },
+  "res://assets/original/rides/16/0.png": {
+    "path": "res://assets/hd/catalog/rides/16/working/0.png",
+    "installer": "part_cards",
+    "scale": 8
+  },
+  "res://assets/original/rides/17/0.png": {
+    "path": "res://assets/hd/catalog/rides/17/working/0.png",
+    "installer": "part_cards",
+    "scale": 8
+  },
+  "res://assets/original/rides/18/0.png": {
+    "path": "res://assets/hd/catalog/rides/18/working/0.png",
+    "installer": "part_cards",
+    "scale": 8
+  },
+  "res://assets/original/rides/19/0.png": {
+    "path": "res://assets/hd/catalog/rides/19/working/0.png",
+    "installer": "part_cards",
+    "scale": 8
+  },
+  "res://assets/original/rides/20/0.png": {
+    "path": "res://assets/hd/catalog/rides/20/working/0.png",
+    "installer": "part_cards",
+    "scale": 8
+  },
+  "res://assets/original/rides/21/0.png": {
+    "path": "res://assets/hd/catalog/rides/21/working/0.png",
+    "installer": "part_cards",
+    "scale": 8
+  },
+  "res://assets/original/rides/22/0.png": {
+    "path": "res://assets/hd/catalog/rides/22/working/0.png",
+    "installer": "part_cards",
+    "scale": 8
+  },
+  "res://assets/original/rides/23/0.png": {
+    "path": "res://assets/hd/catalog/rides/23/working/0.png",
+    "installer": "part_cards",
+    "scale": 8
+  },
+  "res://assets/original/scenery/0/working/0.png": {
+    "path": "res://assets/hd/catalog/scenery/0/working/0.png",
+    "installer": "part_cards",
+    "scale": 8
+  },
+  "res://assets/original/scenery/1/working/0.png": {
+    "path": "res://assets/hd/catalog/scenery/1/working/0.png",
+    "installer": "part_cards",
+    "scale": 8
+  },
+  "res://assets/original/scenery/2/working/0.png": {
+    "path": "res://assets/hd/catalog/scenery/2/working/0.png",
+    "installer": "part_cards",
+    "scale": 8
+  },
+  "res://assets/original/scenery/3/working/0.png": {
+    "path": "res://assets/hd/catalog/scenery/3/working/0.png",
+    "installer": "part_cards",
+    "scale": 8
+  },
+  "res://assets/original/scenery/4/working/0.png": {
+    "path": "res://assets/hd/catalog/scenery/4/working/0.png",
+    "installer": "part_cards",
+    "scale": 8
+  },
+  "res://assets/original/scenery/5/working/0.png": {
+    "path": "res://assets/hd/catalog/scenery/5/working/0.png",
+    "installer": "part_cards",
+    "scale": 8
+  },
+  "res://assets/original/scenery/6/working/0.png": {
+    "path": "res://assets/hd/catalog/scenery/6/working/0.png",
+    "installer": "part_cards",
+    "scale": 8
+  },
+  "res://assets/original/scenery/7/working/0.png": {
+    "path": "res://assets/hd/catalog/scenery/7/working/0.png",
+    "installer": "part_cards",
+    "scale": 8
+  },
+  "res://assets/original/scenery/8/working/0.png": {
+    "path": "res://assets/hd/catalog/scenery/8/working/0.png",
+    "installer": "part_cards",
+    "scale": 8
+  },
+  "res://assets/original/scenery/9/working/0.png": {
+    "path": "res://assets/hd/catalog/scenery/9/working/0.png",
+    "installer": "part_cards",
+    "scale": 8
+  },
+  "res://assets/original/scenery/10/working/0.png": {
+    "path": "res://assets/hd/catalog/scenery/10/working/0.png",
+    "installer": "part_cards",
+    "scale": 8
+  },
+  "res://assets/original/scenery/11/working/0.png": {
+    "path": "res://assets/hd/catalog/scenery/11/working/0.png",
+    "installer": "part_cards",
+    "scale": 8
+  },
+  "res://assets/original/scenery/12/working/0.png": {
+    "path": "res://assets/hd/catalog/scenery/12/working/0.png",
+    "installer": "part_cards",
+    "scale": 8
+  },
+  "res://assets/original/scenery/13/working/0.png": {
+    "path": "res://assets/hd/catalog/scenery/13/working/0.png",
+    "installer": "part_cards",
+    "scale": 8
+  },
+  "res://assets/original/scenery/15/working/0.png": {
+    "path": "res://assets/hd/catalog/scenery/15/working/0.png",
+    "installer": "part_cards",
+    "scale": 8
+  },
+  "res://assets/original/scenery/16/working/0.png": {
+    "path": "res://assets/hd/catalog/scenery/16/working/0.png",
+    "installer": "part_cards",
+    "scale": 8
+  },
+  "res://assets/original/scenery/17/working/0.png": {
+    "path": "res://assets/hd/catalog/scenery/17/working/0.png",
+    "installer": "part_cards",
+    "scale": 8
+  },
+  "res://assets/original/scenery/18/working/0.png": {
+    "path": "res://assets/hd/catalog/scenery/18/working/0.png",
+    "installer": "part_cards",
+    "scale": 8
+  },
+  "res://assets/original/scenery/19/working/0.png": {
+    "path": "res://assets/hd/catalog/scenery/19/working/0.png",
+    "installer": "part_cards",
+    "scale": 8
+  },
+  "res://assets/original/scenery/20/working/0.png": {
+    "path": "res://assets/hd/catalog/scenery/20/working/0.png",
+    "installer": "part_cards",
+    "scale": 8
+  },
+  "res://assets/original/scenery/21/working/0.png": {
+    "path": "res://assets/hd/catalog/scenery/21/working/0.png",
+    "installer": "part_cards",
+    "scale": 8
+  },
+  "res://assets/original/scenery/23/working/0.png": {
+    "path": "res://assets/hd/catalog/scenery/23/working/0.png",
+    "installer": "part_cards",
+    "scale": 8
+  },
+  "res://assets/original/scenery/24/working/0.png": {
+    "path": "res://assets/hd/catalog/scenery/24/working/0.png",
+    "installer": "part_cards",
+    "scale": 8
+  },
+  "res://assets/original/scenery/25/working/0.png": {
+    "path": "res://assets/hd/catalog/scenery/25/working/0.png",
+    "installer": "part_cards",
+    "scale": 8
+  },
+  "res://assets/original/scenery/26/working/0.png": {
+    "path": "res://assets/hd/catalog/scenery/26/working/0.png",
+    "installer": "part_cards",
+    "scale": 8
+  }
+}

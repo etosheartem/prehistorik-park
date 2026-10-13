@@ -1,0 +1,65 @@
+{
+  "res://assets/original/tiles/grass_0.png": {
+    "path": "res://assets/hd/terrain/grass_0.svg",
+    "logical_size": [
+      40,
+      20
+    ]
+  },
+  "res://assets/original/tiles/grass_1.png": {
+    "path": "res://assets/hd/terrain/grass_1.svg",
+    "logical_size": [
+      40,
+      20
+    ]
+  },
+  "res://assets/original/tiles/grass_2.png": {
+    "path": "res://assets/hd/terrain/grass_2.svg",
+    "logical_size": [
+      40,
+      20
+    ]
+  },
+  "res://assets/original/tiles/path_dirt.png": {
+    "path": "res://assets/hd/terrain/path_dirt.svg",
+    "logical_size": [
+      40,
+      20
+    ]
+  },
+  "res://assets/original/tiles/path_stone.png": {
+    "path": "res://assets/hd/terrain/path_stone.svg",
+    "logical_size": [
+      40,
+      20
+    ]
+  },
+  "res://assets/original/tiles/water_0.png": {
+    "path": "res://assets/hd/terrain/water_0.svg",
+    "logical_size": [
+      40,
+      21
+    ]
+  },
+  "res://assets/original/tiles/water_1.png": {
+    "path": "res://assets/hd/terrain/water_1.svg",
+    "logical_size": [
+      40,
+      21
+    ]
+  },
+  "res://assets/original/tiles/water_2.png": {
+    "path": "res://assets/hd/terrain/water_2.svg",
+    "logical_size": [
+      40,
+      21
+    ]
+  },
+  "res://assets/original/tiles/edges_0.png": {
+    "path": "res://assets/hd/terrain/path_dirt.svg",
+    "logical_size": [
+      40,
+      20
+    ]
+  }
+}
