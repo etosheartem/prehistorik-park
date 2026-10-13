@@ -351,7 +351,7 @@ func _build_modal() -> void:
 	modal_body.add_theme_constant_override("separation", 18)
 	modal_scroll.add_child(modal_body)
 	modal_body.minimum_size_changed.connect(_schedule_layout)
-	home_footer = _label(modal, "Офлайн · версия 1.0", 21, true)
+	home_footer = _label(modal, "Офлайн · версия " + str(ProjectSettings.get_setting("application/config/version")), 21, true)
 	home_footer.horizontal_alignment = HORIZONTAL_ALIGNMENT_CENTER
 	home_footer.add_theme_color_override("font_color", ArtTheme.LIGHT)
 	home_footer.mouse_filter = MOUSE_FILTER_IGNORE

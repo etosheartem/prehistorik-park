@@ -46,6 +46,7 @@ class DrawView:
 			Layers.draw_ride_ground(self, b)
 			Layers.draw_ride_body(self, b)
 			Layers.draw_ride_passengers(self, b)
+			Layers.draw_ride_fences_front(self, b)
 		zoom = 3.0
 		base = Vector2(40, 700)
 		Layers.draw_water_gates(self, {"type": 22, "x": 0, "y": 0, "rotation": 0, "water_exit": [3, 0], "exit_rotation": 1})
@@ -55,6 +56,7 @@ class DrawView:
 		Layers.draw_ride_ground(self, cafe)
 		Layers.draw_ride_body(self, cafe)
 		Layers.draw_ride_passengers(self, cafe)
+		Layers.draw_ride_fences_front(self, cafe)
 		for id in 6:
 			base = Vector2(1030 + (id % 3) * 180, 720 + int(id / 3) * 200)
 			Layers.draw_prop_body(self, {"kind": "prop", "type": [0, 1, 2, 8, 10, 13][id], "x": 0, "y": 0, "working": true})

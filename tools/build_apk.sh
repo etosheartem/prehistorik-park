@@ -4,9 +4,9 @@ cd "$(dirname "$0")/.."
 : "${GODOT_ANDROID_KEYSTORE_RELEASE_PATH:?Set the release keystore path}"
 : "${GODOT_ANDROID_KEYSTORE_RELEASE_USER:?Set the signing key alias}"
 : "${GODOT_ANDROID_KEYSTORE_RELEASE_PASSWORD:?Set the signing password}"
-report="${PARK_REPORT_DIR:-build/reports_1.0}"
+report="${PARK_REPORT_DIR:-build/reports_1.0.1}"
 engine="${GODOT_BIN:-godot}"
-apk="build/prehistorik_park_1.0.0.apk"
+apk="build/prehistorik_park_1.0.1.apk"
 sdk_tools="${ANDROID_HOME:-${ANDROID_SDK_ROOT:-$HOME/Android/Sdk}}/build-tools/${ANDROID_BUILD_TOOLS:-35.0.0}"
 bash tools/check.sh
 timeout 300s "$engine" --headless --path game --export-release Android "$(pwd)/$apk" > "$report/export.log" 2>&1

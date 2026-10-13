@@ -15,8 +15,8 @@ godot --path game
 ```
 
 Игра запускается без Python, ComfyUI, моделей и сетевых сервисов.
-Python нужен только для проверок и подготовки ресурсов. `ripgrep`, `timeout`
-и Bash нужны для `tools/check.sh`.
+Python нужен только для проверок и подготовки ресурсов. `ripgrep`, `timeout`,
+`rsvg-convert` (librsvg) и Bash нужны для `tools/check.sh`.
 
 ## Проверки
 
@@ -28,8 +28,8 @@ godot --path game --script res://tests/redesign_check.gd -- \
 ```
 
 `check.sh` проверяет оригинальные данные, происхождение апскейла, симуляцию,
-композицию слоёв, интерфейс, четыре режима графики, звук, настройки и сохранения.
-Логи: `build/reports_1.0/`. Можно переопределить `GODOT_BIN` и `PARK_REPORT_DIR`.
+композицию слоёв, полноту ремейка, интерфейс, четыре режима графики, звук, настройки и сохранения.
+Логи: `build/reports_1.0.1/`. Можно переопределить `GODOT_BIN` и `PARK_REPORT_DIR`.
 Графические проверки запускай с доступным Vulkan/OpenGL; headless не измеряет FPS.
 
 Полное прохождение сценариев:
@@ -58,12 +58,12 @@ export GODOT_ANDROID_KEYSTORE_RELEASE_PASSWORD
 bash tools/build_apk.sh
 ```
 
-Результат: `build/prehistorik_park_1.0.0.apk` и `build/prehistorik_park.apk`.
+Результат: `build/prehistorik_park_1.0.1.apk` и `build/prehistorik_park.apk`.
 Скрипт выполняет проверки, **export-release**, проверку подписи, AndroidManifest,
 CRC, наличие текстур и отсутствие тестов/ключей в архиве. Никаких запросов генерации.
 Для другой версии Build-Tools задай `ANDROID_BUILD_TOOLS`.
 
-Приватный релиз 1.0.0 сохраняет сертификат предыдущих APK для совместимого обновления.
+Приватный релиз 1.0.1 сохраняет сертификат предыдущих APK для совместимого обновления.
 Это существующий локальный development-сертификат; сам бинарник собран без debug.
 Подпись для публикации в Google Play и AAB в этот частный релиз не входят.
 На машине автора настройки подписи находятся вне проекта в
@@ -107,3 +107,17 @@ godot --headless --path game --editor --import --quit
 
 Эта последовательность пересобирает стыки ремейка, 153 каталожных превью и импорты.
 Генерация заставки через локальный ComfyUI описана в [art/README.md](../art/README.md).
+
+Полная сверка текстур и кадров:
+
+```sh
+python art/check_parts.py
+python art/audit_remake.py --out art/review/remake_audit/after
+godot --path game --rendering-method gl_compatibility \
+  --script res://tests/render_remake_audit.gd
+python art/package_remake_audit.py
+```
+
+Команда Godot требует GPU и сохраняет 1191 сравнительный кадр вне `game/`.
+Все 7821 отрисовки проверяются на пустоту и выход за границы камеры;
+визуальную полноту проверяй по контактным листам и отчёту, а не только по альфа-покрытию.

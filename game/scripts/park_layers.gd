@@ -135,19 +135,21 @@ static func _ride_cells(view, b: Dictionary) -> Array:
 static func draw_ride_ground(view, b: Dictionary, tint := Color.WHITE) -> void:
 	if b.get("kind", "") != "ride" or int(b.type) == 22:
 		return
-	for item in _ride_cells(view, b):
-		if item.type < 4 or item.type > 12:
-			continue
-		var at := _tile_origin(view, item.cell)
-		if Graphics.is_remake(view.quality):
-			# Original edge sprites include a green 1px tile rim. Drawing the
-			# continuous sand surface removes the accidental green checkerboard.
+	var cells := _ride_cells(view, b)
+	if Graphics.is_remake(view.quality):
+		# Lay every sand tile first: a later tile must not cover a previously
+		# drawn flower bed, gate threshold or rear wall.
+		for item in cells:
+			if item.type < 4 or item.type > 12: continue
 			var polygon: PackedVector2Array = view.footprint(Vector2i(item.cell))
 			var center: Vector2 = view.cell_to_screen(item.cell)
 			for i in polygon.size(): polygon[i] = center + (polygon[i] - center) * 1.002
 			view.draw_colored_polygon(polygon, Color("e2c68d") * tint)
+	for item in cells:
+		if item.type < 4 or item.type > 12:
 			continue
-		_edge(view, 0, at, tint)
+		var at := _tile_origin(view, item.cell)
+		if not Graphics.is_remake(view.quality): _edge(view, 0, at, tint)
 		var special: Dictionary = {5: 13, 6: 12, 7: 11, 8: 14}
 		if special.has(item.type):
 			_edge(view, int(special[item.type]), at, tint)
@@ -262,7 +264,6 @@ static func draw_ride_passengers(view, b: Dictionary) -> void:
 				var overlay: Array = tables[0].slice(index, index + 6)
 				var sprite_offset := Vector2(rider.frame.offset[0], rider.frame.offset[1])
 				_region(view, 0, rider.actor, Rect2(overlay[0], overlay[1], overlay[2], overlay[3]), at + (sprite_offset + Vector2(overlay[4], overlay[5])) * view.zoom)
-	draw_ride_fences_front(view, b)
 
 
 static func draw_bench(view, cell: Vector2i) -> void:

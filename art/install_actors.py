@@ -126,7 +126,9 @@ def main():
         repairs.append((actor, 'walk_1', 2, 'walk_0', 2, False))
         repairs.extend((actor, 'walk_0', phase, 'walk_1', phase, True) for phase in range(3))
         repairs.extend((actor, 'walk_3', phase, 'walk_2', phase, True) for phase in range(3))
-        repairs.extend([(actor, 'sit', 0, 'pose', 0, True), (actor, 'sit', 1, 'pose', 0, False)])
+        # The source sitting directions are opposite to the earlier repair.
+        # Keep the right-facing pose for sit_0, mirror it only for sit_1.
+        repairs.extend([(actor, 'sit', 0, 'pose', 0, False), (actor, 'sit', 1, 'pose', 0, True)])
     repairs.extend((5, 'walk_2', phase, 'walk_2', phase, True) for phase in range(3))
     for actor in (4, 5):
         repairs.append((actor, 'walk_1', 2, 'walk_0', 2, True))
@@ -200,6 +202,17 @@ def main():
         replace_piece(6, 'ride', 1, body,
                       {'source': source_path, 'rotation_degrees': -135,
                        'reason': 'Replace foreign bearded face with guest6 own body/face in matching tilted direction'})
+    # These six source heads are byte-identical in phases 5 and 6. Independent
+    # generated cells introduced a front-facing head in a rear-facing sequence.
+    for actor in (1, 2, 3, 5, 6, 7):
+        source_path = f'res://assets/original/actors/{actor}/special_5.png'
+        target_path = f'res://assets/original/actors/{actor}/special_6.png'
+        assert originals[source_path].size == originals[target_path].size
+        assert originals[source_path].tobytes() == originals[target_path].tobytes()
+        frames[target_path] = frames[source_path].copy()
+        info = next(r for r in report['frames'] if r['path'] == target_path)
+        info['local_repair'] = {'source': source_path, 'reason': 'Source phases are byte-identical; retain the same complete rear head'}
+        frames[target_path].save(REVIEW / 'crops' / 'actors' / str(actor) / 'special_6.png')
     # Contact pages and anchored animation loops expose pose errors and foot jitter.
     for actor in sorted({p['actor'] for p in entries.values()}):
         actor_parts = [p for p in entries.values() if p['actor'] == actor]

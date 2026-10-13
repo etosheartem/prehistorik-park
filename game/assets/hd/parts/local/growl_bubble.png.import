@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://d0gywy6212bl6"
-path="res://.godot/imported/part_57.png-cb0fede2a5e054d09ba7af1809f97b39.ctex"
+uid="uid://cgdkhl0pp0bc2"
+path="res://.godot/imported/growl_bubble.png-041f9df7761bd712230e6c1ab7a85c94.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/hd/parts/rides/part_57.png"
-dest_files=["res://.godot/imported/part_57.png-cb0fede2a5e054d09ba7af1809f97b39.ctex"]
+source_file="res://assets/hd/parts/local/growl_bubble.png"
+dest_files=["res://.godot/imported/growl_bubble.png-041f9df7761bd712230e6c1ab7a85c94.ctex"]
 
 [params]
 

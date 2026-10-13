@@ -382,6 +382,7 @@ func _draw_building(b: Dictionary, tint := Color.WHITE) -> void:
 	var drawn: bool = layers.draw_ride_body(self, b, tint) if b.kind == "ride" else layers.draw_prop_body(self, b, tint)
 	if not drawn: _frame(frames[frame_index], at, tint)
 	if b.kind == "ride" and tint.a > 0.9: layers.draw_ride_passengers(self, b)
+	if b.kind == "ride": layers.draw_ride_fences_front(self, b, tint)
 	if tint.a > 0.9 and b.kind == "ride" and not b.get("working", true):
 		var badge := at + Vector2(20, -18) * zoom
 		draw_circle(badge, 4.2 * zoom, Color("b95739"))

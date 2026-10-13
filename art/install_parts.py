@@ -16,6 +16,7 @@ import subprocess
 import sys
 import numpy as np
 from PIL import Image, ImageChops, ImageDraw, ImageFilter
+from repair_parts import align_scattered, growl_bubble
 
 ROOT = Path(__file__).resolve().parent.parent
 REVIEW = ROOT / 'art/review/parts'
@@ -286,6 +287,20 @@ def main():
                 original = source_part(key)
                 try:
                     aligned, metrics = fit_part(cell, original, args.scale)
+                    if group == 'rides' and part['id'] == 44:
+                        aligned, placements = align_scattered(cell, original, args.scale)
+                        a = np.asarray(original.getchannel('A').resize(aligned.size, Image.Resampling.NEAREST)) > 32
+                        b = np.asarray(aligned.getchannel('A')) > 32
+                        coverage = float((a & b).sum() / max(1, a.sum()))
+                        if coverage < .9:
+                            raise ValueError('Scattered-stone repair lost source fragments')
+                        metrics['before_component_alignment'] = dict(metrics)
+                        metrics['original_coverage'] = round(coverage, 4)
+                        metrics['silhouette_iou'] = round(float((a & b).sum() / max(1, (a | b).sum())), 4)
+                        metrics['clipped_outside_envelope'] = 0.0
+                        metrics['local_correction'] = 'Place each generated stone at its original component anchor; ignore faint provider alpha outside the burst.'
+                        metrics['component_placements'] = placements
+                        metrics.pop('warning', None)
                 except ValueError as error:
                     report['parts'].append({'group': group, 'id': part['id'], 'atlas': number,
                                             'source_key': list(key), 'warning': str(error), 'fallback': 'original'})
@@ -306,6 +321,10 @@ def main():
         parts[key], crops[key] = image, path
         report['local_overrides'].append({'source_key': list(key), 'path': str(path.relative_to(ROOT)),
                                         'reason': 'Cafe smoke: replace generated stone interpretation and two tiny original pixel clouds with local translucent vector puffs.'})
+    key, path, image = growl_bubble(ROOT, args.scale)
+    parts[key], crops[key] = image, path
+    report['local_overrides'].append({'source_key': list(key), 'path': str(path.relative_to(ROOT)),
+                                    'reason': 'Restore GRR! lettering omitted from the generated haunted-house speech balloon.'})
     micro_previews = {}
     for index, (key, path, image) in enumerate(local_micro_parts(args.scale)):
         parts[key], crops[key] = image, path
