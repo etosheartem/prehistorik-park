@@ -3,7 +3,7 @@
     "UPSCALE OK: 3041 checks; 40 GPU sources; 518 mapped resources; 192 isolated parts; API $0"
   ],
   "release_check": [
-    "RELEASE OK: 75 checks"
+    "RELEASE OK: 81 checks"
   ],
   "layers_check": [
     "LAYERS OK: 11582 checks across original rider cycles"
@@ -18,7 +18,7 @@
     "INTERFACE OK: 126 checks"
   ],
   "release_gles": [
-    "RELEASE OK: 76 checks"
+    "RELEASE OK: 82 checks"
   ],
   "redesign_check": [
     "REDESIGN OK: 265 checks"
@@ -31,5 +31,11 @@
   ],
   "graphics_check": [
     "GRAPHICS OK: 3715 checks across four isolated modes"
-  ]
+  ],
+  "clean_clone_build": {
+    "source_commit": "eda8072",
+    "result": "passed",
+    "engine_cache": "absent before first import",
+    "command": "bash tools/build_apk.sh"
+  }
 }
