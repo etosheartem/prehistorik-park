@@ -6,6 +6,7 @@ extends RefCounted
 const Graphics = preload("res://scripts/park_graphics.gd")
 static var _commands: Dictionary = {}
 static var _commands_loaded := false
+static var _remake_commands: Dictionary = {}
 
 
 static func _load_commands() -> void:
@@ -16,6 +17,7 @@ static func _load_commands() -> void:
 		var parsed = JSON.parse_string(FileAccess.get_file_as_string("res://assets/original/commands.json"))
 		if parsed is Dictionary:
 			_commands = parsed
+	_remake_commands = Graphics._json("res://assets/hd/commands_repaired.json")
 
 
 static func _draw_commands(view, commands: Array, at: Vector2, tint: Color) -> void:
@@ -25,7 +27,15 @@ static func _draw_commands(view, commands: Array, at: Vector2, tint: Color) -> v
 		else:
 			var rgb := int(command[5])
 			var color := Color(float((rgb >> 16) & 255) / 255.0, float((rgb >> 8) & 255) / 255.0, float(rgb & 255) / 255.0) * tint
-			view.draw_line(at + Vector2(command[1], command[2]) * view.zoom, at + Vector2(command[3], command[4]) * view.zoom, color, maxf(1.0, view.zoom), true)
+			var start: Vector2 = at + Vector2(command[1], command[2]) * view.zoom
+			var end: Vector2 = at + Vector2(command[3], command[4]) * view.zoom
+			if Graphics.is_remake(view.quality):
+				view.draw_line(start, end, Color("493723") * tint, maxf(1.5, view.zoom * 1.05), true)
+				view.draw_line(start, end, Color("c49a5a") * tint, maxf(0.8, view.zoom * 0.45), true)
+				view.draw_circle(start, view.zoom * 0.7, Color("584028") * tint, true, -1, true)
+				view.draw_circle(end, view.zoom * 0.7, Color("584028") * tint, true, -1, true)
+			else:
+				view.draw_line(start, end, color, maxf(1.0, view.zoom), true)
 
 
 static func draw_ride_body(view, building: Dictionary, tint := Color.WHITE) -> bool:
@@ -34,7 +44,8 @@ static func draw_ride_body(view, building: Dictionary, tint := Color.WHITE) -> b
 	_load_commands()
 	if not _commands.has("rides"):
 		return false
-	var frames: Array = _commands.rides[int(building.type)]
+	var source: Dictionary = _remake_commands if Graphics.is_remake(view.quality) and not _remake_commands.is_empty() else _commands
+	var frames: Array = source.rides[int(building.type)]
 	if frames.is_empty():
 		return false
 	_draw_commands(view, frames[posmod(visual_phase(view, building), frames.size())], _tile_origin(view, Vector2(building.x, building.y)), tint)
@@ -128,6 +139,14 @@ static func draw_ride_ground(view, b: Dictionary, tint := Color.WHITE) -> void:
 		if item.type < 4 or item.type > 12:
 			continue
 		var at := _tile_origin(view, item.cell)
+		if Graphics.is_remake(view.quality):
+			# Original edge sprites include a green 1px tile rim. Drawing the
+			# continuous sand surface removes the accidental green checkerboard.
+			var polygon: PackedVector2Array = view.footprint(Vector2i(item.cell))
+			var center: Vector2 = view.cell_to_screen(item.cell)
+			for i in polygon.size(): polygon[i] = center + (polygon[i] - center) * 1.002
+			view.draw_colored_polygon(polygon, Color("e2c68d") * tint)
+			continue
 		_edge(view, 0, at, tint)
 		var special: Dictionary = {5: 13, 6: 12, 7: 11, 8: 14}
 		if special.has(item.type):

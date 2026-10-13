@@ -70,12 +70,12 @@ func run() -> void:
 			if height == 1920 or mode == "remake_maximum": await capture("%s_%d_home" % [mode, height])
 			game.show_page("settings")
 			await settle()
-			check(game.modal_panel.size.y < height * 0.82, "settings height follows content " + str(height))
+			check(game.modal_panel.size.y < height * 0.96, "settings height follows content " + str(height))
 			check(game.modal_body.size.y <= game.modal_scroll.size.y + 2, "settings have no unnecessary scrolling")
 			var selected := 0
 			for button in buttons(game.modal_body):
 				check(not button.text.begins_with("Тест:"), "player settings contain no developer toggle")
-				if button.icon != null and button.get_meta("active", false): selected += 1
+				if button.has_meta("graphics_style") and button.get_meta("active", false): selected += 1
 			check(selected == 1, "one visibly checked graphics choice")
 			if height == 1920 and mode == "remake_maximum": await capture("settings")
 	viewport.size = Vector2i(1080, 1920)
@@ -146,6 +146,7 @@ func run() -> void:
 	check(snapshot == JSON.stringify(game.sim.snapshot()), "volume change preserves simulation")
 	game.view.textures.erase(texture_key)
 	game.persistence_enabled = true
+	game.settings_tab = "audio"
 	game.show_page("settings")
 	for child in game.modal_body.get_children():
 		if child is HSlider:

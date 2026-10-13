@@ -1,0 +1,99 @@
+{
+  "1": {
+    "class_type": "UnetLoaderGGUF",
+    "inputs": {
+      "unet_name": "krea2_turbo-Q4_0.gguf"
+    }
+  },
+  "2": {
+    "class_type": "CLIPLoader",
+    "inputs": {
+      "clip_name": "qwen3vl_4b_fp8_scaled.safetensors",
+      "type": "krea2",
+      "device": "default"
+    }
+  },
+  "3": {
+    "class_type": "VAELoader",
+    "inputs": {
+      "vae_name": "qwen_image_vae.safetensors"
+    }
+  },
+  "4": {
+    "class_type": "CLIPTextEncode",
+    "inputs": {
+      "text": "A lavish hand-painted illustration for a cheerful prehistoric theme-park\nmanagement game. Vertical book-cover composition, polished Franco-Belgian comic art,\ncrisp ink outlines, expressive shapes, richly painted surfaces, warm afternoon sunlight.\nA charismatic friendly scruffy caveman park keeper in a simple orange spotted animal-skin\ntunic, barefoot, happy open smile, a little green dinosaur perched on his shoulder. He\nstands on the right side of the middle third of the image, inviting us into his park.\nBehind him a magnificent working wooden Ferris wheel with four hanging wicker gondolas,\na curving timber roller coaster, a giant stone dinosaur-mouth entrance, rope bridges,\nrounded tropical palms, colorful bunting made of leaves. Tiny caveman families visit.\nThe park is built entirely from timber, stone, rope and bones. Emerald jungle valley,\nturquoise river, distant soft hazy mountains. Rich green foliage, golden sand paths,\nwarm amber highlights and deep teal shadows. Charming handcrafted toy-like detail.\nClear composition: the top quarter is airy pale turquoise sky framed by curved palms,\nfor a game title to be placed later; all the main attractions and the hero occupy the\nmiddle half. The lower quarter is a calm dark green grassy foreground suitable for\nbuttons. Beautiful professional game key art, visually readable and cohesive.\nNo lettering, no words, no logos, no watermark, no UI, no modern objects, no extra limbs.\n",
+      "clip": [
+        "2",
+        0
+      ]
+    }
+  },
+  "5": {
+    "class_type": "ConditioningZeroOut",
+    "inputs": {
+      "conditioning": [
+        "4",
+        0
+      ]
+    }
+  },
+  "6": {
+    "class_type": "EmptyLatentImage",
+    "inputs": {
+      "width": 1024,
+      "height": 1536,
+      "batch_size": 1
+    }
+  },
+  "7": {
+    "class_type": "KSampler",
+    "inputs": {
+      "model": [
+        "1",
+        0
+      ],
+      "positive": [
+        "4",
+        0
+      ],
+      "negative": [
+        "5",
+        0
+      ],
+      "latent_image": [
+        "6",
+        0
+      ],
+      "seed": 2026101301,
+      "steps": 10,
+      "cfg": 1,
+      "sampler_name": "euler",
+      "scheduler": "simple",
+      "denoise": 1
+    }
+  },
+  "8": {
+    "class_type": "VAEDecode",
+    "inputs": {
+      "samples": [
+        "7",
+        0
+      ],
+      "vae": [
+        "3",
+        0
+      ]
+    }
+  },
+  "9": {
+    "class_type": "SaveImage",
+    "inputs": {
+      "images": [
+        "8",
+        0
+      ],
+      "filename_prefix": "prehistorik_park/menu_1_0"
+    }
+  }
+}

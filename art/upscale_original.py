@@ -18,8 +18,8 @@ ROOT = Path(__file__).resolve().parents[1]
 SRC = ROOT / 'game/assets/original'
 DEST = ROOT / 'game/assets/upscaled'
 WORK = ROOT / 'art/upscale'
-BIN = Path(os.environ.get('PARK_ESRGAN_BIN', '/home/artem/lovec_dush/art/tools_releases/realesrgan-v0.2.0/realesrgan-ncnn-vulkan-v0.2.0-ubuntu/realesrgan-ncnn-vulkan'))
-MODELS = Path(os.environ.get('PARK_ESRGAN_MODELS', '/home/artem/lovec_dush/art/tools_releases/realesrgan-models-20220424/models'))
+BIN = Path(os.environ.get('PARK_ESRGAN_BIN', shutil.which('realesrgan-ncnn-vulkan') or 'realesrgan-ncnn-vulkan'))
+MODELS = Path(os.environ.get('PARK_ESRGAN_MODELS', str(BIN.parent / 'models')))
 SCALE, PAD = 4, 16
 PREPROCESS = 'nearest-opaque-rgb-bleed-v1'
 

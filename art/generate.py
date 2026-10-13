@@ -13,6 +13,7 @@ from datetime import datetime, timezone
 import fcntl
 import hashlib
 import json
+import os
 from pathlib import Path
 import re
 import time
@@ -62,11 +63,9 @@ def charged(entry: dict) -> float:
 
 
 def read_key() -> str:
-    env = Path("/home/artem/my-project/tg-ai-bot/.env").read_text()
-    match = re.search(r"^OPENROUTER_KEY\s*=\s*([^\n]+)", env, re.M)
-    if not match:
-        raise RuntimeError("OPENROUTER_KEY missing from authorized local env file")
-    key = match.group(1).strip().strip("\"'")
+    key = os.environ.get("OPENROUTER_KEY", "").strip()
+    if not key:
+        raise RuntimeError("OPENROUTER_KEY is not set; archived paid generation is optional")
     if not key.startswith("sk-or-"):
         raise RuntimeError("Invalid local key format")
     return key

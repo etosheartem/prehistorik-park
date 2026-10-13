@@ -6,7 +6,7 @@ park_sdk="${ANDROID_SDK_ROOT:-${ANDROID_HOME:-$HOME/Android/Sdk}}"
 park_avd="PrehistorikPark_API35"
 park_serial="emulator-5580"
 park_apk="${1:-build/prehistorik_park.apk}"
-park_logs="build/reports_0.3/android_emulator"
+park_logs="build/reports_1.0/android_emulator"
 park_adb="$park_sdk/platform-tools/adb"
 mkdir -p "$park_logs"
 exec 9>"$park_logs/launcher.lock"
@@ -17,7 +17,7 @@ if [[ ! -x "$park_sdk/emulator/emulator" || ! -f "$park_apk" ]]; then
     exit 1
 fi
 if "$park_adb" -s "$park_serial" get-state >/dev/null 2>&1; then
-    if ! "$park_adb" -s "$park_serial" emu avd name | tr -d '\r' | grep -Fxq "$park_avd"; then
+    if ! "$park_adb" -s "$park_serial" emu avd name | tr -d '\r' | rg -Fxq "$park_avd"; then
         echo "Port 5580 belongs to a different emulator." >&2
         exit 1
     fi
@@ -44,6 +44,12 @@ until [[ "$("$park_adb" -s "$park_serial" shell getprop sys.boot_completed 2>/de
 done
 "$park_adb" -s "$park_serial" shell input keyevent KEYCODE_WAKEUP
 "$park_adb" -s "$park_serial" shell wm dismiss-keyguard
-"$park_adb" -s "$park_serial" install -r "$park_apk"
+"$park_adb" -s "$park_serial" install --no-incremental -r "$park_apk"
 "$park_adb" -s "$park_serial" shell am start -W \
     -n ru.artem.prehistorikpark/com.godot.game.GodotAppLauncher
+# First cold boot can restart the Android graphics context during GLES fallback.
+sleep 3
+if ! "$park_adb" -s "$park_serial" shell pidof ru.artem.prehistorikpark >/dev/null; then
+    "$park_adb" -s "$park_serial" shell am start -W \
+        -n ru.artem.prehistorikpark/com.godot.game.GodotAppLauncher
+fi

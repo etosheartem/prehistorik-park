@@ -30,6 +30,32 @@ var input_enabled := true
 var touches := {}
 var touch_multitouch := false
 var bursts: Array = []
+var soft_shadows := true
+var particles_enabled := true
+var camera_speed := 1.0
+var reduced_motion := false
+var color_style := "natural"
+
+func configure_options(values: Dictionary) -> void:
+	soft_shadows = bool(values.get("shadows", true))
+	particles_enabled = bool(values.get("particles", true))
+	reduced_motion = bool(values.get("reduced_motion", false))
+	camera_speed = float(values.get("camera_speed", 1.0))
+	color_style = str(values.get("color_style", "natural"))
+	material = Graphics.color_material(color_style) if Graphics.is_remake(quality) else null
+	queue_redraw()
+
+func constrain_camera() -> void:
+	if sim == null or sim.state.is_empty(): return
+	var polygon := footprint(Vector2i.ZERO, Vector2i(sim.state.size, sim.state.size))
+	var bounds := Rect2(polygon[0], Vector2.ZERO)
+	for point in polygon: bounds = bounds.expand(point)
+	var visible_margin := minf(size.x, size.y) * 0.22
+	if bounds.end.x < visible_margin: pan.x += visible_margin - bounds.end.x
+	if bounds.position.x > size.x - visible_margin: pan.x -= bounds.position.x - (size.x - visible_margin)
+	if bounds.end.y < visible_margin: pan.y += visible_margin - bounds.end.y
+	if bounds.position.y > size.y - visible_margin: pan.y -= bounds.position.y - (size.y - visible_margin)
+
 
 func _ready() -> void:
 	mouse_filter = MOUSE_FILTER_STOP
@@ -55,7 +81,7 @@ func advance(dt: float) -> void:
 	queue_redraw()
 
 func burst(cell: Vector2i, demolition := false) -> void:
-	if Graphics.effects_level(quality) == 0: return
+	if Graphics.effects_level(quality) == 0 or not particles_enabled or reduced_motion: return
 	bursts.append({"cell": cell, "born": elapsed, "demolition": demolition})
 	if bursts.size() > 12: bursts.pop_front()
 	queue_redraw()
@@ -135,7 +161,7 @@ func _gui_input(event: InputEvent) -> void:
 			touches[event.index] = event.position
 			if not touch_multitouch:
 				if event.position.distance_to(press_at) > 14: dragging = true
-				if dragging: pan = pan_start + event.position - press_at
+				if dragging: pan = pan_start + (event.position - press_at) * camera_speed
 		hovered = screen_to_cell(event.position)
 		hover_changed.emit(hovered)
 	elif event is InputEventMouseButton:
@@ -155,17 +181,26 @@ func _gui_input(event: InputEvent) -> void:
 	elif event is InputEventMouseMotion:
 		if pressed:
 			if event.position.distance_to(press_at) > 14: dragging = true
-			if dragging: pan = pan_start + event.position - press_at
+			if dragging: pan = pan_start + (event.position - press_at) * camera_speed
 		var cell := screen_to_cell(event.position)
 		if cell != hovered:
 			hovered = cell
 			hover_changed.emit(cell)
 	elif event is InputEventMagnifyGesture:
 		change_zoom(event.factor, event.position)
+	constrain_camera()
 	queue_redraw()
 
 func _texture(path: String) -> Texture2D:
-	if not textures.has(path): textures[path] = load(path) if ResourceLoader.exists(path) else null
+	if not textures.has(path):
+		var texture: Texture2D = load(path) if ResourceLoader.exists(path) else null
+		if texture and quality == "remake_medium" and path.begins_with("res://assets/hd/") and path.ends_with(".png") and maxf(texture.get_width(), texture.get_height()) > 48 and DisplayServer.get_name() != "headless":
+			var compact := texture.get_image()
+			if compact:
+				compact.resize(maxi(1, compact.get_width() / 2), maxi(1, compact.get_height() / 2), Image.INTERPOLATE_LANCZOS)
+				compact.generate_mipmaps()
+				texture = ImageTexture.create_from_image(compact)
+		textures[path] = texture
 	return textures[path]
 
 func texture_for(path: String) -> Texture2D:
@@ -219,7 +254,7 @@ func _draw() -> void:
 	var below := PackedVector2Array()
 	for v in border: below.append(v + Vector2(0, 16 * zoom))
 	draw_colored_polygon(below, Color("283728"))
-	draw_colored_polygon(border, Color("7db34b") if Graphics.is_remake(quality) else Color("50ae18"))
+	draw_colored_polygon(border, Color("78ad43") if Graphics.is_remake(quality) else Color("50ae18"))
 	# Coplanar tiles do not overlap: group them by material to avoid one GPU
 	# texture switch per square on a full-park overview.
 	var batches := {}
@@ -236,8 +271,14 @@ func _draw() -> void:
 			if sim.state.paths.has(key):
 				var type: int = int(sim.state.paths[key])
 				name = "water_%d" % (int(elapsed * 3) % 3) if type == 13 else "path_stone" if type in [4,6] else "path_dirt"
-			if not batches.has(name): batches[name] = []
-			batches[name].append(at)
+			if Graphics.is_remake(quality) and name.begins_with("grass"):
+				# A continuous meadow has no tile alpha edges, seams or sawteeth.
+				var mark := cell_to_screen(Vector2(cell)) + Vector2((x * 7 + y * 3) % 17 - 8, (x * 3 + y * 7) % 7 - 3) * zoom
+				if (x * 11 + y * 7) % 4 == 0:
+					draw_line(mark, mark + Vector2(0.7, -1.2) * zoom, Color(0.27, 0.45, 0.18, 0.18), maxf(0.6, zoom * 0.18), true)
+			else:
+				if not batches.has(name): batches[name] = []
+				batches[name].append(at)
 			if show_grid: visible_cells.append(cell)
 	for name in batches:
 		if art.tiles.has(name):
@@ -286,7 +327,7 @@ func _draw() -> void:
 		if preview_kind in ["ride", "prop"]:
 			_draw_building({"kind": preview_kind, "type": preview_type, "x": hovered.x, "y": hovered.y,
 				"rotation": preview_rotation, "phase": 0, "working": true, "open": true}, Color(1, 1, 1, 0.62))
-	if Graphics.effects_level(quality) > 0:
+	if Graphics.effects_level(quality) > 0 and particles_enabled and not reduced_motion:
 		for event in bursts:
 			var age := elapsed - float(event.born)
 			var base := cell_to_screen(event.cell)
@@ -331,7 +372,7 @@ func _draw_building(b: Dictionary, tint := Color.WHITE) -> void:
 		var bounds := Rect2(at + Vector2(offset[0],offset[1]) * zoom, frame_size * zoom)
 		for point in footprint(Vector2i(b.x,b.y), Vector2i(b.get("w",1),b.get("h",1))): bounds = bounds.expand(point)
 		if not bounds.grow(45*zoom).intersects(Rect2(Vector2.ZERO,size)): return
-	if Graphics.effects_level(quality) > 0 and b.kind == "prop":
+	if Graphics.effects_level(quality) > 0 and soft_shadows and b.kind == "prop":
 		var base := cell_to_screen(Vector2(b.x, b.y))
 		draw_set_transform(base, 0, Vector2(zoom * 1.5, zoom * 0.6))
 		for ring in range(4, 0, -1):
@@ -364,7 +405,7 @@ func _draw_person(person: Dictionary, worker: bool) -> void:
 	var phase := int(person.get("anim", elapsed * 6))
 	var frame: Dictionary = animation.frames[int(seq[posmod(phase, seq.size())])]
 	var at := cell_to_screen(Vector2(float(person.x), float(person.y)))
-	if Graphics.effects_level(quality) > 0:
+	if Graphics.effects_level(quality) > 0 and soft_shadows:
 		draw_set_transform(at, 0, Vector2(zoom * 1.4, zoom * 0.55))
 		draw_circle(Vector2.ZERO, 2.4, Color(0.07, 0.12, 0.06, 0.17))
 		draw_set_transform(Vector2.ZERO)

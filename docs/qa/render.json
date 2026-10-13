@@ -1,0 +1,36 @@
+{
+  "buildings": 45,
+  "guests": 200,
+  "modes": {
+    "original": {
+      "draw_calls": 335.0,
+      "texture_memory_bytes": 28859392.0
+    },
+    "original_upscaled": {
+      "draw_calls": 482.0,
+      "texture_memory_bytes": 38481920.0
+    },
+    "remake_maximum": {
+      "draw_calls": 585.0,
+      "texture_memory_bytes": 113318912.0
+    },
+    "remake_medium": {
+      "draw_calls": 585.0,
+      "texture_memory_bytes": 65645568.0
+    }
+  },
+  "note": "Desktop QHD render; not a phone benchmark. Debug switch is used after restoring the completed acceptance park.",
+  "render_draw_calls": 520.0,
+  "renderer": "NVIDIA GeForce RTX 3070 Ti",
+  "simulation_ms_max": 7.893,
+  "simulation_ms_mean": 0.472845454545454,
+  "simulation_ms_p95": 2.559,
+  "source_public_cash": 13940,
+  "source_public_status": "won",
+  "texture_memory_bytes": 148281344.0,
+  "video_memory_bytes": 232264768.0,
+  "viewport": [
+    1440,
+    2560
+  ]
+}

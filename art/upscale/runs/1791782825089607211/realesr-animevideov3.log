@@ -1,0 +1,42 @@
+[0 NVIDIA GeForce RTX 3070 Ti]  queueC=2[8]  queueG=0[16]  queueT=1[2]
+[0 NVIDIA GeForce RTX 3070 Ti]  bugsbn1=0  bugbilz=0  bugcopc=0  bugihfa=0
+[0 NVIDIA GeForce RTX 3070 Ti]  fp16-p/s/a=1/1/1  int8-p/s/a=1/1/1
+[0 NVIDIA GeForce RTX 3070 Ti]  subgroup=32  basic=1  vote=1  ballot=1  shuffle=1
+0.00%
+0.00%
+50.00%
+0.00%
+0.00%
+0.00%
+0.00%
+0.00%
+0.00%
+0.00%
+0.00%
+0.00%
+0.00%
+0.00%
+0.00%
+0.00%
+0.00%
+0.00%
+0.00%
+0.00%
+0.00%
+0.00%
+0.00%
+0.00%
+0.00%
+0.00%
+0.00%
+0.00%
+0.00%
+0.00%
+0.00%
+0.00%
+0.00%
+0.00%
+50.00%
+0.00%
+0.00%
+0.00%

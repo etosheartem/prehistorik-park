@@ -9,12 +9,22 @@ const MenuFx = preload("res://scripts/park_menu_fx.gd")
 const MiniMap = preload("res://scripts/park_minimap.gd")
 const Store = preload("res://scripts/park_store.gd")
 const Graphics = preload("res://scripts/park_graphics.gd")
+const Preferences = preload("res://scripts/park_preferences.gd")
 const ArtTheme = preload("res://scripts/park_theme.gd")
 
 var sim = Sim.new()
 var view: Control
 var sound: Node
 var settings := {}
+var settings_tab := "graphics"
+var remake_quality := "remake_maximum"
+var catalog_query := ""
+var catalog_search: LineEdit
+var keyboard_pixels := 0
+var save_status: Label
+var last_save_ok := true
+var pending_import := {}
+var data_notice := ""
 var save_path := "user://park.json"
 var settings_path := "user://settings.json"
 var persistence_enabled := true
@@ -239,6 +249,13 @@ func _build_hud() -> void:
 		tab.size_flags_horizontal = SIZE_EXPAND_FILL
 		tab.add_theme_font_size_override("font_size", 24)
 		tab.set_meta("category", category)
+	catalog_search = LineEdit.new()
+	catalog_search.placeholder_text = "Найти постройку…"
+	catalog_search.clear_button_enabled = true
+	catalog_search.custom_minimum_size.y = 76
+	catalog_search.add_theme_font_size_override("font_size", 27)
+	library.add_child(catalog_search)
+	catalog_search.text_changed.connect(func(value): catalog_query = value.strip_edges(); show_catalog(catalog_category, true))
 	var filter_row := HBoxContainer.new()
 	library.add_child(filter_row)
 	catalog_count = _label(filter_row, "", 23)
@@ -334,7 +351,7 @@ func _build_modal() -> void:
 	modal_body.add_theme_constant_override("separation", 18)
 	modal_scroll.add_child(modal_body)
 	modal_body.minimum_size_changed.connect(_schedule_layout)
-	home_footer = _label(modal, "Сделано из костей, палок и больших идей · 0.3", 21, true)
+	home_footer = _label(modal, "Офлайн · версия 1.0", 21, true)
 	home_footer.horizontal_alignment = HORIZONTAL_ALIGNMENT_CENTER
 	home_footer.add_theme_color_override("font_color", ArtTheme.LIGHT)
 	home_footer.mouse_filter = MOUSE_FILTER_IGNORE
@@ -357,6 +374,7 @@ func _layout() -> void:
 			var ratio := size.y / float(physical.y)
 			inset_top = maxf(0, safe.position.y) * ratio
 			inset_bottom = maxf(0, physical.y - safe.end.y) * ratio
+			inset_bottom = maxf(inset_bottom, keyboard_pixels * ratio)
 	var usable := size.y - inset_top - inset_bottom
 	top.position = Vector2(18, 18 + inset_top)
 	top.size = Vector2(size.x - 36, 124)
@@ -384,6 +402,7 @@ func _layout() -> void:
 	# Management is a non-modal sheet: the visible park remains draggable.
 	sheet_shade.visible = catalog_panel.visible
 	view.input_enabled = not modal.visible and not sheet_shade.visible
+	view.show_grid = bool(settings.get("build_grid", true)) and tool_kind in ["ride", "prop", "path"]
 	for id in nav_buttons:
 		var active: bool = (id == "rides" and catalog_panel.visible) or (id == "staff" and inspector.visible and panel_mode == "staff") or (id == "stats" and inspector.visible and panel_mode in ["stats", "goals"])
 		ArtTheme.selected(nav_buttons[id], active)
@@ -407,19 +426,20 @@ func _layout() -> void:
 		modal_panel.size = Vector2(minf(900, size.x - 120), menu_height)
 		modal_panel.position = Vector2((size.x - modal_panel.size.x) * 0.5, start + hero_height)
 		if remake:
-			home_background.position = Vector2(0, start)
-			home_background.size = Vector2(size.x, hero_height + 120)
+			modal_panel.position.y = size.y - inset_bottom - menu_height - 92
+			home_background.position = Vector2.ZERO
+			home_background.size = size
 			home_background.stretch_mode = TextureRect.STRETCH_KEEP_ASPECT_COVERED
 		else:
 			home_background.position = Vector2(64, start)
 			home_background.size = Vector2(size.x - 128, hero_height - 14)
 			home_background.stretch_mode = TextureRect.STRETCH_KEEP_ASPECT_CENTERED
-		title_board.position = Vector2(size.x * 0.12, start + 16)
-		title_board.size = Vector2(size.x * 0.76, 234)
+		title_board.position = Vector2(size.x * 0.12, inset_top + usable * 0.07 if remake else start + 16)
+		title_board.size = Vector2(size.x * 0.76, 218)
 		home_blend.queue_redraw()
-		home_subtitle.position = Vector2(30, start + hero_height - 58)
+		home_subtitle.position = Vector2(30, modal_panel.position.y - 55)
 		home_subtitle.size = Vector2(size.x - 60, 44)
-		home_footer.position = Vector2(40, start + hero_height + menu_height + 16)
+		home_footer.position = Vector2(40, modal_panel.position.y + menu_height + 16)
 		home_footer.size = Vector2(size.x - 80, 56)
 	else:
 		var desired := modal_body.get_combined_minimum_size().y + 64
@@ -450,10 +470,14 @@ func _apply_settings() -> void:
 		var msaa := Graphics.msaa(applied_quality)
 		if RenderingServer.get_current_rendering_method() == "gl_compatibility": msaa = Viewport.MSAA_DISABLED
 		get_viewport().msaa_2d = msaa
-		Engine.max_fps = Graphics.fps(applied_quality)
+
 		if page == "home": _load_menu_art()
 		else: home_background.texture = null
 		if catalog_panel.visible: show_catalog(catalog_category)
+	if Graphics.is_remake(applied_quality): remake_quality = applied_quality
+	Engine.max_fps = int(settings.get("fps", 60))
+	view.configure_options(settings)
+	menu_fx.motion_enabled = not bool(settings.get("reduced_motion", false))
 	if running and bool(sim.state.debug) != bool(settings.debug): sim.set_debug(bool(settings.debug))
 	if persistence_enabled: Store.save_settings(settings_path, settings)
 	_layout()
@@ -536,6 +560,26 @@ func show_page(next_page: String) -> void:
 		_demolition_page()
 	elif next_page == "settings":
 		_settings_page()
+	elif next_page == "data_notice":
+		_page_header("Сохранения", func(): show_page("settings"))
+		_label(modal_body, data_notice, 28, true)
+		_button(modal_body, "Понятно", func(): show_page("settings")).theme_type_variation = "PrimaryButton"
+	elif next_page == "import_confirm":
+		_page_header("Открыть парк из файла?", func(): pending_import = {}; show_page("settings"))
+		var imported: Dictionary = pending_import.get("game", {})
+		_label(modal_body, "%s · %d монет · %d построек\nТекущий парк будет отдельно сохранён перед импортом." % [_scenario_name(int(imported.get("scenario", -1))), int(imported.get("money", 0)), imported.get("buildings", []).size()], 28, true)
+		_button(modal_body, "Открыть этот парк", func(): restore_save_data(pending_import); pending_import = {}).theme_type_variation = "PrimaryButton"
+		_button(modal_body, "Отмена", func(): pending_import = {}; show_page("settings"))
+	elif next_page == "reset_settings":
+		_page_header("Вернуть настройки?", func(): show_page("settings"))
+		_label(modal_body, "Графика, звук и управление вернутся к начальным значениям. Твой парк и его копии останутся на месте.", 28, true)
+		_button(modal_body, "Вернуть начальные настройки", func(): settings = Store.defaults(); _apply_settings(); show_page("settings")).theme_type_variation = "PrimaryButton"
+		_button(modal_body, "Оставить как есть", func(): show_page("settings"))
+	elif next_page == "restore_backup":
+		_page_header("Восстановить личную копию?", func(): show_page("settings"))
+		_label(modal_body, "Игра вернётся к моменту создания копии. Текущий парк будет отдельно сохранён перед восстановлением.", 28, true)
+		_button(modal_body, "Восстановить", restore_manual_backup).theme_type_variation = "PrimaryButton"
+		_button(modal_body, "Отмена", func(): show_page("settings"))
 	elif next_page == "help":
 		_help_page()
 	elif next_page == "guide":
@@ -561,38 +605,98 @@ func _back_button() -> void:
 	_button(modal_body, "Назад", func(): show_page("pause" if running else "home"))
 
 func _settings_page() -> void:
-	_page_header("Настройки", func(): show_page("pause" if running else "home"))
-	_label(modal_body, "ЗВУК", 23).add_theme_color_override("font_color", ArtTheme.MUTED)
-	for spec in [["Музыка", "music"], ["Эффекты", "effects"]]:
-		var key: String = spec[1]
-		var value := _label(modal_body, "%s · %d%%" % [spec[0], roundi(float(settings[key]) * 100)], 28)
-		var slider := HSlider.new()
-		slider.min_value = 0
-		slider.max_value = 100
-		slider.step = 1
-		slider.value = float(settings[key]) * 100
-		slider.custom_minimum_size.y = 72
-		modal_body.add_child(slider)
-		slider.value_changed.connect(func(number):
-			settings[key] = number / 100
-			value.text = "%s · %d%%" % [spec[0], int(number)]
-			sound.configure(settings))
-		slider.drag_ended.connect(func(_changed):
-			if persistence_enabled: Store.save_settings(settings_path, settings))
-	_label(modal_body, "ОФОРМЛЕНИЕ ПАРКА", 23).add_theme_color_override("font_color", ArtTheme.MUTED)
-	var notes := ["Родная пиксельная графика", "Знакомая игра с чёткими деталями", "Новые рисунки, умеренные эффекты", "Новые рисунки, полные эффекты"]
-	for index in Graphics.IDS.size():
-		var key: String = Graphics.IDS[index]
-		var active: bool = settings.quality == key
-		var button := _button(modal_body, str(Graphics.LABELS[index]), func(): settings.quality = key; _apply_settings(); show_page("settings"))
-		button.custom_minimum_size.y = 94
-		ArtTheme.selected(button, active)
-		if active: button.icon = ArtTheme.icon("check")
-		button.tooltip_text = notes[index]
-	_label(modal_body, "Графику можно менять в любой момент — парк сохранится.", 24, true)
-	_button(modal_body, "Готово", func():
-		if persistence_enabled: Store.save_settings(settings_path, settings)
-		show_page("pause" if running else "home")).theme_type_variation = "PrimaryButton"
+	Preferences.build(self)
+
+func manual_save_path() -> String:
+	return save_path + ".manual.json"
+
+func make_manual_backup() -> void:
+	if not running: return
+	var data := _save_data()
+	if Store.write_json(manual_save_path(), data):
+		show_page("settings")
+		_toast("Личная копия сохранена")
+	else:
+		_toast("Не удалось записать копию. Проверь свободное место.")
+
+func restore_manual_backup() -> bool:
+	return restore_save_data(Store.read_json(manual_save_path()))
+
+func restore_save_data(data: Dictionary) -> bool:
+	var candidate := Sim.new()
+	if data.get("format") != "prehistorik-park" or not data.get("game") is Dictionary or not candidate.restore(data.game):
+		data_notice = "Копия повреждена. Текущий парк остался на месте."
+		show_page("data_notice")
+		return false
+	if persistence_enabled:
+		if running and not Store.write_json(save_path + ".before_restore.json", _save_data()):
+			data_notice = "Не удалось защитить текущий парк. Освободи место на устройстве и попробуй снова."
+			show_page("data_notice")
+			return false
+		if not Store.write_json(save_path, data):
+			data_notice = "Не удалось записать копию. Текущий парк не изменён."
+			show_page("data_notice")
+			return false
+	sim.restore(data.game)
+	running = true
+	result_shown = sim.state.status != "playing"
+	last_messages = sim.state.messages.size()
+	_clear_selection()
+	view.focus_activity()
+	resume_game()
+	_toast("Парк восстановлен")
+	return true
+
+func choose_save_file(exporting: bool) -> void:
+	var picker := FileDialog.new()
+	picker.use_native_dialog = true
+	picker.access = FileDialog.ACCESS_FILESYSTEM
+	picker.file_mode = FileDialog.FILE_MODE_SAVE_FILE if exporting else FileDialog.FILE_MODE_OPEN_FILE
+	picker.title = "Экспорт парка" if exporting else "Импорт парка"
+	picker.filters = PackedStringArray(["*.json ; Парк"])
+	if exporting: picker.current_file = "prehistorik-park.json"
+	add_child(picker)
+	picker.canceled.connect(picker.queue_free)
+	picker.file_selected.connect(func(path):
+		if exporting: export_save_to(path)
+		else: prepare_import(path)
+		picker.queue_free())
+	picker.popup_centered_ratio(0.85)
+
+func export_save_to(path: String) -> bool:
+	var data := _save_data() if running else Store.read_json(save_path)
+	if data.is_empty(): return false
+	# Android SAF returns content:// URIs, which cannot be atomically renamed.
+	var file := FileAccess.open(path, FileAccess.WRITE)
+	var ok := file != null
+	if file:
+		file.store_string(JSON.stringify(data))
+		file.flush()
+		ok = file.get_error() == OK
+		file.close()
+	data_notice = "Файл парка сохранён. Его можно перенести на другое устройство и открыть через «Импорт»." if ok else "Не удалось сохранить файл. Выбери другую папку или освободи место."
+	show_page("data_notice")
+	return ok
+
+func prepare_import(path: String) -> bool:
+	pending_import = {}
+	var file := FileAccess.open(path, FileAccess.READ)
+	if file and file.get_length() <= 8 * 1024 * 1024:
+		var value = JSON.parse_string(file.get_as_text())
+		file.close()
+		if value is Dictionary and value.get("format") == "prehistorik-park" and value.get("game") is Dictionary:
+			var candidate := Sim.new()
+			if candidate.restore(value.game): pending_import = value
+	if pending_import.is_empty():
+		data_notice = "Этот файл не похож на сохранение парка или повреждён. Текущая игра не изменена."
+		show_page("data_notice")
+		return false
+	show_page("import_confirm")
+	return true
+
+func _save_data() -> Dictionary:
+	return {"format": "prehistorik-park", "version": 1, "saved_at": Time.get_datetime_string_from_system(),
+		"game": sim.snapshot(), "camera": {"zoom": view.zoom, "pan": [view.pan.x, view.pan.y]}}
 
 func _help_page() -> void:
 	_page_header("Как играть", func(): show_page("pause" if running else "home"))
@@ -622,6 +726,10 @@ func _scenario_name(id: int) -> String:
 	return "Свободный парк" if id == -1 else "Соревнование" if id == -2 else str(sim.scenarios[id].name).capitalize() if id >= 0 and id < sim.scenarios.size() else "Парк"
 
 func new_game(scenario := 0, difficulty := 0, seed_value := -1) -> void:
+	if running and persistence_enabled and not Store.write_json(save_path + ".previous_park.json", _save_data()):
+		data_notice = "Не удалось защитить предыдущий парк. Освободи место и попробуй снова."
+		show_page("data_notice")
+		return
 	sim.new_game(scenario, difficulty, randi() if seed_value < 0 else seed_value)
 	speed = 1
 	speed_button.text = "▶ 1×"
@@ -640,6 +748,7 @@ func resume_game() -> void:
 	if not running: return
 	page = ""
 	modal.hide()
+	_clear(modal_body)
 	home_background.hide()
 	home_background.texture = null
 	original_menu.hide()
@@ -654,7 +763,11 @@ func resume_game() -> void:
 func save_game() -> bool:
 	if not persistence_enabled or not running: return false
 	save_timer = 0
-	return Store.write_json(save_path, {"format": "prehistorik-park", "version": 1, "game": sim.snapshot(), "camera": {"zoom": view.zoom, "pan": [view.pan.x, view.pan.y]}})
+	last_save_ok = Store.write_json(save_path, _save_data())
+	if is_instance_valid(save_status):
+		save_status.text = "Сохранено" if last_save_ok else "Ошибка сохранения"
+	if not last_save_ok: _toast("Не удалось сохранить парк. Проверь свободное место.")
+	return last_save_ok
 
 func load_game() -> void:
 	if running:
@@ -719,9 +832,11 @@ func _toolbar(id: String) -> void:
 	elif id == "goals": show_goals()
 	else: show_catalog(id)
 
-func show_catalog(category: String) -> void:
-	if catalog_panel.visible: catalog_positions[catalog_category] = catalog_scroll.scroll_vertical
-	_clear_selection()
+func show_catalog(category: String, filtering := false) -> void:
+	if catalog_panel.visible:
+		catalog_positions[catalog_category] = 0 if filtering else catalog_scroll.scroll_vertical
+	else:
+		_clear_selection()
 	catalog_category = category
 	message_time = 0
 	message_label.hide()
@@ -751,6 +866,7 @@ func show_catalog(category: String) -> void:
 		var available: bool = sim.availability(kind, id)
 		if available: available_count += 1
 		if catalog_available and not available: continue
+		if not catalog_query.is_empty() and not str(item.name).to_lower().contains(catalog_query.to_lower()): continue
 		shown += 1
 		var card := Button.new()
 		card.mouse_filter = MOUSE_FILTER_PASS
@@ -799,8 +915,10 @@ func show_catalog(category: String) -> void:
 		var status := _label(body, "Можно строить" if available else "Закрыто · как открыть?", 22)
 		status.mouse_filter = MOUSE_FILTER_IGNORE
 		status.add_theme_color_override("font_color", ArtTheme.MUTED)
-	catalog_count.text = "%d объектов · открыто %d" % [entries.size(), available_count]
-	if shown == 0: _label(catalog_row, "Здесь пока нет открытых построек", 28, true)
+	catalog_count.text = "%d объектов · открыто %d" % [entries.size(), available_count] if catalog_query.is_empty() else "Найдено: %d" % shown
+	if shown == 0:
+		var empty := _label(catalog_row, "Ничего не найдено. Измени запрос." if not catalog_query.is_empty() else "Здесь пока нет открытых построек", 26, true)
+		empty.size_flags_horizontal = SIZE_EXPAND_FILL
 	catalog_scroll.set_deferred("scroll_vertical", int(catalog_positions.get(category, 0)))
 	_layout()
 
@@ -1153,6 +1271,11 @@ func _toast(text: String) -> void:
 	message_time = 7.0
 
 func _process(dt: float) -> void:
+	if OS.has_feature("android"):
+		var height := DisplayServer.virtual_keyboard_get_height()
+		if height != keyboard_pixels:
+			keyboard_pixels = height
+			_layout()
 	if suspended: return
 	if running and not modal.visible:
 		sim.advance(minf(dt, 0.25) * speed)
@@ -1200,6 +1323,7 @@ func _go_back() -> void:
 	elif page == "demolish_confirm": _cancel_demolition()
 	elif page == "setup": show_page("scenarios" if chosen_scenario > 0 else "new")
 	elif page == "scenarios": show_page("new")
+	elif page in ["reset_settings", "restore_backup", "data_notice", "import_confirm"]: pending_import = {}; show_page("settings")
 	elif page == "guide": show_page("help")
 	elif page == "home": _quit_game()
 	else: show_page("pause" if running else "home")
@@ -1346,12 +1470,7 @@ func _load_menu_art() -> void:
 	var path := Graphics.menu_path(applied_quality, true)
 	if not ResourceLoader.exists(path): return
 	var source: Texture2D = load(path)
-	if Graphics.is_remake(applied_quality):
-		var crop := AtlasTexture.new()
-		crop.atlas = source
-		crop.region = Rect2(0, source.get_height() * 0.12, source.get_width(), source.get_height() * 0.48)
-		home_background.texture = crop
-	else: home_background.texture = source
+	home_background.texture = source
 	home_background.set_meta("mode", applied_quality)
 	home_background.texture_filter = Graphics.texture_filter(applied_quality)
 

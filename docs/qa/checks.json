@@ -1,0 +1,35 @@
+{
+  "upscale": [
+    "UPSCALE OK: 3041 checks; 40 GPU sources; 518 mapped resources; 192 isolated parts; API $0"
+  ],
+  "release_check": [
+    "RELEASE OK: 75 checks"
+  ],
+  "layers_check": [
+    "LAYERS OK: 11582 checks across original rider cycles"
+  ],
+  "audio_check": [
+    "AUDIO OK: 43 checks"
+  ],
+  "graphics_gles": [
+    "GRAPHICS OK: 4463 checks across four isolated modes"
+  ],
+  "interface_check": [
+    "INTERFACE OK: 126 checks"
+  ],
+  "release_gles": [
+    "RELEASE OK: 76 checks"
+  ],
+  "redesign_check": [
+    "REDESIGN OK: 265 checks"
+  ],
+  "check_assets": [
+    "ASSETS CHECK OK: 4369 assertions, 822 unique images, 35 exact original PNGs, stable1209 ride phases"
+  ],
+  "simulation": [
+    "SIMULATION OK: 579 checks"
+  ],
+  "graphics_check": [
+    "GRAPHICS OK: 3715 checks across four isolated modes"
+  ]
+}

@@ -1,0 +1,24 @@
+{
+  "asset": "menu_source.png",
+  "model": "Krea 2 Turbo Q4_0",
+  "backend": "local ComfyUI 0.37.0",
+  "gpu": "NVIDIA RTX 3070 Ti 8 GB",
+  "seed": 2026101301,
+  "steps": 10,
+  "dimensions": [
+    1024,
+    1536
+  ],
+  "api_cost_usd": 0,
+  "sha256": "5353d00216654624504f1f8b6c16350b9457ac68767c78bbf4ead3a774421441",
+  "upscale": {
+    "engine": "Real-ESRGAN NCNN Vulkan",
+    "model": "realesr-animevideov3",
+    "scale": 2,
+    "dimensions": [
+      2048,
+      3072
+    ],
+    "sha256": "3c03687d902d29f8269e0c70b5f20c5fda484ea240641b5b5e6d10ab67ec73b8"
+  }
+}

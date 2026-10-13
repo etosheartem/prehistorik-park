@@ -3,7 +3,7 @@ extends RefCounted
 ## resolve a remake image, including secondary atlas crops and menu textures.
 
 const IDS := ["original", "original_upscaled", "remake_medium", "remake_maximum"]
-const LABELS := ["Оригинальные", "Оригинальные · апскейл", "Ремейк · среднее (beta)", "Ремейк · макс (beta)"]
+const LABELS := ["Оригинальные", "Оригинальные · апскейл", "Ремейк · баланс", "Ремейк · детали"]
 const DEFAULT := "original_upscaled"
 const ORIGINAL_ROOT := "res://assets/original/"
 const UPSCALED_ROOT := "res://assets/upscaled/"
@@ -75,7 +75,9 @@ static func load_manifest(mode: String) -> Dictionary:
 
 static func load_part_manifest(mode: String) -> Dictionary:
 	if normalize(mode) == "original": return {}
-	return _filtered(mode, _json(asset_root(mode) + "part_manifest.json"), true)
+	var result := _filtered(mode, _json(asset_root(mode) + "part_manifest.json"), true)
+	if is_remake(mode): result.merge(_filtered(mode, _json(REMAKE_ROOT + "structural_manifest.json"), true), true)
+	return result
 
 static func menu_path(mode: String, portrait := true) -> String:
 	if not is_remake(mode):
@@ -103,4 +105,11 @@ static func art_for(mode: String, source: Dictionary) -> Dictionary:
 				item.variants = item.source_variants
 				item.frames = item.source_variants.working
 				item.erase("local_repair")
+	return result
+
+static func color_material(style: String) -> ShaderMaterial:
+	var result := ShaderMaterial.new()
+	result.shader = preload("res://scripts/park_color.gdshader")
+	result.set_shader_parameter("saturation", 1.18 if style == "vivid" else 1.0)
+	result.set_shader_parameter("warmth", 0.08 if style == "warm" else 0.0)
 	return result

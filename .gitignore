@@ -24,8 +24,9 @@ art/pricing/
 art/review/*
 !art/review/acceptance_park.json
 art/upscale/pilot/
-art/upscale/runs/
 
 # Local editor settings
 .idea/
 .vscode/
+
+.venv/

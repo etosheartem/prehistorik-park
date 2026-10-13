@@ -86,4 +86,13 @@ static func make(mode := "original_upscaled") -> Theme:
 	result.set_stylebox("hover", "CheckButton", surface("paper", 14))
 	result.set_stylebox("pressed", "CheckButton", surface("amber", 14))
 	result.set_constant("h_separation", "CheckButton", 16)
+	result.set_stylebox("normal", "LineEdit", surface("paper", 20))
+	result.set_stylebox("read_only", "LineEdit", surface("disabled", 20))
+	result.set_stylebox("focus", "LineEdit", box(Color.TRANSPARENT, GOLD, 0))
+	result.set_color("font_color", "LineEdit", INK)
+	result.set_color("font_placeholder_color", "LineEdit", MUTED)
+	result.set_color("caret_color", "LineEdit", INK)
+	result.set_color("selection_color", "LineEdit", ACCENT)
+	result.set_color("font_selected_color", "LineEdit", INK)
+	result.set_color("clear_button_color", "LineEdit", MUTED)
 	return result

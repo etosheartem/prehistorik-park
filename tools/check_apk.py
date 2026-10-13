@@ -12,13 +12,14 @@ with zipfile.ZipFile(apk) as z:
     assert not forbidden, f'Unwanted source files included: {forbidden[:4]}'
     assets=[n for n in names if n.startswith('assets/')]
     assert 'assets/assets/data/original.json' in assets, 'Original rules not bundled'
+    assert 'assets/assets/hd/commands_repaired.json' in assets, 'Remake geometry repairs not bundled'
     assert 'assets/assets/hd/commands.json' in assets, 'HD animation commands not bundled'
     assert 'assets/assets/hd/part_manifest.json' in assets, 'HD parts not bundled'
     hd=json.loads(z.read('assets/assets/hd/manifest.json'))
     actor_frames=sum('/actors/' in key for key in hd)
     assert actor_frames == 224, f'Incomplete HD actors: {actor_frames}/224'
     texture_paths=set()
-    for index in ('manifest.json','part_manifest.json','terrain/manifest.json'):
+    for index in ('manifest.json','part_manifest.json','terrain/manifest.json','structural_manifest.json'):
         mapping=json.loads(z.read('assets/assets/hd/'+index))
         texture_paths.update(value['path'] if isinstance(value,dict) else value for value in mapping.values())
     hd_textures=len(texture_paths)
@@ -59,7 +60,8 @@ if len(sys.argv)>2:
     assert 'res/mipmap-anydpi-v26/icon.xml' in names, 'Missing adaptive icon'
     for layer in ('foreground','background','monochrome'):
         assert 'res/mipmap/icon_'+layer+'.webp' in names, f'Missing adaptive icon layer: {layer}'
-    report.update(orientation='portrait',internet_permission=False,adaptive_icon='passed')
+    assert not re.search(r':debuggable\([^)]*\)=(?:true|0xffffffff|1)\s', manifest), 'Release is debuggable'
+    report.update(debuggable=False, orientation='portrait',internet_permission=False,adaptive_icon='passed')
     report['exporter_note']='Godot retains an unused themed_icon.xml resource-table entry; the active icon.xml includes all three adaptive layers.'
-Path('build/reports_0.3/apk.json').write_text(json.dumps(report,ensure_ascii=False,indent=2)+'\n')
+(Path(sys.argv[2]).with_name('apk.json') if len(sys.argv)>2 else apk.with_suffix('.json')).write_text(json.dumps(report,ensure_ascii=False,indent=2)+'\n')
 print(json.dumps(report,ensure_ascii=False))
