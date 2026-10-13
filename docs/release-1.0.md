@@ -45,4 +45,4 @@ APK установлена поверх 0.3 на Android 15; парк сохра
 Сборка `export-release`, версия Android package — 5. Сохранён сертификат предыдущих
 частных APK для обновления без удаления игры; интернет-разрешения нет.
 
-[Скачать APK](../../releases/latest) · [Скриншоты и видео](../README.md)
+[Скачать APK](https://github.com/etosheartem/prehistorik-park/releases/latest) · [Скриншоты и видео](../README.md)

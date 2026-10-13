@@ -9,7 +9,7 @@
 
 **24 аттракциона · 27 объектов · 6 сценариев · 3 стиля графики · полностью офлайн**
 
-[Скачать APK 1.0.0](../../releases/latest) · [Что нового](docs/release-1.0.md) · [Сборка и проверки](docs/development.md)
+[Скачать APK 1.0.0](https://github.com/etosheartem/prehistorik-park/releases/latest) · [Что нового](docs/release-1.0.md) · [Сборка и проверки](docs/development.md)
 
 <img src="docs/media/home.png" width="280" alt="Новое главное меню">
 <img src="docs/media/park.png" width="280" alt="Ремейк: работающий парк с посетителями">
@@ -66,7 +66,7 @@
 
 ## Установить и попробовать
 
-1. Скачать `prehistorik_park_1.0.0.apk` из [последнего релиза](../../releases/latest).
+1. Скачать `prehistorik_park_1.0.0.apk` из [последнего релиза](https://github.com/etosheartem/prehistorik-park/releases/latest).
 2. Установить на **Android 7.0+ с ARM64**. Сборка обновляет ранее установленную 0.3
    с тем же сертификатом без удаления сохранения.
 3. Начать с обучения или выбрать «Настройки → Оформление → Ремейк».

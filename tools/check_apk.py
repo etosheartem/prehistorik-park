@@ -31,6 +31,19 @@ with zipfile.ZipFile(apk) as z:
     for value in list(upscaled.values()) + list(upscale_parts.values()):
         assert value['path'].startswith('res://assets/upscaled/'), 'Upscale resolves to remake'
         texture_paths.add(value['path'])
+    # BMFont embeds its page image in .fontdata. On a clean import Godot marks
+    # that PNG as skip, so it must not be required as a standalone texture.
+    font_page='res://assets/upscaled/fonts/original.png'
+    texture_paths.discard(font_page)
+    bitmap_fonts=[]
+    for style in ('original','upscaled'):
+        resource=f'assets/assets/{style}/fonts/original.fnt.import'
+        assert resource in names, f'Missing bitmap font: {style}'
+        metadata=z.read(resource).decode()
+        remap=re.search(r'^path="res://([^"\n]+)"', metadata, re.M)
+        assert remap and 'assets/'+remap[1] in names, f'Missing font data: {style}'
+        assert z.getinfo('assets/'+remap[1]).file_size > 1024, f'Empty bitmap font: {style}'
+        bitmap_fonts.append(style)
     for path in texture_paths:
         resource='assets/'+path.removeprefix('res://')
         assert resource+'.import' in names, f'Missing texture import: {path}'
@@ -41,7 +54,7 @@ with zipfile.ZipFile(apk) as z:
         if name.startswith('lib/') or z.getinfo(name).file_size>30_000_000: continue
         assert b'sk-or-v1-' not in z.read(name), f'API credential marker in {name}'
 report={'apk':apk.name,'bytes':apk.stat().st_size,'sha256':hashlib.sha256(apk.read_bytes()).hexdigest(),'files':len(names),'asset_files':len(assets),'abi':'arm64-v8a','crc':'passed','api_key_scan':'passed','excluded_test_sources':'passed'}
-report.update(hd_actor_frames=actor_frames,hd_exported_textures_verified=hd_textures,upscaled_resources_verified=len(upscaled),upscaled_parts_verified=len(upscale_parts),exported_textures_verified=len(texture_paths))
+report.update(hd_actor_frames=actor_frames,hd_exported_textures_verified=hd_textures,upscaled_resources_verified=len(upscaled),upscaled_parts_verified=len(upscale_parts),exported_textures_verified=len(texture_paths),embedded_bitmap_fonts_verified=bitmap_fonts)
 if len(sys.argv)>2:
     manifest=Path(sys.argv[2]).read_text()
     assert 'package="ru.artem.prehistorikpark"' in manifest, 'Wrong Android package'

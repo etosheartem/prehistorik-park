@@ -16,6 +16,13 @@ func settle() -> void:
 	for i in 8: await process_frame
 
 func run() -> void:
+	for style in ["original", "upscaled"]:
+		var font: FontFile = load("res://assets/%s/fonts/original.fnt" % style)
+		check(font != null and font.get_supported_chars().length() == 89, "bitmap font contains all 89 source glyphs: " + style)
+		if font == null: continue
+		check(font.has_char(1025) and font.has_char(1071) and font.has_char(1103) and font.has_char(48), "bitmap font retains Cyrillic and digits: " + style)
+		var size := Vector2i(font.fixed_size, 0)
+		check(font.get_texture_count(0, size) == 1 and not font.get_texture_image(0, size, 0).is_empty(), "bitmap font contains its embedded atlas: " + style)
 	viewport = SubViewport.new()
 	viewport.size = Vector2i(1080, 1920)
 	viewport.render_target_update_mode = SubViewport.UPDATE_ALWAYS
