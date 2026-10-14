@@ -200,10 +200,14 @@ static func passenger_poses(view, b: Dictionary) -> Array:
 	var rotation := posmod(int(b.get("rotation", 0)), 2)
 	var entry: Array = view.art.rides[int(b.type)].entry_tiles[rotation]
 	var local_cell := Vector2(entry[0], entry[1])
+	# cO places riders relative to the type-10 anchor plus section35[0].
+	# That initial offset applies to static seats too (swings, megacarousel,
+	# seesaw). Using only the type-10 cell left them floating outside the seat.
+	local_cell += Vector2(s[35][0], s[35][1])
 	if int(s[3][2]) == 0:
 		# Section35 records cell changes; section36 records the separate sprite
 		# layer's absolute cell. Accumulating deltas reproduces coaster passengers.
-		for previous in range(phase + 1):
+		for previous in range(1, phase + 1):
 			if previous * 2 + 1 < s[35].size():
 				local_cell += Vector2(s[35][previous * 2], s[35][previous * 2 + 1])
 	var base: Vector2 = view.iso(Vector2(float(b.x), float(b.y)) + local_cell)
@@ -272,7 +276,12 @@ static func draw_bench(view, cell: Vector2i) -> void:
 
 static func draw_resting_person(view, person: Dictionary) -> void:
 	var frame := _actor_frame(view, clampi(int(person.type), 0, 7), 4, 0)
-	var at: Vector2 = view.cell_to_screen(Vector2(person.x, person.y)) + Vector2(-8, -2) * view.zoom
+	# Original bench table11 has two distinct local seat coordinates.
+	var slot := clampi(int(person.get("bench_slot", 0)), 0, 1)
+	var seats: Array = view.sim.data.tables[11]
+	var g := float(seats[slot * 2])
+	var h := float(seats[slot * 2 + 1])
+	var at: Vector2 = _tile_origin(view, Vector2(person.x, person.y)) + Vector2(g + h, 10 + (g - h) * 0.5) * view.zoom
 	view._frame(frame, at)
 
 

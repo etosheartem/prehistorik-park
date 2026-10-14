@@ -1,0 +1,29 @@
+{
+  "apk": "prehistorik_park_1.1.0.apk",
+  "bytes": 123591755,
+  "sha256": "8f9738545a780670003083c35b1f7e634cd541888dc90a0a1531025023dbd0a2",
+  "files": 5055,
+  "asset_files": 4968,
+  "abi": "arm64-v8a",
+  "crc": "passed",
+  "api_key_scan": "passed",
+  "excluded_test_sources": "passed",
+  "hd_actor_frames": 224,
+  "hd_exported_textures_verified": 470,
+  "upscaled_resources_verified": 518,
+  "upscaled_parts_verified": 192,
+  "exported_textures_verified": 1179,
+  "embedded_bitmap_fonts_verified": [
+    "original",
+    "upscaled"
+  ],
+  "version_code": 7,
+  "version_name": "1.1.0",
+  "catalog_previews": 153,
+  "font_license": "included",
+  "debuggable": false,
+  "orientation": "portrait",
+  "internet_permission": false,
+  "adaptive_icon": "passed",
+  "exporter_note": "Godot retains an unused themed_icon.xml resource-table entry; the active icon.xml includes all three adaptive layers."
+}

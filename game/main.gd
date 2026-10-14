@@ -82,6 +82,9 @@ var last_messages := 0
 var last_message_text := ""
 var tool_kind := "select"
 var tool_id := 0
+var moving_worker_uid := -1
+var staff_tab := "team"
+const STAFF_JOBS := ["Выбери дорожку для начала патруля", "Выбери дорожку: дальше сам ходит к поломкам", "Кафе · один повар на каждое кафе", "Закусочные, мороженое и шарики · один продавец на лавку", "Медпункт · один шаман на палатку", "Диномотор · один погонщик на мотор"]
 var build_rotation := 0
 var build_cell := Vector2i(-1, -1)
 var selected_uid := -1
@@ -395,14 +398,14 @@ func _layout() -> void:
 	if not portrait:
 		inspector.size.x = minf(760, size.x * 0.52)
 		inspector.position.x = size.x - inspector.size.x - 18
-	var placing_height := 328.0 if tool_kind in ["ride", "prop"] else 244.0
+	var placing_height := 430.0 if tool_kind in ["ride", "prop", "staff"] else 340.0 if tool_kind == "path" else 244.0
 	placement_panel.reset_size()
 	placement_panel.size = Vector2(size.x - 36, placing_height)
 	placement_panel.position = Vector2(18, size.y - inset_bottom - placement_panel.size.y - 18)
 	# Management is a non-modal sheet: the visible park remains draggable.
 	sheet_shade.visible = catalog_panel.visible
 	view.input_enabled = not modal.visible and not sheet_shade.visible
-	view.show_grid = bool(settings.get("build_grid", true)) and tool_kind in ["ride", "prop", "path"]
+	view.show_grid = bool(settings.get("build_grid", true)) and tool_kind in ["ride", "prop", "path", "staff"]
 	for id in nav_buttons:
 		var active: bool = (id == "rides" and catalog_panel.visible) or (id == "staff" and inspector.visible and panel_mode == "staff") or (id == "stats" and inspector.visible and panel_mode in ["stats", "goals"])
 		ArtTheme.selected(nav_buttons[id], active)
@@ -701,9 +704,9 @@ func _save_data() -> Dictionary:
 func _help_page() -> void:
 	_page_header("Как играть", func(): show_page("pause" if running else "home"))
 	for item in [
-		["Строй и пробуй", "Открой «Строить», выбери объект и место в парке. Поверни вход к дорожке и нажми «Построить». Дорожки ставятся одним касанием. «Отмена» завершает строительство."],
+		["Строй и пробуй", "Открой «Строить», выбери объект и место в парке. Поверни вход к подсвеченной дорожке. Стрелки сдвигают объект на одну клетку; «Построить» подтверждает место. Дорожки ставятся касанием. «Отмена» завершает строительство."],
 		["Исследуй парк", "Перетаскивай парк одним пальцем, приближай двумя. «К парку» вернёт камеру к постройкам. На карте можно перейти в любое место или увидеть весь парк."],
-		["Заботься о гостях", "Нажми на гостя или постройку, чтобы узнать, чего им не хватает. Нанимай сотрудников в разделе «Персонал». Зарплата списывается в начале каждой луны."],
+		["Заботься о гостях", "Нажми на гостя или постройку, чтобы узнать, чего им не хватает. В карточке лавки можно нанять сотрудника прямо сюда. В «Персонале» — выбрать место и переназначить любого работника. Продавец обслуживает лавки, повар — кафе. Скамейки из раздела «Дорожки» дают два места отдыха."],
 		["Сохраняй своё дело", "Парк сохраняется автоматически и при сворачивании. Пауза останавливает время. Снос объекта требует подтверждения; инструмент для дорожек находится в разделе «Парк»."]
 	]:
 		var card := PanelContainer.new()
@@ -802,6 +805,8 @@ func _clear_selection() -> void:
 	selected_guest = -1
 	build_cell = Vector2i(-1, -1)
 	tool_kind = "select"
+	moving_worker_uid = -1
+	view.preview_worker_uid = -1
 	selected_uid = -1
 	view.selected = Vector2i(-1, -1)
 	view.preview_kind = ""
@@ -847,7 +852,7 @@ func show_catalog(category: String, filtering := false) -> void:
 		ArtTheme.selected(tab, tab.get_meta("category") == category)
 	var entries: Array = []
 	var definitions := {
-		"paths": [["path", 0], ["path", 4], ["path", 13]],
+		"paths": [["path", 0], ["path", 4], ["path", 2], ["path", 13]],
 		"rides": [],
 		"services": [["prop", 15], ["prop", 17], ["prop", 19], ["prop", 23], ["prop", 25], ["ride", 23], ["prop", 20]],
 		"decor": [["prop", 0], ["prop", 4], ["prop", 8], ["prop", 10], ["prop", 12], ["prop", 13], ["path", 2]]
@@ -902,6 +907,10 @@ func show_catalog(category: String, filtering := false) -> void:
 		if kind != "path" and ResourceLoader.exists(preview_path): icon.texture = load(preview_path)
 		elif kind == "ride": icon.texture = view.texture_for(view.art.rides[id].frames[0].path)
 		elif kind == "prop": icon.texture = view.texture_for(view.art.scenery[id].frames[0].path)
+		elif id == 2:
+			var bench: Dictionary = view.art.tiles.edges[19]
+			var key := "1:2:%d:%d:%d:%d" % [bench.rect[0],bench.rect[1],bench.rect[2],bench.rect[3]]
+			icon.texture = view._texture(Graphics.replacement_path(view.part_overrides[key])) if view.part_overrides.has(key) else view.texture_for(bench.path)
 		else: icon.texture = view.texture_for(view.art.tiles["path_stone" if id == 4 else "water_0" if id == 13 else "path_dirt"].path)
 		if not available: icon.modulate = Color(0.75, 0.78, 0.71, 0.7)
 		var name_label := _label(body, str(item.name).capitalize(), 29, true)
@@ -912,7 +921,7 @@ func show_catalog(category: String, filtering := false) -> void:
 		var price := _label(body, "%d монет    ·    %d × %d" % [item.cost, item.size[0], item.size[1]], 26)
 		price.mouse_filter = MOUSE_FILTER_IGNORE
 		price.add_theme_color_override("font_color", ArtTheme.GOLD if available else ArtTheme.MUTED)
-		var status := _label(body, "Можно строить" if available else "Закрыто · как открыть?", 22)
+		var status := _label(body, ("2 места · поставить на дорожку" if kind == "path" and id == 2 else "Можно строить") if available else "Закрыто · как открыть?", 22)
 		status.mouse_filter = MOUSE_FILTER_IGNORE
 		status.add_theme_color_override("font_color", ArtTheme.MUTED)
 	catalog_count.text = "%d объектов · открыто %d" % [entries.size(), available_count] if catalog_query.is_empty() else "Найдено: %d" % shown
@@ -949,8 +958,9 @@ func _build_info() -> void:
 	catalog_panel.hide()
 	var heading := HBoxContainer.new()
 	placement_body.add_child(heading)
-	var item: Dictionary = {} if tool_kind == "demolish" else sim._catalog(tool_kind, tool_id)
+	var item: Dictionary = {} if tool_kind in ["demolish", "staff"] else sim._catalog(tool_kind, tool_id)
 	var name := "Снос объектов" if item.is_empty() else str(item.name).capitalize()
+	if tool_kind == "staff": name = ("Назначить: " if moving_worker_uid > 0 else "Нанять: ") + str(sim.staff_catalog[tool_id].name)
 	var title := _label(heading, name, 32, true)
 	title.size_flags_horizontal = SIZE_EXPAND_FILL
 	_button(heading, "Отмена", _clear_selection, 174)
@@ -960,17 +970,40 @@ func _build_info() -> void:
 		if item.requires_motor: detail += " · нужен диномотор"
 	if tool_kind == "ride" and tool_id == 22:
 		detail = "Выход · 35 монет" if int(sim.state.water_build) > 0 else "Вход · 35 монет. Затем поставь выход и соедини водой."
+	if tool_kind == "staff": detail = STAFF_JOBS[tool_id]
+	if tool_kind == "path" and tool_id == 2: detail = "Два места для отдыха · поставь скамейку на готовую дорожку"
 	var info := _label(placement_body, detail, 25, true)
 	info.add_theme_color_override("font_color", ArtTheme.MUTED)
 	var reason := ""
-	if tool_kind in ["ride", "prop"]:
-		reason = "Выбери место в парке" if build_cell.x < 0 else sim.can_build(tool_kind, tool_id, build_cell, build_rotation)
-		var hint := _label(placement_body, reason if not reason.is_empty() else "Место подходит. После постройки можно поставить ещё.", 24, true)
+	if tool_kind in ["ride", "prop", "staff"]:
+		reason = "Выбери место в парке" if build_cell.x < 0 else (sim.staff_placement_error(tool_id, build_cell, moving_worker_uid) if tool_kind == "staff" else sim.can_build(tool_kind, tool_id, build_cell, build_rotation))
+		var ready := "Место подходит. Стрелки двигают на одну клетку."
+		if tool_kind == "staff" and reason.is_empty():
+			var workplace: Dictionary = sim.building_at(build_cell)
+			ready = "Начало патруля · %d, %d" % [build_cell.x, build_cell.y] if workplace.is_empty() else "Рабочее место: %s №%d" % [sim._catalog(workplace.kind, workplace.type).name, workplace.uid]
+		var hint := _label(placement_body, reason if not reason.is_empty() else ready, 24, true)
 		hint.add_theme_color_override("font_color", ArtTheme.CREAM if build_cell.x < 0 or reason.is_empty() else Color("a53f2c"))
+	if tool_kind in ["ride", "prop", "path", "staff"]:
+		var arrows := HBoxContainer.new()
+		arrows.add_theme_constant_override("separation", 12)
+		placement_body.add_child(arrows)
+		for spec in [["↖", Vector2i(-1,0)], ["↗", Vector2i(0,1)], ["↙", Vector2i(0,-1)], ["↘", Vector2i(1,0)]]:
+			var delta: Vector2i = spec[1]
+			var arrow := _button(arrows, spec[0], func(): _nudge_build(delta), 92)
+			arrow.tooltip_text = "На одну клетку " + str(spec[0])
+		var coords := _label(arrows, "Точная установка" if build_cell.x < 0 else "Клетка %d, %d" % [build_cell.x, build_cell.y], 24, true)
+		coords.size_flags_horizontal = SIZE_EXPAND_FILL
+		coords.vertical_alignment = VERTICAL_ALIGNMENT_CENTER
 	var actions := HBoxContainer.new()
 	actions.add_theme_constant_override("separation", 12)
 	placement_body.add_child(actions)
-	if tool_kind != "demolish":
+	if tool_kind == "staff":
+		_button(actions, "Персонал", show_staff, 190)
+		var confirm := _button(actions, "Назначить" if moving_worker_uid > 0 else "Нанять · %d монет" % sim.staff_catalog[tool_id].salary, func(): _cell_selected(build_cell, true))
+		confirm.size_flags_horizontal = SIZE_EXPAND_FILL
+		confirm.disabled = not reason.is_empty()
+		confirm.theme_type_variation = "PrimaryButton"
+	elif tool_kind != "demolish":
 		_button(actions, "Каталог", func(): show_catalog(catalog_category if not catalog_category.is_empty() else "rides"), 174)
 	if tool_kind == "ride" or (tool_kind == "prop" and _prop_next(tool_id) != tool_id):
 		_button(actions, "Повернуть", _rotate_build, 220)
@@ -980,21 +1013,74 @@ func _build_info() -> void:
 		confirm.disabled = not reason.is_empty()
 		confirm.theme_type_variation = "PrimaryButton"
 	elif tool_kind == "path":
-		var hint := _label(actions, "Тап по клетке — построить", 25, true)
-		hint.size_flags_horizontal = SIZE_EXPAND_FILL
+		if build_cell.x >= 0:
+			var confirm := _button(actions, "Построить", func(): _cell_selected(build_cell, true))
+			confirm.size_flags_horizontal = SIZE_EXPAND_FILL
+			confirm.disabled = not sim.can_build("path", tool_id, build_cell).is_empty()
+			confirm.theme_type_variation = "PrimaryButton"
+		else:
+			var hint := _label(actions, "Тап — построить · стрелки — прицелиться", 25, true)
+			hint.size_flags_horizontal = SIZE_EXPAND_FILL
 	_layout()
 	_layout.call_deferred()  # again after the container has given new labels their width
+
+func _nudge_build(delta: Vector2i) -> void:
+	var cell := build_cell
+	if cell.x < 0:
+		cell = view.screen_to_cell(Vector2(size.x * 0.5, (top.position.y + top.size.y + placement_panel.position.y) * 0.5))
+	build_cell = Vector2i(clampi(cell.x + delta.x, 0, int(sim.state.size) - 1), clampi(cell.y + delta.y, 0, int(sim.state.size) - 1))
+	view.selected = build_cell
+	view.hovered = build_cell
+	_build_info()
+	var visible_park := Rect2(36, top.position.y + top.size.y + 70, size.x - 72, maxf(100, placement_panel.position.y - top.position.y - top.size.y - 110))
+	var point: Vector2 = view.cell_to_screen(Vector2(build_cell))
+	if not visible_park.has_point(point): view.pan += visible_park.get_center() - point
+	view.queue_redraw()
+
+func _choose_staff(role: int, worker_uid := -1, cell := Vector2i(-1, -1)) -> void:
+	if worker_uid < 0 and not sim.can_hire(role).is_empty():
+		_toast(sim.can_hire(role))
+		return
+	_clear_selection()
+	tool_kind = "staff"
+	tool_id = role
+	moving_worker_uid = worker_uid
+	build_cell = cell
+	view.preview_kind = "staff"
+	view.preview_type = role
+	view.preview_worker_uid = worker_uid
+	view.selected = cell
+	view.hovered = cell
+	_build_info()
+	if cell.x >= 0: view.focus_cell(Vector2(cell))
 
 func _cell_selected(cell: Vector2i, confirmed := false) -> void:
 	if not running or modal.visible or cell.x < 0 or cell.y < 0 or cell.x >= int(sim.state.size) or cell.y >= int(sim.state.size): return
 	view.selected = cell
-	if tool_kind in ["ride", "prop"] and not confirmed:
+	if tool_kind in ["ride", "prop", "staff"] and not confirmed:
 		build_cell = cell
 		view.hovered = cell
 		_build_info()
 		view.queue_redraw()
 		return
-	if tool_kind in ["ride", "prop", "path"]:
+	if tool_kind == "staff":
+		var ok: bool = sim.assign_worker(moving_worker_uid, cell) if moving_worker_uid > 0 else sim.hire(tool_id, cell)
+		if ok:
+			sound.effect("hire")
+			save_game()
+			var workplace: Dictionary = sim.building_at(cell)
+			_clear_selection()
+			if not workplace.is_empty():
+				selected_uid = int(workplace.uid)
+				view.selected = cell
+				_inspect_building()
+			else: show_staff()
+			_toast("Сотрудник назначен. Рабочее место сохранено.")
+		else:
+			sound.effect("error")
+			_toast(sim.last_error)
+			_build_info()
+	elif tool_kind in ["ride", "prop", "path"]:
 		if sim.build(tool_kind, tool_id, cell, build_rotation):
 			sound.effect("build")
 			view.burst(cell)
@@ -1035,7 +1121,7 @@ func _cell_selected(cell: Vector2i, confirmed := false) -> void:
 	view.queue_redraw()
 
 func _hover(_cell: Vector2i) -> void:
-	if tool_kind in ["ride", "prop"] and build_cell.x >= 0: view.hovered = build_cell
+	if tool_kind in ["ride", "prop", "staff", "path"] and build_cell.x >= 0: view.hovered = build_cell
 
 func _guest_state(guest: Dictionary) -> String:
 	var states := {"walking":"Гуляет", "queue":"Ждёт в очереди", "riding":"Катается", "eating":"Ест", "drinking":"Пьёт", "resting":"Отдыхает", "toilet":"В туалете", "shopping":"Покупает сувенир", "healing":"Лечится", "leaving":"Уходит из парка", "lost":"Ищет выход", "fighting":"Дерётся", "watching":"Наблюдает"}
@@ -1077,6 +1163,21 @@ func _inspect_building() -> void:
 	inspector_tabs.hide()
 	building_status_label = _label(inspector_body, "Работает" if b.working else str(b.reason), 24, true)
 	building_details_label = null
+	var role: int = sim._role(b)
+	if role >= 0:
+		var worker: Dictionary = sim.assigned_worker(int(b.uid))
+		if worker.is_empty():
+			_label(inspector_body, "Рабочее место свободно · нужен %s" % sim.staff_catalog[role].name, 25, true)
+			_button(inspector_body, "Нанять сюда · %d монет" % sim.staff_catalog[role].salary, func(): _choose_staff(role, -1, Vector2i(b.x,b.y))).theme_type_variation = "PrimaryButton"
+			for candidate in sim.state.workers:
+				if int(candidate.type) == role and int(candidate.get("assignment_uid", 0)) <= 0:
+					var uid := int(candidate.uid)
+					_button(inspector_body, "Назначить свободного сотрудника №%d" % uid, func(): _choose_staff(role, uid, Vector2i(b.x,b.y)))
+		else:
+			_label(inspector_body, "Работает: %s №%d" % [sim.staff_catalog[role].name, worker.uid], 25, true)
+			_button(inspector_body, "Переназначить сотрудника", func(): _choose_staff(role, int(worker.uid)))
+	if not bool(b.connected):
+		_label(inspector_body, "Подсвеченные клетки у входа должны соединяться дорожкой со входом в парк.", 24, true)
 	if b.kind == "ride":
 		building_details_label = _label(inspector_body, _building_summary(b, item), 25, true)
 	if b.kind == "ride" or int(item.get("price_group", -1)) >= 0:
@@ -1093,6 +1194,10 @@ func _inspect_building() -> void:
 	if b.kind == "ride" and bool(item.get("requires_motor", false)) and not bool(b.get("powered", true)):
 		_label(inspector_body, "Поставь диномотор рядом, подведи дорожку и найми погонщика.", 24, true)
 		_button(inspector_body, "Построить диномотор", _build_motor).theme_type_variation = "PrimaryButton"
+	if b.kind == "prop" and int(b.type) in [15,16,17,18,20,21]:
+		_button(inspector_body, "Повернуть вход", func():
+			if sim.rotate_service(int(b.uid)): sound.effect("build"); _inspect_building(); view.queue_redraw(); save_game()
+			else: _toast(sim.last_error))
 	_button(inspector_body, "Снести объект…", func(): _request_demolition(Vector2i(b.x, b.y))).theme_type_variation = "DangerButton"
 
 	_layout()
@@ -1107,8 +1212,46 @@ func show_staff() -> void:
 	inspector.show()
 	inspector_tabs.hide()
 	inspector_title.text = "Персонал"
-	_label(inspector_body, "Оплата при найме, затем в начале каждой луны.", 25, true)
-	for role in sim.staff_catalog:
+	_label(inspector_body, "Сначала выбери сотрудника, затем его место в парке. Оплата при найме и в начале каждой луны.", 25, true)
+	var show_team: bool = staff_tab == "team" and not sim.state.workers.is_empty()
+	var tabs := HBoxContainer.new()
+	tabs.add_theme_constant_override("separation", 12)
+	inspector_body.add_child(tabs)
+	for spec in [["Команда · %d / 22" % sim.state.workers.size(), "team"], ["Нанять сотрудника", "hire"]]:
+		var tab: String = spec[1]
+		var button := _button(tabs, spec[0], func(): staff_tab = tab; show_staff())
+		button.size_flags_horizontal = SIZE_EXPAND_FILL
+		button.disabled = tab == "team" and sim.state.workers.is_empty()
+		ArtTheme.selected(button, (tab == "team") == show_team)
+	for worker in (sim.state.workers if show_team else []):
+		var uid := int(worker.uid)
+		var id := int(worker.type)
+		var card := PanelContainer.new()
+		card.add_theme_stylebox_override("panel", ArtTheme.box(ArtTheme.DEEP, ArtTheme.EDGE, 18))
+		inspector_body.add_child(card)
+		var body := VBoxContainer.new()
+		card.add_child(body)
+		_label(body, "%s №%d" % [str(sim.staff_catalog[id].name).capitalize(), uid], 29)
+		var workplace: Dictionary = sim.building_by_id(int(worker.get("assignment_uid", -1)))
+		var detail := "Без рабочего места · назначь на свободный объект" if id >= 2 else "Патрулирует парк · клетка %d, %d" % [roundi(worker.x), roundi(worker.y)]
+		if not workplace.is_empty(): detail = "%s №%d · %s" % [str(sim._catalog(workplace.kind, workplace.type).name).capitalize(), workplace.uid, "работает" if workplace.working else workplace.reason]
+		_label(body, detail, 24, true)
+		var actions := HBoxContainer.new()
+		actions.add_theme_constant_override("separation", 12)
+		body.add_child(actions)
+		_button(actions, "Показать", func():
+			var current: Dictionary = sim.worker_by_id(uid)
+			if not current.is_empty():
+				_clear_selection()
+				view.focus_cell(Vector2(current.x,current.y))
+				view.selected = Vector2i(roundi(current.x),roundi(current.y))
+				var job: Dictionary = sim.building_by_id(int(current.get("assignment_uid", -1)))
+				if not job.is_empty(): selected_uid = int(job.uid); _inspect_building(), 170)
+		_button(actions, "Переназначить", func(): _choose_staff(id, uid)).size_flags_horizontal = SIZE_EXPAND_FILL
+		_button(actions, "Уволить", func():
+			if sim.fire_worker(uid): sound.effect("hire"); show_staff(); save_game()
+			else: _toast(sim.last_error), 162).theme_type_variation = "DangerButton"
+	for role in ([] if show_team else sim.staff_catalog):
 		var id := int(role.id)
 		var card := PanelContainer.new()
 		card.mouse_filter = MOUSE_FILTER_PASS
@@ -1121,18 +1264,10 @@ func show_staff() -> void:
 		description.size_flags_horizontal = SIZE_EXPAND_FILL
 		row.add_child(description)
 		_label(description, str(role.name).capitalize(), 29, true)
-		_label(description, "%d монет / луну" % role.salary, 23).add_theme_color_override("font_color", ArtTheme.MUTED)
-		var minus := _button(row, "−", func():
-			if sim.fire(id): sound.effect("hire"); show_staff(); save_game()
-			else: _toast(sim.last_error), 84)
-		minus.disabled = int(sim.state.staff[id]) <= 0
-		var count := _label(row, str(sim.state.staff[id]), 34)
-		count.custom_minimum_size.x = 55
-		count.horizontal_alignment = HORIZONTAL_ALIGNMENT_CENTER
-		count.vertical_alignment = VERTICAL_ALIGNMENT_CENTER
-		_button(row, "+", func():
-			if sim.hire(id): sound.effect("hire"); show_staff(); save_game()
-			else: _toast(sim.last_error), 84)
+		_label(description, STAFF_JOBS[id], 23, true)
+		_label(description, "%d монет / луну · в парке %d" % [role.salary,sim.state.staff[id]], 23).add_theme_color_override("font_color", ArtTheme.MUTED)
+		_button(row, "Нанять", func(): _choose_staff(id), 170)
+
 	_layout()
 	inspector_scroll.set_deferred("scroll_vertical", scroll_before)
 

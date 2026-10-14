@@ -139,6 +139,7 @@ static func controls(game) -> void:
 	game._label(game.modal_body, "Один палец — движение. Два — масштаб. На компьютере работает колесо мыши.", 26, true)
 	options(game, "camera_speed", [["Точно", 0.7], ["Обычно", 1.0], ["Быстро", 1.4]])
 	toggle(game, "Сетка при строительстве", "Клетки видны только во время размещения", "build_grid")
+	toggle(game, "Прозрачные кроны", "Деревья не закрывают гостей, аттракционы и место строительства", "transparent_trees")
 	toggle(game, "Меньше движения", "Без фоновых частиц и вспышек строительства", "reduced_motion")
 	game._label(game.modal_body, "Кнопка «К парку» возвращает камеру к постройкам. Назад закрывает текущую панель, затем открывает паузу.", 25, true)
 	game._button(game.modal_body, "Сбросить настройки…", func(): game.show_page("reset_settings"))

@@ -135,7 +135,9 @@ func _run() -> void:
 			push_error("Acceptance park failed save/load: scenario %d difficulty %d" % [scenario, difficulty])
 		if scenario == 5 and sim.state.visitors.size() >= 150:
 			DirAccess.make_dir_recursive_absolute("res://../art/review")
-			FileAccess.open("res://../art/review/acceptance_park.json", FileAccess.WRITE).store_string(JSON.stringify(sim.snapshot(), "  "))
+			var fixture_output := OS.get_environment("PARK_ACCEPTANCE_FIXTURE")
+			if fixture_output.is_empty(): fixture_output = "res://../art/review/acceptance_park.json"
+			FileAccess.open(fixture_output, FileAccess.WRITE).store_string(JSON.stringify(sim.snapshot(), "  "))
 		var report := {"scenario": scenario, "difficulty": difficulty, "save_roundtrip": restored_ok, "status": sim.state.status, "months": sim.state.month, "cash": sim.state.money, "income": sim.state.income, "expenses": sim.state.expenses, "guests": sim.state.visitors.size(), "peak_guests": peak_guests, "mood": sim.state.rating, "peak_mood": peak_mood, "rides": sim._count("ride"), "working": sim.state.buildings.filter(func(b): return b.kind == "ride" and b.working).size()}
 		reports.append(report)
 		if sim.state.status != "won" or (scenario > 0 and (sim.state.income < 30 or peak_guests < 4 or peak_mood < 4)):

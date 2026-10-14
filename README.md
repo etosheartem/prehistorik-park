@@ -9,13 +9,16 @@
 
 **24 аттракциона · 27 объектов · 6 сценариев · 3 стиля графики · полностью офлайн**
 
-[Скачать APK 1.0.1](https://github.com/etosheartem/prehistorik-park/releases/latest) · [Что нового](docs/release-1.0.1.md) · [Сборка и проверки](docs/development.md)
+[Скачать APK 1.1.0](https://github.com/etosheartem/prehistorik-park/releases/latest) · [Что нового](docs/release-1.1.0.md) · [Сборка и проверки](docs/development.md)
 
 <img src="docs/media/home.png" width="280" alt="Новое главное меню">
 <img src="docs/media/park.png" width="280" alt="Ремейк: работающий парк с посетителями">
 <img src="docs/media/settings.png" width="280" alt="Настройки ремейка с живым предпросмотром">
 
 </div>
+
+**Обновление 1.1.0:** очереди на дорожках, точная посадка, рабочие места сотрудников, стрелки строительства, отдых на скамейках и прозрачные деревья. [Скриншоты и изменения](docs/release-1.1.0.md).
+
 
 Порт «Первобытного парка» Gear Games с восстановленными правилами J2ME-оригинала
 и интерфейсом для большого сенсорного экрана. Строй, соединяй входы дорожками,

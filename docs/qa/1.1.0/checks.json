@@ -1,0 +1,17 @@
+{
+  "remake_assets": "REMAKE ASSETS OK: 192 atlas regions, 288 mapped images; sitting directions, identical heads, stone fragments and GRR! lettering preserved",
+  "upscale": "UPSCALE OK: 3041 checks; 40 GPU sources; 518 mapped resources; 192 isolated parts; API $0",
+  "export_audio": "AUDIO ASSETS OK: original MIDI + 7 local effects; no paid API",
+  "release_check": "RELEASE OK: 81 checks",
+  "layers_check": "LAYERS OK: 11582 checks across original rider cycles",
+  "export_text": "TEXT OK: 109 UI, 35 help, 39 warning records; CP1251 round-trip verified",
+  "audio_check": "AUDIO OK: 43 checks",
+  "interface_check": "INTERFACE OK: 126 checks",
+  "redesign_check": "REDESIGN OK: 265 checks",
+  "export_data": "DATA OK: 24 rides, 27 props, 177 tables; both files consumed exactly",
+  "check_assets": "ASSETS CHECK OK: 4369 assertions, 822 unique images, 35 exact original PNGs, stable1209 ride phases",
+  "simulation": "SIMULATION OK: 581 checks",
+  "graphics_check": "GRAPHICS OK: 3715 checks across four isolated modes",
+  "gameplay_check": "GAMEPLAY OK: 337 checks",
+  "remake_completeness_check": "COMPLETENESS OK: 46915 checks; 1209 ride phases; 135 scenery phases; 574 rear decorations across 48 orientations"
+}

@@ -20,6 +20,7 @@ var hovered := Vector2i(-1, -1)
 var selected := Vector2i(-1, -1)
 var preview_kind := ""
 var preview_type := 0
+var preview_worker_uid := -1
 var preview_rotation := 0
 var pressed := false
 var dragging := false
@@ -31,6 +32,8 @@ var touches := {}
 var touch_multitouch := false
 var bursts: Array = []
 var soft_shadows := true
+var transparent_trees := true
+var _canopy_targets: Array = []
 var particles_enabled := true
 var camera_speed := 1.0
 var reduced_motion := false
@@ -38,6 +41,7 @@ var color_style := "natural"
 
 func configure_options(values: Dictionary) -> void:
 	soft_shadows = bool(values.get("shadows", true))
+	transparent_trees = bool(values.get("transparent_trees", true))
 	particles_enabled = bool(values.get("particles", true))
 	reduced_motion = bool(values.get("reduced_motion", false))
 	camera_speed = float(values.get("camera_speed", 1.0))
@@ -296,23 +300,29 @@ func _draw() -> void:
 		if int(sim.state.paths[key]) not in [2, 6]: continue
 		var coords: PackedStringArray = str(key).split(",")
 		var cell := Vector2i(int(coords[0]), int(coords[1]))
-		renderables.append({"depth": float(cell.x - cell.y), "kind": "bench", "data": {"cell": cell}})
+		renderables.append({"depth": float(cell.x - cell.y) - 0.7, "kind": "bench", "data": {"cell": cell}})
 	for b in sim.state.buildings:
 		renderables.append({"depth": float(b.x - b.y) + float(b.get("w", 1) - 1) * 0.5, "kind": "building", "data": b})
 	for v in sim.state.visitors:
 		var target: Dictionary = sim.building_by_id(int(v.get("target_uid", -1)))
 		if v.get("state", "") == "riding" and int(target.get("type", -1)) != 22: continue
 		if v.get("state", "") == "eating" and target.get("kind", "") == "ride" and int(target.get("type", -1)) == 23: continue
-		renderables.append({"depth": float(v.x) - float(v.y), "kind": "visitor", "data": v})
+		var depth := float(v.x) - float(v.y)
+		if v.get("state", "") == "resting": depth -= 0.2 if int(v.get("bench_slot",0)) == 0 else 0.5
+		renderables.append({"depth": depth, "kind": "visitor", "data": v})
 	for w in sim.state.get("workers", []):
 		renderables.append({"depth": float(w.x) - float(w.y), "kind": "worker", "data": w})
 	renderables.sort_custom(func(a, b): return a.depth < b.depth)
+	_prepare_canopy_targets(renderables)
 	for entry in renderables:
-		if entry.kind == "building": _draw_building(entry.data)
+		if entry.kind == "building": _draw_building(entry.data, Color(1,1,1,canopy_opacity(entry.data, entry.depth)))
 		elif entry.kind == "bench": layers.draw_bench(self, entry.data.cell)
 		else: _draw_person(entry.data, entry.kind == "worker")
 	layers.draw_park_entrance(self)
-	if selected.x >= 0: _outline(selected, Vector2i.ONE, Color("ffe1a1"))
+	if selected.x >= 0:
+		_outline(selected, Vector2i.ONE, Color("ffe1a1"))
+		var building: Dictionary = sim.building_at(selected)
+		if not building.is_empty(): _draw_access(building)
 	if hovered.x >= 0 and hovered.y >= 0 and hovered.x < side and hovered.y < side and not preview_kind.is_empty():
 		var extent := Vector2i.ONE
 		if preview_kind in ["ride", "prop"]:
@@ -322,11 +332,15 @@ func _draw() -> void:
 			if preview_kind == "ride" and preview_type == 22: extent = Vector2i(1, 2) if preview_rotation == 0 else Vector2i(2, 1)
 		if preview_kind == "prop" and preview_type == 26:
 			_outline(hovered - Vector2i(4, 4), Vector2i(10, 10), Color(0.59, 0.85, 0.94, 0.45))
-		var valid: bool = sim.can_build(preview_kind, preview_type, hovered, preview_rotation).is_empty()
+		var valid: bool = (sim.staff_placement_error(preview_type, hovered, preview_worker_uid) if preview_kind == "staff" else sim.can_build(preview_kind, preview_type, hovered, preview_rotation)).is_empty()
 		_outline(hovered, extent, Color("d6ef7f") if valid else Color("f49373"))
 		if preview_kind in ["ride", "prop"]:
-			_draw_building({"kind": preview_kind, "type": preview_type, "x": hovered.x, "y": hovered.y,
-				"rotation": preview_rotation, "phase": 0, "working": true, "open": true}, Color(1, 1, 1, 0.62))
+			var preview := {"kind": preview_kind, "type": preview_type, "x": hovered.x, "y": hovered.y,
+				"w":extent.x, "h":extent.y, "water_exit":[], "rotation": preview_rotation, "phase": 0, "working": true, "open": true}
+			_draw_building(preview, Color(1, 1, 1, 0.62))
+			_draw_access(preview)
+		elif preview_kind == "staff" and preview_type < 2:
+			_draw_person({"x":hovered.x, "y":hovered.y, "type":preview_type, "dir":3, "anim":0}, true)
 	if Graphics.effects_level(quality) > 0 and particles_enabled and not reduced_motion:
 		for event in bursts:
 			var age := elapsed - float(event.born)
@@ -337,6 +351,62 @@ func _draw() -> void:
 				var color := Color("c0a16a") if event.demolition else Color("e9cb81")
 				color.a = (1.0 - age / 0.85) * 0.75
 				draw_circle(base + offset, (0.5 + i % 3 * 0.25) * zoom, color, true, -1, true)
+
+func _building_bounds(b: Dictionary) -> Rect2:
+	var frames: Array = art.rides[int(b.type)].frames if b.kind == "ride" else art.scenery[int(b.type)].frames
+	if frames.is_empty(): return Rect2()
+	var frame: Dictionary = frames[0]
+	var dimensions: Array = frame.get("size", [40,40])
+	var offset: Array = frame.get("offset", [0,0])
+	return Rect2(origin() + (iso(Vector2(b.x,b.y)) + Vector2(offset[0],offset[1])) * zoom, Vector2(dimensions[0],dimensions[1]) * zoom)
+
+func _prepare_canopy_targets(renderables: Array) -> void:
+	_canopy_targets.clear()
+	if not transparent_trees: return
+	for entry in renderables:
+		var rect := Rect2()
+		if entry.kind == "building":
+			if entry.data.kind == "prop" and int(entry.data.type) < 14: continue
+			rect = _building_bounds(entry.data)
+		elif entry.kind == "bench":
+			rect = Rect2(cell_to_screen(Vector2(entry.data.cell)) - Vector2(20,20) * zoom, Vector2(32,24)*zoom)
+		else:
+			if entry.kind == "worker" and int(entry.data.type) >= 2: continue
+			var at := cell_to_screen(Vector2(entry.data.x,entry.data.y))
+			rect = Rect2(at - Vector2(5,18)*zoom, Vector2(10,19)*zoom)
+		if rect.intersects(Rect2(Vector2.ZERO,size)):
+			_canopy_targets.append({"rect":rect, "depth":float(entry.depth)})
+	if selected.x >= 0:
+		_canopy_targets.append({"rect":Rect2(cell_to_screen(Vector2(selected))-Vector2(19,16)*zoom,Vector2(38,30)*zoom), "depth":INF})
+	if not preview_kind.is_empty() and hovered.x >= 0:
+		var rect := Rect2(cell_to_screen(Vector2(hovered))-Vector2(20,30)*zoom,Vector2(40,45)*zoom)
+		if preview_kind in ["ride","prop"]:
+			rect = _building_bounds({"kind":preview_kind,"type":preview_type,"x":hovered.x,"y":hovered.y})
+		_canopy_targets.append({"rect":rect, "depth":INF})
+
+func canopy_opacity(b: Dictionary, depth: float) -> float:
+	if not transparent_trees or b.kind != "prop" or int(b.type) not in range(12): return 1.0
+	# Inspecting a tree still shows its full artwork. Only foliage in front of
+	# useful park activity fades; decorations do not fade each other.
+	if selected == Vector2i(b.x,b.y) and preview_kind.is_empty(): return 1.0
+	var bounds := _building_bounds(b).grow(-2.0 * zoom)
+	for target in _canopy_targets:
+		if (depth >= float(target.depth) or is_inf(float(target.depth))) and bounds.intersects(target.rect): return 0.28
+	return 1.0
+
+func _draw_access(building: Dictionary) -> void:
+	if building.kind == "prop" and int(building.type) < 14: return
+	for exit_port in [false, true] if building.kind == "ride" else [false]:
+		for cell in sim._access(building, exit_port):
+			if not sim._inside(cell): continue
+			var connected: bool = sim._reachable.has(sim._key(cell))
+			var color := Color("d6ef7f") if connected else Color("f49373")
+			_outline(cell, Vector2i.ONE, color)
+			var at := cell_to_screen(Vector2(cell))
+			var vector := (cell_to_screen(Vector2(building.x, building.y)) - at).normalized() * (1.0 if not exit_port else -1.0)
+			var across := Vector2(-vector.y, vector.x)
+			draw_line(at - vector * zoom * 4, at + vector * zoom * 4, color, maxf(2, zoom))
+			draw_colored_polygon(PackedVector2Array([at + vector * zoom * 6, at + across * zoom * 3, at - across * zoom * 3]), color)
 
 func _draw_path(cell: Vector2i, type: int) -> void:
 	var names := {0: "path_dirt", 2: "path_dirt", 4: "path_stone", 6: "path_stone", 13: "water_%d" % (int(elapsed * 3) % 3)}

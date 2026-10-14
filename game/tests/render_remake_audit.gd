@@ -15,6 +15,7 @@ var viewport: SubViewport
 var view: Preview
 var count := 0
 var failed := false
+var occupied := false
 var records: Array = []
 var folder := ProjectSettings.globalize_path("res://../art/review/remake_audit/rendered")
 
@@ -40,6 +41,9 @@ func run() -> void:
 		printerr("Render audit requires a GPU display"); quit(1); return
 	Engine.max_fps = 0
 	DisplayServer.window_set_vsync_mode(DisplayServer.VSYNC_DISABLED)
+	for arg in OS.get_cmdline_user_args():
+		if arg == "--occupied": occupied = true
+		if arg.begins_with("--output="): folder = arg.trim_prefix("--output=")
 	DirAccess.make_dir_recursive_absolute(folder)
 	viewport = SubViewport.new()
 	viewport.size = Vector2i(512, 512)
@@ -49,6 +53,8 @@ func run() -> void:
 	view = Preview.new()
 	view.sim = Sim.new()
 	view.sim.new_game(-1, 0, 123)
+	if occupied:
+		for index in 12: view.sim.state.visitors.append({"uid":index+1,"type":index%8,"state":"riding"})
 	view.size = Vector2(512,512)
 	viewport.add_child(view)
 	var geometry: Dictionary = view.Graphics._json("res://assets/original/commands.json")
@@ -72,6 +78,8 @@ func run() -> void:
 			view.base = (Vector2(512,512)-(high-low)*view.zoom)/2-low*view.zoom
 			for rotation in (2 if kind == "ride" else 1):
 				view.building = {"kind":kind,"type":id,"x":0,"y":0,"w":catalog.size[0],"h":catalog.size[1],"phase":3,"phase_t":0.0,"rotation":rotation,"occupants":[],"working":true,"open":true,"water_exit":[4,0],"exit_rotation":1-rotation}
+				if occupied and kind == "ride":
+					for index in int(catalog.capacity): view.building.occupants.append(index+1)
 				for mode in ["original", "remake_medium", "remake_maximum"]:
 					view.configure(mode)
 					for state in variants:

@@ -1,0 +1,35 @@
+{
+  "after": {
+    "cached_routes": 953,
+    "elapsed_us": 1685420,
+    "end_tick": 21080,
+    "frame_mean_us": 468.172222222222,
+    "frames": 3600,
+    "guests": 200,
+    "packed_route_bytes": 95096,
+    "start_tick": 20480,
+    "tick_max_us": 26925,
+    "tick_p50_us": 2447,
+    "tick_p95_us": 4474,
+    "ticks": 600
+  },
+  "before": {
+    "cached_routes": 0,
+    "elapsed_us": 2316214,
+    "end_tick": 21080,
+    "frame_mean_us": 643.392777777778,
+    "frames": 3600,
+    "guests": 200,
+    "packed_route_bytes": 0,
+    "start_tick": 20480,
+    "tick_max_us": 44770,
+    "tick_p50_us": 3486,
+    "tick_p95_us": 7234,
+    "ticks": 600
+  },
+  "final_snapshot_sha256": "e62b2d6dfd75ef998a323e64955a461f9746ba8e26081423595ee5708f321fbe",
+  "fixture": "res://../art/review/acceptance_park.json",
+  "note": "Desktop headless CPU benchmark, 60 game seconds. Not an Android FPS measurement.",
+  "snapshots_byte_identical": true,
+  "speedup": 1.374265168326
+}

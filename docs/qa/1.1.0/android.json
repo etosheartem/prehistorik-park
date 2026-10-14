@@ -1,0 +1,37 @@
+{
+  "version": "1.1.0",
+  "version_code": 7,
+  "device": "Pixel 7 / Android API 35 emulator / ARM translation",
+  "renderer": "GLES 3.1 (Vulkan fallback)",
+  "upgrade_from": "1.0.1",
+  "save_unchanged_immediately_after_install": true,
+  "settings_unchanged_immediately_after_install": true,
+  "loaded_park": {
+    "buildings": 45,
+    "guests": 200,
+    "staff": 15
+  },
+  "staff_uids_preserved": true,
+  "building_uids_preserved": true,
+  "verified_on_device": [
+    "Continue existing park",
+    "Team tab with 15 individual workers",
+    "Hire tab",
+    "Guard placement preview",
+    "Construction arrow moves cell 7,9 to 8,9",
+    "Occupied cell disables purchase",
+    "Preview leaves cash at 25196",
+    "Automatic tree transparency",
+    "Seated bench guests"
+  ],
+  "script_or_fatal_errors": [],
+  "original_test_device_saves_restored": {
+    "park.json": "7b4df4572e85dfa2efe4cadaf6cd22599e5e4569d82d84b2fb61fea8d8f04353",
+    "park.json.bak": "eef707d7125d3ce41ffc33bde9fd9a604fa7b6187be300f5948672957a2dd479",
+    "park.json.manual.json": "82e7fed906900102ea9dbad7ec1ac7562fff9a2450e4b11d009c940db949aa79",
+    "park.json.before_restore.json": "7924bcc0e90cc439a4ffa27569e51131dd550db9665e49c7ade75f45e28c054f",
+    "settings.json": "7de473785e8f42040143661e400fb58875ac33a8a3fadf7748c09a9d30fca0b5",
+    "settings.json.bak": "7de473785e8f42040143661e400fb58875ac33a8a3fadf7748c09a9d30fca0b5"
+  },
+  "apk_sha256": "8f9738545a780670003083c35b1f7e634cd541888dc90a0a1531025023dbd0a2"
+}

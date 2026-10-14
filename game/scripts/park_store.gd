@@ -32,7 +32,7 @@ static func save_settings(path: String, values: Dictionary) -> bool:
 static func defaults() -> Dictionary:
 	return {"music": 0.45, "effects": 0.65, "quality": Graphics.DEFAULT, "debug": false,
 		"fps": 60, "shadows": true, "particles": true, "color_style": "natural",
-		"reduced_motion": false, "build_grid": true, "camera_speed": 1.0}
+		"transparent_trees": true, "reduced_motion": false, "build_grid": true, "camera_speed": 1.0}
 
 static func settings(path: String) -> Dictionary:
 	var defaults := defaults()
@@ -42,7 +42,7 @@ static func settings(path: String) -> Dictionary:
 		if saved.get(key) is float or saved.get(key) is int:
 			var number := float(saved[key])
 			if is_finite(number): defaults[key] = clampf(number, 0, 1)
-	for key in ["shadows", "particles", "reduced_motion", "build_grid"]:
+	for key in ["shadows", "particles", "reduced_motion", "build_grid", "transparent_trees"]:
 		if saved.get(key) is bool: defaults[key] = saved[key]
 	if (saved.get("fps") is int or saved.get("fps") is float) and saved.fps in [30.0, 60.0]: defaults.fps = int(saved.fps)
 	if saved.get("color_style") in ["natural", "vivid", "warm"]: defaults.color_style = saved.color_style

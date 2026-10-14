@@ -30,6 +30,7 @@ var _beauty_cache: Dictionary = {}
 var _route_cache: Dictionary = {}
 var _route_cache_order: Array[Vector4i] = []
 var _access_cache: Dictionary = {}
+var _queue_cache: Dictionary = {}
 
 
 func _init() -> void:
@@ -356,28 +357,74 @@ func set_open(uid: int, opened: bool) -> bool:
 	return true
 
 
+func rotate_service(uid: int) -> bool:
+	last_error = ""
+	if state.is_empty() or state.status != "playing":
+		last_error = "Игра завершена"; return false
+	var b := building_by_id(uid)
+	var pairs := {15:16,16:15,17:18,18:17,20:21,21:20}
+	if b.is_empty() or b.kind != "prop" or not pairs.has(int(b.type)):
+		last_error = "Этот объект нельзя повернуть"; return false
+	if not b.occupants.is_empty():
+		last_error = "Подожди, пока посетители закончат обслуживание"; return false
+	b.type = pairs[int(b.type)]
+	_topology_dirty = true
+	_refresh_topology()
+	return true
+
+
 func set_admission(price: int) -> bool:
 	last_error = "В оригинале вход в парк бесплатный" if price != 0 else ""
 	return price == 0
 
 
-func hire(role: int) -> bool:
-	last_error = ""
-	if state.is_empty() or state.status != "playing":
-		last_error = "Игра завершена"
-		return false
-	if role < 0 or role >= 6:
-		last_error = "Неизвестная профессия"
-	elif _staff_count() >= 22:
-		last_error = "Нанят максимум работников (22)"
-	elif int(state.money) - int(staff_catalog[role].salary) < -500:
-		last_error = "Не хватает денег"
-	if not last_error.is_empty():
-		return false
+func can_hire(role: int) -> String:
+	if state.is_empty() or state.status != "playing": return "Игра завершена"
+	if role < 0 or role >= 6: return "Неизвестная профессия"
+	if _staff_count() >= 22: return "Нанят максимум работников (22)"
+	if int(state.money) - int(staff_catalog[role].salary) < -500: return "Не хватает денег"
+	return ""
+
+
+func worker_by_id(uid: int) -> Dictionary:
+	for worker in state.workers:
+		if int(worker.uid) == uid: return worker
+	return {}
+
+
+func assigned_worker(building_uid: int) -> Dictionary:
+	for worker in state.workers:
+		if int(worker.type) >= 2 and int(worker.get("assignment_uid", worker.target_uid)) == building_uid:
+			return worker
+	return {}
+
+
+func staff_placement_error(role: int, cell: Vector2i, worker_uid := -1) -> String:
+	if role < 0 or role >= 6: return "Неизвестная профессия"
+	if not _inside(cell): return "Выбери место внутри парка"
+	if _topology_dirty: _refresh_topology()
+	if role < 2:
+		return "" if _reachable.has(_key(cell)) and not _occupancy.has(_key(cell)) else "Поставь сотрудника на дорожку, связанную со входом"
+	var building := building_at(cell)
+	if building.is_empty() or _role(building) != role:
+		return {2:"Выбери кафе: повар работает в кафе",3:"Выбери закусочную, мороженицу или лавку шариков",4:"Выбери медпункт",5:"Выбери диномотор"}[role]
+	var current := assigned_worker(int(building.uid))
+	if not current.is_empty() and int(current.uid) != worker_uid:
+		return "Здесь уже работает %s №%d" % [staff_catalog[role].name,current.uid]
+	return ""
+
+
+func hire(role: int, cell := Vector2i(-1,-1)) -> bool:
+	last_error = can_hire(role)
+	if last_error.is_empty() and cell != Vector2i(-1,-1): last_error = staff_placement_error(role, cell)
+	if not last_error.is_empty(): return false
+	var start := _entrance() if cell == Vector2i(-1,-1) else cell
+	var assignment := 0 # Compatibility: unattended callers can still fill a free job.
+	if cell != Vector2i(-1,-1):
+		assignment = int(building_at(cell).uid) if role >= 2 else -1
 	_spend(int(staff_catalog[role].salary))
 	state.staff[role] = int(state.staff[role]) + 1
-	var start := _entrance()
-	state.workers.append({"uid": int(state.next_uid), "type": role, "x": float(start.x), "y": float(start.y), "dir": 3, "state": "walking", "target_uid": -1, "route": [], "anim": 0.0})
+	state.workers.append({"uid":int(state.next_uid),"type":role,"x":float(start.x),"y":float(start.y),"dir":3,"state":"walking","target_uid":-1,"assignment_uid":assignment,"route":[],"anim":0.0})
 	state.next_uid = int(state.next_uid) + 1
 	_refresh_working()
 	_tutorial_action("staff", role)
@@ -385,20 +432,42 @@ func hire(role: int) -> bool:
 	return true
 
 
-func fire(role: int) -> bool:
+func assign_worker(uid: int, cell: Vector2i) -> bool:
 	if state.is_empty() or state.status != "playing":
-		last_error = "Игра завершена"
-		return false
-	if role < 0 or role >= 6 or int(state.staff[role]) <= 0:
-		last_error = "Такой работник не нанят"
-		return false
-	for worker in state.workers:
-		if int(worker.type) == role:
-			state.workers.erase(worker)
-			break
-	state.staff[role] = int(state.staff[role]) - 1
+		last_error = "Игра завершена"; return false
+	var worker := worker_by_id(uid)
+	if worker.is_empty():
+		last_error = "Сотрудник не найден"; return false
+	last_error = staff_placement_error(int(worker.type), cell, uid)
+	if not last_error.is_empty(): return false
+	worker.assignment_uid = int(building_at(cell).uid) if int(worker.type) >= 2 else -1
+	worker.target_uid = -1
+	worker.x = float(cell.x)
+	worker.y = float(cell.y)
+	worker.route = []
+	worker.state = "walking"
 	_refresh_working()
 	return true
+
+
+func fire_worker(uid: int) -> bool:
+	if state.is_empty() or state.status != "playing":
+		last_error = "Игра завершена"; return false
+	var worker := worker_by_id(uid)
+	if worker.is_empty():
+		last_error = "Сотрудник не найден"; return false
+	state.staff[int(worker.type)] = int(state.staff[int(worker.type)]) - 1
+	state.workers.erase(worker)
+	_refresh_working()
+	last_error = ""
+	return true
+
+
+func fire(role: int) -> bool:
+	for worker in state.workers:
+		if int(worker.type) == role: return fire_worker(int(worker.uid))
+	last_error = "Такой работник не нанят"
+	return false
 
 
 func start_research(id: int, kind: String = "") -> bool:
@@ -497,6 +566,7 @@ func _refresh_topology() -> void:
 	_route_cache.clear()
 	_route_cache_order.clear()
 	_access_cache.clear()
+	_queue_cache.clear()
 	_occupancy.clear()
 	_by_uid.clear()
 	for b in state.buildings:
@@ -571,6 +641,123 @@ func _connected_access(b: Dictionary, exit_port: bool = false) -> Array:
 	return result
 
 
+# A real, single-file line follows connected path cells from the entrance.
+# Cache only geometry; membership and positions remain part of the simulation.
+func queue_cells(b: Dictionary) -> Array:
+	if _queue_cache.is_empty():
+		var claimed := {}
+		var lines: Array = []
+		# Give every attraction its front position before extending any line.
+		# This keeps adjacent attractions from allocating the same path cells.
+		for ride in state.buildings:
+			if ride.kind != "ride" or int(ride.type) in [22,23]: continue
+			var cells: Array = []
+			var ports := _connected_access(ride)
+			if not ports.is_empty():
+				var front: Vector2i = ports[0]
+				if claimed.has(front):
+					for direction in DIRECTIONS:
+						var alternative: Vector2i = ports[0] + direction
+						if _reachable.has(_key(alternative)) and not claimed.has(alternative):
+							front = alternative
+							break
+				if not claimed.has(front):
+					cells.append(front)
+					claimed[front] = true
+			_queue_cache[int(ride.uid)] = cells
+			lines.append({"cells":cells,"previous":Vector2i(ride.x,ride.y)})
+		# Round-robin extension shares limited space rather than letting the
+		# first attraction consume the whole corridor.
+		for step in 9:
+			for line in lines:
+				if line.cells.is_empty() or line.cells.size() != step + 1: continue
+				var current: Vector2i = line.cells.back()
+				var best := Vector2i(-1,-1)
+				var score := -INF
+				for direction in DIRECTIONS:
+					var next: Vector2i = current + direction
+					if not _reachable.has(_key(next)) or claimed.has(next): continue
+					var candidate := Vector2(direction).dot(Vector2(current - line.previous))
+					if int(state.paths.get(_key(next),0)) in [2,6]: candidate -= 4.0
+					if candidate > score: score = candidate; best = next
+				if best.x >= 0:
+					line.previous = current
+					line.cells.append(best)
+					claimed[best] = true
+	return _queue_cache.get(int(b.uid), [])
+
+
+func _advance_queue(v: Dictionary, b: Dictionary) -> void:
+	var index: int = b.queue.find(int(v.uid))
+	var cells := queue_cells(b)
+	if index < 0 or index >= cells.size():
+		b.queue.erase(int(v.uid))
+		v.state = "walking"
+		v.target_uid = -1
+		v.route = []
+		v.cooldown = 20
+		return
+	var goal: Vector2i = cells[index]
+	var position := Vector2(float(v.x), float(v.y))
+	if position.distance_squared_to(Vector2(goal)) > 0.00001:
+		if v.route.is_empty() or Vector2i(v.route.back()[0], v.route.back()[1]) != goal:
+			v.route = _route(Vector2i(roundi(v.x), roundi(v.y)), goal)
+			# Finish a partly traversed cell even when rounded coordinates match.
+			if v.route.is_empty(): v.route = [[goal.x, goal.y]]
+		_move(v, 1.5)
+	else:
+		v.route.clear()
+		var facing: Vector2 = Vector2(cells[index - 1] if index > 0 else Vector2i(b.x, b.y)) - position
+		v.dir = (1 if facing.x > 0 else 2) if absf(facing.x) > absf(facing.y) else (3 if facing.y > 0 else 0)
+
+
+func _release_bench(v: Dictionary) -> void:
+	v.erase("bench_cell")
+	v.erase("bench_slot")
+
+
+func _free_bench_slot(cell: Vector2i, uid: int) -> int:
+	var used := [false, false]
+	for guest in state.visitors:
+		if int(guest.uid) == uid or guest.state not in ["walking", "resting"]: continue
+		if guest.get("bench_cell", []) == [cell.x, cell.y]:
+			used[clampi(int(guest.get("bench_slot", 0)), 0, 1)] = true
+	return used.find(false)
+
+
+func _seek_bench(v: Dictionary) -> bool:
+	var origin := Vector2i(roundi(v.x), roundi(v.y))
+	var best := Vector2i(-1, -1)
+	var shortest: Array = []
+	var best_slot := -1
+	for key in _reachable:
+		if int(state.paths[key]) not in [2, 6]: continue
+		var seat := _cell(key)
+		var slot := _free_bench_slot(seat, int(v.uid))
+		if slot < 0: continue
+		var route := _route(origin, seat)
+		if origin != seat and route.is_empty(): continue
+		if best.x < 0 or route.size() < shortest.size():
+			best = seat
+			best_slot = slot
+			shortest = route
+	if best.x < 0: return false
+	v.bench_cell = [best.x, best.y]
+	v.bench_slot = best_slot
+	v.target_uid = -1
+	v.route = shortest
+	v.state = "walking"
+	if shortest.is_empty(): _sit_on_bench(v)
+	return true
+
+
+func _sit_on_bench(v: Dictionary) -> void:
+	v.state = "resting"
+	v.timer = int(data.tables[34][5])
+	v.need_ticks = 0
+	v.route = []
+
+
 func _role(b: Dictionary) -> int:
 	if b.kind == "ride":
 		return 2 if int(b.type) == 23 else -1
@@ -578,29 +765,51 @@ func _role(b: Dictionary) -> int:
 
 
 func _refresh_working() -> void:
-	var remaining: Array = state.staff.duplicate()
-	for worker in state.workers:
-		if int(worker.type) >= 2:
-			worker.target_uid = -1
-	var motors: Array = []
+	var claimed := {}
 	for b in state.buildings:
-		if b.kind == "ride" and int(b.type) == 22:
-			b.water_route = _water_route(b)
+		if b.kind == "ride" and int(b.type) == 22: b.water_route = _water_route(b)
 		b.connected = not _connected_access(b).is_empty() and not _connected_access(b, true).is_empty()
-		var role := _role(b)
-		b.staffed = role < 0
-		if role >= 0 and int(remaining[role]) > 0 and bool(b.open) and bool(b.connected):
-			b.staffed = true
-			remaining[role] = int(remaining[role]) - 1
-			for worker in state.workers:
-				if int(worker.type) == role and int(worker.target_uid) == -1:
-					worker.target_uid = int(b.uid)
-					worker.x = float(b.x)
-					worker.y = float(b.y)
-					worker.state = "working"
-					break
-		if b.kind == "prop" and int(b.type) == 26 and bool(b.open) and bool(b.staffed) and bool(b.connected):
-			motors.append(b)
+		b.staffed = _role(b) < 0
+		b.worker_uid = -1
+	# Retain individual assignments even when a road is removed or a shop closes.
+	# Hiring another worker must never move the people already at their jobs.
+	for worker in state.workers:
+		if int(worker.type) < 2: continue
+		var uid := int(worker.get("assignment_uid", worker.target_uid))
+		var b: Dictionary = _by_uid.get(uid,{})
+		if not b.is_empty() and _role(b) == int(worker.type) and not claimed.has(uid):
+			worker.assignment_uid = uid
+			claimed[uid] = worker
+		else:
+			worker.assignment_uid = 0
+			worker.target_uid = -1
+			worker.state = "walking"
+	for worker in state.workers:
+		if int(worker.type) < 2 or int(worker.assignment_uid) > 0: continue
+		var nearest := INF
+		var chosen := -1
+		for b in state.buildings:
+			if _role(b) != int(worker.type) or claimed.has(int(b.uid)) or not bool(b.open) or not bool(b.connected): continue
+			var distance := Vector2(b.x,b.y).distance_squared_to(Vector2(worker.x,worker.y))
+			if distance < nearest:
+				nearest = distance
+				chosen = int(b.uid)
+		if chosen > 0:
+			worker.assignment_uid = chosen
+			claimed[chosen] = worker
+	var motors: Array = []
+	for uid in claimed:
+		var b: Dictionary = _by_uid[uid]
+		var worker: Dictionary = claimed[uid]
+		b.staffed = true
+		b.worker_uid = int(worker.uid)
+		worker.target_uid = uid
+		worker.x = float(b.x)
+		worker.y = float(b.y)
+		worker.route = []
+		worker.state = "working"
+		if b.kind == "prop" and int(b.type) == 26 and bool(b.open) and bool(b.connected): motors.append(b)
+
 	for b in state.buildings:
 		b.powered = true
 		if b.kind == "ride" and bool(ride_catalog[int(b.type)].requires_motor):
@@ -612,7 +821,7 @@ func _refresh_working() -> void:
 		if not bool(b.open):
 			b.reason = "Закрыто"
 		elif not bool(b.connected):
-			b.reason = "Нужны дорожки к входу и выходу"
+			b.reason = "Нужны дорожки к входу и выходу" if b.kind == "ride" else "Подведи дорожку к прилавку или поверни лавку"
 		elif not bool(b.staffed):
 			b.reason = "Нужен работник: " + str(staff_catalog[_role(b)].name)
 		elif not bool(b.powered):
@@ -766,6 +975,19 @@ func _tick_guest(v: Dictionary) -> void:
 				period += _beauty(Vector2i(roundi(v.x), roundi(v.y)))
 			if int(v.need_ticks) % period == 0:
 				v.needs[need] = clampi(int(v.needs[need]) + (1 if NEED_INCREASE[need] else -1), 0, 100)
+	if v.has("bench_cell"):
+		var seat := Vector2i(v.bench_cell[0], v.bench_cell[1])
+		if v.state not in ["walking", "resting"] or int(state.paths.get(_key(seat), -1)) not in [2, 6] or not _reachable.has(_key(seat)):
+			_release_bench(v)
+			if v.state == "resting": v.state = "walking"
+			v.route = []
+		elif v.state == "walking" and v.route.is_empty():
+			if Vector2(float(v.x), float(v.y)).distance_squared_to(Vector2(seat)) < 0.00001:
+				_sit_on_bench(v)
+			else: _release_bench(v)
+	elif v.state == "resting":
+		# Legacy saves did not record which of the two seats was occupied.
+		if not _seek_bench(v): v.state = "walking"
 	if v.state == "queue":
 		var b: Dictionary = _by_uid.get(int(v.target_uid), {})
 		if b.is_empty() or not bool(b.working):
@@ -777,6 +999,7 @@ func _tick_guest(v: Dictionary) -> void:
 			v.needs[0] = maxi(0, int(v.needs[0]) - 10)
 		else:
 			v.timer = int(v.timer) + 1
+			_advance_queue(v, b)
 		return
 	if v.state == "riding":
 		var water: Dictionary = _by_uid.get(int(v.target_uid), {})
@@ -846,27 +1069,8 @@ func _contact_guests(v: Dictionary) -> void:
 func _choose_destination(v: Dictionary) -> void:
 	var choices: Array = []
 	var origin := Vector2i(roundi(v.x), roundi(v.y))
-	# Benches are a need response, not merely a fallback when every ride is unavailable.
-	if int(v.needs[1]) >= 50:
-		var shortest: Array = []
-		for key in _reachable:
-			if int(state.paths[key]) not in [2, 6]:
-				continue
-			var seat := _cell(key)
-			if origin == seat:
-				v.state = "resting"
-				v.timer = int(data.tables[34][5])
-				v.need_ticks = 0
-				v.target_uid = -1
-				return
-			var route := _route(origin, seat)
-			if not route.is_empty() and (shortest.is_empty() or route.size() < shortest.size()):
-				shortest = route
-		if not shortest.is_empty():
-			v.route = shortest
-			v.target_uid = -1
-			v.state = "walking"
-			return
+	_release_bench(v)
+	if int(v.needs[1]) >= 50 and _seek_bench(v): return
 	for b in state.buildings:
 		if not bool(b.working) or int(b.price) > int(v.cash):
 			continue
@@ -894,8 +1098,13 @@ func _choose_destination(v: Dictionary) -> void:
 				if (NEED_INCREASE[need] and int(v.needs[need]) < int(cat.threshold)) or (not NEED_INCREASE[need] and int(v.needs[need]) > int(cat.threshold)):
 					weight = 0.0
 		if weight > 0.0:
-			var route := _route(origin, access[0])
-			if not route.is_empty() or origin == access[0]:
+			var destination: Vector2i = access[0]
+			if b.kind == "ride" and int(b.type) not in [22, 23]:
+				var line := queue_cells(b)
+				if b.queue.size() >= line.size(): continue
+				destination = line[b.queue.size()]
+			var route := _route(origin, destination)
+			if not route.is_empty() or origin == destination:
 				choices.append({"uid": int(b.uid), "weight": weight / (1.0 + route.size() * 0.08) + _rng.randf_range(0.0, 10.0), "route": route})
 	if not choices.is_empty():
 		choices.sort_custom(func(a, b): return a.weight > b.weight)
@@ -903,20 +1112,7 @@ func _choose_destination(v: Dictionary) -> void:
 		v.route = choices[0].route
 		v.state = "walking"
 		return
-	if int(v.needs[1]) > 45:
-		for key in _reachable:
-			if int(state.paths[key]) in [2, 6]:
-				var seat := _cell(key)
-				var route := _route(origin, seat)
-				if origin == seat:
-					v.state = "resting"
-					v.timer = 50
-					v.need_ticks = 0
-					return
-				if not route.is_empty():
-					v.route = route
-					v.cooldown = 20
-					return
+	if int(v.needs[1]) > 45 and _seek_bench(v): return
 	var keys := _reachable.keys()
 	if keys.size() > 1:
 		v.route = _route(origin, _cell(keys[_rng.randi_range(0, keys.size() - 1)]))
@@ -939,14 +1135,21 @@ func _arrive(v: Dictionary) -> void:
 			v.route = b.water_route.duplicate(true)
 			b.occupants.append(int(v.uid))
 			return
-		if b.queue.size() >= 10:
+		var line := queue_cells(b)
+		if b.queue.size() >= line.size():
 			v.target_uid = -1
 			v.cooldown = 30
+			return
+		var tail: Vector2i = line[b.queue.size()]
+		if Vector2(float(v.x), float(v.y)).distance_squared_to(Vector2(tail)) > 0.00001:
+			v.route = _route(Vector2i(roundi(v.x), roundi(v.y)), tail)
+			if v.route.is_empty(): v.route = [[tail.x, tail.y]]
 			return
 		_remember_ride(v, int(b.type))
 		b.queue.append(int(v.uid))
 		v.state = "queue"
 		v.timer = 0
+		_advance_queue(v, b)
 	else:
 		if b.kind == "ride" and b.occupants.size() >= int(ride_catalog[23].capacity):
 			v.target_uid = -1
@@ -981,6 +1184,7 @@ func _pay(v: Dictionary, b: Dictionary) -> void:
 func _finish_service(v: Dictionary) -> void:
 	var b: Dictionary = _by_uid.get(int(v.target_uid), {})
 	if v.state == "resting":
+		_release_bench(v)
 		v.needs[1] = maxi(0, int(v.needs[1]) - 50)
 	elif v.state in ["fighting", "watching"]:
 		var row := 0 if v.state == "fighting" else 1
@@ -1034,6 +1238,7 @@ func _tick_rides() -> void:
 						continue
 					_pay(v, b)
 					v.state = "riding"
+					v.route = []
 					v.need_ticks = 0
 					b.occupants.append(int(v.uid))
 				b.phase = 3
@@ -1105,7 +1310,7 @@ func _tick_workers() -> void:
 					if v.state == "fighting":
 						v.timer = 1
 		else:
-			worker.state = "working"
+			worker.state = "working" if int(worker.target_uid) > 0 else "walking"
 
 
 func _beauty(cell: Vector2i) -> int:
@@ -1405,6 +1610,8 @@ func _valid_save(saved: Dictionary) -> bool:
 				return false
 		if float(v.speed) < 0.1 or float(v.speed) > 10.0:
 			return false
+		if v.has("bench_cell") and (not _int_array(v.bench_cell, 2, 0, size - 1) or not _integer(v.get("bench_slot"), 0, 1)):
+			return false
 		guest_ids[int(v.uid)] = true
 	for b in saved.buildings:
 		for uid in b.occupants + b.queue:
@@ -1420,6 +1627,8 @@ func _valid_save(saved: Dictionary) -> bool:
 		if int(worker.type) < 0 or int(worker.type) > 5 or int(worker.dir) < 0 or int(worker.dir) > 3 or int(worker.uid) < 1 or int(worker.uid) >= int(saved.next_uid) or ids.has(int(worker.uid)):
 			return false
 		if not _valid_route(worker.get("route"), size) or worker.get("state") not in ["walking", "working", "repairing"] or not (worker.get("anim") is int or worker.get("anim") is float) or not is_finite(float(worker.anim)):
+			return false
+		if worker.has("assignment_uid") and not _integer(worker.assignment_uid, -1, int(saved.next_uid) - 1):
 			return false
 		ids[int(worker.uid)] = true
 		actual_staff[int(worker.type)] += 1
