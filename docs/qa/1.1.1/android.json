@@ -1,0 +1,28 @@
+{
+  "version": "1.1.1",
+  "version_code": 8,
+  "device": "Pixel 7 / Android API 35 emulator / ARM translation",
+  "renderer": "GLES 3.1 (expected Vulkan fallback)",
+  "apk_sha256": "a0ece712a7697a9358ef9a961e30fca2fedd3cd03b4a8e2e77230c98355e0630",
+  "fixture": {
+    "source": "known valid backup from before 1.1.0; emulator park files were empty at start of this test",
+    "buildings": 45,
+    "visitors": 200,
+    "workers": 15
+  },
+  "final_install_preserved_valid_park_and_settings": {
+    "park.json": "4435163c6c66fbe07884aea5c3c3b4968e0e3a9fd1676eff262110c453abb805",
+    "settings.json": "34977c2051dae46f44dad9084c0cfd7908dfa5fdb7ab5d9a19da62f48622e950"
+  },
+  "touch_checks": [
+    "Construction arrow moved preview from cell 7,9 to 8,9 in visible park, with stable camera",
+    "Invalid occupied location blocks construction",
+    "Empty cell 1,19 warns about disconnected entrance and exit but permits building",
+    "Remade slide joint visible in catalog, ghost and existing park",
+    "Team scroll failed before card fix; same native swipe now advances to later workers",
+    "Team/hire tabs remain visible after scrolling",
+    "Hire tab returns to first profession"
+  ],
+  "script_or_fatal_errors": [],
+  "pre_test_file_contents_restored": true
+}

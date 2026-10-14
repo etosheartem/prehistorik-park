@@ -220,6 +220,31 @@ func run() -> void:
 	await settle()
 	check(Rect2(Vector2.ZERO,viewport.size).encloses(game.placement_panel.get_rect()), "placement panel with arrows fits screen")
 	check(game.placement_panel.size.y < 480, "precision controls leave three quarters of park visible")
+	# A distant preview must land between the settled controls and placement
+	# panel. Rebuilding wrapped labels used to collapse this area to 100px.
+	game.view.pan = Vector2(9999,-9999)
+	game._nudge_build(Vector2i.ZERO)
+	await settle()
+	var aim: Vector2 = game.view.cell_to_screen(Vector2(game.build_cell))
+	check(aim.y > game.zoom_controls.position.y + game.zoom_controls.size.y + 28 and aim.y < game.placement_panel.position.y - 36,"arrow keeps selected cell below HUD and above settled placement panel")
+	var camera: Vector2 = game.view.pan
+	game._nudge_build(Vector2i(0,1))
+	await settle()
+	check(game.view.pan == camera,"nearby arrow step never jumps an already visible camera")
+	await capture("arrow_camera")
+	game._nudge_build(Vector2i(0,-1))
+	await settle()
+	check(game.sim.placement_warning("ride",6,Vector2i(6,10)).contains("Вход и выход"),"disconnected ride explains both missing paths")
+	check(game.sim.placement_warning("ride",6,Vector2i(1,3)).is_empty(),"connected entrance and exit have no false warning")
+	check(game.sim.placement_warning("prop",0,Vector2i(6,10)).is_empty(),"decorative trees do not request roads")
+	game._choose_build("ride",6)
+	game._cell_selected(Vector2i(6,10))
+	await settle()
+	check(not find_button(game.placement_panel,"Построить").disabled,"missing roads warn without preventing construction")
+	check(game.placement_body.get_child(2).text.contains("не соединены с дорожкой"),"placement hint displays the road warning")
+	await capture("missing_access_warning")
+	game._choose_build("prop",17)
+	game._cell_selected(Vector2i(14,3))
 	game.message_time = 0
 	game._refresh_hud()
 	game.view.focus_cell(Vector2(14,3),5.0)
@@ -246,6 +271,45 @@ func run() -> void:
 	find_button(game.inspector,"Команда · 1 / 22").pressed.emit()
 	await settle()
 	check(find_button(game.inspector,"Переназначить") != null, "team tab returns individual assignments")
+	for index in 10: game.sim.hire(0,Vector2i(15,6))
+	game.show_staff()
+	await settle()
+	Input.emulate_touch_from_mouse = true
+	var drag_start: Vector2 = game.inspector_body.get_child(1).get_global_rect().position+Vector2(160,55)
+	var finger := InputEventScreenTouch.new()
+	finger.index = 0; finger.position = drag_start; finger.pressed = true
+	viewport.push_input(finger,true)
+	var press := InputEventMouseButton.new()
+	press.button_index = MOUSE_BUTTON_LEFT; press.position = drag_start; press.pressed = true; press.device = -1
+	viewport.push_input(press,true)
+	for step in range(1,9):
+		var drag := InputEventScreenDrag.new()
+		drag.index = 0; drag.position = drag_start-Vector2(0,step*28); drag.relative = Vector2(0,-28)
+		viewport.push_input(drag,true)
+		var motion := InputEventMouseMotion.new()
+		motion.position = drag.position; motion.relative = drag.relative; motion.button_mask = MOUSE_BUTTON_MASK_LEFT; motion.device = -1
+		viewport.push_input(motion,true)
+		await process_frame
+	finger = InputEventScreenTouch.new()
+	finger.index = 0; finger.position = drag_start-Vector2(0,224)
+	viewport.push_input(finger,true)
+	var release := InputEventMouseButton.new()
+	release.button_index = MOUSE_BUTTON_LEFT; release.position = finger.position; release.device = -1
+	viewport.push_input(release,true)
+	await settle()
+	check(game.inspector_scroll.scroll_vertical > 0,"finger drag on employee card scrolls the team")
+	check(game.sim.state.workers.size() == 11,"dragging an employee card never fires or moves its worker")
+	Input.emulate_touch_from_mouse = false
+	game.inspector_scroll.scroll_vertical = 1800
+	await settle()
+	var hire_tab := find_button(game.inspector,"Нанять сотрудника")
+	check(game.inspector_scroll.scroll_vertical > 0 and hire_tab.get_global_rect().position.y < game.inspector_scroll.get_global_rect().position.y,"hire tab stays above a scrolled full roster")
+	await capture("staff_scrolled")
+	hire_tab.pressed.emit()
+	await settle()
+	check(game.inspector_scroll.scroll_vertical == 0,"switching staff tab starts at first profession")
+	for worker in game.sim.state.workers.duplicate():
+		if int(worker.type) == 0: game.sim.fire_worker(worker.uid)
 	game._clear_selection()
 	# Deterministic visual fixture: seven people in line, two riders, two resting.
 	var ride: Dictionary = game.sim.state.buildings[0]

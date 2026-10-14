@@ -91,6 +91,16 @@ static func _region(view, pack: int, index: int, source: Rect2, at: Vector2, tin
 		var part = view.part_overrides[key]
 		var replacement: Texture2D = view._texture(Graphics.replacement_path(part))
 		if replacement:
+			if part is Dictionary and part.has("joint_trim"):
+				# Painted atlas cuts include a transparent/outlined rim. Sample
+				# inside that rim and overlap only the authored joining edges.
+				var trim: Array = part.joint_trim
+				var overlap: Array = part.get("joint_overlap", [0,0,0,0])
+				var scale := replacement.get_size() / source.size
+				var sample := Rect2(Vector2(trim[0],trim[1]) * scale, (source.size - Vector2(trim[0]+trim[2],trim[1]+trim[3])) * scale)
+				target = target.grow_individual(overlap[0]*view.zoom,overlap[1]*view.zoom,overlap[2]*view.zoom,overlap[3]*view.zoom)
+				view.draw_texture_rect_region(replacement, target, sample, tint)
+				return
 			if part is Dictionary and part.get("flip_x", false):
 				target.size.x = -target.size.x
 			view.draw_texture_rect(replacement, target, false, tint)

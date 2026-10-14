@@ -629,6 +629,28 @@ func _access(b: Dictionary, exit_port: bool = false) -> Array:
 	return result
 
 
+func placement_warning(kind: String, id: int, cell: Vector2i, rotation := 0) -> String:
+	if kind not in ["ride", "prop"] or (kind == "prop" and id < 14): return ""
+	if _topology_dirty: _refresh_topology()
+	var item := _catalog(kind, id)
+	var preview := {"kind":kind,"type":id,"x":cell.x,"y":cell.y,"w":item.size[0],"h":item.size[1],"rotation":rotation,"water_exit":[],"exit_rotation":rotation}
+	var ports := [false,true] if kind == "ride" and id != 22 else [false]
+	if kind == "ride" and id == 22 and int(state.water_build) > 0:
+		preview = building_by_id(int(state.water_build)).duplicate(true)
+		preview.water_exit = [cell.x,cell.y]
+		preview.exit_rotation = rotation
+		ports = [true]
+	var missing: Array[String] = []
+	for exit_port in ports:
+		var connected := false
+		# Preview objects have no UID and must not populate the live access cache.
+		for access in _access(preview,exit_port):
+			if _reachable.has(_key(access)): connected = true; break
+		if not connected: missing.append("выход" if exit_port else "вход")
+	if missing.is_empty(): return ""
+	return "Вход и выход не соединены с дорожкой. Её можно проложить после постройки." if missing.size() == 2 else "%s не соединён с дорожкой. Её можно проложить после постройки." % missing[0].capitalize()
+
+
 func _connected_access(b: Dictionary, exit_port: bool = false) -> Array:
 	var cache_key := int(b.uid) * 2 + (1 if exit_port else 0)
 	if _access_cache.has(cache_key):

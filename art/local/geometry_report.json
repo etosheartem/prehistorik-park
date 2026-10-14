@@ -1,5 +1,6 @@
 {
-  "structural_parts": 13,
+  "structural_parts": 23,
+  "joined_painted_parts": 10,
   "attached_rope_endpoints": 846,
   "max_attachment_correction_logical_pixels": 4,
   "source_commands_unchanged": true

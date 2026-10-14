@@ -59,6 +59,7 @@ var catalog_available := false
 var sheet_shade: ColorRect
 var inspector_title: Label
 var inspector_tabs: HBoxContainer
+var staff_tabs: HBoxContainer
 var inspector_scroll: ScrollContainer
 var panel_mode := ""
 var placement_panel: PanelContainer
@@ -303,6 +304,10 @@ func _build_hud() -> void:
 		var tab := _button(inspector_tabs, spec[0], func(): show_stats() if name == "stats" else show_goals())
 		tab.size_flags_horizontal = SIZE_EXPAND_FILL
 		tab.set_meta("page", name)
+	staff_tabs = HBoxContainer.new()
+	staff_tabs.add_theme_constant_override("separation", 12)
+	details.add_child(staff_tabs)
+	staff_tabs.hide()
 	inspector_scroll = ScrollContainer.new()
 	inspector_scroll.horizontal_scroll_mode = ScrollContainer.SCROLL_MODE_DISABLED
 	inspector_scroll.size_flags_vertical = SIZE_EXPAND_FILL
@@ -390,7 +395,8 @@ func _layout() -> void:
 	catalog_panel.position = Vector2(18, size.y - inset_bottom - 158 - catalog_panel.size.y)
 	catalog_row.columns = 2 if portrait else 3
 	var details_limit := minf(sheet_height, 1140 if panel_mode in ["staff", "stats", "goals"] else 930)
-	var content_height := inspector_body.get_combined_minimum_size().y + 160 + (104 if inspector_tabs.visible else 0)
+	staff_tabs.visible = inspector.visible and panel_mode == "staff"
+	var content_height := inspector_body.get_combined_minimum_size().y + 160 + (104 if inspector_tabs.visible or staff_tabs.visible else 0)
 	var details_height := clampf(content_height, 380, details_limit)
 	inspector.reset_size()
 	inspector.size = Vector2(size.x - 36, details_height)
@@ -978,11 +984,14 @@ func _build_info() -> void:
 	if tool_kind in ["ride", "prop", "staff"]:
 		reason = "Выбери место в парке" if build_cell.x < 0 else (sim.staff_placement_error(tool_id, build_cell, moving_worker_uid) if tool_kind == "staff" else sim.can_build(tool_kind, tool_id, build_cell, build_rotation))
 		var ready := "Место подходит. Стрелки двигают на одну клетку."
+		var warning := sim.placement_warning(tool_kind,tool_id,build_cell,build_rotation) if reason.is_empty() and tool_kind != "staff" else ""
+		if not warning.is_empty(): ready = warning
 		if tool_kind == "staff" and reason.is_empty():
 			var workplace: Dictionary = sim.building_at(build_cell)
 			ready = "Начало патруля · %d, %d" % [build_cell.x, build_cell.y] if workplace.is_empty() else "Рабочее место: %s №%d" % [sim._catalog(workplace.kind, workplace.type).name, workplace.uid]
 		var hint := _label(placement_body, reason if not reason.is_empty() else ready, 24, true)
 		hint.add_theme_color_override("font_color", ArtTheme.CREAM if build_cell.x < 0 or reason.is_empty() else Color("a53f2c"))
+		if not warning.is_empty(): hint.add_theme_color_override("font_color", Color("8b5d18"))
 	if tool_kind in ["ride", "prop", "path", "staff"]:
 		var arrows := HBoxContainer.new()
 		arrows.add_theme_constant_override("separation", 12)
@@ -1032,7 +1041,20 @@ func _nudge_build(delta: Vector2i) -> void:
 	view.selected = build_cell
 	view.hovered = build_cell
 	_build_info()
-	var visible_park := Rect2(36, top.position.y + top.size.y + 70, size.x - 72, maxf(100, placement_panel.position.y - top.position.y - top.size.y - 110))
+	_keep_placement_visible.call_deferred(build_cell,tool_kind)
+	view.queue_redraw()
+
+func _keep_placement_visible(cell: Vector2i, kind: String) -> void:
+	# Fresh wrapped labels briefly inflate the panel before Container sorting.
+	# Read its rectangle only after that layout has settled, and discard stale
+	# requests if the player has moved again or closed construction meanwhile.
+	await get_tree().process_frame
+	if build_cell != cell or tool_kind != kind or not placement_panel.visible: return
+	_layout()
+	var safe_top := zoom_controls.position.y + zoom_controls.size.y + 28
+	if tutorial_label.visible: safe_top = maxf(safe_top,tutorial_label.position.y+tutorial_label.size.y+28)
+	if toast_panel.visible: safe_top = maxf(safe_top,toast_panel.position.y+toast_panel.size.y+28)
+	var visible_park := Rect2(36,safe_top,size.x-72,maxf(100,placement_panel.position.y-safe_top-36))
 	var point: Vector2 = view.cell_to_screen(Vector2(build_cell))
 	if not visible_park.has_point(point): view.pan += visible_park.get_center() - point
 	view.queue_redraw()
@@ -1202,8 +1224,8 @@ func _inspect_building() -> void:
 
 	_layout()
 
-func show_staff() -> void:
-	var scroll_before := inspector_scroll.scroll_vertical if panel_mode == "staff" else 0
+func show_staff(reset_scroll := false) -> void:
+	var scroll_before := inspector_scroll.scroll_vertical if panel_mode == "staff" and not reset_scroll else 0
 	_clear_selection()
 	_clear(inspector_body)
 	panel_mode = "staff"
@@ -1214,12 +1236,10 @@ func show_staff() -> void:
 	inspector_title.text = "Персонал"
 	_label(inspector_body, "Сначала выбери сотрудника, затем его место в парке. Оплата при найме и в начале каждой луны.", 25, true)
 	var show_team: bool = staff_tab == "team" and not sim.state.workers.is_empty()
-	var tabs := HBoxContainer.new()
-	tabs.add_theme_constant_override("separation", 12)
-	inspector_body.add_child(tabs)
+	_clear(staff_tabs)
 	for spec in [["Команда · %d / 22" % sim.state.workers.size(), "team"], ["Нанять сотрудника", "hire"]]:
 		var tab: String = spec[1]
-		var button := _button(tabs, spec[0], func(): staff_tab = tab; show_staff())
+		var button := _button(staff_tabs, spec[0], func(): staff_tab = tab; show_staff(true))
 		button.size_flags_horizontal = SIZE_EXPAND_FILL
 		button.disabled = tab == "team" and sim.state.workers.is_empty()
 		ArtTheme.selected(button, (tab == "team") == show_team)
@@ -1227,6 +1247,7 @@ func show_staff() -> void:
 		var uid := int(worker.uid)
 		var id := int(worker.type)
 		var card := PanelContainer.new()
+		card.mouse_filter = MOUSE_FILTER_PASS
 		card.add_theme_stylebox_override("panel", ArtTheme.box(ArtTheme.DEEP, ArtTheme.EDGE, 18))
 		inspector_body.add_child(card)
 		var body := VBoxContainer.new()

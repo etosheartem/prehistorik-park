@@ -1,0 +1,161 @@
+{
+  "passed": true,
+  "variants": [
+    {
+      "ride": 19,
+      "variant": 0,
+      "phases": 104,
+      "modes": {
+        "original": [
+          70080
+        ],
+        "remake": [
+          71051
+        ]
+      }
+    },
+    {
+      "ride": 19,
+      "variant": 1,
+      "phases": 104,
+      "modes": {
+        "original": [
+          71792
+        ],
+        "remake": [
+          72746
+        ]
+      }
+    },
+    {
+      "ride": 19,
+      "variant": 2,
+      "phases": 104,
+      "modes": {
+        "original": [
+          71744
+        ],
+        "remake": [
+          72728
+        ]
+      }
+    },
+    {
+      "ride": 19,
+      "variant": 3,
+      "phases": 104,
+      "modes": {
+        "original": [
+          71488
+        ],
+        "remake": [
+          72451
+        ]
+      }
+    },
+    {
+      "ride": 19,
+      "variant": 4,
+      "phases": 104,
+      "modes": {
+        "original": [
+          71408
+        ],
+        "remake": [
+          72359
+        ]
+      }
+    },
+    {
+      "ride": 19,
+      "variant": 5,
+      "phases": 104,
+      "modes": {
+        "original": [
+          71744
+        ],
+        "remake": [
+          72676
+        ]
+      }
+    },
+    {
+      "ride": 19,
+      "variant": 6,
+      "phases": 104,
+      "modes": {
+        "original": [
+          70896
+        ],
+        "remake": [
+          71861
+        ]
+      }
+    },
+    {
+      "ride": 19,
+      "variant": 7,
+      "phases": 104,
+      "modes": {
+        "original": [
+          71824
+        ],
+        "remake": [
+          72809
+        ]
+      }
+    },
+    {
+      "ride": 19,
+      "variant": 8,
+      "phases": 104,
+      "modes": {
+        "original": [
+          71184
+        ],
+        "remake": [
+          72136
+        ]
+      }
+    },
+    {
+      "ride": 19,
+      "variant": 9,
+      "phases": 104,
+      "modes": {
+        "original": [
+          70240
+        ],
+        "remake": [
+          71184
+        ]
+      }
+    },
+    {
+      "ride": 20,
+      "variant": 0,
+      "phases": 54,
+      "modes": {
+        "original": [
+          41040
+        ],
+        "remake": [
+          41635
+        ]
+      }
+    },
+    {
+      "ride": 21,
+      "variant": 0,
+      "phases": 52,
+      "modes": {
+        "original": [
+          33856
+        ],
+        "remake": [
+          34679
+        ]
+      }
+    }
+  ]
+}

@@ -102,5 +102,205 @@
       11
     ],
     "scale": 4
+  },
+  "1:6:57:37:26:12": {
+    "path": "res://assets/hd/parts/rides/part_73.png",
+    "logical_size": [
+      26,
+      12
+    ],
+    "scale": 8,
+    "joint_trim": [
+      0,
+      0,
+      0,
+      0.65
+    ],
+    "joint_overlap": [
+      0,
+      0,
+      0,
+      1
+    ]
+  },
+  "1:6:35:0:35:37": {
+    "path": "res://assets/hd/parts/rides/part_69.png",
+    "logical_size": [
+      35,
+      37
+    ],
+    "scale": 8,
+    "joint_trim": [
+      0,
+      0.65,
+      0.75,
+      0
+    ],
+    "joint_overlap": [
+      0,
+      0,
+      0.75,
+      0
+    ]
+  },
+  "1:6:70:13:11:22": {
+    "path": "res://assets/hd/parts/rides/part_75.png",
+    "logical_size": [
+      11,
+      22
+    ],
+    "scale": 8,
+    "joint_trim": [
+      0.75,
+      0,
+      0,
+      0
+    ],
+    "joint_overlap": [
+      0.75,
+      0,
+      0,
+      0
+    ]
+  },
+  "1:6:0:37:44:75": {
+    "path": "res://assets/hd/parts/rides/part_66.png",
+    "logical_size": [
+      44,
+      75
+    ],
+    "scale": 8,
+    "joint_trim": [
+      0,
+      0,
+      1,
+      0
+    ],
+    "joint_overlap": [
+      0,
+      0,
+      0.8,
+      0
+    ]
+  },
+  "1:6:44:59:15:54": {
+    "path": "res://assets/hd/parts/rides/part_72.png",
+    "logical_size": [
+      15,
+      54
+    ],
+    "scale": 8,
+    "joint_trim": [
+      1,
+      0,
+      0.75,
+      0
+    ],
+    "joint_overlap": [
+      0.8,
+      0,
+      0.75,
+      0
+    ]
+  },
+  "1:6:44:37:13:22": {
+    "path": "res://assets/hd/parts/rides/part_71.png",
+    "logical_size": [
+      13,
+      22
+    ],
+    "scale": 8,
+    "joint_trim": [
+      0.75,
+      0,
+      0,
+      0
+    ],
+    "joint_overlap": [
+      0.75,
+      0,
+      0,
+      0
+    ]
+  },
+  "1:6:81:0:30:44": {
+    "path": "res://assets/hd/parts/rides/part_76.png",
+    "logical_size": [
+      30,
+      44
+    ],
+    "scale": 8,
+    "joint_trim": [
+      0,
+      0,
+      0.75,
+      0
+    ],
+    "joint_overlap": [
+      0,
+      0,
+      0.75,
+      0
+    ]
+  },
+  "1:6:83:44:29:54": {
+    "path": "res://assets/hd/parts/rides/part_77.png",
+    "logical_size": [
+      29,
+      54
+    ],
+    "scale": 8,
+    "joint_trim": [
+      0.75,
+      0,
+      0.75,
+      0
+    ],
+    "joint_overlap": [
+      0.75,
+      0,
+      0.75,
+      0
+    ]
+  },
+  "1:6:83:98:20:26": {
+    "path": "res://assets/hd/parts/rides/part_78.png",
+    "logical_size": [
+      20,
+      26
+    ],
+    "scale": 8,
+    "joint_trim": [
+      0.75,
+      0,
+      0,
+      0.65
+    ],
+    "joint_overlap": [
+      0.75,
+      0,
+      0,
+      0.65
+    ]
+  },
+  "1:6:29:113:12:6": {
+    "path": "res://assets/hd/parts/rides/part_68.png",
+    "logical_size": [
+      12,
+      6
+    ],
+    "scale": 8,
+    "joint_trim": [
+      0.75,
+      0.65,
+      0,
+      0
+    ],
+    "joint_overlap": [
+      0.75,
+      0,
+      0,
+      0
+    ]
   }
 }

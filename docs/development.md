@@ -23,13 +23,14 @@ Python нужен только для проверок и подготовки �
 ```sh
 bash tools/check.sh
 godot --path game --script res://tests/release_check.gd
+godot --path game --script res://tests/joints_check.gd -- --output=/tmp/park-joints
 godot --path game --script res://tests/redesign_check.gd -- \
   --screenshots=/tmp/park-ui
 ```
 
 `check.sh` проверяет оригинальные данные, происхождение апскейла, симуляцию,
 композицию слоёв, полноту ремейка, интерфейс, четыре режима графики, звук, настройки и сохранения.
-Логи: `build/reports_1.1.0/`. Можно переопределить `GODOT_BIN` и `PARK_REPORT_DIR`.
+Логи: `build/reports_1.1.1/`. Можно переопределить `GODOT_BIN` и `PARK_REPORT_DIR`.
 Графические проверки запускай с доступным Vulkan/OpenGL; headless не измеряет FPS.
 
 Полное прохождение сценариев:
@@ -58,14 +59,17 @@ export GODOT_ANDROID_KEYSTORE_RELEASE_PASSWORD
 bash tools/build_apk.sh
 ```
 
-Результат: `build/prehistorik_park_1.1.0.apk` и `build/prehistorik_park.apk`.
+Результат: `build/prehistorik_park_1.1.1.apk` и `build/prehistorik_park.apk`.
 Скрипт выполняет проверки, **export-release**, проверку подписи, AndroidManifest,
 CRC, наличие текстур и отсутствие тестов/ключей в архиве. Никаких запросов генерации.
 Для другой версии Build-Tools задай `ANDROID_BUILD_TOOLS`.
 
-Приватный релиз 1.1.0 сохраняет сертификат предыдущих APK для совместимого обновления.
+Релиз 1.1.1 сохраняет сертификат предыдущих APK для совместимого обновления.
 Это существующий локальный development-сертификат; сам бинарник собран без debug.
-Подпись для публикации в Google Play и AAB в этот частный релиз не входят.
+Подпись для публикации в Google Play и AAB в этот релиз не входят.
+Репозиторий публичный. В GitHub Releases публикуются только APK и описание
+исправлений; отчёты, скриншоты и галереи не прикладываются к релизам.
+
 На машине автора настройки подписи находятся вне проекта в
 `~/.config/prehistorik-park/signing.env` (права 0600); резервируй ключ отдельно.
 

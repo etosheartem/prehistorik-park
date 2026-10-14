@@ -16,6 +16,23 @@ from PIL import Image
 ROOT = Path(__file__).resolve().parents[1]
 HD = ROOT / "game/assets/hd"
 
+# Only internal cuts: outer rock silhouettes, stairs and painted details stay
+# intact. Values are logical pixels in left/top/right/bottom order. The narrow
+# UV inset removes the generated outline at a cut; overlap closes alpha/mipmap
+# gaps without moving the original draw-command anchors.
+ROCK_JOINTS = {
+    "1:6:57:37:26:12": ([0, 0, 0, .65], [0, 0, 0, 1]),
+    "1:6:35:0:35:37": ([0, .65, .75, 0], [0, 0, .75, 0]),
+    "1:6:70:13:11:22": ([.75, 0, 0, 0], [.75, 0, 0, 0]),
+    "1:6:0:37:44:75": ([0, 0, 1, 0], [0, 0, .8, 0]),
+    "1:6:44:59:15:54": ([1, 0, .75, 0], [.8, 0, .75, 0]),
+    "1:6:44:37:13:22": ([.75, 0, 0, 0], [.75, 0, 0, 0]),
+    "1:6:81:0:30:44": ([0, 0, .75, 0], [0, 0, .75, 0]),
+    "1:6:83:44:29:54": ([.75, 0, .75, 0], [.75, 0, .75, 0]),
+    "1:6:83:98:20:26": ([.75, 0, 0, .65], [.75, 0, 0, .65]),
+    "1:6:29:113:12:6": ([.75, .65, 0, 0], [.75, 0, 0, 0]),
+}
+
 
 def main():
     source = json.loads((ROOT / "game/assets/original/commands.json").read_text())
@@ -30,6 +47,8 @@ def main():
         filename = key.replace(":", "_") + ".png"
         shutil.copy2(ROOT / "game" / entry["path"].removeprefix("res://"), out / filename)
         repairs[key] = dict(entry, path="res://assets/hd/parts/structural/" + filename)
+    for key, (trim, overlap) in ROCK_JOINTS.items():
+        repairs[key] = dict(parts[key], joint_trim=trim, joint_overlap=overlap)
     parts.update(repairs)
     commands = copy.deepcopy(source)
     pixels = {}
@@ -66,7 +85,7 @@ def main():
                         changed += 1
     (HD / "structural_manifest.json").write_text(json.dumps(repairs, indent=2) + "\n")
     (HD / "commands_repaired.json").write_text(json.dumps(commands, separators=(",", ":")) + "\n")
-    report = {"structural_parts": len(repairs), "attached_rope_endpoints": changed, "max_attachment_correction_logical_pixels": 4, "source_commands_unchanged": True}
+    report = {"structural_parts": len(repairs), "joined_painted_parts": len(ROCK_JOINTS), "attached_rope_endpoints": changed, "max_attachment_correction_logical_pixels": 4, "source_commands_unchanged": True}
     (ROOT / "art/local/geometry_report.json").write_text(json.dumps(report, indent=2) + "\n")
     print(report)
 
